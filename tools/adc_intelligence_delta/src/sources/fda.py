@@ -101,7 +101,11 @@ def to_evidence(record: dict, since: date) -> list[EvidenceRecord]:
             continue
         submission_number = submission.get("submission_number", "")
         title = "/".join(brand_names) or "/".join(generic_names) or application_number
-        raw_text = (
+        # openFDA has no free-text body for a submission — this is a
+        # deterministic serialization of the structured fields below, not
+        # verbatim source text. See EvidenceRecord.evidence_text docstring;
+        # the real structured fields are preserved in `provenance` too.
+        evidence_text = (
             f"{submission.get('submission_type', '')} submission "
             f"#{submission_number}, status={submission.get('submission_status', '')}, "
             f"priority={submission.get('review_priority', '')}"
@@ -120,7 +124,7 @@ def to_evidence(record: dict, since: date) -> list[EvidenceRecord]:
                 publication_date=status_date,
                 retrieved_at=datetime.now(timezone.utc).isoformat(),
                 title=title,
-                raw_text=raw_text,
+                evidence_text=evidence_text,
                 mentioned_assets=mentioned_assets,
                 mentioned_targets=[],
                 mentioned_indications=[],

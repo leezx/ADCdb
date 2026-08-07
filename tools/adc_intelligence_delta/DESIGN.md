@@ -61,11 +61,24 @@ def to_evidence(raw_source_record) -> EvidenceRecord: ...
 ```
 
 `EvidenceRecord` carries provenance (`source_type`, `source_url`,
-`source_record_id`, `retrieved_at`), the verbatim text a claim is based on
-(`raw_text` — never paraphrased), and free-text mentions
+`source_record_id`, `retrieved_at`), source-derived text
+(`evidence_text`), and free-text mentions
 (`mentioned_assets`/`mentioned_targets`/`mentioned_indications`) that
 `entity_resolution.py` and future seed-extraction logic consume without
 needing to know which API the record came from.
+
+`evidence_text` is *not* guaranteed to be verbatim source text. For
+sources with a real text body (PubMed abstracts, AACR abstracts) it will
+be. For sources with no free-text body — FDA's drugsfda API only returns
+structured fields like submission type/status/priority — the adapter
+instead produces a deterministic serialization of those fields, because
+`EvidenceRecord` still needs *some* text for downstream interpretation to
+read. The field is named `evidence_text`, not `raw_text`, specifically so
+nothing downstream (a human, a future Rule Engine) mistakes a synthesized
+FDA description for a citable verbatim quote. The actual structured
+fields are always preserved in `provenance` regardless of what
+`evidence_text` contains — that's the field to read if you need the
+real source data rather than its text rendering.
 
 ## Four entities, not one
 
@@ -82,7 +95,14 @@ across a company's asset, an academic paper, and a bispecific variant that
 all target the same biology, none of which share a name.
 
 - **`ADCAsset`** — a named, organizationally-developed candidate/product.
-  Maps 1:1 onto an existing `ADCdb_Obsidian/ADCs/*.md` card.
+  `asset_id` is owned by this intelligence system, not by ADCdb — an
+  optional `baseline_ref` points at an `ADCdb_Obsidian/ADCs/*.md` card when
+  one exists, but `asset_id` must stay assignable to assets ADCdb never
+  crawled (e.g. a brand-new asset a future AACR abstract names for the
+  first time), or the contract breaks the moment the system finds one.
+  This PR does not implement `asset_id` generation or an asset registry —
+  `EntityResolver` still returns ADCdb card paths, since every asset it
+  can resolve against today does have one.
 - **`ADCSeed`** — `Target × Indication × Modality`, not asset-name-keyed.
   Not populated by this PR (needs AACR/PubMed ingestion, later PRs).
 - **`ADCEvent`** — a dated, *interpreted* change (`TRIAL_START`,
@@ -143,7 +163,10 @@ job. Caught by running entity resolution against the real corpus and
 spot-checking known aliases, not by the unit tests alone (which use small
 synthetic fixtures and wouldn't have exercised this size-dependent bug) —
 worth remembering before trusting fixture-only test coverage on this
-codebase again.
+codebase again. Locked in as a regression test
+(`test_synonyms_resolve_when_row_occurs_past_first_6000_bytes`) so a future
+reintroduction of a fixed-size read window fails in CI, not just against
+the live corpus.
 
 ## What this PR deliberately does not do
 

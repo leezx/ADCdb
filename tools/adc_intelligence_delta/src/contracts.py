@@ -34,7 +34,13 @@ class EvidenceRecord:
     publication_date: str | None  # ISO date the underlying record was published/last updated, if known
     retrieved_at: str  # ISO datetime this evidence was fetched
     title: str
-    raw_text: str  # verbatim text snippet the claim is based on (never paraphrased)
+    evidence_text: str  # source-derived text used for downstream interpretation: either
+    # verbatim source text (e.g. a PubMed/AACR abstract) or a deterministic serialization
+    # of structured source fields (e.g. an FDA submission's type/status/priority) when the
+    # source has no free-text body. Never an LLM paraphrase or summary. Which case applies
+    # for a given record is NOT distinguishable from this field alone — always keep the
+    # actual structured fields in `provenance` too, and never treat evidence_text as a
+    # citable verbatim quote without checking provenance first.
     mentioned_assets: list[str] = field(default_factory=list)  # free-text names as they appear in the source
     mentioned_targets: list[str] = field(default_factory=list)
     mentioned_indications: list[str] = field(default_factory=list)
@@ -46,13 +52,30 @@ class EvidenceRecord:
 @dataclass
 class ADCAsset:
     """A named, organizationally-developed ADC drug candidate or approved
-    product. Maps 1:1 to an existing ADCdb_Obsidian/ADCs/*.md card —
-    this dataclass does not introduce a new store, it's the in-memory shape
-    entity_resolution.py already builds from those cards."""
+    product — Stelligen's own concept of an asset, not ADCdb's.
 
-    asset_id: str  # path relative to ADCdb_Obsidian root, e.g. "ADCs/Trastuzumab deruxtecan.md"
+    asset_id is owned by this intelligence system, not by the ADCdb
+    baseline. Every asset currently known to the system happens to also
+    exist in ADCdb_Obsidian today, but the whole point of this pipeline is
+    that future evidence (e.g. a 2027 AACR abstract naming a brand-new
+    asset) will discover named ADCs that ADCdb never crawled. Those assets
+    must still be representable, with baseline_ref=None — if asset_id were
+    the ADCdb card path (as an earlier draft of this contract had it),
+    there would be no legal identity to assign them.
+
+    This PR does not implement asset_id generation or a mutable asset
+    registry — EntityResolver still returns ADCdb card paths as the
+    resolved identifier for this PR, since every asset it can currently
+    resolve against does have one. Assigning Stelligen-owned asset_ids
+    (e.g. "adc:trastuzumab_deruxtecan") and building the registry that
+    mints new ones for baseline_ref=None assets is later-PR work; this
+    dataclass only fixes the shape now so it doesn't change out from under
+    that work."""
+
+    asset_id: str  # Stelligen-owned stable identity — NOT necessarily an ADCdb_Obsidian path
     canonical_name: str
     aliases: list[str] = field(default_factory=list)
+    baseline_ref: str | None = None  # optional: path into ADCdb_Obsidian/ADCs/*.md, if this asset has one
 
 
 @dataclass

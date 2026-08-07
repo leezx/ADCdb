@@ -3,9 +3,10 @@ from pathlib import Path
 import entity_resolution as er
 
 
-def _write_card(root: Path, filename: str, name: str, synonyms: str) -> None:
+def _write_card(root: Path, filename: str, name: str, synonyms: str, filler_bytes: int = 0) -> None:
     adcs_dir = root / "ADCs"
     adcs_dir.mkdir(parents=True, exist_ok=True)
+    filler = ("x" * filler_bytes + "\n") if filler_bytes else ""
     content = (
         "---\n"
         f'id: "TEST{filename}"\n'
@@ -14,6 +15,7 @@ def _write_card(root: Path, filename: str, name: str, synonyms: str) -> None:
         'source_url: "https://example.invalid"\n'
         "---\n\n"
         f"# {name}\n\n"
+        f"{filler}"
         "## General Information\n\n"
         "| Field              | Value |\n"
         "| ------------------ | ----- |\n"
@@ -97,3 +99,21 @@ def test_resolve_any_returns_unresolved_when_nothing_matches(tmp_path):
     result = resolver.resolve_any(["Nope", "Also Nope"])
 
     assert result.status == er.ResolutionStatus.UNRESOLVED
+
+
+def test_synonyms_resolve_when_row_occurs_past_first_6000_bytes(tmp_path):
+    """Regression test for a real bug found against the live corpus: an
+    earlier version of _load() only read the first 6000 bytes of each card,
+    which silently dropped the Synonyms row on heavily cross-referenced
+    cards (e.g. Trastuzumab deruxtecan.md, 599KB, Synonyms at byte
+    ~163,600) — exactly the highest-value, most-studied drugs. This
+    constructs a card with >10KB of filler before the Synonyms row so any
+    future reintroduction of a fixed-size read window fails loudly here
+    instead of only showing up against the real 6GB+ corpus."""
+    _write_card(tmp_path, "drug_a.md", "Drug Alpha", "LateCode-1", filler_bytes=10_000)
+    resolver = er.EntityResolver(tmp_path)
+
+    result = resolver.resolve("LateCode-1")
+
+    assert result.status == er.ResolutionStatus.EXACT_MATCH
+    assert result.asset_ids == ["ADCs/drug_a.md"]

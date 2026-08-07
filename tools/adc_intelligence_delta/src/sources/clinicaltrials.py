@@ -107,7 +107,7 @@ def to_evidence(study: dict) -> EvidenceRecord:
         publication_date=last_update or None,
         retrieved_at=datetime.now(timezone.utc).isoformat(),
         title=brief_title,
-        raw_text=brief_summary,
+        evidence_text=brief_summary,
         mentioned_assets=intervention_names,
         mentioned_targets=[],
         mentioned_indications=conditions.get("conditions", []) or [],
