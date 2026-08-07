@@ -1,6 +1,6 @@
 # ADC Intelligence Delta
 
-给 `ADCdb_Obsidian`（冻结的历史基线，爬自 adcdb.idrblab.net）接上持续更新能力的工具。**这次 PR 只做地基（Foundation v0.1）**：定义跨数据源统一的证据契约 + 修好实体消歧的歧义处理，不接新数据源、不改任何 ADCdb 卡片。详细设计见 [DESIGN.md](DESIGN.md)。
+给 `ADCdb_Obsidian`（冻结的历史基线，爬自 adcdb.idrblab.net）接上持续更新能力的工具。详细设计见 [DESIGN.md](DESIGN.md)。
 
 ## 目录
 
@@ -15,8 +15,20 @@ tools/adc_intelligence_delta/
     sources/
       clinicaltrials.py   # CT.gov -> EvidenceRecord
       fda.py               # openFDA -> EvidenceRecord
+      pubmed.py            # PubMed（NCBI E-utilities）-> EvidenceRecord
   tests/
 ```
+
+## PR #2：PubMed 滚动雷达（相对 Foundation v0.1）
+
+验证 Foundation 定下的抽象是否真的成立——加一个新数据源应该只需要写 `to_evidence()`，不该动 `contracts.py`。**结果：`contracts.py` 一行没改。** PubMed 也是第一个 `evidence_text` 真正是原文摘要（而不是像 FDA 那样程序拼出来的描述）的数据源。
+
+跑真实 45 天窗口时发现并修复了两个真实精度问题（同样是"真实数据才能发现"，不是 fixture 测试能覆盖的）：
+
+1. `emtansine` 这个词被 PubMed 自动术语映射悄悄扩展成 `maytansine`（连带整个 maytansinoid 载荷类都被搜进来），查 API 返回的 `querytranslation` 字段才发现。修法是给每个搜索词加 `[tiab]`（限定 title/abstract 字面匹配，禁用 MeSH 自动扩展）——45天窗口结果数从529降到515，且 `translationset` 从非空变成空（确认扩展被关掉了）。
+2. `mentioned_assets` 的粗糙正则提取会把英文连接词当成药名一部分，比如"trastuzumab **and** deruxtecan"会提取出"and deruxtecan"。加了一个停用词表过滤掉。
+
+`mentioned_assets` 提取本来就是 coarse heuristic 不是 NER——PubMed API 没有像 CT.gov intervention 或 FDA generic_name 那样的结构化药名字段，这次也没打算加 LLM/NER，宁可召回率低一点也不要提取错。
 
 ## 这次 PR 改了什么（相对上一版）
 
@@ -33,9 +45,9 @@ tools/adc_intelligence_delta/
 2. **`EvidenceRecord.raw_text` 改名 `evidence_text`**——FDA adapter 产出的其实是程序拼接的描述字符串，不是源文本原文，叫 `raw_text` 并声称"never paraphrased"是名不副实。改名后语义改成"可能是原文，也可能是结构化字段的确定性文本化表示"，真正的结构化字段始终保留在 `provenance` 里。
 3. 新增一个回归测试：构造一张 Synonyms 行在 10KB+ 之后才出现的卡片，锁定"只读文件头导致漏解析"这个真实 bug，防止以后有人为了性能又加回固定大小的读取窗口。
 
-## 有意不做的事（这次 PR 范围外）
+## 有意不做的事（PR #2 范围外）
 
-PubMed/AACR/ASCO/ESMO/company/patent 数据源、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实际提取逻辑、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md 末尾。
+AACR/ASCO/ESMO/company/patent 数据源、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实际提取逻辑、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md。
 
 ## 跑测试
 
@@ -45,4 +57,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-13 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA 归一化。
+21 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed 归一化、PubMed 停用词过滤回归测试。

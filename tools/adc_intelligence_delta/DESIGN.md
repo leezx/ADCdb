@@ -7,7 +7,7 @@ adcdb.idrblab.net (~6100 ADC / 1189 antibody / 285 antigen / 496 linker /
 446 payload entries). It stopped updating the moment the crawl finished.
 This tool keeps ADC intelligence current going forward — not by re-crawling
 ADCdb, but by pulling in new evidence from external sources on a rolling
-basis (ClinicalTrials.gov and FDA today; PubMed, AACR, ASCO, ESMO, company
+basis (ClinicalTrials.gov, FDA, and PubMed today; AACR, ASCO, ESMO, company
 disclosures, and patents are planned for later PRs) and reconciling it
 against the existing corpus.
 
@@ -168,7 +168,7 @@ codebase again. Locked in as a regression test
 reintroduction of a fixed-size read window fails in CI, not just against
 the live corpus.
 
-## What this PR deliberately does not do
+## What the Foundation PR deliberately did not do
 
 - No PubMed / AACR / ASCO / ESMO / company / patent ingestion yet.
 - No fuzzy/LLM-assisted entity resolution.
@@ -179,3 +179,79 @@ the live corpus.
   dedicated adapter emitting `EvidenceRecord`, not a refactor of that
   system).
 - No Rule Engine / StelligenOS integration.
+
+## PR #2: PubMed rolling radar — validating the Foundation held
+
+The Foundation PR's whole premise was that adding a new source should only
+require `source_raw_record -> EvidenceRecord`, with zero changes to
+`contracts.py`. PubMed was the test case, being the most different source
+from CT.gov/FDA available next (unstructured free text instead of
+structured trial/regulatory fields). **Result: `contracts.py` needed zero
+changes.** `sources/pubmed.py` adds `to_evidence()` following the exact
+same pattern as the other two adapters, and nothing downstream had to
+change. This is also the first adapter where `evidence_text` is faithful,
+source-derived abstract text (the PubMed abstract, reconstructed from its
+XML — see `to_evidence()`'s docstring for why that's not strictly
+byte-for-byte verbatim) rather than FDA's synthesized description —
+validating that `EvidenceRecord.evidence_text`'s "may be either" contract
+(see above) was the right call, not overcautious hedging.
+
+Two real, non-hypothetical precision problems were found and fixed by
+running the adapter against live NCBI data over the same 45-day window
+used for the CT.gov/FDA checks, not by unit tests alone (same lesson as
+the Foundation PR's byte-6000 bug — fixture tests validate shape, only a
+real corpus/API run validates recall and precision):
+
+1. **PubMed's automatic term mapping silently broadens queries.** The
+   unqualified query term `emtansine` was expanded by PubMed to
+   `"maytansine"[Supplementary Concept] OR "maytansine"[MeSH Terms]`,
+   pulling in the entire maytansinoid payload class instead of just
+   emtansine — invisible unless you inspect the API's
+   `querytranslation` field. Fixed by qualifying every OR'd term with
+   `[tiab]` (title/abstract, literal match), which suppresses MeSH
+   auto-expansion. Verified: this both eliminated the silent expansion
+   (`translationset` went from non-empty to empty) and reduced the 45-day
+   window's result count from 529 to 515.
+2. **The free-text asset-mention heuristic captured English connector
+   words as part of drug names** — e.g. "trastuzumab **and** deruxtecan"
+   extracted `"and deruxtecan"`. Fixed with a small stopword exclusion list
+   (`and`/`or`/`with`/`plus`/...) checked against the token immediately
+   before a matched payload suffix. Locked in as
+   `test_extract_asset_mentions_excludes_english_connector_words`.
+
+`mentioned_assets` extraction here is explicitly a coarse heuristic, not
+NER — see `_extract_asset_mentions()`'s docstring. PubMed's API has no
+structured drug-name field the way CT.gov's interventions or FDA's
+generic_name/brand_name do, so recall is intentionally traded for
+precision (a missed mention just means fewer resolvable candidates per
+article; a wrong mention risks a bad entity resolution downstream).
+
+### The search query itself is precision-first, not just mention extraction
+
+The paragraph above documents low recall in *mention extraction* (finding
+drug names inside an article this radar already fetched). That is a
+separate concern from recall in the *search query* (which articles the
+radar fetches in the first place) — and the query has the same bias.
+`ADC_QUERY_TERM` matches "antibody-drug conjugate"-style phrases plus a
+short list of known INN payload suffixes (vedotin, deruxtecan, ...). That
+combination is reasonable for tracking assets that already have a formal
+name, but this module is named a *seed* radar — its stated purpose (see
+"Why this exists" above) is catching left-edge, pre-asset signals, and the
+current query has a real gap there. It will miss:
+
+- academic ADC constructs that never got a formal INN,
+- company-code-only ADCs whose code isn't in the query,
+- payload chemistries outside the current suffix list,
+- articles that describe an "antibody conjugated to MMAE/SN-38/exatecan/..."
+  without ever using the phrase "antibody-drug conjugate."
+
+**v0.1's PubMed radar prioritizes precision over recall and does not claim
+complete preclinical seed coverage.** This is a deliberate, not accidental,
+scope limit for this PR — expanding the query with modality-construction
+terms (e.g. `"antibody conjugated"[tiab]`, `"antibody-payload"[tiab]`, or
+`antibody AND MMAE`-style combinations) is a real option, but calibrating
+it without also making it noisy needs to be measured against actual recall
+data, not guessed at. That measurement — auditing a sample of the ~515
+articles/month for true-positive rate, and checking recall against a known
+set of recent preclinical ADC papers — is deliberately left as a follow-up
+task rather than folded into this PR.
