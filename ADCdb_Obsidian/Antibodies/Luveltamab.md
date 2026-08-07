@@ -1,0 +1,171 @@
+---
+id: "ANI0KEFUA"
+name: "Luveltamab"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0KEFUA"
+---
+
+# Luveltamab
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0KEFUA
+
+## ADCdb Links
+
+- [Antigen Info](https://adcdb.idrblab.net/data/abt/details/TAR0QHAVI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RRDEF)
+
+## General Information
+
+| Field            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Antibody ID      | ANI0KEFUA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Antibody Name    | Luveltamab                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Synonyms         | SP8166                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Antibody Type    | Monoclonal antibody (mAb)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Antibody Subtype | Humanized IgG1-kappa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Antigen Name     | Folate receptor alpha (FOLR1) Heavy Chain Sequence MEVQLVESGGGLVQPGGSLRLSCAASGFNIRTQSIHWVRQAPGKGLEWIGDIFPIDGITD YADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARGSWSWPSGMDYYLDYWGQGTL VTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPA VLQSSGLFSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAP ELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPR EEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLP PSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTV DKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK Light Chain Sequence MDIQMTQSPSSLSASVGDRVTITCRASQDVNTAVAWYQQKPGKAPKLLIYSASFLYSGVP SRFSGSRSGTDFTLTISSLQPEDFATYYCQQHYTTPPTFGQGTKVEIKRTVAAPSVFIFP PSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTL TLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC |
+
+## Related ADC Activity Data
+
+### Luveltamab tazevibulin (Phase 2/3)
+
+**Source:** Discovered Using Patient-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 15.00% Negative FOLR1 expression ( FOLR1- )
+- **In Vivo Model:** STRO-002 monotherapy PDX model (PDX:PDX model 5)
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 53.00% Low FOLR1 expression ( FOLR1+ )
+- **In Vivo Model:** PDX model
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 70.00% Moderate FOLR1 expression ( FOLR1++ )
+- **In Vivo Model:** PDX model
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 80.00% High FOLR1 expression ( FOLR1+++ )
+- **In Vivo Model:** PDX model
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 100.00% High FOLR1 expression ( FOLR1+++ )
+- **In Vivo Model:** PDX model
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 100.00% High FOLR1 expression ( FOLR1+++ )
+- **In Vivo Model:** PDX model
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.24 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Lung squamous cell carcinoma NCI-H1703 cells CVCL_1490
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.74 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-468 cells CVCL_0419
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.84 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Lung non-small cell carcinoma NCI-H2110 cells CVCL_1530
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.40 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Skin squamous cell carcinoma A431 cells CVCL_0037
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.42 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.70 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.80 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Amelanotic melanoma MDA-MB-435 cells CVCL_0417
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.20 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.29 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Amelanotic melanoma MDA-MB-435 cells CVCL_0417
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.42 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Plasma cell myeloma OPM-2 cells CVCL_1625
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 3.18 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Colon cancer HT29 cells CVCL_A8EZ
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 3.59 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 7.90 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Lung adenocarcinoma A-549 cells CVCL_0023
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 9.18 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Colon carcinoma HCT 116 cells CVCL_0291
+**Experiment 15 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 9.20 nM Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Lung adenocarcinoma NCI-H1651 cells CVCL_1484
+**Experiment 16 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.07 ng/mL Moderate FOLR1 expression ( FOLR1++ )
+- **Method Description:** STRO-002 in lgrov1 cell.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 17 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.35 ng/mL High FOLR1 expression ( FOLR1+++ )
+- **Method Description:** STRO-002 in KB cell.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 18 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.42 ng/mL Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-6 cells CVCL_2206
+**Experiment 19 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.60 ng/mL Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Endometrial adenocarcinoma Ishikawa cells CVCL_2529
+**Experiment 20 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.10 ng/mL Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 21 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.20 ng/mL Moderate FOLR1 expression ( FOLR1++ )
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 22 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.80 ng/mL Low FOLR1 expression ( FOLR1+ )
+- **In Vitro Model:** High grade ovarian serous adenocarcinoma OVKATE cells CVCL_3110
+**Experiment 23 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 3.60 ng/mL Moderate FOLR1 expression ( FOLR1++ )
+- **Method Description:** SC209 in lgrov1 cell.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 24 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 3.90 ng/mL High FOLR1 expression ( FOLR1+++ )
+- **Method Description:** SC209 in KB cell.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 25 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 291.00 ng/mL Moderate FOLR1 expression ( FOLR1++ )
+- **Method Description:** SC239 in lgrov1 cell.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 26 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 400.00 ng/mL High FOLR1 expression ( FOLR1+++ )
+- **Method Description:** SC239 in KB cell.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+
+## References
+
+1. Discovery of STRO-002, a Novel Homogeneous ADC Targeting Folate Receptor Alpha, for the Treatment of Ovarian and Endometrial Cancers. Mol Cancer Ther. 2023 Feb 1;22(2):155-167.

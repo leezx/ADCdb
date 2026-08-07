@@ -1,0 +1,65 @@
+---
+id: "PATR0YMUAI"
+name: "Breakpoint cluster region protein (BCR)"
+entity_type: "Target"
+source_url: "https://adcdb.idrblab.net/data/plt/details/PATR0YMUAI"
+---
+
+# Breakpoint cluster region protein (BCR)
+
+Source: https://adcdb.idrblab.net/data/plt/details/PATR0YMUAI
+
+## ADCdb Links
+
+- [gene-symbol-report](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014)
+- [[ADCs/HLCX-SS-dasatinib ADC|HLCX-SS-dasatinib ADC]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0POFNN))
+
+## General Information
+
+| Field         | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Target ID     | PATR0YMUAI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Target Name   | Breakpoint cluster region protein (BCR)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Gene Name     | BCR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Gene ID       | 613                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Synonym       | BCR1; D22S11; Renal carcinoma antigen NY-REN-26                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Function      | Protein with a unique structure having two opposing regulatory activities toward small GTP-binding proteins. The C-terminus is a GTPase-activating protein (GAP) domain which stimulates GTP hydrolysis by RAC1, RAC2 and CDC42. Accelerates the intrinsic rate of GTP hydrolysis of RAC1 or CDC42, leading to down-regulation of the active GTP-bound form. The central Dbl homology (DH) domain functions as guanine nucleotide exchange factor (GEF) that modulates the GTPases CDC42, RHOA and RAC1. Promotes the conversion of CDC42, RHOA and RAC1 from the GDP-bound to the GTP-bound form. The amino terminus contains an intrinsic kinase activity. Functions as an important negative regulator of neuronal RAC1 activity. Regulates macrophage functions such as CSF1-directed motility and phagocytosis through the modulation of RAC1 activity. Plays a major role as a RHOA GEF in keratinocytes being involved in focal adhesion formation and keratinocyte differentiation. |
+| Uniprot Entry | BCR_HUMAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| HGNC ID       | HGNC:1014                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| KEGG ID       | hsa:613                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+
+### Protein Sequence
+
+```
+MVDPVGFAEAWKAQFPDSEPPRMELRSVGDIEQELERCKASIRRLEQEVNQERFRMIYLQ
+TLLAKEKKSYDRQRWGFRRAAQAPDGASEPRASASRPQPAPADGADPPPAEEPEARPDGE
+GSPGKARPGTARRPGAAASGERDDRGPPASVAALRSNFERIRKGHGQPGADAEKPFYVNV
+EFHHERGLVKVNDKEVSDRISSLGSQAMQMERKKSQHGAGSSVGDASRPPYRGRSSESSC
+GVDGDYEDAELNPRFLKDNLIDANGGSRPPWPPLEYQPYQSIYVGGMMEGEGKGPLLRSQ
+STSEQEKRLTWPRRSYSPRSFEDCGGGYTPDCSSNENLTSSEEDFSSGQSSRVSPSPTTY
+RMFRDKSRSPSQNSQQSFDSSSPPTPQCHKRHRHCPVVVSEATIVGVRKTGQIWPNDGEG
+AFHGDADGSFGTPPGYGCAADRAEEQRRHQDGLPYIDDSPSSSPHLSSKGRGSRDALVSG
+ALESTKASELDLEKGLEMRKWVLSGILASEETYLSHLEALLLPMKPLKAAATTSQPVLTS
+QQIETIFFKVPELYEIHKEFYDGLFPRVQQWSHQQRVGDLFQKLASQLGVYRAFVDNYGV
+AMEMAEKCCQANAQFAEISENLRARSNKDAKDPTTKNSLETLLYKPVDRVTRSTLVLHDL
+LKHTPASHPDHPLLQDALRISQNFLSSINEEITPRRQSMTVKKGEHRQLLKDSFMVELVE
+GARKLRHVFLFTDLLLCTKLKKQSGGKTQQYDCKWYIPLTDLSFQMVDELEAVPNIPLVP
+DEELDALKIKISQIKNDIQREKRANKGSKATERLKKKLSEQESLLLLMSPSMAFRVHSRN
+GKSYTFLISSDYERAEWRENIREQQKKCFRSFSLTSVELQMLTNSCVKLQTVHSIPLTIN
+KEDDESPGLYGFLNVIVHSATGFKQSSNLYCTLEVDSFGYFVNKAKTRVYRDTAEPNWNE
+EFEIELEGSQTLRILCYEKCYNKTKIPKEDGESTDRLMGKGQVQLDPQALQDRDWQRTVI
+AMNGIEVKLSVKFNSREFSLKRMPSRKQTGVFGVKIAVVTKRERSKVPYIVRQCVEEIER
+RGMEEVGIYRVSGVATDIQALKAAFDVNNKDVSVMMSEMDVNAIAGTLKLYFRELPEPLF
+TDEFYPNFAEGIALSDPVAKESCMLNLLLSLPEANLLTFLFLLDHLKRVAEKEAVNKMSL
+HNLATVFGPTLLRPSEKESKLPANPSQPITMTDSWSLEVMSQVQVLLYFLQLEAIPAPDS
+```
+
+## Related ADCs
+
+| ADC                   | Antibody    | Antigen | Payload   | Linker                               |
+| --------------------- | ----------- | ------- | --------- | ------------------------------------ |
+| HLCX-SS-dasatinib ADC | Undisclosed | CXCR4   | Dasatinib | Dasatinib disulfide cleavable linker |
+
+## References
+
+1. An immunosuppressive antibody-drug conjugate. J Am Chem Soc. 2015 Mar 11;137(9):3229-32. doi: 10.1021/jacs.5b00620. Epub 2015 Feb 27.

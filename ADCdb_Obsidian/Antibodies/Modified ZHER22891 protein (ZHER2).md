@@ -1,0 +1,70 @@
+---
+id: "ANI0BFSVD"
+name: "Modified ZHER2:2891 protein (ZHER2)"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0BFSVD"
+---
+
+# Modified ZHER2:2891 protein (ZHER2)
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0BFSVD
+
+## ADCdb Links
+
+- [[Antigens/Receptor tyrosine-protein kinase erbB-2 (HER2)|Receptor tyrosine-protein kinase erbB-2 (HER2)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0THKZD))
+- [[ADCs/Pyro-Linker-ZHER2|Pyro-Linker-ZHER2]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0YSXXF))
+
+## General Information
+
+| Field         | Value                                           |
+| ------------- | ----------------------------------------------- |
+| Antibody ID   | ANI0BFSVD                                       |
+| Antibody Name | Modified ZHER2:2891 protein (ZHER2)             |
+| Antibody Type | Fusion protein (FP)                             |
+| Antigen Name  | Receptor tyrosine-protein kinase erbB-2 (ERBB2) |
+
+## Related ADC Activity Data
+
+### Pyro-Linker-ZHER2 (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 19) High HER2 expression ( HER2 +++ )
+- **Method Description:** BALB/c nude mice bearing HER2-high expression NCI-N87 tumors received iv injection of 20 nmol/mouse of Pyro-Linker-ZHER2, Pyro-Linker-OH, Pyro, or PBS buffer only and then irradiated with 180 J/cm 2 light 4 h (for groups of PyroLinker-ZHER2 and PBS buffer only) postinjection.
+- **In Vivo Model:** NCI-N87 CDX model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 12.50 nM High HER2 expression ( HER2 +++ )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Invasive breast carcinoma BT-474 cells CVCL_0179
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 23.00 nM High HER2 expression ( HER2 +++ )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 nM Low HER2 expression ( HER2 - )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Invasive breast carcinoma MCF-7 cells CVCL_0031
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 nM Low HER2 expression ( HER2 - )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Prostate carcinoma PC-3 cells CVCL_0035
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 nM High HER2 expression ( HER2 +++ )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells (blocking) CVCL_1603
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 nM Low HER2 expression ( HER2 - )
+- **Method Description:** Dark toxicity was measured without light illumination, and a HER2 receptor blocking experiment was carried out by preincubation of the cells with free ZHER2:2891 affibody (10.0 M) for 4 h before the addition of Pyro, Pyro-Linker-OH, or Pyro-Linker-ZHER2.
+- **In Vitro Model:** Prostate carcinoma PC-3 cells (blocking) CVCL_0035
+
+## References
+
+1. Anti-HER2 Affibody-Conjugated Photosensitizer for Tumor Targeting Photodynamic Therapy. Mol Pharm. 2020 May 4;17(5):1546-1557. doi: 10.1021/acs.molpharmaceut.9b01247. Epub 2020 Apr 16.

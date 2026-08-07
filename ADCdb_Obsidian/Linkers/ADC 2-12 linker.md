@@ -1,0 +1,26 @@
+---
+id: "LIN0QOGXU"
+name: "ADC 2-12 linker"
+entity_type: "Linker"
+source_url: "https://adcdb.idrblab.net/data/linker/details/LIN0QOGXU"
+---
+
+# ADC 2-12 linker
+
+Source: https://adcdb.idrblab.net/data/linker/details/LIN0QOGXU
+
+## ADCdb Links
+
+- [[ADCs/ADC2-12|ADC2-12]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0PVYCO))
+
+## General Information
+
+| Field                    | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Linker ID                | LIN0QOGXU                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Linker Name              | ADC 2-12 linker                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Antibody-Linker Relation | Cleavable Full Information of The Activity Data of The ADC(s) Related to This Linker ADC2-12 [Investigative] ADC Info Revealed Based on the Cell Line Data Experiment 1 Reporting the Activity Date of This ADC [ 1 ] Efficacy Data Max inhibition rate (MIR) 76.50% High HER2 expression ( HER2+++ ) Method Description The in vitro potency of ADC was measured in a panel of cancer cell lines usingthe CellTiter-Glo Luminescent Viability Assay. In Vitro Model Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603 Experiment 2 Reporting the Activity Date of This ADC [ 1 ] Efficacy Data Half Maximal Effective Concentration (EC50) 0.26 nM High HER2 expression ( HER2+++ ) Method Description The in vitro potency of ADC was measured in a panel of cancer cell lines usingthe CellTiter-Glo Luminescent Viability Assay. In Vitro Model Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603 References Ref 1 Antibody drug conjugates; 2023-07-06. |
+
+## References
+
+1. Antibody drug conjugates; 2023-07-06.

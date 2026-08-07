@@ -1,0 +1,124 @@
+---
+id: "ANI0LQVDF"
+name: "Modified pAcPhe trastuzumab"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0LQVDF"
+---
+
+# Modified pAcPhe trastuzumab
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0LQVDF
+
+## ADCdb Links
+
+- [Antigen Info](https://adcdb.idrblab.net/data/abt/details/TAR0THKZD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LNVKG)
+
+## General Information
+
+| Field            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Antibody ID      | ANI0LQVDF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Antibody Name    | Modified pAcPhe trastuzumab                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Antibody Type    | Monoclonal antibody (mAb)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Antibody Subtype | Humanized IgG1-kappa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Antigen Name     | Receptor tyrosine-protein kinase erbB-2 (ERBB2) ChEMBI ID CHEMBL1201585 PDB ID 1fvc , 1n8z , 4hkz , 5xhg , 6bhz , 6bi0 , 6bi2 , 6mh2 , 6oge DrugBank ID DB00072 Drug Central ID 4979 Heavy Chain Sequence EVQLVESGGGLVQPGGSLRLSCAASGFNIKDTYIHWVRQAPGKGLEWVARIYPTNGYTRY ADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCSRWGGDGFYAMDYWGQGTLVTVSS USTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS GLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGG PSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYN STYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDE LTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRW QQGNVFSCSVMHEALHNHYTQKSLSLSPG Heavy Chain Varible Domain EVQLVESGGGLVQPGGSLRLSCAASGFNIKDTYIHWVRQAPGKGLEWVARIYPTNGYTRY ADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCSRWGGDGFYAMDYWGQGTLVTVSS Heavy Chain Constant Domain 1 ASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSS GLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKV Heavy Chain Constant Domain 2 APELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTK PREEQYNSTYRVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAK Heavy Chain Constant Domain 3 GQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDS DGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPGK Heavy Chain Hinge Region EPKSCDKTHTCPPCP Heavy Chain CDR 1 GFNIKDTY Heavy Chain CDR 2 IYPTNGYT Heavy Chain CDR 3 SRWGGDGFYAMDY Light Chain Sequence DIQMTQSPSSLSASVGDRVTITCRASQDVNTAVAWYQQKPGKAPKLLIYSASFLYSGVPS RFSGSRSGTDFTLTISSLQPEDFATYYCQQHYTTPPTFGQGTKVEIKRTVAAPSVFIFPP SDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLT LSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC Light Chain Varible Domain DIQMTQSPSSLSASVGDRVTITCRASQDVNTAVAWYQQKPGKAPKLLIYSASFLYSGVPS RFSGSRSGTDFTLTISSLQPEDFATYYCQQHYTTPPTFGQGTKVEIK Light Chain Constant Domain RTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQD SKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC Light Chain CDR 1 QDVNTA Light Chain CDR 2 SAS Light Chain CDR 3 QQHYTTPPT |
+
+## Related ADC Activity Data
+
+### ARX-788 (Phase 2)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 57.10%
+- **Patients Enrolled:** Patients with HER2+ mBC whose disease has progressed following T-DM1, T-DXd, and/or tucatinib-containing regimens.
+- **Administration Dosage:** Administered with an initial dose of 1.50 mg/kg Q4W and subsequent doses of 1.30 mg/kg Q4W.
+- **NCT Number:** NCT04829604
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A global, phase 2 study of ARX788 in HER2-positive metastatic breast cancer patients who were previously treated with T-DXd.
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 33.30% (1.3 mg/kg) 46.20% (1.5 mg/kg) 28.60% (1.7 mg/kg)
+- **Patients Enrolled:** Twenty-two (73.30%) had gastric adenocarcinoma, and the rest (26.70%) had GEJ adenocarcinoma.
+- **Administration Dosage:** At least one dose of ARX788, of whom 9 patients received 1.30 mg/kg, 14 received 1.50 mg/kg, and 7 received 1.70 mg/kg ARX788. The median treatment duration was 3.5 (range: 1-29) cycles.
+- **NCT Number:** CTR20171162
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 study of ACE-Breast-01 [ZMC-ARX788111 (CTR20171162)] to test the safety, PK, and antitumor activity of ARX788 in patients in China with HER2-positive metastatic breast cancer (MBC) whose disease had progressed on prior anti-HER2 treatments. The study includes dose escalation(N=69) to determine the maximum tolerated dose (MTD)/recommended phase 2 dose (RP2D) in patients with HER2-positive MBC.
+- **Primary Endpoint:** The MTD of ARX788 was not reached at doses of up to 1.50 mg/kg every 3 weeks. the RP2D in breast cancer studies was determined to be 1.50 mg/kg every 3 weeks. 33 of the 69 (47.83%) patients had an objective partial tumor response. For ARX788 1.50 mg/kg every 3 weeks, the objective response rate was 65.52% [19/29, 95% confidence interval (CI), 45.70-82.10], the disease control rate was 100.00% (95% CI, 81.20-100.00), and the median progression-free survival was 17.02 months (95% CI, 10.09-not reached).
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 37.90%
+- **Patients Enrolled:** HER2-positive advanced gastric/gastroesophageal junction adenocarcinoma failing to respond to prior trastuzumab-based standard treatment, at least one dose.
+- **Administration Dosage:** 9 patients received 1.30 mg/kg, 14 received 1.50 mg/kg, and 7 received 1.70 mg/kg ARX788.
+- **NCT Number:** CTR20171162
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 study in HER2-positive advanced ug/GEJ adenocarcinoma was initiated to evaluate the safety and efficacy of ARX788. There were 22 males (73.3%) and 8 females (26.7%). Twenty-two (73.3%) had gastric adenocarcinoma,and the rest (26.7%) had GEJ adenocarcinoma. Twenty-seven patients (90%) underwent prior trastuzumab-containing therapy,eight of whom progressed within 6 months in the adjuvant or neoadjuvant phase. Twelve (40%) were treated with 2 or more lines of therapy (26) and eight of whom had 3 or more lines. All patients were treated with platinum-based and fluorouracil regimens,and eight with taxanes and three with irinotecan. Most participants (73.3%) had an Eastern Cooperative Oncology Group (ECOG) performance status (PS) of 1. All of them had at least one dose of ARX788,of whom 9 patients received 1.3 mg/kg,14 received 1.5 mg/kg,and 7 received 1.7 mg/kg ARX788.
+- **Primary Endpoint:** For ARX788 1.70 mg/kg, a median follow up of 10 (95% CI: 6.50-15.90) months,the median PFS was 4.10 (95% CI,1.40-6.40) months,and the median OS was 10.70 (95% CI,4.80-not reached) months.
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 65.52%
+- **Patients Enrolled:** Incurable, locally advanced, or metastatic HER2-positive (immunohistochemistry [IHC] 3+ and/or fluorescence in situ 1 hybridization [FISH]-positive) breast cancer that progressed on greater and or 2 equal to two prior anti-HER2 treatment(s) in the advanced disease setting and 3 who provided written informed consent, patients had an Eastern 4 Cooperative Oncology Group (ECOG) performance status of 0-1.
+- **Administration Dosage:** 0.33 mg/kg Q3W, 0.66 mg/kg Q3W, 0.88 mg/kg Q4W, 0.88 mg/kg Q3W, 1.10 mg/kg Q4W, 1.10 mg/kg Q3W, 1.30 mg/kg Q4W, 1.30 mg/kg Q3W, and 1.50 mg/kg Q3W, intravenous infusion.
+- **NCT Number:** CTR20171162
+- **Clinical Status:** Phase 1
+- **Clinical Description:** Patients with HER2-positive MBC received ARX788 at doses of 0.33, 0.66, 0.88, 1.10, 1.30, or 1.50 mg/kg every 3 weeks, or 0.88, 1.10, or 1.30 mg/kg every 4 weeks. The dose-limiting toxicity (DLT) was assessed for 84 days for pulmonary toxicity and at a duration of one cycle (21 or 28 days) for other toxicities. In total, 69 patients were enrolled. No DLT or drug-related deaths occurred.
+- **Primary Endpoint:** At 1.50 mg/kg every 3 weeks, the recommended phase II dose, the objective response rate was 65.52% [19/29, 95% confidence interval (CI), 45.70-82.10].
+- **Other Endpoint:** The disease control rate was 100.00% (95% CI, 81.20-100.00), and the median progression-free survival was 17.02 months (95% CI, 10.09-not reached).
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 74.00% (Breast cancer) 67.00% (Pan-tumor)
+- **Patients Enrolled:** ACE-Breast-01 (median 6 prior lines of therapy) and ACE-Pan tumor-01 trial (including breast, gastric/GEJ, NSCLC, ovarian, urothelial, biliary track, endometrial, and salivary gland cancer).
+- **Administration Dosage:** 0.33 - 1.5 mg/kg; Q3W or Q4W.
+- **NCT Number:** NCT03255070
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1, multicenter, open-label, multiple dose-escalation and expansion study of ARX788, as monotherapy in advanced solid tumors with HER2 expression.
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05426486
+- **Clinical Status:** Phase 2/3
+- **Clinical Description:** A randomized, open label, multi-center phase 2-2i neoadjuvant study comparing the efficacy and safety of ARX788 combined with pyrotinib maleate versus TCBHP (trastuzumab plus pertuzumab with docetaxel and carboplatin) in patients with HER2-positive breast cancer.
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05041972
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A global phase 2 study to evaluate the efficacy and safety of ARX788 for selected HER2-mutated or HER2-amplified/overexpressed solid tumors.
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05018702
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A prospective, single-arm, single-center phase 2 clinical study of recombinant humanized anti-HER2 monoclonal antibody-AS269 conjugate (ARX788) in the treatment of HER2-positive breast cancer patients with brain metastases.
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05018676
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A single-arm, single-center phase 2 clinical study of recombinant humanized anti-HER2 monoclonal antibody-AS269 conjugate (ARX788) in the treatment of unresectable and/or metastatic breast cancer with low expression of HER2.
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04983121
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Efficacy and safety of pyrotinib maleate combined with ARX788 neoadjuvant treatment in stage 2-2I HER2-positive breast cancer patients who have poor outcomes after treatment with trastuzumab and pertuzumab.
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT01042379
+- **Clinical Status:** Phase 2
+- **Clinical Description:** I-SPY trial (investigation of serial studies to predict your therapeutic response with imaging and molecular analysis 2).
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT02512237
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1, multicenter, open-label, multiple dose-escalation study of ARX788, intravenously administered as a single agent in subjects with advanced cancers with HER2 expression.
+
+## References
+
+1. ACE-Breast-03: Efficacy and safety of ARX788 in patients with HER2+ metastatic breast cancer previously treated with T-DM1. Cancer Res (2023) 83 (5_Supplement): PD18-09.
+2. Phase 1 multicenter, dose-expansion study of ARX788 as monotherapy in HER2-positive advanced gastric and gastroesophageal junction adenocarcinoma. Cell Rep Med. 2022 Nov 15;3(11):100814.
+3. Phase I Trial of a Novel Anti-HER2 Antibody-Drug Conjugate, ARX788, for the Treatment of HER2-Positive Metastatic Breast Cancer. Clin Cancer Res. 2022 Jun 29:OF1-OF10.
+4. Safety and unique pharmacokinetic profile of ARX788, a site-specific ADC, in heavily pretreated patients with HER2-overexpresing solid tumors: Results from two phase 1 clinical trials. J Clin Oncol. 2021 39:15_suppl, 1038-1038.
+5. A Randomized, Open Label, Multi-center Phase II-III Neoadjuvant Study Comparing the Efficacy and Safety of ARX788 Combined With Pyrotinib Maleate Versus TCBHP (Trastuzumab Plus Pertuzumab With Docetaxel and Carboplatin) in Patients With HER2-positive Breast Cancer, NCT05426486
+6. A Global Phase 2 Study to Evaluate the Efficacy and Safety of ARX788 for Selected HER2-mutated or HER2-amplified/Overexpressed Solid Tumors, NCT05041972
+7. A Prospective, Single-arm, Single-center Phase II Clinical Study of Recombinant Humanized Anti-HER2 Monoclonal Antibody-AS269 Conjugate (ARX788) in the Treatment of HER2-positive Breast Cancer Patients With Brain Metastases, NCT05018702
+8. A Single-arm, Single-center Phase II Clinical Study of Recombinant Humanized Anti-HER2 Monoclonal Antibody-AS269 Conjugate (ARX788) in the Treatment of Unresectable and/or Metastatic Breast Cancer With Low Expression of HER2, NCT05018676
+9. Efficacy and Safety of Pyrotinib Maleate Combined With ARX788 Neoadjuvant Treatment in Stage II-III HER2-positive Breast Cancer Patients Who Have Poor Outcomes After Treatment With Trastuzumab and Pertuzumab, NCT04983121
+10. I-SPY Trial (Investigation of Serial Studies to Predict Your Therapeutic Response With Imaging And moLecular Analysis 2), NCT01042379
+11. A Phase 1, Multicenter, Open-label, Multiple Dose-escalation Study of ARX788, Intravenously Administered as a Single Agent in Subjects With Advanced Cancers With HER2 Expression, NCT02512237

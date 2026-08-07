@@ -1,0 +1,976 @@
+---
+id: "PAY0UXDSB"
+name: "DX-8951 derivative (DXd)"
+entity_type: "Payload"
+source_url: "https://adcdb.idrblab.net/data/payload/details/PAY0UXDSB"
+---
+
+# DX-8951 derivative (DXd)
+
+Source: https://adcdb.idrblab.net/data/payload/details/PAY0UXDSB
+
+## ADCdb Links
+
+- [Target Info](https://adcdb.idrblab.net/data/plt/details/PATR0EGDKN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ERKBH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZOYQV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DAKKB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NNKAQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YWAHM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MGUUX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WJKRI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UCXTV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BWNUI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UZQBB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0EFAMN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZBRFQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SLFJV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LOXYS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GVDPA)
+
+## General Information
+
+| Field      | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Payload ID | PAY0UXDSB                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Name       | DX-8951 derivative (DXd)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Synonyms   | 1599440-33-1; Dxd; OQM5SD32BQ; N-[(10S,23S)-10-ethyl-18-fluoro-10-hydroxy-19-methyl-5,9-dioxo-8-oxa-4,15-diazahexacyclo[14.7.1.02,14.04,13.06,11.020,24]tetracosa-1,6(11),12,14,16,18,20(24)-heptaen-23-yl]-2-hydroxyacetamide; Exatecan derivative for ADC; Acetamide, N-((1S,9S)-9-ethyl-5-fluoro-2,3,9,10,13,15-hexahydro-9-hydroxy-4-methyl-10,13-dioxo-1H,12H-benzo(de)pyrano(3',4':6,7)indolizino(1,2-b)quinolin-1-yl)-2-hydroxy-; N-((1S,9S)-9-Ethyl-5-fluoro-2,3,9,10,13,15-hexahydro-9-hydroxy-4-methyl-10,13-dioxo-1H,12H-benzo(de)pyrano(3',4':6,7)indolizino(1,2-b)quinolin-1-yl)-2-hydroxyacetamide; N-((1S,9S)-9-ethyl-5-fluoro-9-hydroxy-4-methyl-10,13-dioxo-2,3,9,10,13,15-hexahydro-1H,12H-benzo[de]pyrano[3',4':6,7]indolizino[1,2-b]quinolin-1-yl)-2-hydroxyacetamide; N-[(1S,9S)-9-Ethyl-5-fluoro-2,3,9,10,13,15-hexahydro-9-hydroxy-4-methyl-10,13-dioxo-1H,12H-benzo[de]pyrano[3',4':6,7]indolizino[1,2-b]quinolin-1-yl]-2-hydroxyacetamide; UNII-OQM5SD32BQ; SCHEMBL16485136; EX-A4319; HY-13631D; NSC825332; AT21797; NSC-825332; AC-32494; BP-27997; MS-29164; CS-0044752; A936339; N-[(10S,23S)-10-ethyl-18-fluoro-10-hydroxy-19-methyl-5,9-dioxo-8-oxa-4,15-diazahexacyclo[14.7.1.0,.0,.0,.0,tetracosa-1,6(11),12,14,16,18,20(24)-heptaen-23-yl]-2-hydroxyacetamide |
+| Target(s)  | DNA topoisomerase 1 (TOP1)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+## Chemical Structure
+
+| Property        | Value                       |
+| --------------- | --------------------------- |
+| Formula         | C26H24FN3O6                 |
+| PubChem CID     | 117888634                   |
+| InChIKey        | PLXLYXLUCNZSAA-QLXKLKPCSA-N |
+| Molecule Weight | 493.491                     |
+
+**Isosmiles:**
+```
+[H]OC([H])([H])C(=O)N([H])[C@]1([H])c2c3c(nc4c([H])c(F)c(C([H])([H])[H])c(c24)C([H])([H])C1([H])[H])-c1c([H])c2c(c(=O)n1C3([H])[H])C([H])([H])OC(=O)[C@]2(O[H])C([H])([H])C([H])([H])[H]
+```
+
+**InChI:**
+```
+InChI=1S/C26H24FN3O6/c1-3-26(35)15-6-19-23-13(8-30(19)24(33)14(15)10-36-25(26)34)22-17(28-20(32)9-31)5-4-12-11(2)16(27)7-18(29-23)21(12)22/h6-7,17,31,35H,3-5,8-10H2,1-2H3,(H,28,32)/t17-,26-/m0/s1
+```
+
+**IUPAC Name:**
+```
+N-[(10S,23S)-10-ethyl-18-fluoro-10-hydroxy-19-methyl-5,9-dioxo-8-oxa-4,15-diazahexacyclo[14.7.1.02,14.04,13.06,11.020,24]tetracosa-1,6(11),12,14,16,18,20(24)-heptaen-23-yl]-2-hydroxyacetamide
+```
+
+### Pharmaceutical Properties
+
+| Property        | Value                                                                                                                                                                                                                                                                                                                               |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Molecule Weight | 493.491                                                                                                                                                                                                                                                                                                                             |
+| Polar area      | 130.75                                                                                                                                                                                                                                                                                                                              |
+| Complexity      | 493.1649137                                                                                                                                                                                                                                                                                                                         |
+| xlogp Value     | 1.62292                                                                                                                                                                                                                                                                                                                             |
+| Heavy Count     | 36                                                                                                                                                                                                                                                                                                                                  |
+| Rot Bonds       | 7                                                                                                                                                                                                                                                                                                                                   |
+| Hbond acc       | 8                                                                                                                                                                                                                                                                                                                                   |
+| Hbond Donor     | 3 The activity data of This Payload Standard Type Value Units Cell line Disease Model Cell line ID Reference Half Maximal Inhibitory Concentration (IC50) 0.5 nM MDA-MB-468 cells Breast adenocarcinoma CVCL_0419 [ 1 ] Half Maximal Inhibitory Concentration (IC50) 4 nM KPL-4 cells Breast inflammatory carcinoma CVCL_5310 [ 1 ] |
+
+## Related ADC Activity Data
+
+### Trastuzumab deruxtecan (Approved)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 52.90% (In HR+ cohort) 52.30% (In HR+ and HR- cohort)
+- **Patients Enrolled:** HER2-low metastatic breast cancer who had received one or two previous lines of chemotherapy.
+- **Administration Dosage:** Intravenously every 3 weeks at a dose of 5.40 mg per kilogram of body weight.
+- **NCT Number:** NCT03734029
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3, multicenter, randomized, open-label, active controlled trial of DS-8201a, an Anti-HER2-antibody drug conjugate (ADC), versus treatment of physician's choice for HER2-low, unresectable and/or metastatic breast cancer subjects.
+- **Primary Endpoint:** In HR+ cohort, for ENHERTU (N=331), median Progression-Free Survival (mFPS)=10.10 months (95% Cl 9.50-11.50), for Chemotherapy (N=163), median Progression-Free Survival (mFPS)=5.40 months(95% Cl 4.40-7.10), hazard radio=0.51 (95% Cl 0.40-0.64) and p-value<0.0001.
+- **Other Endpoint:** In HR+ cohort, for ENHERTU (N=331), median overall survival (months)=23.90 (95% Cl 20.80-24.80), Confirmed Objective Response Rate=52.90% (95% Cl 47.30-58.40), Complete Response rate=36.00%, Partial Response rate= 49.50%, median Duration of Response (months)=10.70 (95% Cl 8.50-13.70); for Chemotherapy (N=163), median overall survival (months)=17.50 (95% Cl 15.20-24.80), Confirmed Objective Response Rate=16.60% (95% Cl 11.20-23.20), Complete Response rate=0.60%, Partial Response rate= 16.00%, median Duration of Response (months)=6.80 (95% Cl 6.50-9.90). In HR+ and HR- cohort, for ENHERTU (N=373), median Progression-Free Survival (mFPS)=9.90 months (95% Cl 9.00-11.30), median overall survival (months) = 23.40 (95% Cl 20.00-24.80), Confirmed Objective Response Rate = 52.30% (95% Cl 47.10-57.40), Complete Response rate=35.00%, Partial Response rate= 49.10%, median Duration of Response(months)=10.70 (95% Cl 8.50-13.20); for Chemotherapy (N=184), median Progression-Free Survival (mFPS)=5.40 months(95% Cl 4.20-6.80), median overall survival (months)=16.80(95% Cl 14.50-20.00), Confirmed Objective Response Rate=16.30% (95% Cl 11.30-22.50), Complete Response rate=11.00%, Partial Response rate= 15.20%, median Duration of Response(months)=6.80 (95% Cl 6.00-9.90).
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 79.70%
+- **Patients Enrolled:** HER2-positive metastatic breast cancer previously treated with trastuzumab and a taxane.
+- **Administration Dosage:** Intravenously every 3 weeks at a dose of 5.40 mg per kilogram of body weigh.
+- **NCT Number:** NCT03529110
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3, multicenter, randomized, open-label, active-controlled study of DS-8201a (Trastuzumab Deruxtecan), an Anti-HER2 antibody drug conjugate (ADC), versus Ado Trastuzumab Emtansine (T-DM1) for HER2-positive, unresectable and/or metastatic breast cancer subjects previously treated with trastuzumab and taxane.
+- **Primary Endpoint:** For ENHERTU 5.40 mg/kg, Median Progression-Free Survival (mPFS)=not reached (95% Cl 18.5-not estimable); For Ado-trastuzumab emtansine 3.60 mg/kg, Median Progression-Free Survival (mPFS)=6.80months (95% Cl 5.60-8.20), hazard radio=0.28 (95% Cl 0.22-0.37) and p-value<0.0001.
+- **Other Endpoint:** For ENHERTU 5.40 mg/kg, Confirmed Objective Response Rate (ORR)=79.70% (95% Cl 74.30%-84.40%), complete response rate=16.10%, partial response rate=63.60%; For Ado-trastuzumab emtansine 3.60 mg/kg, Confirmed Objective Response Rate (ORR)=34.20% (95% Cl 28.50%-40.30%), complete response rate=8.70%, partial response rate=25.50%.
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 79.70%
+- **Patients Enrolled:** HER2-positive unresectable or metastatic breast cancer who were previously treated with trastuzumab and a taxane in the advanced or metastatic setting.
+- **NCT Number:** NCT03529110
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3, multicenter, randomized, open-label, active-controlled study of DS-8201a (Trastuzumab Deruxtecan), an Anti-HER2 antibody drug conjugate (ADC), versus Ado Trastuzumab Emtansine (T-DM1) for HER2-positive, unresectable and/or metastatic breast cancer subjects previously treated with trastuzumab and taxane.
+- **Primary Endpoint:** The median patient age was 54 years. Approximately 50% of patients were treated with 0-1 prior lines of therapy in the metastatic setting, and 50% were treated with 2 prior treatment regimens. At baseline, 16.50% of patients in the T-DXd group and 14.80% of those in the T-DM1 group had brain metastases. At a median follow-up of 15.90 months, T-DXd significantly improved PFS by 72% compared with T-DM1 across all patient subgroups. Findings were consistent irrespective of hormone receptor status, prior treatment with pertuzumab, number of prior lines of therapy, presence or absence of visceral disease, and presence or absence of brain metastases. The overall response rate (ORR) in the overall study cohort was 79.70% and 34.20% in the T-DXd and T-DM1 groups, respectively, representing an absolute improvement in ORR of 45% with T-DXd Findings were consistent across all patient subgroups, with the absolute improvement in ORR associated with T-DXd relative to T-DM1 ranging from 39% to 52%.
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 43.00% Positive HER2 expression ( HER2+++/++ ; HER2 MFI=562)
+- **Patients Enrolled:** HER2-positive gastric or gastroesophageal junction adenocarcinoma that had progressed while they were receiving at least two previous therapies, including trastuzumab.
+- **Administration Dosage:** 6.40 mg per kilogram of body weight every 3 weeks.
+- **NCT Number:** NCT03329690
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, open-label study of DS-8201a in subjects with HER2-expressing advanced gastric or gastroesophageal junction adenocarcinoma.
+- **Primary Endpoint:** In the trastuzumab deruxtecan group, confirmed objective response rate=43.00% (95% Cl 34.00-52.00%), complete response rate=8.00%, partial response rate=34.00%. In the chemotherapy group, confirmed objective response rate=12.00% (95% Cl 5.00-24.00%), complete response rate=0.00%, partial response rate=12.00%.
+- **Other Endpoint:** In the trastuzumab deruxtecan group (N=119), confirmed disease control rate=86.00% (95% Cl 78.00-91.00%), median Duration of Response (mDOR)=11.30 months (95% Cl 5.60-not estimable), median overall survival (mOS)=12.50 months (95% Cl 9.60-14.30), estimated overall survival was 80.00% at 6 months and 52.00% at 12 months, median progression-free survival (mPFS)=5.60 months (95% CI, 4.30-6.90), estimated progression-free survival=43.00% at 6 months and 30.00% at 12 months In the chemotherapy group (N=56), confirmed disease control rate=62.00% (95% Cl 49.00-75.00%), median Duration of Response (mDOR)=3.90 months (95% Cl 3.0-4.9), median overall survival (mOS)=8.40 months (95% Cl 6.90-10.70), estimated overall survival was 66.00% at 6 months and 29.00% at 12 months, median progression-free survival (mPFS)=3.50 months (95% CI, 2.00-4.30), estimated progression-free survival=21.00% at 6 months and 0.00% at 12 months.
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 45.30% High HER2 expression ( HER2 +++ )
+- **Patients Enrolled:** 86 patients with metastatic colorectal cancer (mCRC) were enrolled and received at least 1 dose of T-DXd, including 53 patients in cohort A (HER2-positive, immunohistochemistry [IHC] 3+ or IHC 2+/in situ hybridization [ISH]+), 15 patients in cohort B (HER2 IHC 2+/ISH), and 18 patients in cohort C (HER2 IHC 1+).
+- **Administration Dosage:** 6.4 mg/kg every 3 weeks
+- **NCT Number:** NCT04744831
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, randomized, study of trastuzumab deruxtecan in participants with HER2-overexpressing locally advanced, unresectable or metastatic colorectal cancer (DESTINY-CRC02).
+- **Primary Endpoint:** ORR of 45.30% in cohort A
+- **Other Endpoint:** No responses occurred in cohorts B or C. Median progression-free survival, overall survival, and duration of response were 6.90, 15.50, and 7.00 months, respectively.
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 55.00% Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Patients Enrolled:** HER2-overexpressing or HER2-mutant non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** Intravenously every 3 weeks at a dose of 6.40 mg per kilogram of body weight.
+- **NCT Number:** NCT03505710
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, open-label, 2-cohort study of Trastuzumab Deruxtecan (DS-8201a), an anti-HER2 antibody drug conjugate (ADC), for HER2-over-expressing or -mutated, unresectable and/or metastatic non small cell lung cancer (NSCLC) (DESTINY-Lung01).
+- **Primary Endpoint:** Confirmed objective response rate=55.00% (95% CI, 44.00%-65.00%), confirmed complete response rate=1.00%, confirmed partial response=54.00%.
+- **Other Endpoint:** Median duration of response (mDOR) = 9.30 months (95% CI, 5.70-14.70), Median progression-free survival (mPFS) = 8.20 months (95% CI, 6.00-11.90), median overall survival=17.80 months (95% CI, 13.80-22.10).
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 57.70% Negative HER2 expression ( HER2- ; HER2 MFI=10)
+- **Patients Enrolled:** HER2-mutated metastatic non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** 6.40 mg/kg administered by intravenous infusion every 3 weeks (Q3W).
+- **NCT Number:** NCT04644237
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, randomized study of trastuzumab deruxtecan in subjects with HER2-mutated metastatic non-small cell lung cancer (NSCLC) (DESTINY-LUNG02).
+- **Primary Endpoint:** Confirmed Objective Response Rate=57.70% (95% CI, 43.20-71.30%), Complete Response rate=19.00%, Partial Response=55.80%.
+- **Other Endpoint:** Median Duration of Response (mDOR) = 8.70 months (95% Cl 7.10-not estimable).
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 60.90% Positive HER2 expression ( HER2+++/++ ; HER2 MFI=957)
+- **Patients Enrolled:** Pathologically documented HER2-positive, unresectable or metastatic breast cancer who had received previous treatment with trastuzumab emtansine.
+- **Administration Dosage:** 5.4 mg per kilogram administered by intravenous infusion every 3 weeks.
+- **NCT Number:** NCT03248492
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, open-label study of DS-8201a, an anti-HER2-antibody drug conjugate (ADC) for HER2-positive, unresectable and/or metastatic breast cancer subjects previously treated with T-DM1 (DESTINY-Breast01).
+- **Primary Endpoint:** Confirmed Objective Response Rate=60.90% (95% CI, 53.40%-68.00%), complete response rate=6.00%, partial response rate= 54.90%.
+- **Other Endpoint:** Disease-control rate was 97.30% (95% CI, 93.80-99.10), Median Duration of Response (months)=14.80 (95% CI, 13.80-16.90), clinical-benefit rate was 76.10% (95% CI, 69.30-82.10), median duration of progression-free survival was 16.40 months (95% CI, 12.70-not reached), estimated overall survival was 93.90% (95% CI, 89.30-96.60) at 6 months and 86.20% (95% CI, 79.80-90.70) at 12 months.
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 73.33%
+- **Patients Enrolled:** HER2-positive breast cancer and newly diagnosed untreated brain metastases or brain metastases progressing after previous local therapy, previous exposure to trastuzumab and pertuzumab and no indication for immediate local therapy.
+- **Administration Dosage:** 5.40 mg per kg bodyweight once every 3 weeks intravenously.
+- **NCT Number:** NCT04752059
+- **Phase Status:** Phase 2
+- **Clinical Description:** Phase 2 study of trastuzumab-deruxtecan (T-DX; DS-8201a) in HER2-positive breast cancer patients with newly diagnosed or progressing brain metastases.
+- **Primary Endpoint:** In the ITT population (n=15 patients), intracranial response rate by RANO-BM was 73.33% (95% CI 48.10-89.10%) (11/15 patients; 2 patients in complete remission (13.33%); 9 patients in partial remission (60.00%)). In the per protocol population (PP;n=14 patients), the response rate was 78.57% (95% CI 49.20-95.30%) (11/14). Two patients had stable disease for 6 months and one patient had stable disease at first restaging and progressed after four cycles of trastuzumab deruxtecan. Clinical benefit rate was 13/14 (92.86%; 95% CI 66.10-99.80%) in the PP population.
+- **Other Endpoint:** In patients with extracranial metastases at baseline (n=13), a partial response by RECIST 11 was observed in 5/13 (27.8%; 95% CI 13.9-68.4%) patients, with the remainder having stable disease. None of the patients progressing on trastuzumab deruxtecan had extracranial progression as the first site of progressive disease In patients with measurable extracranial disease at baseline (n=8), a partial remission was observed in 5/8 (62.50%; 95% CI 24.50-91.50%) patients, with the remainder having stable disease.
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 37.00% Low HER2 expression ( HER2 - )
+- **Patients Enrolled:** 54 patients with HER2-low breast cancer
+- **Administration Dosage:** 5.4 or 6.4 mg/kg.
+- **NCT Number:** NCT02564900
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, two-part, multicenter, non-randomized, open-label, multiple dose first-in-human study of DS-8201A, in subjects with advanced solid malignant tumors.
+- **Primary Endpoint:** Median duration of response = 10.40 months, median progression free survival (PFS) = 11.10 months, median overall survival = 29.40 months.
+- **Other Endpoint:** Confirmed ORR = 24.00 ; DOR, Median=11.00 months; TTR, months Median=2.80 ;PFS, months Median=8.00.
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 54.50% (HER2-high) 70.00% (HER2-low)
+- **Patients Enrolled:** Recurrent uterine carcinosarcoma (UCS) with HER2 immunohistochemistry scores 1+ previously treated with chemotherapy were included.
+- **Administration Dosage:** 6.40 or 5.40 mg/kg was administered intravenously once every 3 weeks.
+**Source:** Discovered Using Patient-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 88.90% (Day 28) High HER2 expression ( HER2+++ ; IHC 3+)
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various patient-derived xenograft models with different HER2 expression levels. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 3 mg/kg or 10 mg/kg DS-8201a was i.v. respectively to the tumor-bearing mice.
+- **In Vivo Model:** Gastric cancer PDX model (PDX: NIBIO G016)
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 96.30% (Day 28) Low HER2 expression ( HER2+ ; IHC 1+)
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various patient-derived xenograft models with different HER2 expression levels. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** Breast cancer PDX model (PDX: ST313)
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 98.20% (Day 28) Low HER2 expression ( HER2+ ; IHC 1+)
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various patient-derived xenograft models with different HER2 expression levels. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** Breast cancer PDX model (PDX: ST565)
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 98.60% (Day 21) Moderate HER2 expression ( HER2++ ; IHC 2+)
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various patient-derived xenograft models with different HER2 expression levels. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** Breast cancer PDX model (PDX: ST225)
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% Negative HER2 expression ( HER2 - )
+- **Method Description:** Volume of tumors formed by HCT116-Mock, HCT116-H2L or HCT116-H2H cells in nude mice injected intraperitoneally once every 3 weeks with PBS vehicle or trastuzumab deruxtecan (DS-8201a, 3 mg/kg) beginning at Day 0.
+- **In Vivo Model:** HCT116-Mock CDX model
+- **In Vitro Model:** Colon carcinoma HCT 116-Mock cells (Negative HER2 expression) CVCL_0291
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 13.50% (Day 21) Low HER2 expression ( HER2+ )
+- **Method Description:** The antitumor activity of DS-8201a and trastuzumab were evaluated in various mice xenograft models with different HER2 expression levels; CFPAC-1 (low-expression). Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 1 mg/kg DS-8201a or 10 mg/kg trastuzumab was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** CFPAC-1 cell line xenograft model
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma CFPAC-1 cells CVCL_1119
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 17.20% (Day 21) Negative HER2 expression ( HER2- )
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various mice xenograft models with different HER2 expression levels; GCIY (negative). Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a or Anti-HER2 ADC(same drug-linker as DS-8201a and DAR=3.4) was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** GCIY cell line xenograft model
+- **In Vitro Model:** Gastric adenocarcinoma GCIY cells CVCL_1228
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 28.80% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Method Description:** The in vivo antitumor activity of DS-8201a was evaluated in a HER2-positive NCI-N87 xenograft model. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice. The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0 In this group, 0.25 mg/kg DS-8201a was iv to the tumor-bearing mice.
+- **In Vivo Model:** HER2-positive NCI-N87 xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 58.50% (Day 21) Moderate HER2 expression ( HER2++ )
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various mice xenograft models with different HER2 expression levels; JIMT-1 (moderate positive). Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a or Anti-HER2 ADC(same drug-linker as DS-8201a and DAR=3.4) was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** JIMT-1 cell line xenograft model
+- **In Vitro Model:** Breast ductal carcinoma JIMT-1 cells CVCL_2077
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 61.60% (Day 21) Low HER2 expression ( HER2+ )
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various mice xenograft models with different HER2 expression levels; Capan-1 (weak positive). Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a or Anti-HER2 ADC(same drug-linker as DS-8201a and DAR=3.4) was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** Capan-1 cell line xenograft model
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma Capan-1 cells CVCL_0237
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 62.50% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Method Description:** The in vivo antitumor activity of DS-8201a was evaluated in a HER2-positive NCI-N87 xenograft model. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice. The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0 In this group, 0.5 mg/kg DS-8201a was iv to the tumor-bearing mice.
+- **In Vivo Model:** HER2-positive NCI-N87 xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 66.70% (Day 18) Positive HER2 expression ( HER2 +++/++ )
+- **Method Description:** Trastuzumab deruxtecan (10 mg/kg, every seven days 2) induces efficient tumor cell killing in cell line-derived models of EMT6-hHER2 cells with HER2 expression with high expression.
+- **In Vivo Model:** EMT6 CDX model (Expressing hHER2)
+- **In Vitro Model:** Mammary gland malignant neoplasms EMT6 cells (High HER2 expression) CVCL_1923
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 68.70% (Day 24) Low HER2 expression ( HER2 + , IHC 1+)
+- **Method Description:** Volume of tumors formed by HCT116-Mock, HCT116-H2L or HCT116-H2H cells in nude mice injected intraperitoneally once every 3 weeks with PBS vehicle or trastuzumab deruxtecan (DS-8201a, 3 mg/kg) beginning at Day 0.
+- **In Vivo Model:** HCT116-H2L CDX model
+- **In Vitro Model:** Colon carcinoma HCT 116-H2L cells (Low HER2 expression) CVCL_0291
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 86.00% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Method Description:** The in vivo antitumor activity of DS-8201a was evaluated in a HER2-positive NCI-N87 xenograft model. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 1 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** HER2-positive NCI-N87 xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 88.30% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=95.7)
+- **Method Description:** The antitumor activity of DS-8201a was evaluated in various mice xenograft models with different HER2 expression levels; KPL-4 (strong positive). Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 10 mg/kg DS-8201a or Anti-HER2 ADC(same drug-linker as DS-8201a and DAR=3.4) was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** KPL-4 cell line xenograft model
+- **In Vitro Model:** Breast inflammatory carcinoma KPL-4 cells CVCL_5310
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 96.10% (Day 24) High HER2 expression ( HER2 +++ , IHC 3+)
+- **Method Description:** Volume of tumors formed by HCT116-Mock, HCT116-H2L or HCT116-H2H cells in nude mice injected intraperitoneally once every 3 weeks with PBS vehicle or trastuzumab deruxtecan (DS-8201a, 3 mg/kg) beginning at Day 0.
+- **In Vivo Model:** HCT116-H2H CDX model
+- **In Vitro Model:** Colon carcinoma HCT 116-H2H cells (High HER2 expression) CVCL_0291
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 97.30% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Method Description:** The in vivo antitumor activity of DS-8201a was evaluated in a HER2-positive NCI-N87 xenograft model. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 2 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** HER2-positive NCI-N87 xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 99.10% (Day 21) Positive HER2 expression ( HER2+++/++ ; HER2 MFI=1016)
+- **Method Description:** The in vivo antitumor activity of DS-8201a was evaluated in a HER2-positive NCI-N87 xenograft model. Each cell suspension or tumor fragment was inoculated subcutaneously into specific pathogen-free female nude mice.The tumor-bearing mice were randomized into treatment and control groups based on the tumor volumes, and dosing was initiated on day 0. In this group, 4 mg/kg DS-8201a was i.v. to the tumor-bearing mice.
+- **In Vivo Model:** HER2-positive NCI-N87 xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.70 ng/mL±1.50 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.80 ng/mL±0.70 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 5.10 ng/mL±1.00 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-453 cells CVCL_0418
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 5.30 ng/mL±0.20 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 6.10 ng/mL±2.70 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-453 cells CVCL_0418
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 6.70 ng/mL
+- **Method Description:** The inhibitory activity of DS-8201a against cancer cell growth was compared with an anti-HER2 Ab and control IgG-ADC-conjugated with DXd against various human cancer cell lines in vitroThe cells were treated with DS-8201a, anti-HER2 Ab, and control IgG-ADC for 6 days.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 7.60 ng/mL±0.50 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor BAY1895344 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Invasive breast carcinoma BT-474 cells CVCL_0179
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 7.60 ng/mL±0.20 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor BAY1895344 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 8.10 ng/mL±1.30 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor BAY1898344 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 9.00 ng/mL±1.60 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor BAY1895344 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-453 cells CVCL_0418
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 11.50 ng/mL±3.20 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-453 cells CVCL_0418
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 15.10 ng/mL±1.70 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor BAY1895344 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Lung adenocarcinoma Calu-3 cells CVCL_0609
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 15.70 ng/mL±2.90 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 24.90 ng/mL±7.50 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 15 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 25.40 ng/mL
+- **Method Description:** The inhibitory activity of DS-8201a against cancer cell growth was compared with an anti-HER2 Ab and control IgG-ADC-conjugated with DXd against various human cancer cell lines in vitroThe cells were treated with DS-8201a, anti-HER2 Ab, and control IgG-ADC for 6 days.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 16 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 26.80 ng/mL
+- **Method Description:** The inhibitory activity of DS-8201a against cancer cell growth was compared with an anti-HER2 Ab and control IgG-ADC-conjugated with DXd against various human cancer cell lines in vitroThe cells were treated with DS-8201a, anti-HER2 Ab, and control IgG-ADC for 6 days.
+- **In Vitro Model:** Breast inflammatory carcinoma KPL-4 cells CVCL_5310
+**Experiment 17 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 32.70 ng/mL±20.80 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+**Experiment 18 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 34.80 ng/mL±0.40 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Lung adenocarcinoma Calu-3 cells CVCL_0609
+**Experiment 19 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 41.70 ng/mL±22.70 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Lung adenocarcinoma Calu-3 cells CVCL_0609
+**Experiment 20 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 41.80 ng/mL±4.40 ng/mL Moderate HER2 expression ( HER2 ++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Lung adenocarcinoma Calu-3 cells CVCL_0609
+**Experiment 21 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Invasive breast carcinoma BT-474 cells CVCL_0179
+**Experiment 22 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL Negative HER2 expression ( HER2 - )
+- **Method Description:** In vitro cytotoxicity of ADCs against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 23 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Invasive breast carcinoma BT-474 cells CVCL_0179
+**Experiment 24 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL Negative HER2 expression ( HER2 - )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 25 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Invasive breast carcinoma BT-474 cells CVCL_0179
+**Experiment 26 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL Negative HER2 expression ( HER2 - )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 27 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 3000 ng/mL Negative HER2 expression ( HER2 - )
+- **Method Description:** In vitro cytotoxicity of DS-8201 plus PARP inhibitor AZD2281 and ATR inhibitor AZD2281 against a panel of multiple human cancer cell lines. IC50 values were determined by sulforhodamine B assay in cells treated with different concentrations of drugs for 120 h.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 28 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL High HER2 expression ( HER2 +++ , IHC 3+)
+- **Method Description:** Viability of NCI-N87 cells as well as of parental HCT116 cells and their derivatives (Mock, H2L and H2H) after incubation with the indicated concentrations of trastuzumab deruxtecan (DS-8201a) or T-DM1 for 144 h.
+- **In Vitro Model:** Colon carcinoma HCT 116-H2H cells (High HER2 expression) CVCL_0291
+**Experiment 29 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 10.00 ug/mL
+- **Method Description:** The inhibitory activity of DS-8201a against cancer cell growth was compared with an anti-HER2 Ab and control IgG-ADC-conjugated with DXd against various human cancer cell lines in vitroThe cells were treated with DS-8201a, anti-HER2 Ab, and control IgG-ADC for 6 days.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-468 cells CVCL_0419
+**Experiment 30 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 97.00 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** Viability of NCI-N87 cells as well as of parental HCT116 cells and their derivatives (Mock, H2L and H2H) after incubation with the indicated concentrations of trastuzumab deruxtecan (DS-8201a) or T-DM1 for 144 h.
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+### Datopotamab deruxtecan (Approved)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 24.00% (NSCLC, 4 mg/kg) 26.00% (NSCLC, 6 mg/kg) 24.00% (NSCLC, 8 mg/kg) 39.00% (TNBC, 6 mg/kg)
+- **Patients Enrolled:** Patients were unselected for TROP2 expression and had measurable disease per RECIST version 1.1; patients with stable/treated brain metastases were permitted.
+- **Administration Dosage:** Dato-DXd 4 mg/kg (n=50), 6 mg/kg (n=50), or 8 mg/kg (n=80) intravenously every 3 weeks.
+- **NCT Number:** NCT03401385
+- **Phase Status:** Phase 1/2
+- **Clinical Description:** Phase 1, two-part, multicenter, open-label, multiple dose, first-in-human study of DS-1062a in subjects with advanced solid tumors (TROPION-PanTumor01).
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 34.00 52.00% (in a subset nave to TOPO I-based ADCs)
+- **Patients Enrolled:** Unresectable a/mTNBC pts eligible for 1L treatment, regardless of PD-L1/TROP2 status.
+- **Administration Dosage:** Intravenous Dato-DXd 6 mg/kg + durvalumab 1120 mg every 3 weeks.
+- **NCT Number:** NCT03742102
+- **Phase Status:** Phase 1/2
+- **Clinical Description:** A phase 1b/2, 2-stage, open-label, multicenter study to determine the efficacy and safety of durvalumab (MEDI4736) + paclitaxel and durvalumab (MEDI4736) in combination with novel oncology therapies with or without paclitaxel for first-line metastatic triple negative breast cancer.
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 22.00% High TROP2 expression ( TROP2 +++ )
+- **Patients Enrolled:** Two hundred ten adults with locally advanced/metastatic non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** 0.27-10 mg/kg Dato-DXd once every 3 weeks during escalation or 4 mg/kg Dato-DXd once every 3 weeks during expansion.
+- **NCT Number:** NCT03401385
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, two-part, multicenter, open-label, multiple dose, first-in-human study of DS-1062a in subjects with advanced solid tumors (TROPION-PanTumor01).
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 23.80% High TROP2 expression ( TROP2 +++ )
+- **Patients Enrolled:** Two hundred ten adults with locally advanced/metastatic non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** 0.27-10 mg/kg Dato-DXd once every 3 weeks during escalation or 8 mg/kg Dato-DXd once every 3 weeks during expansion.
+- **NCT Number:** NCT03401385
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, two-part, multicenter, open-label, multiple dose, first-in-human study of DS-1062a in subjects with advanced solid tumors (TROPION-PanTumor01).
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 26.00% High TROP2 expression ( TROP2 +++ )
+- **Patients Enrolled:** Two hundred ten adults with locally advanced/metastatic non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** 0.27-10 mg/kg Dato-DXd once every 3 weeks during escalation or 6 mg/kg Dato-DXd once every 3 weeks during expansion.
+- **NCT Number:** NCT03401385
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, two-part, multicenter, open-label, multiple dose, first-in-human study of DS-1062a in subjects with advanced solid tumors (TROPION-PanTumor01).
+- **Primary Endpoint:** Patients receiving 6 mg/kg (n = 50), median duration on study, including follow-up, and median exposure were 13.30 and 3.50 months, respectively. The most frequent any-grade treatment-emergent adverse events (TEAEs) were nausea (64.00%), stomatitis (60.00%), and alopecia (42.00%).
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 50.00% (doublet) 57.00% (triplet)
+- **Patients Enrolled:** Pts in escalation may have received 2 prior lines of therapy for a non-small cell lung cancer (NSCLC). Pts in expansion were primarily treatment (tx) naive (pts receiving Dato-DXd + pembro may have 1 prior Pt-based tx).
+- **Administration Dosage:** Dato-DXd (4 or 6 mg/kg) + pembro 200 mg Pt-CT (cisplatin 75 mg/m 2 or carboplatin AUC 5) every 21 days across 6 cohorts.
+- **NCT Number:** NCT04526691
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1b, multicenter, open-label study of datopotamab deruxtecan (Dato-DXd) in combination with pembrolizumab with or without platinum chemotherapy in subjects with advanced or metastatic non-small cell lung cancer (TROPION-Lung02).
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05687266
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3, randomised, open-label, multicentre, global study of datopotamab deruxtecan (Dato-DXd) in combination with durvalumab and carboplatin versus pembrolizumab in combination with platinum-based chemotherapy for the first-line treatment of patients with locally advanced or metastatic NSCLC without actionable genomic alterations (D926NC00001; AVANZAR).
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05629585
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3 open-label, randomised study of datopotamab deruxtecan (DatoDXd) with or without durvalumab versus investigator's choice of therapy in patients with stage i-2i triple-negative breast cancer who have residual invasive disease in the breast and/or axillary lymph nodes at surgical resection following neoadjuvant systemic therapy (TROPION-Breast03).
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Patients with previously untreated, advanced or metastatic non-squamous NSCLC with less than 50% programmed death-ligand (PD-L1) expression (tumor proportion score [TPS] < 50%) and without actionable genomic alterations.
+- **Administration Dosage:** Arm A (datopotamab deruxtecan [6 mg/kg] plus pembrolizumab 200 mg IV plus platinum chemotherapy every three weeks), Arm B (datopotamab deruxtecan [6 mg/kg] plus pembrolizumab 200 mg IV every three weeks), and Arm C (pembrolizumab 200 mg IV plus pemetrexed [500 mg/m 2 ] plus platinum chemotherapy every three weeks).
+- **NCT Number:** NCT05555732
+- **Phase Status:** Phase 3
+- **Clinical Description:** A randomized phase 3 study of datopotamab deruxtecan (Dato-DXd) and pembrolizumab with or without platinum chemotherapy in subjects with no prior therapy for advanced or metastatic PD-L1 TPS <50% non-squamous non-small cell lung cancer without actionable genomic alterations (TROPION-Lung07).
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05374512
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase 3, open-label, randomised study of datopotamab deruxtecan (Dato-DXd) versus investigator's choice of chemotherapy in patients who are not candidates for PD-1/PD-L1 inhibitor therapy in first-line locally recurrent inoperable or metastatic triple-negative breast cancer (TROPION Breast02).
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Advanced non-small cell lung cancer (NSCLC).
+- **Administration Dosage:** Dato-DXd 6 mg/kg plus pembrolizumab 200 mg every 3 weeks (arm 1) and pembrolizumab 200 mg every 3 weeks (arm 2).
+- **NCT Number:** NCT05215340
+- **Phase Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of Dato-DXd plus pembrolizumab vs pembrolizumab alone in treatment-nave subjects with advanced or metastatic PD-L1 high (TPS 50%) non-small cell lung cancer without actionable genomic alterations (TROPION-Lung08).
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Patients with inoperable or metastatic HR+/HER2 breast cancer.
+- **Administration Dosage:** Dato-DXd 6 mg/kg IV Q3W or ICC (eribulin, capecitabine, vinorelbine, or gemcitabine).
+- **NCT Number:** NCT05104866
+- **Phase Status:** Phase 3
+- **Clinical Description:** A phase-3, open-label, randomized study of Dato-DXd versus investigator's choice of chemotherapy (ICC) in participants with inoperable or metastatic HR-positive, HER2-negative breast cancer who have been treated with one or two prior lines of systemic chemotherapy (TROPION-Breast01).
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04656652
+- **Phase Status:** Phase 3
+- **Clinical Description:** Phase 3 randomized study of DS-1062a versus docetaxel in previously treated advanced or metastatic non-small cell lung cancer (TROPION-LUNG01).
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05489211
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicentre, open-label, master protocol to evaluate the efficacy and safety of datopotamab deruxtecan (Dato-DXd) as monotherapy and in combination with anticancer agents in patients with advanced/metastatic solid tumours (TROPION-PanTumor03).
+**Experiment 15 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05061550
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, open-label, multicentre, randomised study of neoadjuvant and adjuvant treatment in patients with resectable, early-stage (2 to 2IB) non-small cell lung cancer (NeoCOAST-2).
+**Experiment 16 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04940325
+- **Phase Status:** Phase 2
+- **Clinical Description:** Phase 2, open label study of DS-1062a, an anti-TROP-2-antibody-drug conjugate (ADC), in patients with advanced and/or unresectable non-small cell lung cancer (NSCLC), with biomarker analysis to characterize response to therapy.
+**Experiment 17 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04484142
+- **Phase Status:** Phase 2
+- **Clinical Description:** Phase 2, single-arm, open-label study of DS-1062A in advanced or metastatic non-small cell lung cancer with actionable genomic alterations and progressed on or after applicable targeted therapy and platinum based chemotherapy (TROPION-Lung05).
+**Experiment 18 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT03944772
+- **Phase Status:** Phase 2
+- **Clinical Description:** A biomarker-directed phase 2 platform study in patients with advanced non-small lung cancer whose disease has progressed on first-line osimertinib therapy.
+**Experiment 19 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT01042379
+- **Phase Status:** Phase 2
+- **Clinical Description:** I-SPY trial (investigation of serial studies to predict your therapeutic response with imaging and molecular analysis 2).
+**Experiment 20 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05460273
+- **Phase Status:** Phase 1/2
+- **Clinical Description:** Phase 1/2, multicentre, open-label, multiple-cohort study of Dato-DXd in Chinese patients with advanced non-small-cell lung cancer, triple-negative breast cancer, gastric/gastroesophageal junction cancer, urothelial cancer, and other solid tumours (TROPION-PanTumor02).
+**Experiment 21 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04644068
+- **Phase Status:** Phase 1
+- **Clinical Description:** A modular phase 1/2a, open-label, multicentre study to assess the safety, tolerability, pharmacokinetics, pharmacodynamics and preliminary efficacy of ascending doses of AZD5305 as monotherapy and in combination with anti-cancer agents in patients with advanced solid malignancies.
+**Experiment 22 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04612751
+- **Phase Status:** Phase 1
+- **Clinical Description:** A phase 1b, multicenter, 2-part, open-label study of datopotamab deruxtecan (Dato-DXd) in combination with immunotherapy with or without carboplatin in participants with advanced or metastatic non-small cell lung cancer (Tropion-Lung04).
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 96.00% (Day 21) High TROP2 expression ( TROP2+++ )
+- **Method Description:** Dato-DXd was intravenously administered at 10 mg/kg to NCI-N87 xenograft model mice. When the tumor volume reached approximately 150-300 mm 3 ,the tumor-bearing mice were assigned to the vehicle control group,the treatment groups and the satellite sampling groups,and Dato-DXd or other test substances were administered intravenously once on day 0.
+- **In Vivo Model:** NCI-N87 cell line xenograft model
+- **In Vitro Model:** Gastric tubular adenocarcinoma NCI-N87 cells CVCL_1603
+### Patritumab deruxtecan (Phase 3)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 39.00%
+- **Patients Enrolled:** In dose escalation phase, pts with metastatic or unresectable non-small cell lung cancer (NSCLC) with EGFR activating mutation after disease progression during/after EGFR TKI therapy; In Dose Expansion phase, pts with metastatic or unresectable NSCLC with EGFR activating mutation or squamous or non-squamous NSCLC with disease progression during/after systemic treatment for locally advanced or metastatic disease.
+- **Administration Dosage:** Dose of 3.20, 4.80, 5.60, 6.40, iv Q3W in Dose Escalation phase; EGFR mutant pts at 5.60 mg/kg IV, Q3W, and EGFR wild-type pts at RDE IV, Q3W, in Dose Expansion phase.
+- **NCT Number:** NCT03260491
+- **Phase Status:** Phase 1
+- **Clinical Description:** A multicenter, open-label phase 1 study of U3-1402 in subjects with metastatic or unresectable non-small cell lung cancer.
+- **Primary Endpoint:** The confirmed ORR by blinded independent central review (BICR) was 39.00% [95% confidence interval (CI), 26.00-52.40] in patients who received HER3-DXd at a dose of 5.60 mg/kg i.v. once every 3 weeks. There was 1 complete response (CR) and 21 partial responses (PR); 19 patients had stable disease (SD) as a best response.
+- **Other Endpoint:** At a median follow-up of 10.20 months, median PFS was 8.20 (95% CI, 4.40-8.30) months (16 of 57 patients were ongoing without events), and the median OS was not reached at the time of data cutoff (95% CI, 9.40-NE months; 35 of 57 patients were ongoing without events).
+**Source:** Discovered Using Patient-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 40.30% (Day 28) Negative HER3 expression ( HER3- ; IHC H score=1)
+- **Method Description:** Single-agent efficacy of HER3DXd in EGFR inhibitorresistant models of NSCLC. The dose was ten mg/kg HER3DXd or IgG control, weekly.
+- **In Vivo Model:** Non-small cell lung cancer PDX model (PDX: DFCI-306)
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 78.30% (Day 28) High HER3 expression ( HER3+++ ; IHC H score=202)
+- **Method Description:** Single-agent efficacy of HER3DXd in EGFR inhibitorresistant models of NSCLC. The dose was ten mg/kg HER3DXd or IgG control, weekly.
+- **In Vivo Model:** Non-small cell lung cancer PDX model (PDX: DFCI-259)
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 82.20% (Day 38) Moderate HER3 expression ( HER3++ ; IHC H score=181)
+- **Method Description:** Single-agent efficacy of HER3DXd in EGFR inhibitorresistant models of NSCLC. The dose was ten mg/kg HER3DXd or IgG control, weekly.
+- **In Vivo Model:** Non-small cell lung cancer PDX model (PDX: DFCI-161)
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 86.20% (Day 22) High HER3 expression ( HER3+++ ; IHC H score=248)
+- **Method Description:** Single-agent efficacy of HER3DXd in EGFR inhibitorresistant models of NSCLC. The dose was ten mg/kg HER3DXd or IgG control, weekly.
+- **In Vivo Model:** Non-small cell lung cancer PDX model (PDX: DFCI-284)
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 78.50% (Day 7) Positive HER3 expression ( HER3 +++/++ )
+- **Method Description:** U3-1402 (30 mg/kg body weight in 200 uL ABS, weekly), ABS (200 L, weekly; vehicle), anti-PD-1 antibody (10 mg/kg body weight in 200 L PBS, twice a week), or a combination of U3-1402 and anti-PD-1 were received intraperitoneal injections.
+- **In Vivo Model:** B16-F10 CDX model
+- **In Vitro Model:** Mouse melanoma B16-F10 cells CVCL_0159
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 95.10% (Day 21) Positive HER3 expression ( HER3+++/++ )
+- **Method Description:** U3-1402 (6 m ug/kg, every seven days x3) induces efficient tumor cell killing in cell line-derived models of breast cancer cell line MDA-MB-453 with HER2 expression with high expression.
+- **In Vivo Model:** MDA-MB-453 CDX model
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-453 cells CVCL_0418
+### Ifinatamab deruxtecan (Phase 3)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05280470
+- **Phase Status:** Phase 2
+- **Clinical Description:** A phase 2, multicenter, randomized, open-label study of DS-7300a, a B7-H3 antibody drug conjugate (ADC), in subjects with pretreated extensive-stage small cell lung cancer (ES-SCLC).
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT04145622
+- **Phase Status:** Phase 1/2
+- **Clinical Description:** Phase 1/2, two-part, multicenter first-in-human study of DS-7300a in subjects with advanced solid malignant tumors.
+**Source:** Discovered Using Patient-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 26) High CD276 expression ( CD276+++ )
+- **Method Description:** PDX studies CTG-2093, CTG-0166, CTG-0820, and CTG-1061 studies were performed by Champions Oncology, Inc. Models were established by inoculating tumor fragments derived from patients with small cell lung cancer (SCLC), nonsmall cell lung cancer (NSCLC), head and neck cancer, and bladder cancer, respectively, which were maintained in host mice, subcutaneously into female Hsd: Athymic Nude-Foxn1nu mice.Group assignment was carried out when the tumor volume reached approximately 100 to 300 mm 3 . The tumor-bearing mice were treated with DS-7300a or relevant controls intravenously on days 0 and 14.
+- **In Vivo Model:** Small cell lung cancer PDX model (PDX: CTG-2093) Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.36 nM
+- **Method Description:** In vivo The target specificity and species cross-reactivity of DS-7304a were assessed. Its pharmacologic activities were evaluated in several human cancer cell lines in vitro and xenograft mouse models, including patient-derived xenograft (PDX) mouse models.
+- **In Vitro Model:** Endometrial adenocarcinoma MFE-280 cells CVCL_1405
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.37 nM
+- **Method Description:** In vivo The target specificity and species cross-reactivity of DS-7303a were assessed. Its pharmacologic activities were evaluated in several human cancer cell lines in vitro and xenograft mouse models, including patient-derived xenograft (PDX) mouse models.
+- **In Vitro Model:** Alveolar rhabdomyosarcoma Rh41 cells CVCL_2176
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.55 nM
+- **Method Description:** In vivo The target specificity and species cross-reactivity of DS-7302a were assessed. Its pharmacologic activities were evaluated in several human cancer cell lines in vitro and xenograft mouse models, including patient-derived xenograft (PDX) mouse models.
+- **In Vitro Model:** T acute lymphoblastic leukemia CCRF-CEM cells CVCL_0207
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Method Description:** In vivo The target specificity and species cross-reactivity of DS-7300a were assessed. Its pharmacologic activities were evaluated in several human cancer cell lines in vitro and xenograft mouse models, including patient-derived xenograft (PDX) mouse models.
+- **In Vitro Model:** T acute lymphoblastic leukemia CCRF-CEM cells CVCL_0207
+### DS-6000 (Phase 2/3)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 13.30% (all)
+- **Patients Enrolled:** Patients with advanced renal cell carcinoma or ovarian cancer. Patients had received a median of 4 prior systemic therapy.
+- **Administration Dosage:** First dose was 1.60 mg/kg followed by 3.20, 4.80, 6.40, 8.00, and 9.60 mg/kg every 3 weeks.
+- **NCT Number:** NCT04707248
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, two-part, multi-center, first-in-human study of DS-6000A in subjects with advanced renal cell carcinoma and ovarian tumors.
+### FDA-022 (Phase 1)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT05564858
+- **Phase Status:** Phase 1
+- **Clinical Description:** A phase study to evaluate the safety, tolerability, pharmacokinetics and efficacy of FDA022-BB05 in subjects with advanced solid malignant tumors.
+### DS-6157a (Phase 1 (Terminated))
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 2.90% High GPR20 expression ( GPR20+++ )
+- **Patients Enrolled:** Histopathologically documented unresectable and/or metastatic gastrointestinal stromal tumor (GIST) following treatment with standard of care, including imatinib.
+- **Administration Dosage:** 1.6 mg/kg, 3.2 mg/kg, 4.8 mg/kg, 6.4 mg/kg, and 9.6 mg/kg intravenously on Day 1 of each 21-day cycle.
+- **NCT Number:** NCT04276415
+- **Phase Status:** Phase 1
+- **Clinical Description:** Phase 1, multicenter, open-label, first-in-human study of DS-6157a in subjects with advanced gastrointestinal stromal tumor.
+- **Primary Endpoint:** MTD=6.40 mg/kg.
+- **Other Endpoint:** Median PFS=4.20 months (95% CI, 1.60-6.90), Objective response rate=2.86%, comprising 0 complete responses and 1 (2.86%) partial responses.
+### CAC10-DT (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=1 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=3 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 72.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=3 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=10 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 7.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 16.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 26.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### H01L02-DXd (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 13) Negative CDH6 expression ( CDH6- )
+- **Method Description:** The CDH6-negative human ovarian tumor cell line ES-2 was subcutaneously inoculated at a dose of 1,000,000 cells to the right flank region of each female nude mouse (Day 0). On the day 7 of grouping, the antibody-drug conjugate H01L02-DXd was intravenously administered at doses of 1 mg/kg to thetail of each mouse.
+- **In Vivo Model:** ES-2 CDX model
+- **In Vitro Model:** Ovarian clear cell adenocarcinoma ES-2 cells CVCL_3509
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 13) Negative CDH6 expression ( CDH6- )
+- **Method Description:** The CDH6-negative human ovarian tumor cell line ES-2 was subcutaneously inoculated at a dose of 1,000,000 cells to the right flank region of each female nude mouse (Day 0). On the day 7 of grouping, the antibody-drug conjugate H01L02-DXd was intravenously administered at doses of 3 mg/kg to thetail of each mouse.
+- **In Vivo Model:** ES-2 CDX model
+- **In Vitro Model:** Ovarian clear cell adenocarcinoma ES-2 cells CVCL_3509
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 41.87% (Day 23) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 20 of grouping, the anti-body-drug conjugate H01L02-DXd was intravenously administered at doses of 1 mg/kg to thetail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 75.34% (Day 23) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 20 of grouping, the anti-body-drug conjugate H01L02-DXd was intravenously administered at doses of 3 mg/kg to thetail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 79.79% (Day 28) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line OVCAR-3 was subcutane-ously inoculated at a dose of 10,000,000 cells to the right flank region of each female nude mouse (Day 0). On the day 22 of grouping, theantibody-drug conjugate H01L02-DXd was intravenously administered at doses of 1 mg/kg to the tail of each mouse.
+- **In Vivo Model:** OVCAR-3 CDX model
+- **In Vitro Model:** Ovarian serous adenocarcinoma OVCAR-3 cells CVCL_0465
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 85.25% (Day 24) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line 786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 18 of grouping, H01L02-DXd was intravenously administered at a dose of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 88.96% (Day 21) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line PA-1 was subcutaneously inoculatedat a dose of 8,500,000 cells to the right flank region of eachfemale nude mouse (Day 0). On the day 11 of grouping, the antibody-drug conjugate H01L02-DXd was intravenously administered at doses of 1 mg/kg to the tail of each mouse.
+- **In Vivo Model:** PA-1 CDX model
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 92.76% (Day 28) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line OVCAR-3 was subcutane-ously inoculated at a dose of 10,000,000 cells to the right flank region of each female nude mouse (Day 0). On the day 22 of grouping, theantibody-drug conjugate H01L02-DXd was intravenously administered at doses of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** OVCAR-3 CDX model
+- **In Vitro Model:** Ovarian serous adenocarcinoma OVCAR-3 cells CVCL_0465
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 98.37% (Day 21) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line PA-1 was subcutaneously inoculatedat a dose of 8,500,000 cells to the right flank region of eachfemale nude mouse (Day 0). On the day 11 of grouping, the antibody-drug conjugate H01L02-DXd was intravenously administered at doses of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** PA-1 CDX model
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.01-0.10 nM Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** CDH6-positive human ovarian tumor cell line PA-1 was seeded over a 96-well plate at 2,000 cells/100 L/well in MEM medium supplemented with 10% FBS, and the cells were then cultured overnight. On the next day, each of the 4 humanized hG019-drug conjugates or NOV0712-DM4 was added to the cells.
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+### NOV0712-DXd (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 73.20% (Day 21) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line PA-1 was subcutaneously inoculatedat a dose of 8,500,000 cells to the right flank region of eachfemale nude mouse (Day 0). On the day 11 of grouping, the antibody-drug conjugate NOV0712-DXd was intravenously administered at doses of 1 mg/kg to the tail of each mouse.
+- **In Vivo Model:** PA-1 CDX model
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.12% (Day 21) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human ovarian tumor cell line PA-1 was subcutaneously inoculatedat a dose of 8,500,000 cells to the right flank region of eachfemale nude mouse (Day 0). On the day 11 of grouping, the antibody-drug conjugate NOV0712-DXd was intravenously administered at doses of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** PA-1 CDX model
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+### H02L03-DXd (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 87.59% (Day 24) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line 786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 18 of grouping, H02L03-DXd was intravenously administered at a dose of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** CDH6-positive human ovarian tumor cell line PA-1 was seeded over a 96-well plate at 2,000 cells/100 L/well in MEM medium supplemented with 10% FBS, and the cells were then cultured overnight. On the next day, each of the 4 humanized hG019-drug conjugates or NOV0712-DM4 was added to the cells.
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+### H04L02-DXd (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 88.53% (Day 24) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line 786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 18 of grouping, H04L02-DXd was intravenously administered at a dose of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10-1.00 nM Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** CDH6-positive human ovarian tumor cell line PA-1 was seeded over a 96-well plate at 2,000 cells/100 L/well in MEM medium supplemented with 10% FBS, and the cells were then cultured overnight. On the next day, each of the 4 humanized hG019-drug conjugates or NOV0712-DM4 was added to the cells.
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+### H02L02-DXd (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 92.00% (Day 24) Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** The CDH6-positive human renal cell tumor cell line 786-O was subcutaneously inoculated at a dose of 5,000,000 cells to the right flank regionof each male SCID mouse (Day 0). On the day 18 of grouping, H02L02-DXd was intravenously administered at a dose of 3 mg/kg to the tail of each mouse.
+- **In Vivo Model:** 786-O CDX model
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.01-0.10 nM Positive CDH6 expression ( CDH6+++/++ )
+- **Method Description:** CDH6-positive human ovarian tumor cell line PA-1 was seeded over a 96-well plate at 2,000 cells/100 L/well in MEM medium supplemented with 10% FBS, and the cells were then cultured overnight. On the next day, each of the 4 humanized hG019-drug conjugates or NOV0712-DM4 was added to the cells.
+- **In Vitro Model:** Ovarian mixed germ cell tumor PA-1 cells CVCL_0479
+### H00-DT (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+### 40H3-Deruxtecan (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 9.32 nM High EGFR expression ( EGFR+++ )
+- **Method Description:** 1 x10 4 cells per well in a volume of 100 ul were plated in 96-well tissue culture plates. After 24 h, ADCs were added at the indicated concentrations. After 72 h, the medium was removed and the viability was determined using the CellTiter-Glo luminescent cell viability assay kit.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-468 cells CVCL_0419
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 70.36 nM Moderate EGFR expression ( EGFR++ )
+- **Method Description:** 1 x10 4 cells per well in a volume of 100 ul were plated in 96-well tissue culture plates. After 24 h, ADCs were added at the indicated concentrations. After 72 h, the medium was removed and the viability was determined using the CellTiter-Glo luminescent cell viability assay kit.
+- **In Vitro Model:** Invasive breast carcinoma of no special type BT-20 cells CVCL_0178
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 90.21 nM High EGFR expression ( EGFR+++ )
+- **Method Description:** 1 x10 4 cells per well in a volume of 100 ul were plated in 96-well tissue culture plates. After 24 h, ADCs were added at the indicated concentrations. After 72 h, the medium was removed and the viability was determined using the CellTiter-Glo luminescent cell viability assay kit.
+- **In Vitro Model:** Skin squamous cell carcinoma A431 cells CVCL_0037
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 100.00 nM Negative EGFR expression ( EGFR- )
+- **Method Description:** 1 x10 4 cells per well in a volume of 100 ul were plated in 96-well tissue culture plates. After 24 h, ADCs were added at the indicated concentrations. After 72 h, the medium was removed and the viability was determined using the CellTiter-Glo luminescent cell viability assay kit.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+
+## References
+
+1. Bystander killing effect of DS-8201a, a novel anti-human epidermal growth factor receptor 2 antibody-drug conjugate, in tumors with human epidermal growth factor receptor 2 heterogeneity. Cancer Sci. 2016 Jul;107(7):1039-46.
+2. Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer. N Engl J Med. 2022 Jul 7;387(1):9-20.
+3. Trastuzumab Deruxtecan versus Trastuzumab Emtansine for Breast Cancer. N Engl J Med. 2022 Mar 24;386(12):1143-1154.
+4. Trastuzumab Deruxtecan Improves Progression-Free Survival and Intracranial Response in Patients with HER2-Positive Metastatic Breast Cancer and Brain Metastases. Oncologist. 2022 Mar 28;27(Suppl 1):S3-S4.
+5. Trastuzumab Deruxtecan in Previously Treated HER2-Positive Gastric Cancer. N Engl J Med. 2020 Jun 18;382(25):2419-2430.
+6. Final results of DESTINY-CRC01 investigating trastuzumab deruxtecan in patients with HER2-expressing metastatic colorectal cancer. Nat Commun. 2023 Jun 7;14(1):3332. doi: 10.1038/s41467-023-38032-4.
+7. Trastuzumab Deruxtecan in HER2-Mutant Non-Small-Cell Lung Cancer. N Engl J Med. 2022 Jan 20;386(3):241-251.
+8. Fam-trastuzumab deruxtecan-nxki for injection
+9. Trastuzumab Deruxtecan in Previously Treated HER2-Positive Breast Cancer. N Engl J Med. 2020 Feb 13;382(7):610-621.
+10. Trastuzumab deruxtecan in HER2-positive breast cancer with brain metastases: a single-arm, phase 2 trial. Nat Med. 2022 Sep;28(9):1840-1847.
+11. Datopotamab deruxtecan in advanced/metastatic HER2- breast cancer: Results from the phase 1 TROPION-PanTumor01 study. Cancer Res (2022) 82 (4_Supplement): GS1-05.
+12. Datopotamab deruxtecan (Dato-DXd) + durvalumab (D) as first-line (1L) treatment for unresectable locally advanced/metastatic triple-negative breast cancer (a/mTNBC): Initial results from BEGONIA, a phase Ib/II study. J Thorac Oncol. 2022 May; 33(3):Supplement S199.
+13. First-in-Human, Phase I Dose-Escalation and Dose-Expansion Study of Trophoblast Cell-Surface Antigen 2-Directed Antibody-Drug Conjugate Datopotamab Deruxtecan in Non-Small-Cell Lung Cancer: TROPION-PanTumor01. J Clin Oncol. 2023 Jun 16:JCO2300059. doi: 10.1200/JCO.23.00059. Online ahead of print.
+14. Antitumor Activity and Safety of Trastuzumab Deruxtecan in Patients With HER2-Low-Expressing Advanced Breast Cancer: Results From a Phase Ib Study. J Clin Oncol. 2020 Jun 10;38(17):1887-1896. doi: 10.1200/JCO.19.02318. Epub 2020 Feb 14.
+15. TROPION-Lung08: Phase III study of datopotamab deruxtecan plus pembrolizumab as first-line therapy for advanced NSCLC. Future Oncol. 2023 May 30. doi: 10.2217/fon-2023-0230.
+16. Trastuzumab Deruxtecan for Human Epidermal Growth Factor Receptor 2-Expressing Advanced or Recurrent Uterine Carcinosarcoma (NCCH1615): The STATICE Trial. J Clin Oncol. 2023 May 20;41(15):2789-2799.
+17. A Phase III, Randomised, Open-label, Multicentre, Global Study of Datopotamab Deruxtecan (Dato-DXd) in Combination With Durvalumab and Carboplatin Versus Pembrolizumab in Combination With Platinum-based Chemotherapy for the First-line Treatment of Patients With Locally Advanced or Metastatic NSCLC Without Actionable Genomic Alterations (D926NC00001; AVANZAR), NCT05687266
+18. A Phase 3 Open-label, Randomised Study of Datopotamab Deruxtecan (DatoDXd) With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Who Have Residual Invasive Disease in the Breast and/or Axillary Lymph Nodes at Surgical Resection Following Neoadjuvant Systemic Therapy (TROPION-Breast03), NCT05629585
+19. A Randomized Phase 3 Study of Datopotamab Deruxtecan (Dato-DXd) and Pembrolizumab With or Without Platinum Chemotherapy in Subjects With No Prior Therapy for Advanced or Metastatic PD-L1 TPS <50% Non-squamous Non-small Cell Lung Cancer Without Actionable Genomic Alterations (TROPION-Lung07), NCT05555732
+20. A Phase 3, Open-label, Randomised Study of Datopotamab Deruxtecan (Dato-DXd) Versus Investigator's Choice of Chemotherapy in Patients Who Are Not Candidates for PD-1/PD-L1 Inhibitor Therapy in First-line Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION Breast02), NCT05374512
+21. Datopotamab deruxtecan (Dato-DXd), a TROP2 antibody-drug conjugate, vs investigators choice of chemotherapy in previously-treated, inoperable or metastatic HR+/HER2 breast cancer: TROPION-Breast01. Cancer Res (2023) 83 (5_Supplement): OT1-03-04.
+22. MA03.02 TROPION-PanTumor01: Updated Results From the NSCLC Cohort of the Phase 1 Study of Datopotamab Deruxtecan in Solid Tumors. J Thorac Oncol. 2021 Sept; 16(10):Supplement S892-S893.
+23. Phase 3 Randomized Study of DS-1062a Versus Docetaxel in Previously Treated Advanced or Metastatic Non-Small Cell Lung Cancer (TROPION-LUNG01), NCT04656652
+24. A Phase II, Multicentre, Open-label, Master Protocol to Evaluate the Efficacy and Safety of Datopotamab Deruxtecan (Dato-DXd) as Monotherapy and in Combination With Anticancer Agents in Patients With Advanced/Metastatic Solid Tumours (TROPION-PanTumor03), NCT05489211
+25. A Phase II, Open-label, Multicentre, Randomised Study of Neoadjuvant and Adjuvant Treatment in Patients With Resectable, Early-stage (II to IIIB) Non-small Cell Lung Cancer (NeoCOAST-2), NCT05061550
+26. Phase 2, Open Label Study of DS-1062a, an Anti-TROP-2-Antibody-Drug Conjugate (ADC), in Patients With Advanced and/or Unresectable Non-Small Cell Lung Cancer (NSCLC), With Biomarker Analysis to Characterize Response to Therapy, NCT04940325
+27. Phase 2, Single-arm, Open-label Study of DS-1062a in Advanced or Metastatic Non-small Cell Lung Cancer With Actionable Genomic Alterations and Progressed On or After Applicable Targeted Therapy and Platinum Based Chemotherapy (TROPION-Lung05), NCT04484142
+28. A Biomarker-directed Phase 2 Platform Study in Patients With Advanced Non-Small Lung Cancer Whose Disease Has Progressed on First-Line Osimertinib Therapy. NCT03944772
+29. I-SPY Trial (Investigation of Serial Studies to Predict Your Therapeutic Response With Imaging And moLecular Analysis 2), NCT01042379
+30. Phase 1/2, Multicentre, Open-label, Multiple-cohort Study of Dato-DXd in Chinese Patients With Advanced Non-small-cell Lung Cancer, Triple-negative Breast Cancer, Gastric/Gastroesophageal Junction Cancer, Urothelial Cancer, and Other Solid Tumours (TROPION-PanTumor02), NCT05460273
+31. A Modular Phase I/IIa, Open-label, Multicentre Study to Assess the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics and Preliminary Efficacy of Ascending Doses of AZD5305 as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Malignancies, NCT04644068
+32. A Phase 1b, Multicenter, 2-Part, Open-Label Study of Datopotamab Deruxtecan (Dato-DXd) in Combination With Immunotherapy With or Without Carboplatin in Participants With Advanced or Metastatic Non-Small Cell Lung Cancer (Tropion-Lung04), NCT04612751
+33. DS-8201a, A Novel HER2-Targeting ADC with a Novel DNA Topoisomerase I Inhibitor, Demonstrates a Promising Antitumor Efficacy with Differentiation from T-DM1. Clin Cancer Res. 2016 Oct 15;22(20):5097-5108.
+34. [Fam-] trastuzumab deruxtecan (DS-8201a)-induced antitumor immunity is facilitated by the anti-CTLA-4 antibody in a mouse model. PLoS One. 2019 Oct 1;14(10):e0222280. doi: 10.1371/journal.pone.0222280.
+35. Datopotamab Deruxtecan, a Novel TROP2-directed Antibody-drug Conjugate, Demonstrates Potent Antitumor Activity by Efficient Drug Delivery to Tumor Cells. Mol Cancer Ther. 2021 Dec;20(12):2329-2340.
+36. Combined inhibition of PARP and ATR synergistically potentiates the antitumor activity of HER2-targeting antibody-drug conjugate in HER2-positive cancers. Am J Cancer Res. 2023 Jan 15;13(1):161-175. eCollection 2023.
+37. Efficacy and Safety of Patritumab Deruxtecan (HER3-DXd) in EGFR Inhibitor-Resistant, EGFR-Mutated Non-Small Cell Lung Cancer. Cancer Discov. 2022 Jan;12(1):74-89.
+38. A Phase 2, Multicenter, Randomized, Open-label Study of DS-7300a, a B7-H3 Antibody Drug Conjugate (ADC), in Subjects With Pretreated Extensive-stage Small Cell Lung Cancer (ES-SCLC), NCT05280470
+39. Phase I/II, Two-Part, Multicenter First-in-Human Study of DS-7300a in Subjects With Advanced Solid Malignant Tumors, NCT04145622
+40. EGFR Inhibition Enhances the Cellular Uptake and Antitumor-Activity of the HER3 Antibody-Drug Conjugate HER3-DXd. Cancer Res. 2022 Jan 1;82(1):130-141.
+41. DS-7300a, a DNA Topoisomerase I Inhibitor, DXd-Based Antibody-Drug Conjugate Targeting B7-H3, Exerts Potent Antitumor Activities in Preclinical Models. Mol Cancer Ther. 2022 Apr 1;21(4):635-646.
+42. Two drugs for advanced HER2-positive breast cancer (Enhertu and Tukysa). Med Lett Drugs Ther. 2020 Nov 16;62(1611):182-184.
+43. A Novel HER3-Targeting Antibody-Drug Conjugate, U3-1402, Exhibits Potent Therapeutic Efficacy through the Delivery of Cytotoxic Payload by Efficient Internalization. Clin Cancer Res. 2019 Dec 1;25(23):7151-7161. doi: 10.1158/1078-0432.CCR-19-1745. Epub 2019 Aug 30.
+44. Phase I, two-part, multicenter, first-in-human (FIH) study of DS-6000a in subjects with advanced renal cell carcinoma (RCC) and ovarian tumors (OVC). J Clin Oncol. 2022 40:16_suppl, 3002-3002.
+45. A PhaseStudy to Evaluate the Safety, Tolerability, Pharmacokinetics and Efficacy of FDA022-BB05 in Subjects With Advanced Solid Malignant Tumors, NCT05564858
+46. A Phase 1, Multicenter, Open-Label, First-in-Human Study of DS-6157a in Patients With Advanced Gastrointestinal Stromal Tumor. Clin Cancer Res. 2023 Jun 26:CCR-23-0640. doi: 10.1158/1078-0432.CCR-23-0640. Online ahead of print.
+47. Development of Novel Antibody-Camptothecin Conjugates. Mol Cancer Ther. 2021 Feb;20(2):329-339.
+48. Anti-cdh6 antibody and anti-cdh6 antibody-drug conjugate.
+49. Antibody drug conjugates, targeting cancer-expressed EGFR, exhibit potent and specific antitumor activity. Biomed Pharmacother. 2023 Jan;157:114047.

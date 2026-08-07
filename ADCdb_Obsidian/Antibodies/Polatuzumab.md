@@ -1,0 +1,213 @@
+---
+id: "ANI0WTRRK"
+name: "Polatuzumab"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0WTRRK"
+---
+
+# Polatuzumab
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0WTRRK
+
+## ADCdb Links
+
+- [Antigen Info](https://adcdb.idrblab.net/data/abt/details/TAR0KZVDX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QWZIT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NDOBI)
+
+## General Information
+
+| Field            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Antibody ID      | ANI0WTRRK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Antibody Name    | Polatuzumab Organization Roche Holding AG Indication Diffuse large B-cell lymphoma                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Synonyms         | ACD-79B; ACD79B; ANTI-CD79B                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Antibody Type    | Monoclonal antibody (mAb)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Antibody Subtype | Humanized IgG1-kappa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Antigen Name     | B-cell antigen receptor complex-associated protein beta chain (CD79B) ChEMBI ID CHEMBL3301582 Heavy Chain Sequence EVQLVESGGGLVQPGGSLRLSCAASGYTFSSYWIEWVRQAPGKGLEWIGEILPGGGDTNY NEIFKGRATFSADTSKNTAYLQMNSLRAEDTAVYYCTRRVPIRLDYWGQGTLVTVSSAST KGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLY SLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSV FLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTY RVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSREEMTK NQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQG NVFSCSVMHEALHNHYTQKSLSLSPGK Light Chain Sequence DIQLTQSPSSLSASVGDRVTITCKASQSVDYEGDSFLNWYQQKPGKAPKLLIYAASNLES GVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQSNEDPLTFGQGTKVEIKRTVAAPSVF IFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLS STLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC |
+
+## Related ADC Activity Data
+
+### Polatuzumab vedotin (Approved)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 54.00%
+- **Patients Enrolled:** Relapsed or refractory diffuse large B-cell lymphoma or relapsed or refractory grade 13a follicular lymphoma.
+- **Administration Dosage:** Either rituximab (375 mg/m 2 ) followed by pina (2.4 mg/kg) every 21 days, or rituximab (375 mg/m 2 ) followed by pola (2.4 mg/kg) every 21 days until disease progression or unacceptable toxicity up to 1 year.
+- **NCT Number:** NCT01691898
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A randomized, open-label, multicenter, phase 2 trial evaluating the safety and activity of pinatuzumab vedotin (DCDT2980S) in combination with rituximab or polatuzumab vedotin (DCDS4501A) in combination with rituximab and a non-randomized phase 1b/2 evaluation of polatuzumab vedotin in combination with obinutuzumab in patients with relapsed or refractory B-cell non-Hodgkin's lymphoma.
+- **Primary Endpoint:** Among patients with refractory diffuse large B-cell lymphoma, complete responses and median overall survival compares favourably with immunochemotherapy regimens reported in the SCHOLAR-1 study, in which 7.00% of patients achieved a complete response and a median overall survival of 6.30 months was observed.
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 41.50% (pola + BR)
+- **Patients Enrolled:** Patients aged 18 years were eligible if they had histologically confirmed R/R DLBCL (excluding transformed follicular lymphoma), received 1 prior line of therapy, had an Eastern Cooperative Oncology Group performance status of 0 to 2, and were considered transplant ineligible by the treating physician or experienced treatment failure with prior autologous SCT.
+- **Administration Dosage:** Bendamustine 90 mg/m 2 intravenously (IV) on days 2 and 3 of cycle 1, and days 1 and 2 of subsequent cycles, plus rituximab IV (375 mg/m 2 on day 1 of each cycle); polatuzumab vedotin received 1.80 mg/kg IV on day 2 of cycle 1, and day 1 of subsequent cycles; up to six 21-day cycles.
+- **NCT Number:** NCT02257567
+- **Clinical Status:** Phase 1b/2
+- **Clinical Description:** A phase 1b/2 study evaluating the safety, tolerability and anti-tumor activity of polatuzumab vedotin in combination with rituximab (R) or obinutuzumab (G) plus bendamustine (B) in relapsed or refractory follicular or diffuse large B-cell lymphoma.
+- **Primary Endpoint:** With an additional 27 months of follow-up in the randomized pola + BR arm was 62.50% vs 25.00%; best CR rate was 52.50% vs 22.50%.
+- **Other Endpoint:** The median IRC-assessed PFS (95% CI) was 9.20 months (6.00-13.90) with pola + BR vs 3.70 months (2.10-4.50) with BR (HR, 0.39; 95% CI, 0.23-0.66); median investigator-assessed PFS was 7.50 vs 2.00 months (HR, 0.33; 95% CI, 0.20-0.56) with pola + BR and BR, respectively. Median OS (95% CI) was 12.40 months (9.00-32.00) vs 4.70 months (3.70-8.30) with pola + BR vs BR (HR, 0.42; 95% CI, 0.24-0.72). The 24-month OS probability was 38% (95% CI, 22.50-53.90) with pola + BR vs 17.0% (3.60-30.40) with BR. The 24-month PFS probability was 28.40% (95% CI, 13.9-43.0) with pola + BR vs 9.10% (95% CI, 0.00-18.90) with BR.The median DOR was 9.50 months (95% CI, 7.90-12.10) by IRC assessment and 8.70 months (95% CI, 5.90-12.10) by investigator assessment. The median IRC-assessed PFS was 6.6 months (95% CI, 5.10-9.20). Median OS was 12.50 months (95% CI, 8.20-23.10); the 12-month OS probability was 50.20% (95% CI, 40.40-60.10).
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 76.09%
+- **Patients Enrolled:** CD20-positive relapsed or refractory follicular lymphoma (excluding grade 3b) and Eastern Cooperative Oncology Group performance status of 2 or less who had previously received anti-CD20-containing chemotherapy were eligible for inclusion.
+- **Administration Dosage:** Six 28-day cycles of induction treatment with intravenous obinutuzumab 1000 mg (all cohorts), and intravenous polatuzumab vedotin and oral lenalidomide (Celgene, Summit, NJ, USA) in the following doses: 14 mg/kg polatuzumab vedotin and 10 mg lenalidomide (cohort 1); 18 mg/kg polatuzumab vedotin and 10 mg lenalidomide (cohort 2); 14 mg/kg polatuzumab vedotin and 15 mg lenalidomide (cohort 3); 18 mg/kg polatuzumab vedotin and 15 mg lenalidomide (cohort 4); 14 mg/kg polatuzumab vedotin and 20 mg lenalidomide (cohort 5); and 18 mg/kg polatuzumab vedotin and 20 mg lenalidomide (cohort 6). Polatuzumab vedotin was administered on day 1, lenalidomide on days 1-21, and obinutuzumab on days 1, 8, and 15 of cycle one and day 1 of cycles two to six of each 28-day cycle.
+- **NCT Number:** NCT02600897
+- **Clinical Status:** Phase 1b/2
+- **Clinical Description:** A phase 1b/2 study evaluating the safety and efficacy of obinutuzumab in combination with polatuzumab vedotin and lenalidomide in patients with relapsed or refractory follicular lymphoma and rituximab in combination with polatuzumab vedotin and lenalidomide in patients with relapsed or refractory diffuse large B-cell lymphoma.
+- **Primary Endpoint:** According to the Independent Review Committeeassessment, 29 (63.04%) of 46 patients (90% CI 50.00-75.00) had acomplete response and 35 (76.09%) patients (90% CI 64.00-86.00) had an objective response, per Modified Lugano 2014 criteria. Independent Review Committee assessment showed that 33 (71.74%) patients (90% CI59.00-82.00) had a complete metabolic response at the end ofinduction per Modified Lugano 2014 criteria.
+- **Other Endpoint:** At data cut-off (median follow-up 26.70 months [IQR 22.20-31.30]),median progression-free survival had not been reached. As determined by the investigator, theprogression-free survival was 86.00% (95% CI 75.00-96.00) at 12 months and 67.00% (95% CI 51.00-83.00) at 24 months, and 11 (23.91%) of 46 patients had an event reported at the time of this analysis.
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 33.00% (FL patients treated with G-atezo-pola at pola doses of 1.4 mg/kg) 57.00% (FL patients treated with G-atezo-pola at pola doses of 1.8 mg/kg) 25.00% (DLBCL patients who received R-atezo-pola)
+- **Patients Enrolled:** R/R follicular lymphoma (FL); R/R diffuse large B-cell lymphoma (DLBCL).
+- **Administration Dosage:** FL patients received up to six 21-day cycles of obinutuzumab (1000 mg intravenously [IV], Day [D]1, D8, D15 of Cycle [C]1, and D1 of C26) and atezolizumab (1200 mg IV, D1 of C26) plus pola (1.40 or 1.80 mg/kg IV, D1 of C16). Subsequently, patients entered an expansion phase and received obinutuzumab and atezolizumab (same doses) plus pola at the RP2D (1.8 mg/kg). Patients who achieved at least stable disease at the end of induction (EOI; 68 weeks after D1C6) proceeded to obinutuzumab maintenance (1000 mg every 2 months) and atezolizumab (840 mg, D1 and D2 every month) for up to 2 years, or until progressive disease (PD). Unlike the FL cohort, the first seven DLBCL patients entered a safety run-in; once safety criteria were met, the cohort was expanded. All DLBCL patients received up to six 21-day cycles of rituximab (375 mg/m 2 IV, D1 of C16), atezolizumab (1200 mg, D1 of C26), and pola (1.80 mg/kg, D1 of C16). Patients with at least a partial response (PR) at EOI (68 weeks after D1 of C6) received rituximab consolidation (375 mg/m 2 , D1 every 2 months) and atezolizumab (840 mg, D1 and D2 every month) for up to 8 months, or until PD.
+- **NCT Number:** NCT02729896
+- **Clinical Status:** Phase 1b
+- **Clinical Description:** A phase 1b/2 study evaluating the safety and efficacy of obinutuzumab in combination with atezolizumab plus polatuzumab vedotin in patients with relapsed or refractory follicular lymphoma and rituximab in combination with atezolizumab plus polatuzumab vedotin in patients with relapsed or refractory diffuse large B-cell lymphoma.
+- **Primary Endpoint:** At EOI, CR rates in FL patients treated with G-atezo-pola at pola doses of 1.40 mg/kg (N=3) and 1.80 mg/kg (N=7) were 33.00% and 14.00% , respectively. In DLBCL patients who received R-atezo-pola, the CR rate at EOI was 13.00%.
+- **Other Endpoint:** At EOI, ORR rates in FL patients treated with G-atezo-pola at pola doses of 1.40 mg/kg (N=3) and 1.80 mg/kg (N=7) were 33.00% and 57.00% , respectively. In DLBCL patients who received R-atezo-pola, the ORR rate at EOI was 25.00%.
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 42.86%
+- **Patients Enrolled:** Elapsed/refractory (R/R) diffuse large B-cell lymphoma (DLBCL) who received 1 prior line of therapy and were ineligible for autologous stem cell transplantation (ASCT) or experienced treatment failure with prior ASCT.
+- **Administration Dosage:** Pola 1.80 mg/kg intravenously (IV) on day 2 of cycle 1 and day 1 of subsequent cycles; bendamustine 90 mg/m 2 IV on days 2 and 3 of cycle 1 and then days 1 and 2 of subsequent cycles; rituximab 375 mg/m 2 IV on day 1 of each cycle. Three weeks of treatment was regarded as one cycle, and patients received up to six cycles of treatment.
+- **NCT Number:** NCT02257567
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1b/2 study evaluating the safety, tolerability and anti-tumor activity of polatuzumab vedotin in combination with rituximab (R) or obinutuzumab (G) plus bendamustine (B) in relapsed or refractory follicular or diffuse large B-cell lymphoma.
+- **Primary Endpoint:** 2 patients (34.30%, 95% CI 19.1-52.2) achieved CR.
+- **Other Endpoint:** Seven of 12 patients who achieved CR completed six cycles of treatment. Fifteen patients (42.86%, 95% CI 26.30-60.70) achieved an overall response (12 patients CR; 3 patients PR). At a median followup of 5.40 months, median DOR, PFS, and EFS were 6.60 months, 5.20 months, and 5.10 months, respectively. Twentythree patients (65.71%) were alive, and median OS was not reached (95% CI 8.40-not evaluable [NE]).
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 57.60% (FL) 23.50% (DLBCL)
+- **Patients Enrolled:** R/R follicular lymphoma (FL) and R/R diffuse large B-cell lymphoma (DLBCL); the majority had an Eastern Cooperative Oncology Group performance score of 0 or 1.
+- **Administration Dosage:** Dose escalation FL cohorts (3 + 3 design); Dose escalation DLBCL cohorts (3 + 3 design); polatuzumab vedotin 1.80 mg/kg and venetoclax 800 mg.
+- **NCT Number:** NCT02611323
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1b/2 study evaluating the safety and efficacy of obinutuzumab in combination with polatuzumab vedotin and venetoclax in patients with relapsed or refractory follicular lymphoma and rituximab in combination with polatuzumab vedotin and venetoclax in patients with relapsed or refractory diffuse large B-cell lymphoma.
+- **Primary Endpoint:** The overall response rate (ORR) for patients with FL was 75.80%, with 57.60% of patients achieving a complete response (CR). All patients in FL cohort 6 treated at the identified RP2D dose combination achieved CR at EOI. The ORR observed for patients with DLBCL was 29.40%; 23.50% achieved CR. Similar trends were seen in the DLBCL cohorts, with higher response rates in patients treated at the RP2D (37.5% vs. 22.2%).
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 50.00% (In the phase Ib pola-BR arm, EOT IRC-assessed) 40.00% (the randomly assigned cohort, IRC-assessed pola-BR) 17.50% (the randomly assigned cohort, IRC-assessed BR)
+- **Patients Enrolled:** Patients aged 18 years were eligible if they had biopsy-confirmed R/R DLBCL (excluding transformed lymphoma) after 1 prior line of therapy, an Eastern Cooperative Oncology Group (ECOG) performance status of 0-2, grade 1 peripheral neuropathy (PN), and were considered transplantation ineligible by the treating physician or experienced treatment failure with prior ASCT. Double- and triple-hit lymphomas were not excluded.
+- **Administration Dosage:** 1.80 mg/kg IV on day 2 of cycle 1 and day 1 of subsequent cycles. Patients were treated for up to six 21-day cycles.
+- **NCT Number:** NCT01287741
+- **Clinical Status:** Phase Ib/II
+- **Clinical Description:** A phase Ib/II, multicenter, open-label randomized trial comparing the efficacy of GA101 (RO5072759) in combination with CHOP (G-CHOP) versus rituximab and CHOP (R-CHOP) in previously untreated patients with CD20-positive diffuse large B-cell lymphoma (DLBCL).
+- **Primary Endpoint:** In the phase Ib pola-BR arm, EOT IRC-assessed CR rate was 50.00% (3/6), with all 3 patients remaining in remission at a median follow-up of 37.60 months (DOR, > 28.90 to 38.20 months).
+- **Other Endpoint:** After a median follow-up of 22.3 months, PFS, OS, and DOR were significantly improved with pola-BR versus BR. Consistent benefit in risk reduction was seen for IRC- and INV-assessed PFS (IRC: HR, 0.36; 95% CI, 0.21-0.63; INV: HR, 0.34; 95% CI 0.20-0.57) and for DOR (IRC: HR, 0.47; 95% CI, 0.19-1.14; INV: HR,0.44, 95% CI 0.20-0.95).
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** CD20-positive diffuse large B-cell lymphoma (DLBCL), had not received previous treatment for lymphoma, had an Eastern Cooperative Oncology Group performance status score of 0 to 2 (on a 5-point scale, with higher numbers indicating greater disability), had a baseline International Prognostic Index (IPI) score between 2 and 5 (on a 5-level prognostic scale, with higher numbers indicating a poorer prognosis), and had adequate hematologic, renal, hepatic, and cardiac function, regardless of the cell of origin or the presence of rearrangements in MYC, BCL2, BCL6, or a combination of these.
+- **Administration Dosage:** Eight 21-day cycles of treatment were planned. During the first six cycles, patients received either pola-R-CHP or R-CHOP. On day 1 of each cycle, patients received either intravenous polatuzumab vedotin at a dose of 1.80 mg per kilogram of body weight and a placebo matching intravenous vincristine (pola-R-CHP group) or a placebo matching polatuzumab vedotin and intravenous vincristine at a dose of 1.40 mg per square meter of body-surface area (maximum of 2 mg) (R-CHOP group), plus intravenous doses of rituximab (375 mg per square meter), cyclophosphamide (750 mg per square meter), and doxorubicin (50 mg per square meter). All the patients also received oral prednisone at a dose of 100 mg once daily on days 1 through 5 of each of the first six cycles. During cycles 7 and 8, patients in both groups received rituximab monotherapy at a dose of 375 mg per square meter.
+- **NCT Number:** NCT03274492
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A phase 3, multicenter, randomized, double-blind, placebo-controlled trial comparing the efficacy and safety of polatuzumab vedotin in combination with rituximab and CHP (R-CHP) versus rituximab and CHOP (R-CHOP) in previously untreated patients with diffuse large B-cell lymphoma.
+- **Primary Endpoint:** For the pola-R-CHP group, 2 years FPS=76.70% (95% CI, 72.70-80.80). For the R-CHOP group, 2 years FPS=70.20% (95% CI, 65.80-74.60).
+- **Other Endpoint:** The relative risk of events was lower in the pola-R-CHP group than in the R-CHOP group (2-year event-free survival, 75.60% [95% CI, 71.50 to 79.70] and 69.40% [95% CI, 65.00 to 73.80%], respectively.
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Non Hodgkin lymphoma (NHL) or chronic lymphocytic leukemia (CLL) expected to express CD79B (confirmation of CD79B expression was not required) and for whom no suitable therapy of curative intent or higher priority existed from 13 centres.
+- **Administration Dosage:** 0.124 mg/kg every 21 days.
+- **NCT Number:** NCT01290549
+- **Clinical Status:** Phase 1
+- **Clinical Description:** An open-label, multicenter, phase 1 trial of the safety and pharmacokinetics of escalating doses of DCDS4501A in patients with relapsed or refractory B-cell non-Hodgkins lymphoma and chronic lymphocytic leukemia and DCDS4501A in combination with rituximab in patients with relapsed or refractory B-cell non-Hodgkins lymphoma.
+- **Primary Endpoint:** Polatuzumab vedotin has an acceptable safety and tolerability profile in patients with NHL but not in those with CLL. Among 45 patients with NHL treated at the recommended phase 2 dose of single-agent polatuzumab vedotin, median progressionfree survival was 5.70 months (95% CI 3.00-7.90) and median duration of response was 6.2 months (95% CI 3.3-14.1). In patients with diffuse large B-cell lymphoma treated at the recommended phase 2 dose of single-agent polatuzumab, median progression-free survival was 5.00 months (95% CI 2.30-6.80) and median duration of response was 5.20 months (95% CI 2.40-13.10).
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 1.60% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 1 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 5.40% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 2 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 6.60% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 0.1 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 37.10% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 4 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 61.20% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 0.5 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 82.90% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 8 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 86.30% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 1 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 94.90% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 12 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 97.10% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 1.5 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 97.90% (Day 28) High CD22 expression ( CD22+++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 16 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Diffuse large B-cell lymphoma WSU-DLCL2 cells CVCL_1902
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 2 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 14) Moderate CD22 expression ( CD22++ )
+- **Method Description:** Cells were inoculated subcutaneously into the flanks of female CB17 ICR severe combined immunodeficient (SCID) mice. When mean tumor size reached desired volume,the mice were divided into groups of 7 to 9 mice with the same mean tumor size and dosed intravenously via the tail vein with ADCs or antibodies. Rituximab was dosed at 30 mg/kg intraperitoneally (i.p.). Polatuzumab vedotin was administered as a single injection at 4 mg/kg.
+- **In Vivo Model:** B-cell lymphoma CDX model
+- **In Vitro Model:** Burkitt lymphoma BJAB cells CVCL_5711
+### CD79b-A Antibody-Compound (XLIII) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.30 nM Positive CD79b expression ( CD79b+++/++ )
+- **Method Description:** The cells, at a predetermined concentration, were plated into 96 well plates, and, after overnight incubation at 37°C/5% CO 2 , serial dilutions of each test article (TA) were added to the cells. Cells were incubated with test articles for 72 hours. and viability was detected with CellTiter-Gloreagent.
+- **In Vitro Model:** Burkitt lymphoma Ramos cells CVCL_0597
+
+## References
+
+1. Polatuzumab vedotin or pinatuzumab vedotin plus rituximab in patients with relapsed or refractory non-Hodgkin lymphoma: final results from a phase 2 randomised study (ROMULUS). Lancet Haematol. 2019 May;6(5):e254-e265.
+2. Polatuzumab vedotin plus bendamustine and rituximab in relapsed/refractory DLBCL: survival update and new extension cohort data. Blood Adv. 2022 Jan 25;6(2):533-543.
+3. Polatuzumab vedotin plus obinutuzumab and lenalidomide in patients with relapsed or refractory follicular lymphoma: a cohort of a multicentre, single-arm, phase 1b/2 study. Lancet Haematol. 2021 Dec;8(12):e891-e901.
+4. Anti-CD20-atezolizumab-polatuzumab vedotin in relapsed/refractory follicular and diffuse large B-cell lymphoma. J Cancer Res Clin Oncol. 2023 Feb;149(2):811-817.
+5. A phase 2 study of polatuzumab vedotin + bendamustine + rituximab in relapsed/refractory diffuse large B-cell lymphoma. Cancer Sci. 2021 Jul;112(7):2845-2854.
+6. Targeting MCL-1 and BCL-2 with polatuzumab vedotin and venetoclax overcomes treatment resistance in R/R non-Hodgkin lymphoma: Results from preclinical models and a Phase Ib study. Am J Hematol. 2023 Mar;98(3):449-463.
+7. Polatuzumab Vedotin in Relapsed or Refractory Diffuse Large B-Cell Lymphoma. J Clin Oncol. 2020 Jan 10;38(2):155-165.
+8. Polatuzumab Vedotin in Previously Untreated Diffuse Large B-Cell Lymphoma. N Engl J Med. 2022 Jan 27;386(4):351-363.
+9. Safety and activity of the anti-CD79B antibody-drug conjugate polatuzumab vedotin in relapsed or refractory B-cell non-Hodgkin lymphoma and chronic lymphocytic leukaemia: a phase 1 study. Lancet Oncol. 2015 Jun;16(6):704-15.
+10. DCDT2980S, an anti-CD22-monomethyl auristatin E antibody-drug conjugate, is a potential treatment for non-Hodgkin lymphoma. Mol Cancer Ther. 2013 Jul;12(7):1255-65.
+11. Linkers for use in antibody drug conjugates; 2023-03-16.

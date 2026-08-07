@@ -1,0 +1,18 @@
+# ADC Patent Monitoring Update
+
+- date_of_scan: 2026-04-30T16:10:07+00:00
+- number_of_total_records: 0
+- number_of_new_records: 0
+- number_of_new_families: 0
+- new_whole_ADC_patents: 0
+- new_linker_patents: 0
+- new_payload_patents: 0
+- new_conjugation_or_DAR_patents: 0
+- new_antibody_link_only_records: 0
+- errors_or_gaps: 2 errors logged during this run
+
+## Category Counts
+
+
+## Recommended Manual Review
+

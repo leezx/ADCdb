@@ -1,0 +1,45 @@
+---
+id: "DRG0PLPNX"
+name: "SGN-ALPV"
+entity_type: "ADC"
+source_url: "https://adcdb.idrblab.net/data/adc/details/DRG0PLPNX"
+---
+
+# SGN-ALPV
+
+Source: https://adcdb.idrblab.net/data/adc/details/DRG0PLPNX
+
+## Related
+
+- antibody: [[Antibodies/h12F3|h12F3]]
+- antigen: [[Antigens/Alkaline phosphatase, germ cell type (ALPG) Alkaline phosphatase, placental type (ALPP)|Alkaline phosphatase, germ cell type (ALPG); Alkaline phosphatase, placental type (ALPP)]]
+- payload: [[Payloads/Monomethyl auristatin E|Monomethyl auristatin E]]
+- target: [[Targets/Microtubule (MT)|Microtubule (MT)]]
+- linker: [[Linkers/Mc-Val-Cit-PABC|Mc-Val-Cit-PABC]]
+
+## ADCdb Links
+
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0UEBWN)
+- [Antigen Info](https://adcdb.idrblab.net/data/abt/details/TAR0YDDCE)
+- [Payload Info](https://adcdb.idrblab.net/data/payload/details/PAY0FSXOW)
+- [Target Info](https://adcdb.idrblab.net/data/plt/details/PATR0CXRBX)
+- [Linker
+ Info](https://adcdb.idrblab.net/data/linker/details/LIN0SQEDQ)
+
+## General Information
+
+| Field              | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ADC ID             | DRG0PLPNX SGN-ALPV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Synonyms           | SGN-ALPV; SGN ALPV; SGNALPV Organization Seagen Inc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Drug Status        | Phase 1 (Terminated)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Indication         | Solid tumor Phase 1 Clinical Trial Drug-to-Antibody Ratio 4 3D                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Antibody Name      | h12F3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Antigen Name       | Alkaline phosphatase, germ cell type (ALPG); Alkaline phosphatase, placental type (ALPP)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Payload Name       | Monomethyl auristatin E                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Therapeutic Target | Microtubule (MT)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Linker Name        | Mc-Val-Cit-PABC Info Conjugate Type Undisclosed Combination Type vedotin General Information of The Activity Data Related to This ADC Identified from the Human Clinical Data Standard Type NCT Number Clinical Status Clinical Trial Description Undisclosed NCT05229900 Phase 1 A phase 1 study of SGN-ALPV in advanced solid tumors. Full List of Activity Data of This Antibody-drug Conjugate Identified from the Human Clinical Data Experiment 1 Reporting the Activity Date of This ADC [ 1 ] Related Clinical Trial NCT Number NCT05229900 Clinical Status Phase 1 Clinical Description A phase 1 study of SGN-ALPV in advanced solid tumors. References Ref 1 A Phase 1 Study of SGN-ALPV in Advanced Solid Tumors |
+
+## References
+
+1. A Phase 1 Study of SGN-ALPV in Advanced Solid Tumors

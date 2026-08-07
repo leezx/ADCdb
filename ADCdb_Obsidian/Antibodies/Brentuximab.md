@@ -1,0 +1,2172 @@
+---
+id: "ANI0HIDZC"
+name: "Brentuximab"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0HIDZC"
+---
+
+# Brentuximab
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0HIDZC
+
+## ADCdb Links
+
+- [Antigen Info](https://adcdb.idrblab.net/data/abt/details/TAR0QPCSQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JWBNH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UCXTV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VOHBK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BUAWG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KDLRL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TKKDC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HDIEW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HCGBQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WHDMO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RHSBY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QVAFS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GPMCI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LEDIZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YQTRS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZTTAU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HRDJC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DZWGP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NOMGT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QHUYA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZMEAV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MYMOJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XQTEX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IQGNU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UQSJX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CLVXF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DZPBK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GTTXQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MHULE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HFCDR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RCYWA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SLGIO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OIFQQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VXYOC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PMNKJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QKOKV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DDGRB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UVAYQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CPDPN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UXODO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MIRMC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZRDFG)
+
+## General Information
+
+| Field            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Antibody ID      | ANI0HIDZC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Antibody Name    | Brentuximab Organization Seagen Inc. Indication Neoplasms                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Synonyms         | Brentuximab; cAC10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Antibody Type    | Monoclonal antibody (mAb)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Antibody Subtype | Chimeric IgG1-kappa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Antigen Name     | Tumor necrosis factor receptor superfamily member 8 (TNFRSF8) ChEMBI ID CHEMBL1742994 Heavy Chain Sequence QIQLQQSGPEVVKPGASVKISCKASGYTFTDYYITWVKQKPGQGLEWIGWIYPGSGNTKY NEKFKGKATLTVDTSSSTAFMQLSSLTSEDTAVYFCANYGNYWFAYWGQGTQVTVSAAST KGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLY SLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSV FLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYVDGVEVHNAKTKPREEQYNSTY RVVSVLTVLHQDWLNGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSRDELTK NQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQG NVFSCSVMHEALHNHYTQKSLSLSPG Light Chain Sequence DIVLTQSPASLAVSLGQRATISCKASQSVDFDGDSYMNWYQQKPGQPPKVLIYAASNLES GIPARFSGSGSGTDFTLNIHPVEEEDAATYYCQQSNEDPWTFGGGTKLEIKRTVAAPSVF IFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLS STLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC The Activity Data of This Antibody Antibody Activity Information 1 [ 1 ] Antibody Function Brentuximab vedotin binds to CD30, becomes internalized, and releases MMAE, which causes apoptosis as an antitubulin agent. |
+
+## Related ADC Activity Data
+
+### Brentuximab vedotin (Approved)
+
+**Source:** Identified from the Human Clinical Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Two-year Progression-Free Survival (PFS) 97.30% (BV-AVD group); 92.60% (ABVD group)
+- **Patients Enrolled:** 34 patients with previously untreated classical Hodgkin lymphoma (cHL).
+- **Administration Dosage:** After 2 cycles of Brentuximab vedotin, doxorubicin, dacarbazine combination therapy.
+- **NCT Number:** NCT02505269
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Brentuximab vedotin plus ad in non-bulky limited stage Hodgkin lymphoma.
+- **Primary Endpoint:** For patients with high total metabolic tumor volume, the 2-year PFS rate was 90.90% and 70.70% in the BV-AVD and ABVD arms, respectively. 82.30% in the BV-AVD arm were PET-negative compared with 75.40% in the ABVD arm.
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 59.00%
+- **Patients Enrolled:** Eastern Cooperative Oncology Group performance status 2 with previously untreated CD30-positive PTCL (CD30 detected in 10% of neoplastic cells by local review.
+- **Administration Dosage:** Patients were treated with six or eight 21-day cycles of either brentuximab vedotin, cyclophosphamide, doxorubicin, prednisone (A+CHP) or cyclophosphamide, doxorubicin, vincristine, prednisone (CHOP).
+- **NCT Number:** NCT01777152
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, double-blind, placebo-controlled, phase 3 study of brentuximab vedotin and CHP (A+CHP) versus CHOP in the frontline treatment of patients with CD30-positive mature T-cell lymphomas.
+- **Primary Endpoint:** The median PFS = 62.30 months (95% CI: 42.00 months to not evaluable) for A+CHP. The median PFS = 23.80 months (95% CI: 13.60-60.80 months) for CHOP.
+- **Other Endpoint:** 5-year overall survival (OS) rates = 70.10% (95% CI: 63.30% to 75.90%) with A+CHP VS 61.00% (95% CI: 54.00% to 67.30%) with CHOP (hazard ratio = 0.72; 95% CI: 0.53-0.99), The PFS HR = 0.55 (95% CI: 0.39-0.79; P = 0.0009) in the subset of patients with sALCL, and the estimated 5-year PFS = 60.60% (95% CI: 49.50% to 69.90%) for A+CHP,the estimated 5-year PFS= 48.40% (95% CI: 39.60% to 56.70%) for CHOP The ORR with first subsequent therapy on the A+CHP arm = 42.00% (27.00% CR) VS The ORR with first subsequent therapy = 42.00% (19.00% CR) in the CHOP armCR=72.57% (82/113) in the A+CHP arm were in CR at EOT, and = 30.49% (25/82) underwent consolidative SCT.
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 60.00% Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** Relapsed or progressive Hodgkin lymphoma (HL).
+- **Administration Dosage:** 1.8 mg/kg IV once every 3 weeks for up to 16 cycles.
+- **NCT Number:** NCT01100502
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A phase 3 study of brentuximab vedotin (SGN-35) in patients at high risk of residual Hodgkin lymphoma following stem cell transplant (the AETHERA trial).
+- **Primary Endpoint:** Objective response rate=60.00% (including 4 complete responses, 2 partial responses, 1 stable disease, 1 progressive disease, and 2 unknown).
+- **Other Endpoint:** 5-year PFS=59.00% (95% CI 51.00-66.00).
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 60.13%
+- **Patients Enrolled:** Elapsed or refractory classical Hodgkin lymphoma with measurable disease and an Eastern Cooperative Oncology Group performance status of 0 or 1 who were ineligible for or had relapsed after autologous haematopoietic stem-cell transplantation (HSCT).
+- **Administration Dosage:** 1.80 mg/kg intravenously every 3 weeks.
+- **NCT Number:** NCT02684292
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A phase 3, randomized, open-label, clinical trial to compare pembrolizumab with brentuximab vedotin in subjects with relapsed or refractory classical hodgkin lymphoma.
+- **Primary Endpoint:** Median progression-free survival = 13.20 months (95% CI 10.90-19.40) for pembrolizumab vs median progression-free survival = 8.30 months (5.70-8.80) for brentuximab vedotin (hazard ratio 0.65 [95% CI 0.48-0.88].; p=0.0027).
+- **Other Endpoint:** Objective responses (by investigator review) were recorded in 103 (68.21% [95% CI 60.1-75.5]) of 151 patients in the pembrolizumab group (40 [26.48%] complete responses and 63 [41.72%] partial responses), and in 92 (60.13% [51.9-67.9]) of 153 patients in the brentuximab vedotin group (36 [23.53%] complete responses and 56 [36.60%] partial responses).
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 0.00% Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** Histologically confirmed diagnoses of advSM (ASM, SM-AHN, or MCL).
+- **Administration Dosage:** 1.8 mg/kg IV every 3 weeks up to 8 cycles.
+- **NCT Number:** NCT01807598
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Brentuximab vedotin in treating patients with advanced systemic mastocytosis or mast cell leukemia.
+- **Primary Endpoint:** Objective response rate=0.00%.
+- **Other Endpoint:** Median progression-free survival=210 days (95% CI 77-343 days).
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 8.00% Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** CD30-expressing nonlymphomatous cancer, not have been treated with chemotherapy, radiotherapy, biologics.
+- **Administration Dosage:** 1.8 or 2.4 mg/kg BV once every three weeks.
+- **NCT Number:** NCT01461538
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Brentuximab vedotin in patients with CD30-positive nonlymphomatous malignancies.
+- **Primary Endpoint:** Objective response rate= 8.00% (95% CI 1.10, 28.00).
+- **Other Endpoint:** Median progression-free survival=2.10 months (95% CI 1.20- 2.80).
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 13.33% Negative Lewis Y expression ( Lewis Y- ); Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** Relapsed/refractory CD30+ primary mediastinal large B-cell lymphoma (PmLBCL).
+- **Administration Dosage:** 1.80 mg per kg as a single IV infusion on day 1 of each 21-day cycle.
+- **NCT Number:** NCT02423291
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of SGN-35 (Brentuximab Vedotin) of patients with relapsed or refractory primary mediastinal large B-cell lymphoma (PmLBCL).
+- **Primary Endpoint:** The ORR was 13.33% (2/15): 2 patients PR, 1 patient SD, and the remaining 12 patients PD.
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 36.40% Negative Lewis Y expression ( Lewis Y- ); Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** Any subtype of histologically confirmed high-CD30expressing non Hodgkin lymphoma (NHL), except anaplastic large-cell lymphoma (ALCL). High CD30 expression was defined as membranous CD30 expression in 30% of tumor cells detectable by visual assessment of routine immunohistochemistry staining using the anti-CD30 antibody on biopsy at the time of diagnosis or relapse. (2) A bidimensionally measurable lesion 1.5 cm in the greatest transverse diameter. (3) Age 20-75 years and an Eastern Cooperative Oncology Group performance status of 2. (4) Adequate bone marrow and organ function. (5) No history of another active cancer within the previous 5 years except basal cell carcinoma. Note that patients who had relapsed after autologous stem cell transplantation (SCT) were considered eligible. Exclusion criteria were: undergoing allogeneic SCT; active infection, human immunodeficiency virus infection, or hepatitis B or C; and lymphomatous involvement of the central nervous system. The 30% cutoff was established by consensus during an investigation initiation meeting of the pathologists from each of the study sites after they reviewed various cutoff values for positive and strong positive of CD30 expression across various subtypes of NHL.
+- **Administration Dosage:** Intravenously at 1.80 mg/kg every 3 weeks and the primary endpoint was > 40% disease control rate.
+- **NCT Number:** NCT02280785
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin for relapsed/refractory CD30-positive non-Hodgkin lymphomas other than anaplastic large cell lymphoma.
+- **Primary Endpoint:** For 1.80 mg/kg BV intravenously, the overall disease control rate was 48.48% (16/33).
+- **Other Endpoint:** For 1.80 mg/kg BV intravenously, the median PFS and OS 1.90 months and 6.10 months.
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 41.18% (In 34 evaluable patients) 54.00% (AITL)
+- **Patients Enrolled:** Relapsed/refractory CD30+ non-Hodgkin lymphomas; at least 1 prior systemic therapy, measurable disease, age 12 years, and Eastern Cooperative Oncology Group (ECOG) performance status of 2.
+- **Administration Dosage:** 1.80 mg/kg was administered every 3 weeks until progression or unacceptable toxicity.
+- **NCT Number:** NCT01421667
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin in relapsed or refractory non-hodgkin lymphoma (NHL).
+- **Primary Endpoint:** In 34 evaluable patients, ORR was 41.18% (8 CRs, 6 PRs,and ORR was 54.00% in AITL (5 CRs, 2 PRs) with median PFS of 6.70 months thus far.
+- **Other Endpoint:** Median baseline sCD30 for patients with AITL and PTCL-NOS was 1214 ng/mL (range, 108-9473 ng/mL) and 840 ng/mL, respectively. Median duration of response for all patients was 7.60 months (range, 1.30-14.10 months), 5.50 months for AITL patients,and 7.60 months (range, 1.40-10.11 months) for PTCL-NOS patients.
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 48.00% Positive CD30 expression ( CD30+++/++ ; FACS analysis = 495)
+- **Patients Enrolled:** EBV-positive and CD30- positive non-Hodgkin lymphomas with various levels of CD30 in the relapsed or refractory setting.
+- **Administration Dosage:** 1.80 mg/kg brentuximab vedotin intravenously every 3 weeks for up to 16 cycles or until disease progression.
+- **NCT Number:** NCT02388490
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin in patients with relapsed or refractory EBV-and CD30-positive lymphomas.
+- **Primary Endpoint:** For 1.80 mg/kg BV intravenously, the ORR was 48.00% (90% CI: 31.00%-64.00%).
+- **Other Endpoint:** For 1.80 mg/kg BV intravenously, Median Progression-Free Survival (mPFS)= 6.20 months (95% CI: 2.90-13.60), overall survival(mOS)=15.70 months (95% CI: 6.10-not reached).
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 52.94% Positive CD30 expression ( CD30+++/++ ; FACS analysis = 116)
+- **Patients Enrolled:** Elderly patients with relapsed/refractory Hodgkin lymphoma (R/R HL).
+- **Administration Dosage:** 1.80 mg/kg administered as a single outpatient intravenous infusion on Day 1 of each 21-day treatment cycle, for a maximum of 16 cycles.
+- **NCT Number:** NCT02227433
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin (BV) in the treatment of elderly Hodgkin lymphoma (HL) patients at first relapse or with primary refractory disease.
+- **Primary Endpoint:** The efficacy of single agent BV was measured by overall objective response rate (ORR, sum of CR and partial response [PR] rates),Best response was reached at fourth cycle of BV therapy. ORR was 52.94% (9 of 17 patients) with a CR rate of 23.5% (4 of 17 patients).
+- **Other Endpoint:** Secondary endpoints were CR rate, disease free survival (DFS), 1-year PFS, 1-year OS and safety and tolerability of BV. With a median follow-up of 24.90 months, median PFS was 8.80 months and median OS was 21.70 months.
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 67.86% (HL and systemic ALCL retreatment patients) 60.00% (HL patients) 87.50% (systemic ALCL patients)
+- **Patients Enrolled:** Patients who previously experienced a CR or PR with brentuximab vedotin, discontinued treatment while in remission, and subsequently experienced disease progression or relapse. Patients who received an allogeneic stem cell transplant (SCT) were eligible if they were >100 days from transplant and had no evidence of cytomegalovirus by polymerase chain reaction.
+- **Administration Dosage:** 1.80 mg/kg intravenously approximately every 3 weeks over 30 minutes as an outpatient infusion.
+- **NCT Number:** NCT00947856
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Treatment with SGN-35 in patients with CD30-positive hematologic malignancies who have previously participated in an SGN-35 study.
+- **Primary Endpoint:** The ORR for HL and systemic ALCL retreatment patients was 67.86% (95% CI; 47.60-84.10),with a CR rate of 39.29% (95% CI; 21.50-59.40). The ORR was 60.00% (30.00% CR) for HL patients and 87.50% (62.50% CR) for systemic ALCL patients. The majority of patients (81.00%) who received brentuximab vedotin retreatment experienced reduction in measurable tumor volume.
+- **Other Endpoint:** The objective response rate = 60.00% (30.00% CR) in HL patients and 87.50% (62.50% CR) in systemic ALCL patients.
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 71.00%
+- **Patients Enrolled:** Relapsed or refractory Hodgkin lymphoma (HL) after auto-stem cell transplant.
+- **Administration Dosage:** 1.80 mg/kg IV once every 3 weeks over 30 minutes on an outpatient basis for up to 16 infusions.
+- **NCT Number:** NCT00848926
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A pivotal study of SGN-35 in treatment of patients with relapsed or refractory hodgkin lymphoma (HL).
+- **Primary Endpoint:** OrR = 72.00% (33.00% CR, 38.00% PR).
+- **Other Endpoint:** The estimated median DOR of PR in the 73 patients= 11.20 months (95% CI: 7.70, 18.70), The median DOR of CR in the 34 patients = not been reached (95% CI: 20.50 - NA months). The estimated median OS for all patients was 40.50 months (95% CI: 28.70-NA ). The estimated 3-year OS for the 34 patients with a CR to brentuximab vedotin was 73.00% (95% CI: 57%, 88%). The estimated median PFS for all patients was 9.30 months (95% CI: 7.10, 12.20). Three-year PFS was estimated at 58.00% (95% CI: 41.00%, 76.00%) for the 34 CR patients.
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 75.00%
+- **Patients Enrolled:** Relapsed or refractory Hodgkin lymphoma (HL) after high-dose chemotherapy and auto-stem cell transplant, histologically documented CD30-positive Hodgkin's Reed-Sternberg cells by central pathology review.
+- **Administration Dosage:** 1.80 mg/kg by intravenous infusion every 3 weeks; received a maximum of 16 cycle.
+- **NCT Number:** NCT00848926
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A pivotal study of SGN-35 in treatment of patients with relapsed or refractory hodgkin lymphoma (HL).
+- **Primary Endpoint:** Tumor reductions were observed in 94% of patients. The ORR was 75.00% (95% CI, 64.90% to 82.60%); 34% of all patients achieved a CR (95% CI, 25.20% to 44.40%), and the overall disease control rate (CR + partial remission + stable disease) was 96% (95% CI, 90.30% to 98.90%). The median time to objective response was 5.70 weeks (range, 5.10 to 56 weeks),and the median time to CR was 12 weeks (range, 5.10 to 56 weeks).
+- **Other Endpoint:** For patients who had an objective response,the median duration of response was 6.70 months (95% CI,3.60 to 14.80 months). The median duration of response for patients who achieved a CR was 20.50 months (95% CI,10.80 months to not estimable).
+**Experiment 15 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 86.00%
+- **Patients Enrolled:** Relapsed or refractory systemic anaplastic large cell lymphoma (ALCL) after treatment failure of at least one prior therapy with curative intent, the most common being a combination of cyclophosphamide, doxorubicin, vincristine, and prednisone.
+- **Administration Dosage:** 1.80 mg/kg was administered intravenously once every 3 weeks over 30 minutes on an outpatient basis for up to 16 total doses.
+- **NCT Number:** NCT00866047
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of SGN-35 in treatment of patients with relapsed or refractory systemic anaplastic large cell lymphoma (ALCL).
+- **Primary Endpoint:** The ORR per independent review was 86.00% (95% CI,74.60% to 93.90%); 57% of patients achieved CR (95% CI, 43.20% to 69.80%), and 29.00% achieved partial remission. Tumor reductions were observed in 97.00% of patients.
+- **Other Endpoint:** The estimated median PFS time per independent review was 13.30 months (95% CI,6.90 months to NE); in the subset of patients who achieved a CR,the median PFS was 14.60 months. Per investigator assessment,the median PFS with brentuximab vedotin was 14.30 months (95% CI,9.10 months to NE). The median OS had not yet been reached. The estimated 12-month survival rate was 70.00%.
+**Experiment 16 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 92.31%
+- **Patients Enrolled:** Patients were aged 60 years with classical HL (ie, patients with nodular lymphocyte predominant HL [NLPHL] were excluded). Patients were treatment nave and were either ineligible for frontline conventional combination treatment of HL (eg, ABVD or bleomycin, etoposide, doxorubicin, cyclophosphamide, vincristine, procarbazine, and prednisone [BEACOPP]) in the investigators judgment or had declined the available chemotherapy options after being informed of the potential benefits and risks.
+- **Administration Dosage:** 1.80 mg/kg of IV brentuximab vedotin every 3 weeks for up to 16 doses.
+- **NCT Number:** NCT01716806
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 open-label study of brentuximab vedotin in front-line therapy of Hodgkin lymphoma (HL) an dCD30-expressing peripheral t-cell lymphoma (PTCL) in older patients or patients with significant comorbidities ineligible for standard chemotherapy.
+- **Primary Endpoint:** The ORR among the 26 efficacy-evaluable patients was 92.31% (n=24, 95% CI 74.90-99.10). The median duration of objective response was 9.10 months (range 2.80-20.90 months) for all responder.
+- **Other Endpoint:** The CR among the 26 efficacy-evaluable patients was 73.08% (n=19, 95% CI 52.20-88.40), The median PFS was 10.50 months (range 2.61-22.31 months) for all efficacy evaluable patients and 11.80 months (range 4.10-22.31months) for CR.
+**Experiment 17 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 100.00% (for efficacy-evaluable patients treated with BV plus DTIC)
+- **Patients Enrolled:** Had treatment-naive classical HL (excluding nodular lymphocyte predominant HL), fluorodeoxyglucose positron emission tomography (PET)-avid disease, bidimensional measurable disease of >=1.5 cm in the greatest transverse diameter, and an ECOG performance status of <=3 and were ineligible for or declined standard frontline chemotherapies (eg, ABVD or bleomycin, etoposide, Adriamycin, cyclophosphamide, Oncovin, procarbazine, and prednisone).
+- **Administration Dosage:** 1.80 mg/kg BV and 375 mg/m 2 DTIC for up to 12 cycles, and 20 more patients received 1.80 mg/kg BV plus 90 or 70 mg/m 2 bendamustine for up to 6 cycles (dose reduced due to toxicity).
+- **NCT Number:** NCT01716806
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 open-label study of brentuximab vedotin in front-line therapy of hodgkin lymphoma (HL) an dCD30-expressing peripheral t-cell lymphoma (PTCL) in older patients or patients with significant comorbidities ineligible for standard chemotherapy.
+- **Primary Endpoint:** For efficacy-evaluable patients treated with BV plus DTIC (n = 21), the ORR was 100.00%. For efficacy-evaluable patients treated with BV plus bendamustine (n = 17), the ORR was also 100.00%.
+- **Other Endpoint:** For efficacy-evaluable patients treated with BV plus DTIC (n = 21), the CR rate was 62.00%. At the time of this analysis, the median observation time from first dose was 21.60 months (range, 14.80 to 29.00 months), and median PFS was 17.90 months (range, 4.20 to 29.00 months). For efficacy-evaluable patients treated with BV plus bendamustine (n = 17), the CR was also 88.00%. Out of 7 patients (57.00%) with B symptoms at baseline had resolution. The median observation time from first dose was 10.80 months (range, 2.90 to 18.20 months). Neither the median PFS (range, 2.90 to 18.00 months) nor the median OS (range, 2.90 to 18.20 months) was reached at the time of this analysis.
+**Experiment 18 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 100.00% High CD30 expression ( CD30+++ )
+- **Patients Enrolled:** 35 patients with R/R Hodgkin lymphoma (HL).
+- **Administration Dosage:** Any time before on-protocol consolidation (nivolumab + BV; BV + bendamustine).
+- **NCT Number:** NCT02927769
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Risk-based, response-adapted, phase II open-label trial of nivolumab + brentuximab vedotin (N + BV) for children, adolescents, and young adults with relapsed/refractory (R/R) CD30 + classic hodgkin lymphoma (cHL) after failure of first-line therapy, followed by brentuximab + bendamustine (BV + B) for participants with a suboptimal response (checkmate 744: checkpoint pathway and nivolumab clinical trial evaluation)
+**Experiment 19 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 100.00% Positive CD30 expression ( CD30 +++/++ )
+- **Patients Enrolled:** Patients with previously untreated, early-stage unfavorable Hodgkin lymphoma.
+- **Administration Dosage:** Patients were randomly assigned (2:1) to four cycles of BV-AVD or standard doxorubicin, bleomycin, vincristine, and dacarbazine (ABVD), followed by 30 Gy involved node radiotherapy.
+- **NCT Number:** NCT02292979
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Brentuximab vedotin associated with chemotherapy in untreated patients with stage I/II unfavourable hodgkin lymphoma. a randomized phase ii lysa-fil-eortc intergroup study.
+- **Primary Endpoint:** CRR was 94.12% (32/34).
+- **Other Endpoint:** ORR was 100.00% (34/34).
+**Experiment 20 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 60.71% (in the Phase 1) 78.38% (in the Phase 2)
+- **Patients Enrolled:** Relapsed/refractory CD30+ biopsy proven Hodgkin lymphoma (HL) or anaplastic large cell lymphoma (ALCL) and an ECOG Performance Status 2.
+- **Administration Dosage:** Bv was escalated from 1.20 mg/kg Day 1, and B from 70 mg/m 2 Days 1 and 2 every 21 days until the MTD or recommended phase 2 dose (RP2D) was reached;Bv escalating to a dose of 1.80 mg/kg and B was escalated to 90 mg/m 2 .
+- **NCT Number:** NCT01657331
+- **Clinical Status:** Phase 1/2
+- **Clinical Description:** A phase 1/2 clinical trial of the combination of brentuximab vedotin and bendamustine in patients with relapsed or refractory hodgkin lymphoma or anaplastic large cell lymphoma.
+- **Primary Endpoint:** The MTD was not reached, based on the fact there was no maximum administrable dose identified. The RP2D was Bv at 1.80 mg/kg and B at 9.00 mg/kg. Only 1 of 11 patients qualified as a DLT (Grade 4 neutropenia) at the RP2D.
+- **Other Endpoint:** 17 of 28 (ORR 60.71%, 95% CI 41.00-79.00) of patients achieved a response in the Phase 1, with 5 of 28 (17.86%) being CR. In the Phase 2, 29 of 37 (ORR 78.38%, 95% CI 62.00-91.00) patients responded, with 16 of 37 (43.24%) attaining a CR.
+**Experiment 21 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 50.00% Positive CD30 expression ( CD30+++/++ ; FACS analysis = 102)
+- **Patients Enrolled:** Patients had relapsed or refractory, histologically confirmed CD30-positive hematologic cancers. Patients with Hodgkin's lymphoma had received systemic chemotherapy either as induction therapy for advanced-stage disease or salvage therapy after initial radiotherapy for early-stage disease and had previously undergone autologous stem cell transplant (ASCT).
+- **Administration Dosage:** Intravenously at doses of 0.10 to 3.60 mg per kilogram of body weight every 3 weeks (one cycle).
+- **NCT Number:** NCT00430846
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 dose escalation study of SGN-35 in patients with relapsed/refractory CD30-positive hematologic malignancies.
+- **Primary Endpoint:** Safety profile of brentuximab vedotin =1.80 mg/kg.
+- **Other Endpoint:** Secondary objectives were to determine pharmacokinetic measures for the antibody-drug conjugate and MMAE, evaluate immunogenicity, and assess antitumor response.The median time to maximum concentration occurred immediately after infusion for the antibody-drug conjugate and approximately 2 to 3 days after infusion for MMAE. Steady-state pharmacokinetics for both the antibody-drug conjugate and MMAE occurred by approximately 21 days,consistent with the half-life estimates of 4 to 6 days and 3 to 4 days, respectively.
+**Experiment 22 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 73.00% (at a median follow-up of 11.1 months) 70.00% (BICR-assessed)
+- **Patients Enrolled:** R/R PMBL; had an Eastern Cooperative Oncology Group performance status of 0 to 1, had a CD30 expression level of 1% or greater in the tumor or tumor-infiltrating lymphocytes by local immunohistochemistry, and had 1 or more measurable sites of disease according to the Lugano 2014 classification.
+- **Administration Dosage:** Received nivolumab (240 mg intravenously) and BV (1.80 mg/kg intravenously) every 3 weeks until disease progression or unacceptable toxicity.
+- **NCT Number:** NCT02581631
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/ 2 study to evaluate the safety and preliminary efficacy of nivolumab in combination with brentuximab vedotin in subjects with relapsed refractory non hodgkin lymphomas with CD30 expression (checkmate 436: CHECK point pathway and nivolumab clinical trial evaluation 436).
+- **Primary Endpoint:** For nivolumab (240 mg intravenously) and BV (1.8 mg/kg intravenously), ORR(95% CI) was 73.00% (54.00% to 88.00%), with a 37.00% complete remission rate per investigator, and ORR of 70.00% (51.00% to 85.00%), with a 43.00% complete metabolic response rate per independent review.
+- **Other Endpoint:** For nivolumab (240 mg intravenously) and BV (1.80 mg/kg intravenously), the 6-month PFS rate was 63.50% (95% CI, 42.50 to 78.60), and the 6-month OS rate was 86.30% (95% CI, 67.50 to 94.60). Median PFS and median OS were not reached.
+**Experiment 23 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 81.97% (all treated patients) 83.33% (efficacy-evaluable patients)
+- **Patients Enrolled:** Refractory Hodgkin lymphoma (defined as not achieving a CR to frontline therapy or progression within 3 months of CR), or Hodgkin lymphoma that had relapsed (defined as progression 3 months after CR to frontline therapy).
+- **Administration Dosage:** Received BV (1.80 mg/kg IV, 30-minute infusion) and Nivo (3.00 mg/kg IV, 60-minute infusion) in 3-week cycles for up to 12 weeks (4 cycles). During the first cycle, BV was administered on day 1 and Nivo on day 8. During cycles 2 to 4, BV and Nivo were administered on day 1, with Nivo given at least 30 minutes after BV.
+- **NCT Number:** NCT02572167
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/2 study evaluating brentuximab vedotin in combination with nivolumab in patients with relapsed or refractory Hodgkin lymphoma after failure of frontline therapy.
+- **Primary Endpoint:** Response rates and Deauville 5-point score for all treated patients (n = 61) and efficacy-evaluable patients (n = 60) are presented. The CR rate among all treated patients was 61.00% (95% CI,47.00%-73.00%). Among efficacy-evaluable patients,the CR rate was 62.00% (95% CI,48.00%-74.00%).
+- **Other Endpoint:** Response rates and Deauville 5-point score for all treated patients (n = 61) and efficacy-evaluable patients (n = 60) are presented. The ORR rate among all treated patients was 81.97% (95% CI, 70.00%-91.00%). Among efficacy-evaluable patients, the ORR rate was 83.33% (95% CI,72.00%-92.00%).
+**Experiment 24 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 85.00%
+- **Patients Enrolled:** Biopsy-proven primary refractory (ie, not achieving a CR or progression <3 months after CR) or relapsed Hodgkin lymphoma (HL; progression 3 months after CR).
+- **Administration Dosage:** Received up to 4 cycles of BV 1.80 mg/kg every 3 weeks IV over 30 minutes followed by Nivo 3.00 mg/kg IV over 60 minutes. In parts 1/2 (staggered dosing), BV was administered on day 1 and Nivo on day 8 of cycle 1, with both agents administered on day 1 during cycles 2 to 4. During part 2, the protocol was amended to mandate prophylactic treatment with steroids (hydrocortisone 100 mg or equivalent) and antihistamines (diphenhydramine 25-50 mg or equivalent) at day 1 of each cycle beginning at cycle 2. Patients in part 3 (same-day dosing) received both BV and Nivo on day 1 of all cycles, based on the interim efficacy and safety results in parts 1 and 2 of this study and encouraging results with same-day dosing of both agents in the Eastern Cooperative Oncology Group and the American College of Radiology Imaging Network (ECOG-ACRIN) study E4412.
+- **NCT Number:** NCT02572167
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/2 study evaluating brentuximab vedotin in combination with nivolumab in patients with relapsed or refractory Hodgkin lymphoma after failure of frontline therapy.
+- **Primary Endpoint:** The objective response rate (ORR; N=91) = 85.00%, with 67.00% achieving a complete response (CR); progression-free survival (PFS) rate at 3 years = 77.00% (95% CI, 65.00% to 86.00%) and 91.00% (95% CI, 79.00% to 96.00%) for patients undergoing ASCT directly after study treatment.
+- **Other Endpoint:** OS= 93.00% (95% CI, 85.00% to 97.00%) at 3 years.
+**Experiment 25 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 100.00% Positive CD30 expression ( CD30+++/++ )
+- **Patients Enrolled:** CD30 peripheral T-cell lymphoma.
+- **Administration Dosage:** 1.8 mg/kg IV once every 3 weeks for 6 cycles.
+- **NCT Number:** NCT01309789
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 study of brentuximab vedotin given sequentially and combined with multi-agent chemotherapy for CD30-positive mature T-cell and NK-cell neoplasms.
+- **Primary Endpoint:** Objective response rate=100.00%.
+- **Other Endpoint:** 5-year PFS= 52.00%; OS=80.00%
+**Experiment 26 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 73.00% (patients with Hodgkin lymphoma who relapsed after ASCT) 86.00% (patients with sALCL)
+- **Patients Enrolled:** Hodgkin lymphoma who had relapsed after autologous stem cell transplant (ASCT); systemic anaplastic large-cell lymphoma (sALCL) who had previously been treated with curative intent.
+- **Administration Dosage:** 1.80 mg/kg, i.v., once every 21 days; a maximum of 16 cycles.
+**Experiment 27 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Objective Response Rate (ORR) 58.54%
+- **Patients Enrolled:** Relapsed or refractory, histologically confirmed CD30-positive hematologic malignancies with bi-dimensional measurable disease of at least 1.5 cm by radiographic evaluation. Patients with Hodgkin lymphoma had received systemic chemotherapy as induction therapy for advanced-stage disease or salvage therapy after initial radiotherapy for early-stage disease and had previously undergone autologous stem cell transplantation (ASCT) unless they were ineligible for or had declined treatment. Patients with other CD30-positive malignancies had previously failed or were refractory to front-line chemotherapy. Patients who had transformed to systemic anaplastic large cell lymphoma (ALCL) were eligible.
+- **Administration Dosage:** Intravenously on Days 1, 8, and 15, of each 28-day cycle at doses ranging from 0.40 to 1.40 mg/kg.
+**Experiment 28 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 35.00%
+- **Patients Enrolled:** Histologically confirmed rel/ref de novo or transformed diffuse large B-cell lymphoma (DLBCL) after at least 1 prior therapy, Eastern Cooperative Oncology Group (ECOG) performance status 2, and adequate organ function as defined in supplemental Methods.
+- **Administration Dosage:** The treatment cycle was 21 days with intravenous BV administered on day 1 and Len administered on days 1 to 21 for a maximum of 16 cycles, the maximum tolerated dose of the combination was 1.20 mg/kg BV with 20 mg/d Len.
+- **NCT Number:** NCT04404283
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, double-blind, placebo-controlled, active-comparator, multicenter, phase 3 study of brentuximab vedotin or placebo in combination with lenalidomide and rituximab in subjects with relapsed or refractory diffuse large B-cell lymphoma (DLBCL).
+- **Primary Endpoint:** The maximum tolerated dose of the combination was 1.20 mg/kg BV with 20 mg/d lenalidomide.
+- **Other Endpoint:** The overall response rate was 57.00% (95% CI, 39.60-72.50), complete response rate, 35.00% (95% CI, 20.70-52.60); median duration of response, 13.10 months; median progression-free survival, 10.20 months (95% CI, 5.50-13.70); and median overall survival, 14.30 months (95% CI, 10.20-35.60).
+**Experiment 29 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 61.54%
+- **Patients Enrolled:** Previously untreated, histologically confirmed stage III/IV classical Hodgkin lymphoma (cHL).
+- **Administration Dosage:** A+AVD (brentuximab vedotin, 1.20 mg/kg of bodyweight, doxorubicin 25 mg/m 2 of body surface area, vinblastine 6 mg/m 2 , and dacarbazine 375 mg/m 2 ) or ABVD (doxorubicin 25 mg/m 2 , bleomycin 10 U/m2, vinblastine 6 mg/m 2 , and dacarbazine 375 mg/m 2 ) intravenously on days 1 and 15 of each 28-day cycle for up to six cycles.
+- **NCT Number:** NCT01712490
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of A+AVD versus ABVD as frontline therapy in patients with advanced classical hodgkin lymphoma.
+- **Primary Endpoint:** For 1.20 mg/kg BV intravenously, the 3-year PFS rates=83.10% (95% CI, 79.90-85.90) in the A+AVD arm.
+- **Other Endpoint:** For 1.20 mg/kg BV intravenously, complete resolution(CR)=61.54% of (272/442) in the A+AVD arm.
+**Experiment 30 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 71.33%
+- **Patients Enrolled:** Previously untreated patients (18 years with an Eastern Cooperative Oncology Group performance status of 2) with stage III or IV classical Hodgkin lymphoma.
+- **Administration Dosage:** A+AVD (brentuximab vedotin, 1.20 mg/kg of bodyweight, doxorubicin 25 mg/m 2 of body surface area, vinblastine 6 mg/m 2 , and dacarbazine 375 mg/m 2 ) or ABVD (doxorubicin 25 mg/m 2 , bleomycin 10 U/m2, vinblastine 6 mg/m 2 , and dacarbazine 375 mg/m 2 ) intravenously on days 1 and 15 of each 28-day cycle for up to six cycles.
+- **NCT Number:** NCT01712490
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of A+AVD versus ABVD as frontline therapy in patients with advanced classical hodgkin lymphoma.
+- **Primary Endpoint:** For 1.20 mg/kg BV intravenously, 5-year PFS rates=82.20% (95% CI 79.00-85.00) with A+AVD.
+- **Other Endpoint:** For 1.20 mg/kg BV intravenously, complete resolution(CR)=71.33% of (316/443) of patients with peripheral neuropathy in the A+AVD arm. Peripheral neuropathy occurred in 443 (66.91%) of 662 patients in the A+AVD group.
+**Experiment 31 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 12.00%
+- **Patients Enrolled:** Part (A) relapsed/refractory CD30-expressing mature T-cell and B-cell non-Hodgkin lymphomas (NHL), including DLBCL; Part (B) brentuximab vedotin plus rituximab in relapsed/refractory CD30-expressing DLBCL; and Part (C) single-agent brentuximab vedotin in relapsed/refractory CD30u DLBCL.
+- **Administration Dosage:** 1.80 mg/kg was administered IV every 21 days.
+- **NCT Number:** NCT01421667
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin in relapsed or refractory non-hodgkin lymphoma (NHL).
+- **Primary Endpoint:** ORR=31.00%, median duration=4.70 months (range 0.50-11.60) for 16 patients enrolled on Part C.
+- **Other Endpoint:** Six patients had CR (12.00%) with a median duration of 11.60 months (range,1.40±11.60) and median PFS of 15.60 months (range,3.8±15.6). Overall median PFS was 1.4 months (range, 0.40- 15.60). Median overall survival (OS) was 7.50 months (range, 0.7-18.6).
+**Experiment 32 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 35.41%
+- **Patients Enrolled:** A clinical and histologically confirmed diagnosis of CD30+ LyP, CD30+ pc-anaplastic large-cell lymphoma (ALCL), or myelofibrosis (MF). Eastern Cooperative Oncology Group performance status of 2 and adequate bone marrow and organ function were required.
+- **Administration Dosage:** Intravenously at 1.80 mg/kg every 21 days for a maximum of eight doses.
+- **NCT Number:** NCT01352520
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Phase 2 trial of brentuximab vedotin (SGN-35) at dose of 1.80 mg/kg IV every 3 weeks in patients with CD30-positive lymphoproliferative disorders (cutaneous anaplastic large T-cell lymphoma (ALCL), mycosis fungoides, and extensive lymphomatoid papulosis (LyP).
+- **Primary Endpoint:** Os rate=72.92% (95% CI, 60.00% to 86.00%; 35 of 48 patients), CR raate=35.41% (95% CI, 22.00% to 49.00%; 17 of 48 patients). Fifteen (53.57%; 95% CI, 31% to 59%) of 28 patients with MF responded, independent of CD30 expression.
+- **Other Endpoint:** In patients with MF/Szary syndrome, the overall response rate was 50.00% (five of 10 patients) in patients with low CD30 expression (< 10%), 58.33% (seven of 12 patients) in patients with medium expression (10% to 50%), and 50.00% (three of six patients) in patients with high expression (50%).
+**Experiment 33 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 43.00% (In 56 evaluable patients treated across cohorts)
+- **Patients Enrolled:** Patients over 10 years of age with biopsy-proven cHL that had relapsed or was primary refractory (lack of CR or PD within 3months of upfront therapy) after standard initial therapy were eligible.
+- **Administration Dosage:** 1.80 mg/kg intravenously every 3 weeks for two cycles.
+- **NCT Number:** NCT01393717
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of brentuximab vedotin as salvage therapy for hodgkin lymphoma prior to autologous hematopoietic stem cell transplantation.
+- **Primary Endpoint:** The 2-year PFS among patients in CR at the time of AHCT (n=37) was 71% compared with 54% in patients not in CR (p=0.12). The 2-year PFS in patients who proceeded to AHCT directly after receiving BV alone was 77%.
+- **Other Endpoint:** Of 56 evaluable patients treated across cohorts, the overall response rate (ORR) to second-line BV was 75.00% with 43.00% CR.
+**Experiment 34 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 58.00%
+- **Patients Enrolled:** LyP and were also required to have scarring, more than 10 lesions, or active lesions on the face, hands, or feet.
+- **Administration Dosage:** Intravenous brentuximab vedotin 1.80 mg/kg infused over 30 minutes every 21 days.
+- **NCT Number:** NCT01352520
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Phase 2 trial of brentuximab vedotin (SGN-35) at dose of 1.80 mg/kg IV every 3 weeks in patients with CD30-positive lymphoproliferative disorders (cutaneous anaplastic large T-cell lymphoma (ALCL), mycosis fungoides, and extensive lymphomatoid papulosis (LyP).
+- **Primary Endpoint:** The overall response rate was 100% and at 4 months was 80% (8 of 10 patients).
+**Experiment 35 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 14.70%
+- **Patients Enrolled:** Steroid-refractory acute graft-versus-host disease (SR-aGVHD).
+- **Administration Dosage:** The study included weekly dosing for 3 weeks followed by maintenance dosing every 3 weeks for an 4 additional doses. A standard 3+3 dose-escalation cohort (0.60 mg/kg, 0.90 mg/kg, and 1.20 mg/kg) was planned to define the maximum tolerated dose (MTD). After treating the first 6 patients, the study was revised to dosing every 2 weeks for 4 doses only for safety purposes, and to enroll cohorts of 5 patients at each dose level (0.60 mg/kg, 0.80 mg/kg, 1.00 mg/kg, and 1.20 mg/kg).
+- **NCT Number:** NCT01940796
+- **Clinical Status:** Phase 1
+- **Clinical Description:** Phase 1 trial of brentuximab vedotin for refractory chronic graft-vs.-host disease (GVHD).
+- **Primary Endpoint:** The MTD was defined at 0.80 mg/kg with one DLT observed (sepsis).
+- **Other Endpoint:** At day 28, the overall response rate was 38.20% with 5 complete responses (CR, 14.70%) and 8 very good partial responses (VGPR, 23.50%).Overall survival was 41.00% (95% CI, 25.00%-57.00%) at 6 months and 38.00% (95% CI, 22.00%-54.00%) at 12 months.
+**Experiment 36 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 35.00%
+- **Patients Enrolled:** Relapsed or refractory diffuse large B-cell lymphoma (DLBCL); have previously received at least two lines of therapy, including rituximab and an anthracycline; patients had either had a relapse after or were ineligible for autologous transplantation.
+- **Administration Dosage:** 1.20 mg/kg intravenously (IV) on Day 1 of every 21 day cycle.
+- **NCT Number:** NCT02086604
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 trial of brentuximab vedotin in combination with lenalidomide in relapsed or refractory diffuse large B-cell lymphoma.
+- **Primary Endpoint:** Most patients required granulocyte colony-stimulating factor support because of neutropenia. The overall response rate was 57.00% (95% CI, 39.60-72.50), complete response rate, 35.00% (95% CI, 20.70-52.60); median duration of response, 13.10 months; median progression-free survival, 10.20 months (95% CI, 5.50-13.70); and median overall survival, 14.30 months (95% CI, 10.20-35.60). Response rates were highest in patients with CD301 DLBCL (73.00%), but they did not differ according to cell of origin (P=5.96).
+**Experiment 37 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 66.67%
+- **Patients Enrolled:** Primary refractory Hodgkin Lymphoma or early relapse. Eligibility criteria included age 30 years; no prior Brentuximab vedotin exposure; and relapse <1 year from completion of initial therapy.
+- **Administration Dosage:** Each 21-day cycle consisted of intravenous day 1 at 1.40 mg/kg or 1.80 mg/kg.
+- **NCT Number:** NCT01780662
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/2 study of brentuximab vedotin (SGN35) in combination with gemcitabine for pediatric and young adult patients with relapsed or refractory Hodgkin lymphoma.
+- **Primary Endpoint:** For four of the 13 patients with stable disease or partial response,all target lesions were Deauville score 3 on central review,and would thus be considered CRs by response criteria published after AHOD1221 opened. By these criteria,the complete response rate observed on AHOD1221 was 28 of 42 patients (66.67%; 95% CI, 51.00-80.00%).
+**Experiment 38 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 74.00%
+- **Patients Enrolled:** First relapse or primary refractory classic Hodgkin lymphoma (CHL) after one prior line of therapy.
+- **Administration Dosage:** Days 1 and 8 at either 1.20 or 1.50 mg/kg IV (capped at 150 mg) with standard dosing of ICE on days 13 for two cycles.
+- **NCT Number:** NCT02227199
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/2 trial of brentuximab vedotin (BV), ifosfamide (I), carboplatin (C), and etoposide (E) for patients with relapsed or refractory Hodgkin lymphoma (BV-ICE).
+- **Primary Endpoint:** Rp2D=BV 1.50 mg/kg IV CR=74.00%.
+- **Other Endpoint:** ORR=91.00%.
+**Experiment 39 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 86.00%
+- **Patients Enrolled:** CD30+ primary mediastinal large B-cell lymphoma (PMBCL), diffuse large B-cell lymphoma (DLBCL), or gray zone lymphoma (GZL). Patients with any stage, measurable disease, and an Eastern Cooperative Oncology Group Performance Status of 3 or less were eligible. The diagnostic biopsy had to demonstrate at least 1% or higher expression of CD30 on the lymphoma B cells by immunohistochemistry and was assessed independently by two pathologists. Patients with active central nervous system involvement and uncontrolled systemic infections were excluded.
+- **Administration Dosage:** Six cycles of BV (1.80 mg/kg, maximum dose of 180 mg) administered with the R-CHOP regimen without vincristine, including: rituximab 375 mg/m 2 , cyclophosphamide 750 mg/m 2 , and doxorubicin 50 mg/m 2 on day 1 and prednisone 100 mg (or equivalent) daily on days 1 through 5 of each 21-day cycle. For cycle 1, rituximab was split into two doses (100 mg/m 2 on day 1 and 275 mg/m 2 on day 2) to reduce risks of an infusion reaction to rituximab.
+- **NCT Number:** NCT01994850
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1/2 study of brentuximab vedotin in combination with multi-agent chemotherapy as front-line treatment in patients with CD30 positive primary mediastinal large B-cell, diffuse large B-cell, and grey zone lymphomas.
+- **Primary Endpoint:** For Brentuximab vedotin dose of 1.80 mg/kg, the overall response rate was 100.00% (95%CI: 88.00-100.00) with 86.00% (95% CI: 68.00-96.00) of patients achieving complete response at the end of systemic treatment.
+- **Other Endpoint:** For Brentuximab vedotin dose of 1.80 mg/kg, the 2-year PFS and overall survival rates were 85.00% (95%CI: 66.00-94.00) and 100.00%, respectively.
+**Experiment 40 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 95.45% (brentuximab vedotin + ABVD) 96.00% (brentuximab vedotin + AVD)
+- **Patients Enrolled:** Newly diagnosed, treatment-naive, CD30-positive patients with Hodgkin's lymphoma who had histologically confirmed stage IIA bulky disease or stage IIB-IV disease and an Eastern Cooperative Oncology Group performance status of two or less.
+- **Administration Dosage:** 0.60, 0.90, or 1.20 mg/kg brentuximab vedotin by intravenous infusion every 2 weeks with either ABVD (25 mg/m(2) doxorubicin, 10 units/m(2) bleomycin, 6 mg/m(2) vinblastine, and 375 mg/m(2) dacarbazine) or AVD (ABVD modified regimen without the inclusion of bleomycin) for up to six cycles.
+- **NCT Number:** NCT01060904
+- **Clinical Status:** Phase 1
+- **Clinical Description:** A phase 1 dose-escalation safety study of brentuximab vedotin in combination with multi-agent chemotherapy as frontline therapy in patients with Hodgkin lymphoma.
+- **Primary Endpoint:** The MTD of brentuximab vedotin 1.20 mg/kg ; CR of brentuximab vedotin + ABVD = 95.45%(21/22); CR of brentuximab vedotin + AVD = 96.00%(24 /25 ).
+- **Other Endpoint:** Maximum tolerated dose was not exceeded at 1.20 mg/kg of brentuximab vedotin combined with either ABVD or AVD.
+**Experiment 41 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Complete Remission (CR) 60.00% (BV + R therapy)
+- **Patients Enrolled:** Had prior solid organ or hematopoietic stem cell transplantation, received immunosuppressive therapy for a nonmalignant condition, and/or had an aggressive EBV+lymphoid malignancy.
+- **Administration Dosage:** Induction therapy consisted of R 375 mg/m 2 given on days 1, 8, 15, 22, and BV 1.20 mg/kg given on days 1, 8, 15, followed by restaging as assessed by CT imaging. MT consisted of BV 1.8 mg/kg every 3 weeks and R 375 mg/m 2 every 6 weeks for up to one year of total therapy.
+**Experiment 42 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Previously untreated Hodgkins lymphoma of stage IIB with bulk tumor or stage IIIB, IVA, or IVB.
+- **Administration Dosage:** Brentuximab vedotin (at a dose of 1.80 mg per kilogram) plus doxorubicin, vincristine, etoposide, prednisone, and cyclophosphamide or the standard bleomycin-containing chemotherapy regimen was administered every 21 days.
+- **NCT Number:** NCT02166463
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized phase 3 study of brentuximab vedotin (SGN-35) for newly diagnosed high-risk classical hodgkin lymphoma (cHL) in children and young adults.
+- **Primary Endpoint:** At a median follow-up of 42.10 months (range, 0.10 to 80.90), the 3-year event-free survival was 92.10% (95% confidence interval [CI],88.40 to 94.70) in the brentuximab vedotin group.
+- **Other Endpoint:** Overall survival at 3 years was 99.30% (95% CI,97.30 to 99.80) in the brentuximab vedotin group.
+**Experiment 43 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** III or IV Hodgkins lymphoma.
+- **Administration Dosage:** 1.20 mg of brentuximab vedotin per kilogram of body weight, 25 mg of doxorubicin per square meter of body-surface area, 6 mg of vinblastine per square meter, and 375 mg of dacarbazine per square meter; intravenously on days 1 and 15 of each 28-day cycle for up to six cycles.
+- **NCT Number:** NCT01712490
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of A+AVD Versus ABVD as frontline therapy in patients with advanced classical hodgkin lymphoma.
+- **Primary Endpoint:** The analysis of overall survival significantly favored A+AVD over ABVD (95% CI,0.40-0.88).The 6-year overall survival estimates were 93.90% (95% CI,91.60 to 95.50) in the A+AVD group and 89.40% (95% CI,86.60 to 91.70) in the ABVD group.
+- **Other Endpoint:** The median follow-up in the overall survival analysis was 73.00 months (95% CI,72.30 to 73.60; range,0.0 to 100.6). A total of 39 deaths occurred in the A+AVD group and 64 in the ABVD group.
+**Experiment 44 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Advanced classic Hodgkins lymphoma (Ann Arbor stage III or IV, as determined on a 4-point scale, with higher stages indicating more widespread disease),17 according to the World Health Organization classification system. Patients who had not been previously treated with systemic chemotherapy or radiotherapy were eligible. Patients were required to have an Eastern Cooperative Oncology Group performance status of 0, 1, or 2 (on a scale of 0 to 5, with higher scores indicating greater disability).
+- **Administration Dosage:** A+AVD (1.20 mg of brentuximab vedotin per kilogram of body weight, 25 mg of doxorubicin per square meter of body-surface area, 6 mg of vinblastine per square meter, and 375 mg of dacarbazine per square meter) or ABVD (25 mg of doxorubicin per square meter, 10 units of bleomycin per square meter, 6 mg of vinblastine per square meter, and 375 mg of dacarbazine per square meter) intravenously on days 1 and 15 of each 28-day cycle for up to 6 cycles.
+- **NCT Number:** NCT01712490
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of A+AVD versus ABVD as frontline therapy in patients with advanced classical Hodgkin lymphoma.
+- **Primary Endpoint:** After a median follow-up of 24.90 months (range, 0 to 49.30), the rate of the primary end point of independently determined modified progression-free survival was significantly higher in the A+AVD group than in the ABVD group (2-year modified progression-free survival rate, 82.10% [95% confidence interval {CI}, 78.70 to 85.00] vs. 77.20% [95% CI, 73.70 to 80.40]; hazard ratio for progression, death, or modified progression, 0.77 [95% CI, 0.60 to 0.98]; P = 0.03), corresponding to a 23.00% risk reduction.
+- **Other Endpoint:** The interim 2-year overall survival rate for the A+AVD group was 96.60% (95% CI,94.80 to 97.70) and that for the ABVD group was 94.90% (95% CI,92.90 to 96.40),which corresponded to a reduction in the risk of death of 28.00% in favor of the A+AVD regimen (hazard ratio,0.72; 95% CI,0.44 to 1.17; P = 0.19).
+**Experiment 45 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** CD30-positive mycosis fungoides or primary cutaneous anaplastic large-cell lymphoma who had been previously treated.
+- **Administration Dosage:** Interactive voice and web response system to receive intravenous brentuximab vedotin 1.80 mg/kg once every 3 weeks, for up to 16 3-week cycles.
+- **NCT Number:** NCT01578499
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A randomized, open-label, phase 3 trial of brentuximab vedotin (SGN-35) versus physician's choice (methotrexate or bexarotene) in patients with CD30-positive cutaneous T-cell lymphoma.
+- **Primary Endpoint:** At a median follow-up of 22.90 months (95% CI 18.40-26.10), the proportion of patients achieving an objective global response lasting at least 4 months was 56.25% (36 of 64 patients) with brentuximab vedotin versus 12.50% (8/64) with physicians choice, resulting in a between-group difference of 43.80% (95% CI 29.10-58.40).
+- **Other Endpoint:** Median progression-free survival per EMA criteria was 16.70 months in the brentuximab vedotin group versus 3.50 months in the physicians choice group (HR 0.270, 95% CI 0.169-0.430).
+**Experiment 46 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Patients aged 18 years with previously treated CD30-expressing myelofibrosis (MF) or classic anaplastic large-cell lymphoma (after at least 1 prior systemic therapy or prior radiotherapy) were enrolled; CD30 positivity was defined as 10% of target lymphoid cells exhibiting a membrane, cytoplasmic, and/or Golgi staining pattern for CD30. An Eastern Cooperative Oncology Group performance status of 0 to 2 was required.
+- **Administration Dosage:** Brentuximab vedotin (1.80 mg/kg IV every 3 weeks, for up to 16 cycles) or physicians choice (methotrexate, 5-50 mg orally once weekly or bexarotene 300 mg/m 2 [target dose] orally once daily, for up to 48 weeks).
+- **NCT Number:** NCT01578499
+- **Clinical Status:** Phase 3
+- **Clinical Description:** A previously treated, recurrent or metastatic cervical cancer (SGN-35) versus physician's choice (methotrexate or bexarotene) in patients with CD30-positive cutaneous T-cell lymphoma.
+- **Primary Endpoint:** For 1.80 mg/kg BV intravenously, objective responses lasting 4 months (ORR4) was 54.70%; the ORR per IRF was 65.60%.
+- **Other Endpoint:** For 1.80 mg/kg BV intravenously, the CR rate was 17.20%; median PFS 16.70 (95% CI, 0.25-0.58); 3-year estimates of OS was 64.40% (95% CI, 0.42-1.32); time to next treatment (TTNT) was 14.20 (95% CI, 0.17-0.42).
+**Experiment 47 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** High-risk relapsed or refractory classic Hodgkin lymphoma, had an ECOG performance status of 0-2, and had adequate organ and bone marrow function.
+- **Administration Dosage:** Enrolled patients received brentuximab vedotin (1.8 mg/kg) intravenously starting 30-60 days after autologous HSCT on day 1 of each 21-day cycle for up to 8 cycles.
+- **NCT Number:** NCT03057795
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2 study of nivolumab and brentuximab vedotin consolidation after autologous stem cell transplantation in patients with high-risk classical hodgkin lymphoma.
+- **Primary Endpoint:** The 18-month progression-free survival in all 59 patients was 94% (95% CI 84-98).
+- **Other Endpoint:** The 24-month overall survival was 98.00% (95% CI 88.00-100.00). The 24-month progression-free survival according to the number of risk factors was 94.00% (95% CI 67.00-99.00) in patients with one risk factor (n=21),96.00% (73.00-99.00) in patients with two risk factors (n=24), and 85.00% (51.00-96.00) in patients with three or more risk factors (n=14). The 24-month cumulative incidence of relapse and progression was 5.70% (95% CI 1.50-14.00); the 24-month cumulative incidence of non-relapse mortality was 1.80% (0.14-8.40).
+**Experiment 48 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Histologically proven anaplastic lymphoma kinase (ALK)+ anaplastic large-cell lymphoma (ALCL) and were younger than 22 years of age at diagnosis.
+- **Administration Dosage:** Brentuximab vedotin was administered on day 1 of each of the 6 cycles for a total of 6 doses. The starting dose of brentuximab vedotin was 1.80 mg/kg (maximum dose, 180 mg) given IV over 30 minutes on day 1 of each cycle prior to all other chemotherapy. Dose reductions to 1.20 mg/kg (maximum dose, 120 mg), followed by 0.80 mg/kg (maximum dose, 80 mg), were mandated for certain toxicities.
+- **NCT Number:** NCT01979536
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A randomized phase 2 trial of brentuximab vedotin (SGN35, NSC# 749710), or crizotinib (NSC#749005, commercially labeled) in combination with chemotherapy for newly diagnosed patients with anaplastic large cell lymphoma (ALCL).
+- **Primary Endpoint:** For 1.80 mg/kg BV intravenously, the complete response rate (complete response + complete response, unconfirmed) was 62.12% for patients who underwent evaluation after cycle 2 (41/66 patients) and 96.88% after cycle 6 (62/64 patients).
+- **Other Endpoint:** For 1.80 mg/kg BV intravenously, The 2-year event-free survival (EFS)=79.10% (95%CI, 67.20-87.10). The 2-year overall survival (OS)=97.00% (95% CI, 88.10-99.20).
+**Experiment 49 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** Metastatic non-seminomatous germ cell tumor (GCT) with the exception of pure teratoma who progressed after first-line cisplatin-based chemotherapy and after at least one salvage regimen.
+- **Administration Dosage:** 1.80 mg/kg IV every 3 weeks until disease progression or intolerable toxicities.
+- **NCT Number:** NCT01461538
+- **Clinical Status:** Phase 2
+- **Clinical Description:** A phase 2, open-label study of brentuximab vedotin in patients with CD30-positive nonlymphomatous malignancies.
+- **Primary Endpoint:** For 1.80 mg/kg BV intravenously, Median PFS in the CD30 positive cohort was 1.20 months (95% CI: 0.90-2.10) and in the CD30 negative cohort was 1.40 months (95% CI: 0.00-2.10). Median OS in the CD30 positive cohort was 2.50 months (95% CI: 1.10-12.90) and in the CD30 negative cohort was 5.90 months (95% CI: 1.60-8.20).
+**Experiment 50 Reporting the Activity Date of This ADC**
+
+- **Patients Enrolled:** 46 patients with classic Hodgkin lymphoma, unsuitable for standard chemotherapy because of a cardiac ejection fraction of less than 50%, pulmonary diffusion capacity of less than 80%, or a creatinine clearance of 30 mL/min or more but less than 60 mL/minrequired to have an Eastern Cooperative Oncology Group (ECOG) performance status of 0-2.
+- **Administration Dosage:** Brentuximab vedotin (1.8 mg/kg, dose cap at 180 mg) and nivolumab (3 mg/kg) intravenously every 21 days for 8 cycles.
+- **NCT Number:** NCT02758717
+- **Clinical Status:** Phase 2
+- **Clinical Description:** Phase II, multi-center trial of nivolumab and brentuximab vedotin in patients with untreated Hodgkin lymphoma over the age of 60 years or unable to receive standard adriamycin, bleomycin, vinblastine, and dacarbazine (ABVD) chemotherapy.
+- **Primary Endpoint:** The overall response, defined as a partial metabolic response or complete metabolic response at the end of 8 cycles of treatment
+- **Other Endpoint:** The complete metabolic response rate, safety and tolerability of the regimen in this population, duration of response, progression-free survival, and overall survival.
+**Experiment 51 Reporting the Activity Date of This ADC**
+
+- **NCT Number:** NCT02686346
+- **Clinical Status:** Phase 1/2
+- **Clinical Description:** Phase 1/2 feasibility study of brentuximab vedotin in refractory/relapsed hodgkin lymphoma patients who are treated by chemotherapy (ICE) in second line and eligible for autologous transplantation.
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 0.00% (Day 40) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** 3 mg conjugate/kg/inj.
+- **In Vivo Model:** L2987 cell line xenograft model
+- **In Vitro Model:** Lung adenocarcinoma L2987 cells CVCL_H586
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 28.40% (Day 35) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** L-540 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma L-540 cells CVCL_1362
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 31.50% (Day 35) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** KM-H2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma KM-H2 cells CVCL_1330
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 51.70% (Day 53) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** KM-H2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma KM-H2 cells CVCL_1330
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 53.40% (Day 35) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** KM-H2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma KM-H2 cells CVCL_1330
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 65.80% (Day 35) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** L-540 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma L-540 cells CVCL_1362
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 74.70% (Day 53) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination Brentuximab Vedotin with TGR-1202 (PI3K- inhibitor) against cancer cell growth was evaluated in the HL xenograft model. Six- to eight-week-old NOD/SCID mice (20 to 25 g) were xenografted with L-540 (2.5x10 6 cells/mouse) and KM-H2 (2.0x10 6 cells/mouse) cells by inoculation into the left flank. When the tumor volume reached approximately 100 mg, the mice were randomly assigned to receive TGR-1202 (150 mg/kg/5 day/3 wks, PO) and/or BV (0.5 mg/kg/q4d/2 weeks, IP).
+- **In Vivo Model:** KM-H2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma KM-H2 cells CVCL_1330
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 78.80% (Day 56) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. Mice of the ruxolitinib group received ruxolitinib at a dose of 50 mg/kg per day by s.c. inserted osmotic minipumps for 2 wk. Mice of the BV group received BV at 4 mg/kg by i.v. injection every 4 d for three injections. Mice of the combination group received a combination of ruxolitinb with BV at the same doses and dosing schedules as those in the ruxolitinib and BV groups.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 87.30% (Day 21) High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib, Navitoclax, and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. The xenograft tumor model of human HL HDLM-2 was established by s.c. injection of 2x10 7 HDLM-2 cells into the right flank of female, 8-wk-old, NOD/SCID mice.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 92.00% (Day 21) Moderate CD30 expression ( CD30++ )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib, Navitoclax, and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. The xenograft tumor model of human HL HDLM-2 was established by s.c. injection of 2x10 7 HDLM-2 cells into the right flank of female, 8-wk-old, NOD/SCID mice.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 94.70% (Day 21) Negative CD30 expression ( CD30- )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib, Navitoclax, and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. The xenograft tumor model of human HL HDLM-2 was established by s.c. injection of 2x10 7 HDLM-2 cells into the right flank of female, 8-wk-old, NOD/SCID mice.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 96.83% (Day 30) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** 1 mg conjugate/kg/inj.
+- **In Vivo Model:** Karpas 299 ALCL cell line xenograft model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 13 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** 99.20% (Day 15) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** 0.5 mg/kg/in.
+- **In Vivo Model:** Karpas 299 ALCL cell line xenograft model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 14 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 99.80% (Day 56) High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. Mice of the ruxolitinib group received ruxolitinib at a dose of 50 mg/kg per day by s.c. inserted osmotic minipumps for 2 wk. Mice of the BV group received BV at 4 mg/kg by i.v. injection every 4 d for three injections. Mice of the combination group received a combination of ruxolitinb with BV at the same doses and dosing schedules as those in the ruxolitinib and BV groups.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 15 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 99.90% (Day 21) High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of all possible combination regimens of ruxolitinib, Navitoclax, and BV against cancer cell growth was evaluated in the HDLM-2 xenograft mouse model of human HL. The xenograft tumor model of human HL HDLM-2 was established by s.c. injection of 2x10 7 HDLM-2 cells into the right flank of female, 8-wk-old, NOD/SCID mice.
+- **In Vivo Model:** HDLM-2 cell line xenograft model
+- **In Vitro Model:** Hodgkin lymphoma HDLM-2 cells CVCL_0009
+**Experiment 16 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Tumor Growth Delay (TGD) 40 Day (Median) High CD30 expression ( CD30+++ )
+- **Method Description:** SCID mice were implanted with L540cy HL cells in the right flank. Groups of mice (9-10/group) were untreated or received SGN-35 (1 mg/kg, q4dx3, i.p.) and/or ABVD [Adriamycin (0.75 mg/kg, q4dx3, i.v.), Bleomycin (6u/kg, q4dx3, i.p.), Vinblastine (0.01 mg/kg, q4dx3, i.p.) and Dacarbazine (15 mg/kg, q3dx4, i.p.)] when tumour size averaged approximately 300 mm 3 .
+- **In Vivo Model:** L540cy cell line xenograft model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 17 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Tumor Growth Delay (TGD) 61 Day (Median) High CD30 expression ( CD30+++/++ )
+- **Method Description:** SCID mice were implanted with L540cy HL cells in the right flank. Groups of mice (9-10/group) were untreated or received SGN-35 (1 mg/kg, q4dx3, i.p.) and/or ABVD [Adriamycin (0.75 mg/kg, q4dx3, i.v.), Bleomycin (6u/kg, q4dx3, i.p.), Vinblastine (0.01 mg/kg, q4dx3, i.p.) and Dacarbazine (15 mg/kg, q3dx4, i.p.)] when tumour size averaged approximately 300 mm 3 .
+- **In Vivo Model:** L540cy cell line xenograft model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 18 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Tumor Growth Delay (TGD) 63 Day (Median) High CD30 expression ( CD30+++ )
+- **Method Description:** SCID mice were implanted with L540cy HL cells in the right flank. Groups of mice (9-10/group) were untreated or received SGN-35 (1 mg/kg, q4dx3, i.p.) and/or ABVD [Adriamycin (0.75 mg/kg, q4dx3, i.v.), Bleomycin (6u/kg, q4dx3, i.p.), Vinblastine (0.01 mg/kg, q4dx3, i.p.) and Dacarbazine (15 mg/kg, q3dx4, i.p.)] when tumour size averaged approximately 100 mm 3 .
+- **In Vivo Model:** L540cy cell line xenograft model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 19 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Tumor Growth Delay (TGD) > 80 Day (Median) Negative Lewis Y expression ( Lewis Y- ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** SCID mice were implanted with L540cy HL cells in the right flank. Groups of mice (9-10/group) were untreated or received SGN-35 (1 mg/kg, q4dx3, i.p.) and/or ABVD [Adriamycin (0.75 mg/kg, q4dx3, i.v.), Bleomycin (6u/kg, q4dx3, i.p.), Vinblastine (0.01 mg/kg, q4dx3, i.p.) and Dacarbazine (15 mg/kg, q3dx4, i.p.)] when tumour size averaged approximately 100 mm 3 .
+- **In Vivo Model:** L540cy cell line xenograft model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 20 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 2.50 ng/mL
+- **Method Description:** The inhibitory activity of cAC10 vcMMAE against cancer cell growth was compared with other anti-CD30 mAbs against the growth of a variety of HD and ALCL cell lines in vitro. For localized, subcutaneous disease models of ALCL and HD,5x10 6 Karpas 299 or 2x10 7 L540cy cells, respectively, were implanted into the right flanks of C.B.-17/IcrHsd-SCID mice (Harlan, Indianapolis, IN).Therapy with cAC10-vcMMAE or controls was initiated when the tumor size in each group of 5 animals averaged approximately 100 mm 3 .Treatment consisted of intravenous injections every fourth day for 4 injections (q4d x 4).
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.90 pM
+- **Method Description:** The inhibitory activity of Brentuximab vedotin against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 6.70 pM
+- **Method Description:** The inhibitory activity of Brentuximab vedotin against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Hodgkin lymphoma L-540 cells CVCL_1362
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 14.20 pM
+- **Method Description:** The inhibitory activity of Brentuximab vedotin against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Adult acute myeloid leukemia HL-60 cells CVCL_0002
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 14.50 pM
+- **Method Description:** The inhibitory activity of Brentuximab vedotin against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Anaplastic large cell lymphoma SU-DHL-1 cells CVCL_0538
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.50 ng/mL
+- **Method Description:** The inhibitory activity of the mAb-Val-Cit-MMAE conjugates exhibited greater in vitrospecificity and lower in vivo toxicity was compared with corresponding hydrazone conjugatescorresponding hydrazone conjugates on H3396 cells.The cytotoxic effects of the conjugates on H3396 cells (cBR96 Ag+,cAC10 Ag-) were determined using both pulsed (2 h) and long-term(97 h) drug exposure assays.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 6.00 ng/mL
+- **Method Description:** The inhibitory activity of the mAb-Val-Cit-MMAE conjugates exhibited greater in vitrospecificity and lower in vivo toxicity was compared with corresponding hydrazone conjugatescorresponding hydrazone conjugates on H3396 cells.The cytotoxic effects of the conjugates on H3396 cells (cBR96 Ag+,cAC10 Ag-) were determined using both pulsed (2 h) and long-term(97 h) drug exposure assays.
+- **In Vitro Model:** Adult acute myeloid leukemia CESS cells CVCL_0209
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 63.00 ng/mL
+- **Method Description:** The inhibitory activity of the mAb-Val-Cit-MMAE conjugates exhibited greater in vitrospecificity and lower in vivo toxicity was compared with corresponding hydrazone conjugatescorresponding hydrazone conjugates on H3396 cells.The cytotoxic effects of the conjugates on H3396 cells (cBR96 Ag+,cAC10 Ag-) were determined using both pulsed (2 h) and long-term(97 h) drug exposure assays.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 90.00 ng/mL
+- **Method Description:** The inhibitory activity of the mAb-Val-Cit-MMAE conjugates exhibited greater in vitrospecificity and lower in vivo toxicity was compared with corresponding hydrazone conjugatescorresponding hydrazone conjugates on H3396 cells.The cytotoxic effects of the conjugates on H3396 cells (cBR96 Ag+,cAC10 Ag-) were determined using both pulsed (2 h) and long-term(97 h) drug exposure assays.
+- **In Vitro Model:** Hodgkin lymphoma KM-H2 cells CVCL_1330
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 219.50 ng/mL
+- **Method Description:** The inhibitory activity of Brentuximab Vedotin against cancer cell growth was evaluated in CD30positive GCT27 cell line in vitro. The cells were treated with 250 ng/mL ADC for 96 hours.
+- **In Vitro Model:** Testicular teratoma GCT 27 cells CVCL_A344
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1013.00 ng/mL
+- **Method Description:** The inhibitory activity of Brentuximab Vedotin against cancer cell growth was evaluated in CD30negative JAR cell line in vitro. The cells were treated with 1000 ng/mL ADC for 96 hours.
+- **In Vitro Model:** Gestational choriocarcinoma JAR cells CVCL_0360
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1400.80 ng/mL
+- **Method Description:** The inhibitory activity of Brentuximab Vedotin against cancer cell growth was evaluated in moderate expression NCCIT cell line in vitro. The cells were treated with 500 ng/mL ADC for 96 hours.
+- **In Vitro Model:** Testicular embryonal carcinoma NCC-IT cells CVCL_1451
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3300.00 ng/mL 1.30 ng/mL 9.90 ng/mL
+- **Method Description:** The antitumor activity of SGN-35 was prepared with 14C-labeled MMAE. Intracellular ADC activation on CD30+ and negative cell lines was determined using a combination of radiometric and liquid chromatograhpy/mass spectrometry-based assays. The bystander activity of SGN-35 was determined using mixed tumor cell cultures consisting of CD30+ and CD30 lines.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324 Diffuse large B-cell lymphoma WSU-NHL cells CVCL_1793 Hodgkin's disease L540cy cells Homo sapiens
+### CAC10-DT (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=1 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 0.00% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=3 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 72.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=3 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-DT=10 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 7.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 16.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 26.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### CAC10-CPT-LC (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 54.80% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=1 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 72.65% (Day 51) Low CD30 expression ( CD30+ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=3 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 76.00% (Day 28) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=0.3 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=3 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.00% (Day 11) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=10 mg/kg.
+- **In Vivo Model:** ALCL CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells/Karpas BVR cells CVCL_1324
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 28) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lc=1 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Ovarian serous cystadenocarcinoma SK-OV-3 cells CVCL_0532
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 2.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### CAC10-GT (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 67.00% (Day 28) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-GT=10 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 67.00% (Day 28) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-GT=30mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 20.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 27.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 79.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 160.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 850.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### CAC10-CPT-LB (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 78.00% (Day 28) Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. The dose of cAC10-CPT-Lb=0.3 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 93.80% Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Tumor cells, as suspensions, were implanted subcutaneously in SCID or nude mice. Upon tumor engraftment, mice were randomized to study groups (5 mice per group) when the average tumor volume reached about 100 mm 3 . The ADC or vehicle controls were dosed once via intraperitoneal injection. cAC10-CPT-Lb=1 mg/kg.
+- **In Vivo Model:** HD CDX model
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### WO2007011968A2 cAC10-9a (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 27) Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** An in vivo therapy experiments with cAC10-9a was undertaken in nude mice with subcutaneous Karpas 299 ALCL tumors. The animals (5 per group)were treated with a single intravenous dose of cAC10-9a at 0.75 mg/kg (mAb component) on day 14.
+- **In Vivo Model:** Karpas-299 CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 27) Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** An in vivo therapy experiments with cAC10-9a was undertaken in nude mice with subcutaneous Karpas 299 ALCL tumors. The animals (5 per group)were treated with a single intravenous dose of cAC10-9a at 1 mg/kg (mAb component) on day 14.
+- **In Vivo Model:** Karpas-299 CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 27) Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** An in vivo therapy experiments with cAC10-9a was undertaken in nude mice with subcutaneous Karpas 299 ALCL tumors. The animals (5 per group)were treated with a single intravenous dose of cAC10-9a at 3 mg/kg (mAb component) on day 14.
+- **In Vivo Model:** Karpas-299 CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.06 nM Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 50.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 55.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Clear cell renal cell carcinoma Caki-1 cells CVCL_0234
+### CAC10-Gly5-MAY (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 14) High CD30 expression ( CD30+++ )
+- **Method Description:** CD30 Karpas-299 cells were either transplanted subcutaneously into NSG, or into CB17.SCID mice. Mice were treated intravenously 3 times weekly with 1 mg/kg preparations, beginning one day post randomization, when the tumors had reached a size ranging between 100 and 150 mm 3 .
+- **In Vivo Model:** Non-Hodgkin's lymphoma CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 16) High CD30 expression ( CD30+++ )
+- **Method Description:** CD30 Karpas-299 cells were either transplanted subcutaneously into NSG, or into CB17.SCID mice. Mice were treated intravenously 3 times weekly with 10 mg/kg ADC preparations, beginning one day post randomization, when the tumors had reached a size ranging between 100 and 150 mm 3 .
+- **In Vivo Model:** Non-Hodgkin's lymphoma CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.70 ng/mL High CD30 expression ( CD30+++ )
+- **Method Description:** Briefly, cells were plated on 96-well plates in 75 uL growth medium and grown at 37°C in a humidified incubator in a 7.5% CO 2 atmosphere. After one day incubation, 25 uL of 3.5-fold serial dilutions of each ADC in growth medium were added, typically resulting in final ADC concentrations from 20 ug/mL to 0.02 ng/mL.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### CAC10-Gly5-PNU (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 16) High CD30 expression ( CD30+++ )
+- **Method Description:** CD30 Karpas-299 cells were either transplanted subcutaneously into NSG, or into CB17.SCID mice. Mice were treated intravenously 3 times weekly with 1 mg/kg preparations, beginning one day post randomization, when the tumors had reached a size ranging between 100 and 150 mm 3 .
+- **In Vivo Model:** Non-Hodgkin's lymphoma CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 14) High CD30 expression ( CD30+++ )
+- **Method Description:** CD30 Karpas-299 cells were either transplanted subcutaneously into NSG, or into CB17.SCID mice. Mice were treated intravenously 3 times weekly with 1 mg/kg preparations, beginning one day post randomization, when the tumors had reached a size ranging between 100 and 150 mm 3 .
+- **In Vivo Model:** Non-Hodgkin's lymphoma CDX model
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.80 ng/mL High CD30 expression ( CD30+++ )
+- **Method Description:** Briefly, cells were plated on 96-well plates in 75 uL growth medium and grown at 37°C in a humidified incubator in a 7.5% CO 2 atmosphere. After one day incubation, 25 uL of 3.5-fold serial dilutions of each ADC in growth medium were added, typically resulting in final ADC concentrations from 20 ug/mL to 0.02 ng/mL.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.80 ng/mL Negative CD30 expression ( CD30- )
+- **Method Description:** Briefly, cells were plated on 96-well plates in 75 uL growth medium and grown at 37°C in a humidified incubator in a 7.5% CO 2 atmosphere. After one day incubation, 25 uL of 3.5-fold serial dilutions of each ADC in growth medium were added, typically resulting in final ADC concentrations from 20 ug/mL to 0.02 ng/mL.
+- **In Vitro Model:** B acute lymphoblastic leukemia Reh cells CVCL_1650
+### CAC10-CPT-LA (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL High CD30 expression ( CD30+++ ; 285,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Precursor T-cell acute lymphoblastic leukemia ALCL cells CVCL_A036
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.00 ng/mL High CD30 expression ( CD30+++ ; 180,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL/BVR cells CVCL_1170
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 400,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL High CD30 expression ( CD30+++ ; 320,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000.00 ng/mL Low CD30 expression ( CD30+ ; 70,000 CD30 molecules/cell)
+- **Method Description:** Serial dilutions of ADCs in cell culture media were prepared at 4x working concentrations, and 50 uL of each dilution was added to the 96-well plates. Following addition of test articles, cells were incubated for 4 days at 37°C, after which growth inhibition was assessed by the addition of CellTiter-Glo and luminescence was measured on a plate reader.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+### Brentuximab-8 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.60 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-8 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.50 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-8 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Hodgkin lymphoma L-540 cells CVCL_1362
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 4.20 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-8 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Anaplastic large cell lymphoma SU-DHL-1 cells CVCL_0538
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 5.10 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-8 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Adult acute myeloid leukemia HL-60 cells CVCL_0002
+### Brentuximab-7 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.40 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-7 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 6.40 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-7 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Hodgkin lymphoma L-540 cells CVCL_1362
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 10.20 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-7 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Adult acute myeloid leukemia HL-60 cells CVCL_0002
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 10.50 pM High CD30 expression ( CD30+++ )
+- **Method Description:** The inhibitory activity of Brentuximab-7 against cancer cell growth was evaluated in various human cancer cell lines in vitro.
+- **In Vitro Model:** Anaplastic large cell lymphoma SU-DHL-1 cells CVCL_0538
+### Crown Ether ADC 4f (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 16.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 4d (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 16.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 6b (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 19.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 4e (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 19.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 4b (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 22.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 4c (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 28.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 5a (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 30.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 4a (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 30.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 6a (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 32.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### Crown Ether ADC 5b (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 34.00 pM Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Cells were incubated for 24 h at 37°C with 5% CO 2 . The cells were treated by addition of ADCs 4a-f, 5a-b and 6a-b, dilution series (50 uL/well) and were then incubated at 37°C/5% CO 2 for a further 96 h. Cell viability assays were carried out using CellTiter-Glo Luminescent reagent as per the manufacturers instructions.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+### WO2007011968A2 cAC10-9b (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.05 nM Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 50.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Clear cell renal cell carcinoma Caki-1 cells CVCL_0234
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 50.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+### WO2007011968A2 cAC10-17 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.20 nM Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 45.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Clear cell renal cell carcinoma Caki-1 cells CVCL_0234
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 45.00 nM Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+### WO2015095755A1 cAC10-2.0 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.40 ng/mL Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL Positive CD30 expression ( CD30+++/++ ); Low CD70 expression ( CD70+ )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 65.00 ng/mL Moderate CD30 expression ( CD30++ ); Low CD70 expression ( CD70+ )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Negative CD30 expression ( CD30- ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Erythroleukemia HEL 92.1.7 cells CVCL_2481
+### WO2015095755A1 cAC10-1.3 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.80 ng/mL Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 ng/mL Positive CD30 expression ( CD30+++/++ ); Low CD70 expression ( CD70+ )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Clear cell renal cell carcinoma Caki-1 cells CVCL_0234
+### WO2015095755A1 cAC10-1006 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 1.00 ng/mL Positive CD30 expression ( CD30+++/++ ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 8.00 ng/mL Positive CD30 expression ( CD30+++/++ ); Low CD70 expression ( CD70+ )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Positive CD70 expression ( CD70+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Clear cell renal cell carcinoma Caki-1 cells CVCL_0234
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Moderate CD30 expression ( CD30++ ); Low CD70 expression ( CD70+ )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Hodgkin lymphoma L-428 cells CVCL_1361
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) > 1000 ng/mL Negative CD30 expression ( CD30- ); Negative CD70 expression ( CD70- )
+- **Method Description:** Cell-based in vitro assays are used to measure viability (proliferation), cytotoxicity,and induction of apoptosis of the ADC of the invention. Culturing the cells for a period from about 6 hours to about 5 days and measuring cell viability.
+- **In Vitro Model:** Erythroleukemia HEL 92.1.7 cells CVCL_2481
+### EphA2-targeted mAb ADC B 23 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.20 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.30 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 24 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.20 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 4.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 24 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.03 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.50 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 19 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.30 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.30 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.40 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 22 (DAR6) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 3.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+### EphA2-targeted mAb ADC B 21 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.40 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 17 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 25.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 12 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.01 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 7.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+### EphA2-targeted mAb ADC B 23 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.02 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.30 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.30 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 12 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 20 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.02 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.50 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 19 (DAR4) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.02 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.50 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 20 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.10 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.20 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 17 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 0.20 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### EphA2-targeted mAb ADC B 12 (DAR8) (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Karpas-299 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** ALK-positive anaplastic large cell lymphoma Karpas-299 cells CVCL_1324
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 1.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the L540cy cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Hodgkin's disease L540cy cells Homo sapiens
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 2.00 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MOLM-13 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Adult acute myeloid leukemia MOLM-13 cells CVCL_2119
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the 786-O cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Renal cell carcinoma 786-O cells CVCL_1051
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the A2058 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Melanoma A2058 cells CVCL_1059
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the BxPC3 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Pancreatic ductal adenocarcinoma BxPC-3 cells CVCL_0186
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the Ls174T cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Colon adenocarcinoma LS174T cells CVCL_1384
+**Experiment 8 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the MDA-MB-231 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Breast adenocarcinoma MDA-MB-231 cells CVCL_0062
+**Experiment 9 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 1000 ng/mL Positive EPHA2 expression ( EPHA2+++/++ ); Negative CD30 expression ( CD30- )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the SU-DHL-4 cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Diffuse large B-cell lymphoma SU-DHL-4 cells CVCL_0539
+**Experiment 10 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells (Brentuximab vedotin resistance). Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells (Brentuximab vedotin resistant) CVCL_1170
+**Experiment 11 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) > 4.00 pg/mL Positive EPHA2 expression ( EPHA2+++/++ ); Positive CD30 expression ( CD30+++/++ )
+- **Method Description:** Potency of compounds and ADCs was evaluated using the DEL cells. Cells were plated in a 96-well flat bottom tissue culture-treated clear polystyrene plate at ~100,000 cells per well in 200 uL with the indicated concentration of the compound or ADC.
+- **In Vitro Model:** Anaplastic large cell lymphoma DEL cells CVCL_1170
+### Brentuximab-PNUEDAGly5 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 4.80 ng/mL High HER2 expression ( HER2 +++ )
+- **Method Description:** For this, cells were plated on 96 well plates in 100 ul DMEM/10% FCS at adensity of 10 4 cells per well and assays were performed.
+- **In Vitro Model:** Breast adenocarcinoma SK-BR-3 cells CVCL_0033
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Effective Concentration (EC50) 11.00 ng/mL Low HER2 expression ( HER2 + )
+- **Method Description:** For this, cells were plated on 96 well plates in 100 ul DMEM/10% FCS at adensity of 10 4 cells per well and assays were performed.
+- **In Vitro Model:** Invasive breast carcinoma T-47D cells CVCL_0553
+
+## References
+
+1. Brentuximab Vedotin for Patients With Refractory Lymphomatoid Papulosis: An Analysis of Phase 2 Results. JAMA Dermatol. 2017 Dec 1;153(12):1302-1306.
+2. Brentuximab Vedotin Plus AVD for First-Line Treatment of Early-Stage Unfavorable Hodgkin Lymphoma (BREACH): A Multicenter, Open-Label, Randomized, Phase II Trial. J Clin Oncol. 2023 Jan 10;41(2):327-335. doi: 10.1200/JCO.21.01281. Epub 2022 Jul 22.
+3. The ECHELON-2 Trial: 5-year results of a randomized, phase III study of brentuximab vedotin with chemotherapy for CD30-positive peripheral T-cell lymphoma. Ann Oncol. 2022 Mar;33(3):288-298.
+4. Five-year PFS from the AETHERA trial of brentuximab vedotin for Hodgkin lymphoma at high risk of progression or relapse. Blood. 2018 Dec 20;132(25):2639-2642. doi: 10.1182/blood-2018-07-861641. Epub 2018 Sep 28.
+5. Pembrolizumab versus brentuximab vedotin in relapsed or refractory classical Hodgkin lymphoma (KEYNOTE-204): an interim analysis of a multicentre, randomised, open-label, phase 3 study. Lancet Oncol. 2021 Apr;22(4):512-524.
+6. A phase 2 study of brentuximab vedotin in patients with CD30-positive advanced systemic mastocytosis. Blood Adv. 2019 Aug 13;3(15):2264-2271. doi: 10.1182/bloodadvances.2019000152.
+7. A phase 2, open-label study of brentuximab vedotin in patients with CD30-expressing solid tumors. Invest New Drugs. 2019 Aug;37(4):738-747. doi: 10.1007/s10637-019-00768-6. Epub 2019 Apr 16.
+8. Brentuximab vedotin in relapsed primary mediastinal large B-cell lymphoma: results from a phase 2 clinical trial. Blood. 2017 Apr 20;129(16):2328-2330.
+9. Efficacy of Brentuximab Vedotin in Relapsed or Refractory High-CD30-Expressing Non-Hodgkin Lymphomas: Results of a Multicenter, Open-Labeled Phase II Trial. Cancer Res Treat. 2020 Apr;52(2):374-387.
+10. Objective responses in relapsed T-cell lymphomas with single-agent brentuximab vedotin. Blood. 2014 May 15;123(20):3095-100.
+11. A phase II study of brentuximab vedotin in patients with relapsed or refractory Epstein-Barr virus-positive and CD30-positive lymphomas. Haematologica. 2021 Aug 1;106(8):2277-2280.
+12. Brentuximab vedotin in the treatment of elderly Hodgkin lymphoma patients at first relapse or with primary refractory disease: a phase II study of FIL ONLUS. Haematologica. 2020 Oct 1;105(10):e512.
+13. Retreatment with brentuximab vedotin in patients with CD30-positive hematologic malignancies. J Hematol Oncol. 2014 Mar 19;7:24.
+14. Durable remissions in a pivotal phase 2 study of brentuximab vedotin in relapsed or refractory Hodgkin lymphoma. Blood. 2015 Feb 19;125(8):1236-43.
+15. Results of a pivotal phase II study of brentuximab vedotin for patients with relapsed or refractory Hodgkin's lymphoma. J Clin Oncol. 2012 Jun 20;30(18):2183-9.
+16. Brentuximab vedotin (SGN-35) in patients with relapsed or refractory systemic anaplastic large-cell lymphoma: results of a phase II study. J Clin Oncol. 2012 Jun 20;30(18):2190-6.
+17. Phase 2 study of frontline brentuximab vedotin monotherapy in Hodgkin lymphoma patients aged 60 years and older. Blood. 2015 Dec 24;126(26):2798-804.
+18. Frontline brentuximab vedotin in combination with dacarbazine or bendamustine in patients aged 60 years with HL. Blood. 2017 Dec 28;130(26):2829-2837.
+19. Nivolumab and brentuximab vedotin with or without bendamustine for R/R Hodgkin lymphoma in children, adolescents, and young adults. Blood. 2023 Apr 27;141(17):2075-2084. doi: 10.1182/blood.2022017118.
+20. Brentuximab vedotin plus doxorubicin and dacarbazine in?nonbulky limited-stage classical Hodgkin lymphoma. Blood Adv. 2023 Apr 11;7(7):1130-1136. doi: 10.1182/bloodadvances.2022008420.
+21. Brentuximab vedotin plus bendamustine in relapsed or refractory Hodgkin's lymphoma: an international, multicentre, single-arm, phase 1-2 trial. Lancet Oncol. 2018 Feb;19(2):257-266.
+22. Brentuximab vedotin (SGN-35) for relapsed CD30-positive lymphomas. N Engl J Med. 2010 Nov 4;363(19):1812-21.
+23. Nivolumab Combined With Brentuximab Vedotin for Relapsed/Refractory Primary Mediastinal Large B-Cell Lymphoma: Efficacy and Safety From the Phase II CheckMate 436 Study. J Clin Oncol. 2019 Nov 20;37(33):3081-3089.
+24. Interim results of brentuximab vedotin in combination with nivolumab in patients with relapsed or refractory Hodgkin lymphoma. Blood. 2018 Mar 15;131(11):1183-1194.
+25. Brentuximab vedotin in combination with nivolumab in relapsed or refractory Hodgkin lymphoma: 3-year study results. Blood. 2021 Aug 12;138(6):427-438.
+26. Five-year outcomes for frontline brentuximab vedotin with CHP for CD30-expressing peripheral T-cell lymphomas. Blood. 2018 May 10;131(19):2120-2124. doi: 10.1182/blood-2017-12-821009. Epub 2018 Mar 5.
+27. U.S. Food and Drug Administration approval summary: brentuximab vedotin for the treatment of relapsed Hodgkin lymphoma or relapsed systemic anaplastic large-cell lymphoma. Clin Cancer Res. 2012 Nov 1;18(21):5845-9.
+28. A phase I weekly dosing study of brentuximab vedotin in patients with relapsed/refractory CD30-positive hematologic malignancies. Clin Cancer Res. 2012 Jan 1;18(1):248-55.
+29. Phase 1/dose expansion trial of brentuximab vedotin andlenalidomide in relapsed or refractory diffuse large B-cell lymphoma. Blood. 2022 Mar 31;139(13):1999-2010.
+30. Brentuximab vedotin with chemotherapy for stage III/IV classical Hodgkin lymphoma: 3-year update of the ECHELON-1 study. Blood. 2020 Mar 5;135(10):735-742.
+31. Brentuximab vedotin with chemotherapy for stage III or IV classical Hodgkin lymphoma (ECHELON-1): 5-year update of an international, open-label, randomised, phase 3 trial. Lancet Haematol. 2021 Jun;8(6):e410-e421.
+32. Brentuximab vedotin activity in diffuse large B-cell lymphoma with CD30 undetectable by visual assessment of conventional immunohistochemistry. Leuk Lymphoma. 2017 Jul;58(7):1607-1616.
+33. Results of a Phase II Trial of Brentuximab Vedotin for CD30+ Cutaneous T-Cell Lymphoma and Lymphomatoid Papulosis. J Clin Oncol. 2015 Nov 10;33(32):3759-65.
+34. Autologous stem-cell transplantation after second-line brentuximab vedotin in relapsed or refractory Hodgkin lymphoma. Ann Oncol. 2018 Mar 1;29(3):724-730.
+35. Phase 1 multicenter trial of brentuximab vedotin for steroid-refractory acute graft-versus-host disease. Blood. 2017 Jun 15;129(24):3256-3261.
+36. Tisagenlecleucel in Adult Relapsed or Refractory Diffuse Large B-Cell Lymphoma. N Engl J Med. 2019 Jan 3;380(1):45-56.
+37. Brentuximab vedotin with gemcitabine for paediatric and young adult patients with relapsed or refractory Hodgkin's lymphoma (AHOD1221): a Children's Oncology Group, multicentre single-arm, phase 1-2 trial. Lancet Oncol. 2018 Sep;19(9):1229-1238.
+38. Dose-dense brentuximab vedotin plus ifosfamide, carboplatin, and etoposide for second-line treatment of relapsed or refractory classical Hodgkin lymphoma: a single centre, phase 1/2 study. Lancet Haematol. 2021 Aug;8(8):e562-e571.
+39. Brentuximab vedotin in combination with rituximab, cyclophosphamide, doxorubicin, and prednisone as frontline treatment for patients with CD30-positive B-cell lymphomas. Haematologica. 2021 Jun 1;106(6):1705-1713.
+40. Brentuximab vedotin combined with ABVD or AVD for patients with newly diagnosed Hodgkin's lymphoma: a phase 1, open-label, dose-escalation study. Lancet Oncol. 2013 Dec;14(13):1348-56.
+41. A phase I/II trial of brentuximab vedotin plus rituximab as frontline therapy for patients with immunosuppression-associated CD30+ and/or EBV+lymphomas. Leuk Lymphoma. 2021 Dec;62(14):3493-3500.
+42. Brentuximab Vedotin with Chemotherapy in Pediatric High-Risk Hodgkin's Lymphoma. N Engl J Med. 2022 Nov 3;387(18):1649-1660.
+43. Overall Survival with Brentuximab Vedotin in Stage III or IV Hodgkin's Lymphoma. N Engl J Med. 2022 Jul 28;387(4):310-320.
+44. Brentuximab Vedotin with Chemotherapy for Stage III or IV Hodgkin's Lymphoma. N Engl J Med. 2018 Jan 25;378(4):331-344.
+45. Brentuximab vedotin or physician's choice in CD30-positive cutaneous T-cell lymphoma (ALCANZA): an international, open-label, randomised, phase 3, multicentre trial. Lancet. 2017 Aug 5;390(10094):555-566.
+46. Randomized phase 3 ALCANZA study of brentuximab vedotin vs physician's choice in cutaneous T-cell lymphoma: final data. Blood Adv. 2021 Dec 14;5(23):5098-5106.
+47. Brentuximab vedotin plus nivolumab after autologous haematopoietic stem-cell transplantation for adult patients with high-risk classic Hodgkin lymphoma: a multicentre, phase 2 trial. Lancet Haematol. 2023 Jan;10(1):e14-e23.
+48. Brentuximab vedotin in combination with chemotherapy for pediatric patients with ALK+ ALCL: results of COG trial ANHL12P1. Blood. 2021 Jul 1;137(26):3595-3603.
+49. Phase II trial of brentuximab vedotin in relapsed/refractory germ cell tumors. Invest New Drugs. 2021 Dec;39(6):1656-1663.
+50. Brentuximab vedotin plus nivolumab as first-line therapy in older or chemotherapy-ineligible patients with Hodgkin lymphoma (ACCRU): a multicentre, single-arm, phase 2 trial. Lancet Haematol. 2020 Nov;7(11):e808-e815. doi: 10.1016/S2352-3026(20)30275-1. Epub 2020 Oct 1.
+51. Final results of brentuximab vedotin combined with ifosfamide-carboplatin-etoposide in first refractory/relapsed Hodgkin lymphoma: a lymphoma study association phase I/II study. Leuk Lymphoma. 2022 Dec;63(13):3063-3071.
+52. Protease-activated drug development. Theranostics. 2012;2(2):156-78.
+53. The novel PI3K- inhibitor TGR-1202 enhances Brentuximab Vedotin-induced Hodgkin lymphoma cell death via mitotic arrest. Leukemia. 2016 Dec;30(12):2402-2405.
+54. Augmented efficacy of brentuximab vedotin combined with ruxolitinib and/or Navitoclax in a murine model of human Hodgkin's lymphoma. Proc Natl Acad Sci U S A. 2016 Feb 9;113(6):1624-9.
+55. Combination of the anti-CD30-auristatin-E antibody-drug conjugate (SGN-35) with chemotherapy improves antitumour activity in Hodgkin lymphoma. Br J Haematol. 2008 Jul;142(1):69-73.
+56. cAC10-vcMMAE, an anti-CD30-monomethyl auristatin E conjugate with potent and selective antitumor activity. Blood. 2003 Aug 15;102(4):1458-65.
+57. https://tubulis.com/
+58. Engineering a mevalonate pathway in Escherichia coli for production of terpenoids. Nat Biotechnol. 2003 Jul;21(7):796-802.
+59. An antibody-drug conjugate that targets tissue factor exhibits potent therapeutic activity against a broad range of solid tumors. Cancer Res. 2014 Feb 15;74(4):1214-26.
+60. Brentuximab vedotin exerts profound antiproliferative and pro-apoptotic efficacy in CD30-positive as well as cocultured CD30-negative germ cell tumour cell lines. J Cell Mol Med. 2018 Jan;22(1):568-575.
+61. Intracellular activation of SGN-35, a potent anti-CD30 antibody-drug conjugate. Clin Cancer Res. 2010 Feb 1;16(3):888-97.
+62. Development of Novel Antibody-Camptothecin Conjugates. Mol Cancer Ther. 2021 Feb;20(2):329-339.
+63. Beta-glucuronide-linker drug conjugates; 2007-10-25.
+64. Highly Potent, Anthracycline-based Antibody-Drug Conjugates Generated by Enzymatic, Site-specific Conjugation. Mol Cancer Ther. 2017 May;16(5):879-892.
+65. Incorporation of Hydrophilic Macrocycles Into Drug-Linker Reagents Produces Antibody-Drug Conjugates With Enhanced in vivo Performance. Front Pharmacol. 2022 Jun 17;13:764540. doi: 10.3389/fphar.2022.764540. eCollection 2022.
+66. Methylene carbamate linkers for use with targeted-drug conjugates; 2015-06-25.
+67. Immunomodulatory antibody-drug conjugates; 2022-07-21.
+68. Novel b7-h3 binding molecules, antibody drug conjugates thereof and methods of use thereof; 2017-10-19.

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.DS_Store
+ADCdb_Obsidian/_raw.zip

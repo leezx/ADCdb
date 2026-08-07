@@ -1,0 +1,39 @@
+---
+id: "DRG0OKNPO"
+name: "WO2021044208A1 ADC A2F2 M1-6"
+entity_type: "ADC"
+source_url: "https://adcdb.idrblab.net/data/adc/details/DRG0OKNPO"
+---
+
+# WO2021044208A1 ADC A2F2 M1-6
+
+Source: https://adcdb.idrblab.net/data/adc/details/DRG0OKNPO
+
+## Related
+
+- antibody: [[Antibodies/Anti-ROR1 mAb A2F2 M1|Anti-ROR1 mAb A2F2 M1]]
+- antigen: [[Antigens/Inactive tyrosine-protein kinase transmembrane receptor ROR1 (ROR1)|Inactive tyrosine-protein kinase transmembrane receptor ROR1 (ROR1)]]
+- payload: [[Payloads/SG2000|SG2000]]
+- target: [[Targets/Human Deoxyribonucleic acid (hDNA)|Human Deoxyribonucleic acid (hDNA)]]
+- linker: [[Linkers/WO2021044208A1_ADC A2F2 M1-7 linker|WO2021044208A1_ADC A2F2 M1-7 linker]]
+
+## ADCdb Links
+
+- [[Antibodies/ANI0KWJHL|ANI0KWJHL]] ([source](https://adcdb.idrblab.net/data/antibody/details/ANI0KWJHL))
+- [[Antigens/Inactive tyrosine-protein kinase transmembrane receptor ROR1 (ROR1)|Inactive tyrosine-protein kinase transmembrane receptor ROR1 (ROR1)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0LTTSS))
+- [[Payloads/PAY0VDATG|PAY0VDATG]] ([source](https://adcdb.idrblab.net/data/payload/details/PAY0VDATG))
+- [[Targets/Human Deoxyribonucleic acid (hDNA)|Human Deoxyribonucleic acid (hDNA)]] ([source](https://adcdb.idrblab.net/data/plt/details/PATR0RIOXT))
+
+## General Information
+
+| Field              | Value                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| ADC ID             | DRG0OKNPO WO2021044208A1 ADC A2F2 M1-6                                                                               |
+| Synonyms           | WO2021044208A1 ADC A2F2 M1-7 Organization LegoChem Biosciences, Inc.; ABL Bio, Inc.                                  |
+| Drug Status        | Investigative                                                                                                        |
+| Indication         | Breast cancer Investigative Lung cancer Investigative Mantle cell lymphoma Investigative Drug-to-Antibody Ratio 2 3D |
+| Antibody Name      | Anti-ROR1 mAb A2F2 M1                                                                                                |
+| Antigen Name       | Inactive tyrosine-protein kinase transmembrane receptor ROR1 (ROR1)                                                  |
+| Payload Name       | SG2000                                                                                                               |
+| Therapeutic Target | Human Deoxyribonucleic acid (hDNA)                                                                                   |
+| Linker Name        | WO2021044208A1_ADC A2F2 M1-7 linker                                                                                  |

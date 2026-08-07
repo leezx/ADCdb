@@ -1,0 +1,184 @@
+# Query groups used for initial collection and monitoring.
+# Keep this file simple: the bundled scripts parse this subset of YAML.
+
+broad_adc:
+  - '"antibody drug conjugate"'
+  - '"antibody-drug conjugate"'
+  - '"antibody drug conjugates"'
+  - '"antibody-drug conjugates"'
+  - '"ADC patent"'
+  - '"ADC patents"'
+  - '"ADC" "payload"'
+  - '"ADC" "linker"'
+  - '"ADC" "drug antibody ratio"'
+  - '"ADC" "site-specific conjugation"'
+
+linker:
+  - '"antibody drug conjugate linker"'
+  - '"cleavable linker antibody drug conjugate"'
+  - '"non-cleavable linker antibody drug conjugate"'
+  - '"Val-Cit linker ADC"'
+  - '"glucuronide linker ADC"'
+  - '"hydrophilic linker ADC"'
+  - '"linker-payload antibody drug conjugate"'
+  - '"peptide linker antibody drug conjugate"'
+  - '"disulfide linker antibody drug conjugate"'
+  - '"sulfatase cleavable linker ADC"'
+
+payload:
+  - '"antibody drug conjugate payload"'
+  - '"auristatin antibody drug conjugate"'
+  - '"maytansinoid antibody drug conjugate"'
+  - '"DXd antibody drug conjugate"'
+  - '"exatecan antibody drug conjugate"'
+  - '"PBD antibody drug conjugate"'
+  - '"camptothecin antibody drug conjugate"'
+  - '"topoisomerase I inhibitor antibody drug conjugate"'
+  - '"duocarmycin antibody drug conjugate"'
+  - '"amanitin antibody drug conjugate"'
+  - '"calicheamicin antibody drug conjugate"'
+
+conjugation_dar_process:
+  - '"site specific antibody drug conjugate patent"'
+  - '"DAR antibody drug conjugate"'
+  - '"drug antibody ratio patent"'
+  - '"homogeneous antibody drug conjugate"'
+  - '"engineered cysteine ADC"'
+  - '"ADC manufacturing process patent"'
+  - '"antibody drug conjugate formulation"'
+  - '"antibody drug conjugate purification"'
+  - '"site specific ADC"'
+  - '"glycan antibody drug conjugate"'
+  - '"transglutaminase antibody drug conjugate"'
+
+whole_adc_combination:
+  - '"antibody drug conjugate cancer"'
+  - '"antibody drug conjugate linker payload"'
+  - '"bispecific antibody drug conjugate"'
+  - '"dual payload antibody drug conjugate"'
+  - '"masked antibody drug conjugate"'
+  - '"antibody drug conjugate combination therapy"'
+  - '"antibody drug conjugate dosing regimen"'
+  - '"targeted antibody drug conjugate"'
+  - '"probody drug conjugate"'
+  - '"conditional antibody drug conjugate"'
+  - '"tumor activated antibody drug conjugate"'
+
+targets:
+  - HER2
+  - TROP2
+  - Nectin-4
+  - B7-H3
+  - CEACAM5
+  - EGFR
+  - HER3
+  - FRa
+  - CD30
+  - CD33
+  - CD22
+  - CD79b
+  - Tissue factor
+  - CLDN18.2
+  - MUC1
+  - MUC16
+  - MET
+  - LIV-1
+  - ROR1
+  - TWEAKR
+  - Fn14
+  - TNFRSF12A
+  - B7H4
+  - HER-2
+  - ERBB2
+  - ERBB3
+  - FOLR1
+  - NaPi2b
+  - SLC34A2
+  - PSMA
+  - CD19
+  - CD20
+  - CD25
+  - CD37
+  - CD38
+  - CD56
+  - CD70
+  - CD71
+  - CD74
+  - CD123
+  - CD138
+  - DLL3
+  - PTK7
+  - AXL
+  - c-Met
+  - mesothelin
+  - MSLN
+  - GPC3
+  - 5T4
+  - SLC39A6
+
+companies:
+  - Seagen
+  - Seattle Genetics
+  - ImmunoGen
+  - Daiichi Sankyo
+  - AstraZeneca
+  - Gilead
+  - Mersana
+  - Sutro
+  - ProfoundBio
+  - DualityBio
+  - Kelun
+  - LegoChem
+  - ADC Therapeutics
+  - Ambrx
+  - Synaffix
+  - Byondis
+  - Tubulis
+  - BioNTech ADC
+  - RemeGen
+  - Hansoh
+  - BeiGene ADC
+  - Pfizer ADC
+  - Roche ADC
+  - Genentech ADC
+  - AbbVie ADC
+  - Merck ADC
+  - Astellas ADC
+  - BMS ADC
+  - Novartis ADC
+  - BioAtla
+  - Zymeworks ADC
+  - NBE Therapeutics
+  - Adcendo
+  - Mythic Therapeutics
+  - Hengrui ADC
+  - CSPC ADC
+  - Lepu Biopharma
+  - Mabwell ADC
+
+payload_terms:
+  - MMAE
+  - MMAF
+  - auristatin
+  - maytansinoid
+  - DM1
+  - DM4
+  - DXd
+  - exatecan
+  - camptothecin
+  - topoisomerase I inhibitor
+  - PBD
+  - duocarmycin
+  - amanitin
+  - calicheamicin
+  - deruxtecan
+  - SN-38
+  - SN38
+  - belotecan
+  - anthracycline
+  - pyrrolobenzodiazepine
+  - tubulysin
+  - eribulin
+  - doxorubicin
+  - maytansine
+  - amatoxin

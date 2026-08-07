@@ -1,0 +1,42 @@
+timestamp	lookback_days	queries_run	records_seen	new_records	skip_downloads
+2026-04-30T16:10:07+00:00	21	2	0	0	True
+2026-04-30T16:10:27+00:00	21	2	0	0	True
+2026-04-30T16:11:55+00:00	21	3	15	15	True
+2026-04-30T16:12:33+00:00	21	2	6	0	False
+2026-04-30T16:13:12+00:00	21	2	6	0	False
+2026-04-30T16:14:02+00:00	21	3	15	0	False
+2026-04-30T16:22:34+00:00	21	110	390	375	True
+2026-04-30T16:43:45+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-04-30T16:43:45+00:00	21	216	0	0	True
+2026-04-30T17:43:49+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-04-30T17:43:49+00:00	21	216	0	0	True
+2026-04-30T18:43:54+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-04-30T18:43:54+00:00	21	216	0	0	True
+2026-05-01T00:46:07+00:00	21	partial	60	unknown	True	stopped_after_1_failed_queries
+2026-05-01T00:46:07+00:00	21	216	60	8	True
+2026-05-01T00:49:35+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T00:49:35+00:00	21	216	0	0	True
+2026-05-01T03:49:40+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T03:49:40+00:00	21	216	0	0	True
+2026-05-01T06:49:44+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T06:49:44+00:00	21	216	0	0	True
+2026-05-01T09:49:47+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T09:49:47+00:00	21	216	0	0	True
+2026-05-01T12:49:51+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T12:49:52+00:00	21	216	0	0	True
+2026-05-01T15:49:57+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T15:49:57+00:00	21	216	0	0	True
+2026-05-01T18:50:00+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-01T18:50:00+00:00	21	216	0	0	True
+2026-05-03T00:53:23+00:00	21	partial	20	unknown	True	stopped_after_1_failed_queries
+2026-05-03T00:53:23+00:00	21	216	20	0	True
+2026-05-03T00:57:06+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-03T00:57:07+00:00	21	216	0	0	True
+2026-05-03T06:57:11+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-03T06:57:11+00:00	21	216	0	0	True
+2026-05-03T12:57:15+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-03T12:57:15+00:00	21	216	0	0	True
+2026-05-03T18:57:19+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-03T18:57:19+00:00	21	216	0	0	True
+2026-05-04T00:57:24+00:00	21	partial	0	unknown	True	stopped_after_1_failed_queries
+2026-05-04T00:57:24+00:00	21	216	0	0	True

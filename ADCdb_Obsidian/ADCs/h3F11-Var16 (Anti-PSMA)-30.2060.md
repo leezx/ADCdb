@@ -1,0 +1,41 @@
+---
+id: "DRG0EERWJ"
+name: "h3/F11-Var16 (Anti-PSMA)-30.2060"
+entity_type: "ADC"
+source_url: "https://adcdb.idrblab.net/data/adc/details/DRG0EERWJ"
+---
+
+# h3/F11-Var16 (Anti-PSMA)-30.2060
+
+Source: https://adcdb.idrblab.net/data/adc/details/DRG0EERWJ
+
+## Related
+
+- antibody: [[Antibodies/Anti-PSMA mAb h3F11-Var16|Anti-PSMA mAb h3/F11-Var16]]
+- antigen: [[Antigens/Glutamate carboxypeptidase 2 (FOLH1)|Glutamate carboxypeptidase 2 (FOLH1)]]
+- payload: [[Payloads/Amanitin 30.206|Amanitin 30.206]]
+- target: [[Targets/DNA-directed RNA polymerase II subunit RPB2 (POLR2B) DNA-directed RNA polymerase III subunit RPC7 (POLR3G)|DNA-directed RNA polymerase II subunit RPB2 (POLR2B); DNA-directed RNA polymerase III subunit RPC7 (POLR3G)]]
+- linker: [[Linkers/Mc-Val-Ala-PABC|Mc-Val-Ala-PABC]]
+
+## ADCdb Links
+
+- [[Antibodies/ANI0UNQYF|ANI0UNQYF]] ([source](https://adcdb.idrblab.net/data/antibody/details/ANI0UNQYF))
+- [[Antigens/Glutamate carboxypeptidase 2 (FOLH1)|Glutamate carboxypeptidase 2 (FOLH1)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0ZHRFU))
+- [[Payloads/PAY0ZLLVK|PAY0ZLLVK]] ([source](https://adcdb.idrblab.net/data/payload/details/PAY0ZLLVK))
+- [[Targets/DNA-directed RNA polymerase II subunit RPB2 (POLR2B) DNA-directed RNA polymerase III subunit RPC7 (POLR3G)|DNA-directed RNA polymerase II subunit RPB2 (POLR2B); DNA-directed RNA polymerase III subunit RPC7 (POLR3G)]] ([source](https://adcdb.idrblab.net/data/plt/details/PATR0QBNMQ))
+- [[Linkers/Linker Info|Linker
+ Info]] ([source](https://adcdb.idrblab.net/data/linker/details/LIN0OXUQL))
+
+## General Information
+
+| Field              | Value                                                                                                       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| ADC ID             | DRG0EERWJ h3/F11-Var16 (Anti-PSMA)-30.2060                                                                  |
+| Synonyms           | h3/F11-Var16(AntiPSMA) 30.2060 Organization Heidelberg Pharma Research GmbH                                 |
+| Drug Status        | Investigative                                                                                               |
+| Indication         | Prostate cancer Investigative Drug-to-Antibody Ratio 2                                                      |
+| Antibody Name      | Anti-PSMA mAb h3/F11-Var16                                                                                  |
+| Antigen Name       | Glutamate carboxypeptidase 2 (FOLH1)                                                                        |
+| Payload Name       | Amanitin 30.206                                                                                             |
+| Therapeutic Target | DNA-directed RNA polymerase II subunit RPB2 (POLR2B); DNA-directed RNA polymerase III subunit RPC7 (POLR3G) |
+| Linker Name        | Mc-Val-Ala-PABC Info Conjugate Type Site-specific conjugation through the engineered cysteine (THIOMAB).    |

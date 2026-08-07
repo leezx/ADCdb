@@ -1,0 +1,41 @@
+---
+id: "ANI0KNPXN"
+name: "scFv(F8) antibody"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0KNPXN"
+---
+
+# scFv(F8) antibody
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0KNPXN
+
+## ADCdb Links
+
+- [[Antigens/T-cell surface glycoprotein CD8 alpha chain (CD8A) T-cell surface glycoprotein CD8 alpha chain (CD8A)|T-cell surface glycoprotein CD8 alpha chain (CD8A); T-cell surface glycoprotein CD8 alpha chain (CD8A)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0OBBOA))
+- [[ADCs/F8-TNF|F8-TNF]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0WGZXJ))
+
+## General Information
+
+| Field            | Value                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| Antibody ID      | ANI0KNPXN                                                                                              |
+| Antibody Name    | scFv(F8) antibody                                                                                      |
+| Antibody Type    | Monoclonal antibody (mAb)                                                                              |
+| Antibody Subtype | Humanized IgG scFv                                                                                     |
+| Antigen Name     | T-cell surface glycoprotein CD8 alpha chain (CD8A); T-cell surface glycoprotein CD8 alpha chain (CD8A) |
+
+## Related ADC Activity Data
+
+### F8-TNF (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 86.70% (Day 21) Moderate CD8 expression ( CD8 ++ )
+- **Method Description:** CT26 Cells were implanted subcutaneously (s.c.) in the right flank of the mice using 3x10 6 cells per animal. Mice received three injections of either 1 g F8-TNF (WEHI-164 tumor-bearing mice) or 2.5 g (CT26 tumor-bearing mice) every 48 h starting on the day after vaccination.
+- **In Vivo Model:** CT26 CDX model
+- **In Vitro Model:** Colon carcinoma CT26 cells CVCL_7254
+
+## References
+
+1. Antibody-based Delivery of TNF to the Tumor Neovasculature Potentiates the Therapeutic Activity of a Peptide Anticancer Vaccine. Clin Cancer Res. 2019 Jan 15;25(2):698-709. doi: 10.1158/1078-0432.CCR-18-1728. Epub 2018 Oct 16.

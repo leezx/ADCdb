@@ -1,0 +1,9 @@
+lookback_days_default: 21
+download_categories:
+  - linker
+  - payload
+  - conjugation_dar_process
+  - whole_adc_combination
+link_only_categories:
+  - antibody_link_only
+

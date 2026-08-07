@@ -1,0 +1,1335 @@
+---
+id: "TAR0GLSWQ"
+name: "CD276 antigen (CD276)"
+entity_type: "Antigen"
+source_url: "https://adcdb.idrblab.net/data/abt/details/TAR0GLSWQ"
+---
+
+# CD276 antigen (CD276)
+
+Source: https://adcdb.idrblab.net/data/abt/details/TAR0GLSWQ
+
+## ADCdb Links
+
+- [gene-symbol-report](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19137)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0QVFVF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HRDVK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BOYYY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MGQKQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SPLWS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HNWHC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AQORB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BFWCL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BDVKC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XFHVR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0EVRLU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AKJZA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OWAQF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QBJLN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UKFWU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FOEZF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RBLOG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WJQKX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AWLEK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GNJAL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JBUPO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FXCQC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WOVGR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MFTOU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LLCYT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HPDNL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZQYQO)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0CQDJU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MEUDU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FQMJV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VANAK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0EXSTY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CAWIM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JMMDK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LDATK)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0KLWUW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AEKGZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LWHRD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JDYRQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HDBOR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LDRGB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ESWCK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OIPAV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NVSHZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TUSXR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YYFAV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JNEIA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WACJD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0INKSA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OWTBL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UKTFP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AMSYG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SYZJU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CHCIE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JPQPN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TQUTX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XMUFR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MHGEY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IVZPH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OMEDY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IXNKU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XFKBU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DZWME)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SSMYI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OTNSC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MRBDJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FGNIW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZZSIP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MGZTS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FNQSW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CFRYZ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0GAVYY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ICMWF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UNOJU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JLOLU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FZBBE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HJRWO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CLNIN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FLBQV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PPMSF)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0QMOAY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UPDIB)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0WUWFY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QBHCA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LNYSY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FHSSN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JKBCS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IMSRW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NNWLK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AMBTD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MEZWI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LWBKC)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0MFPWW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XDFDW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KNKJC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UMZIZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UBZFY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OEDOT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TYKRQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FZACB)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0BGLEH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QKCSG)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0YTARZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BSXLS)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0NAYPF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JAZAY)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0DSNPZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NUKBB)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ZBAYV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QFMUH)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ZSXCF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RNBLS)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0KIWJK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZYKGV)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0KQZUA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IDMTW)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0TRXII)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VNTSD)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0SAMUD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NGUFC)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ITFUE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HVHRQ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0CSRRT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QMQFL)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0HETLX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XHGCX)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0MUCXM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FWUQF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WYNIR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0EHQZF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PHKKV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RQVGN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UEPZK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WSTCX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WJMOW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NRTNU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MHPZY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WEMVA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CQNSX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YPTUZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DHUHV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SYMAL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LVKKV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DOLSA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PZWKP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AVZZX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0AHLGV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BZKNQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CKJBU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WUXPI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CJOJO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NGASM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IQWFE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DNVTX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NIQWT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LUTCK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SGDCD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GSSSI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JNCAE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SCUWC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MQAMA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TJHRX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QEIIT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FCTQU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GKPSK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SJZBR)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0DRXZT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XTMJF)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0HNFHN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XUUSQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XGIHT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GRMKZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ERIVA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UMVJG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YBFIJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KYEXT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ARIXM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NPSMZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZVEXS)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TKQSQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DXDHU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RXWMU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZWVOT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SJVXL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PCYWO)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0BMAGR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VRDFH)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0PPQZY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FRWPD)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0XYNEB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BRISR)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0XEYVY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VWATR)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0IHBRM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LKPSU)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0FBNXH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DQZOZ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ZKGXW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FOOYF)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0PXIOU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PCNRJ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0PGRPK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MTVHH)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0SECZH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OHPNA)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0VVYVC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MOTTL)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0AGWKB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FRNVU)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0WABIQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZZWNQ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0YNHQU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ERRNB)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0FMFNT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MVHNA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YQUDK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PRSJR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QUZHD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FPBKT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KWJGP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JZQWX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YOOKM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DQVFI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0RQUYH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SWZLZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZVZLV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SCMIX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PNRPE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JDNBK)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0LNFRO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BKXLI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GBOFG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZUEKL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XEBII)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MHRGW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UIHHE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QKUBL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IRGDW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GEORL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CVETH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CNLPQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TISPB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BYIAX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SDQVO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DSVQT)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0USAKX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XXOQT)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ONUNR)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0MOYWK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LRCUN)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0GGAWP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IANNH)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0TIBJG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CMHLG)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0JYTME)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WMLGT)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0RFIXU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FKVKZ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0IPZXU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NNKAQ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0APTHX)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0OGZEE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YKODJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GDMWD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ETPUC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NBPRQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UQTJD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QVLPN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SHPRV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GOSSN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DVUDJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KGYQG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XHQUE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PUPTP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WKPUN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CFGDY)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QSXWO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WLDST)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DHBSH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZEIAH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ETUFG)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0YYSBO)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KRKBL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TWGUE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FAESC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XGCRN)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FJCCJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TBQPE)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0MEQWJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DNMOA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PDHXH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UCLXZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0INPJI)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JDVLA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PRPNM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PQMZD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IUWGF)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0VYBMB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NTKKD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QHYWD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0NUSZB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0FRDFP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GRSXM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UGDYM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0CHPDV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0GWDSM)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JNFZT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PUKSL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HYLMC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0IWEAQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KFMWE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XMSKP)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BYHEB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PIRUU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DVTUT)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ZCCGD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0TBCEQ)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0GBXOD)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0UGBDK)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0JSQUA)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0EIMTT)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0DEGEG)
+- [Antibody Info](https://adcdb.idrblab.net/data/antibody/details/ANI0ZCCGZ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0PULZQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0XMYPL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ZAFBL)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LYQEA)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0HGHXE)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WFJHW)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0QDDHH)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SYLKC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0POAPJ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0KHNLU)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0SDYOQ)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0LTXQB)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0BPIAV)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0ROPTC)
+- [ADC Info](https://adcdb.idrblab.net/data/adc/details/DRG0WRGGL)
+
+## General Information
+
+| Field         | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Antigen ID    | TAR0GLSWQ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Antigen Name  | CD276 antigen (CD276)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Gene Name     | CD276                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Gene ID       | 80381                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Synonym       | B7H3; PSEC0249; UNQ309; PRO352; 4Ig-B7-H3;B7 homolog 3;Costimulatory molecule;CD_antigen=CD276                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Family        | HIV-1 env protein family                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Function      | May participate in the regulation of T-cell-mediated immune response. May play a protective role in tumor cells by inhibiting natural-killer mediated cell lysis as well as a role of marker for detection of neuroblastoma cells. May be involved in the development of acute and chronic transplant rejection and in the regulation of lymphocytic activity at mucosal surfaces. Could also play a key role in providing the placenta and fetus with a suitable immunological environment throughout pregnancy. Both isoform 1 and isoform 2 appear to be redundant in their ability to modulate CD4 T-cell responses. Isoform 2 is shown to enhance the induction of cytotoxic T-cells and selectively stimulates interferon gamma production in the presence of T-cell receptor signaling. |
+| Uniprot Entry | CD276_HUMAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| HGNC ID       | HGNC:19137                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| KEGG ID       | hsa:80381                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+### Protein Sequence
+
+```
+MLRRRGSPGMGVHVGAALGALWFCLTGALEVQVPEDPVVALVGTDATLCCSFSPEPGFSL
+AQLNLIWQLTDTKQLVHSFAEGQDQGSAYANRTALFPDLLAQGNASLRLQRVRVADEGSF
+TCFVSIRDFGSAAVSLQVAAPYSKPSMTLEPNKDLRPGDTVTITCSSYQGYPEAEVFWQD
+GQGVPLTGNVTTSQMANEQGLFDVHSILRVVLGANGTYSCLVRNPVLQQDAHSSVTITPQ
+RSPTGAVEVQVPEDPVVALVGTDATLRCSFSPEPGFSLAQLNLIWQLTDTKQLVHSFTEG
+RDQGSAYANRTALFPDLLAQGNASLRLQRVRVADEGSFTCFVSIRDFGSAAVSLQVAAPY
+SKPSMTLEPNKDLRPGDTVTITCSSYRGYPEAEVFWQDGQGVPLTGNVTTSQMANEQGLF
+DVHSVLRVVLGANGTYSCLVRNPVLQQDAHGSVTITGQPMTFPPEALWVTVGLSVCLIAL
+LVALAFVCWRKIKQSCEEENAGAEDQDGEGEGSKTALQPLKHSDSKEDDGQEIA
+```
+
+## Related ADCs
+
+- 1D1-01
+- 1D1-01-ADC-Tb1-1
+- 1D1-01-ADC-Tb1-1 payload
+- 1D1-01-ADC-Tb1-1 linker
+- 1D1-01-ADC-Tb1-10
+- 1D1-01-ADC-Tb1-10 payload
+- 1D1-01-ADC-Tb1-10 linker
+- 1D1-01-ADC-Tb1-11
+- 1D1-01-ADC-Tb1-11 payload
+- 1D1-01-ADC-Tb1-11 linker
+- 1D1-01-ADC-Tb1-12
+- 1D1-01-ADC-Tb1-12 payload
+- 1D1-01-ADC-Tb1-12 linker
+- 1D1-01-ADC-Tb1-13
+- 1D1-01-ADC-Tb1-13 payload
+- 1D1-01-ADC-Tb1-13 linker
+- 1D1-01-ADC-Tb1-14
+- 1D1-01-ADC-Tb1-14 payload
+- 1D1-01-ADC-Tb1-14 linker
+- 1D1-01-ADC-Tb1-15
+- 1D1-01-ADC-Tb1-15 payload
+- 1D1-01-ADC-Tb1-15 linker
+- 1D1-01-ADC-Tb1-16
+- 1D1-01-ADC-Tb1-16 payload
+- 1D1-01-ADC-Tb1-16 linker
+- 1D1-01-ADC-Tb1-17
+- 1D1-01-ADC-Tb1-17 payload
+- 1D1-01-ADC-Tb1-17 linker
+- 1D1-01-ADC-Tb1-18
+- 1D1-01-ADC-Tb1-18 payload
+- 1D1-01-ADC-Tb1-18 linker
+- 1D1-01-ADC-Tb1-19
+- 1D1-01-ADC-Tb1-19 payload
+- 1D1-01-ADC-Tb1-19 linker
+- 1D1-01-ADC-Tb1-2
+- 1D1-01-ADC-Tb1-2 payload
+- 1D1-01-ADC-Tb1-2 linker
+- 1D1-01-ADC-Tb1-20
+- 1D1-01-ADC-Tb1-20 payload
+- 1D1-01-ADC-Tb1-20 linker
+- 1D1-01-ADC-Tb1-21
+- 1D1-01-ADC-Tb1-21 payload
+- 1D1-01-ADC-Tb1-21 linker
+- 1D1-01-ADC-Tb1-22
+- 1D1-01-ADC-Tb1-22 payload
+- 1D1-01-ADC-Tb1-22 linker
+- 1D1-01-ADC-Tb1-23
+- 1D1-01-ADC-Tb1-23 payload
+- 1D1-01-ADC-Tb1-23 linker
+- 1D1-01-ADC-Tb1-24
+- 1D1-01-ADC-Tb1-24 payload
+- 1D1-01-ADC-Tb1-24 linker
+- 1D1-01-ADC-Tb1-25
+- 1D1-01-ADC-Tb1-25 payload
+- 1D1-01-ADC-Tb1-25 linker
+- 1D1-01-ADC-Tb1-26
+- 1D1-01-ADC-Tb1-26 payload
+- 1D1-01-ADC-Tb1-26 linker
+- 1D1-01-ADC-Tb1-3
+- 1D1-01-ADC-Tb1-3 payload
+- 1D1-01-ADC-Tb1-3 linker
+- 1D1-01-ADC-Tb1-4
+- 1D1-01-ADC-Tb1-4 payload
+- 1D1-01-ADC-Tb1-4 linker
+- 1D1-01-ADC-Tb1-5
+- 1D1-01-ADC-Tb1-5 payload
+- 1D1-01-ADC-Tb1-5 linker
+- 1D1-01-ADC-Tb1-6
+- 1D1-01-ADC-Tb1-6 payload
+- 1D1-01-ADC-Tb1-6 linker
+- 1D1-01-ADC-Tb1-7
+- 1D1-01-ADC-Tb1-7 payload
+- 1D1-01-ADC-Tb1-7 linker
+- 1D1-01-ADC-Tb1-8
+- 1D1-01-ADC-Tb1-8 payload
+- 1D1-01-ADC-Tb1-8 linker
+- 1D1-01-ADC-Tb1-9
+- 1D1-01-ADC-Tb1-9 payload
+- 1D1-01-ADC-Tb1-9 linker
+- 1F9DS
+- WO2020063676A1 ADC-25
+- WO2020063676A1_ADC-25 payload
+- WO2020063676A1_ADC-25 linker
+- WO2020063676A1 ADC-26
+- WO2020063676A1_ADC-26 payload
+- WO2020063676A1_ADC-26 linker
+- WO2020063676A1 ADC-27
+- WO2020063676A1_ADC-27 payload
+- WO2020063676A1_ADC-27 linker
+- WO2020063676A1 ADC-28
+- WO2020063676A1_ADC-28 payload
+- WO2020063676A1_ADC-28 linker
+- WO2020063676A1 ADC-29
+- WO2020063676A1_ADC-29 payload
+- WO2020063676A1_ADC-29 linker
+- WO2020063676A1 ADC-30
+- WO2020063676A1_ADC-30 payload
+- WO2020063676A1_ADC-30 linker
+- WO2020063676A1 ADC-31
+- WO2020063676A1_ADC-31 payload
+- WO2020063676A1_ADC-31 linker
+- Anti-B7H3 mAb 2E3-02
+- B7H3-ADC-01
+- B7H3-ADC-01 payload
+- B7H3-ADC-01 linker
+- B7H3-ADC-02
+- B7H3-ADC-02 payload
+- B7H3-ADC-02 linker
+- B7H3-ADC-03
+- B7H3-ADC-03 payload
+- B7H3-ADC-03 linker
+- B7H3-ADC-04 (DAR8)
+- B7H3-ADC-04 payload
+- B7H3-ADC-04 linker
+- B7H3-ADC-05 (DAR4)
+- B7H3-ADC-05(DAR8) payload
+- B7H3-ADC-05(DAR4) linker
+- B7H3-ADC-05 (DAR8)
+- B7H3-ADC-05(DAR8) payload
+- B7H3-ADC-05(DAR8) linker
+- B7H3-ADC-06 (DAR8)
+- B7H3-ADC-06 payload
+- B7H3-ADC-06 linker
+- B7H3-ADC-07 (DAR2)
+- B7H3-ADC-07(DAR2) payload
+- B7H3-ADC-07(DAR2) linker
+- B7H3-ADC-07 (DAR4)
+- B7H3-ADC-07(DAR4) payload
+- B7H3-ADC-07(DAR4) linker
+- B7H3-ADC-07 (DAR6)
+- B7H3-ADC-07(DAR6) payload
+- B7H3-ADC-07(DAR6) linker
+- B7H3-ADC-07 (DAR8)
+- B7H3-ADC-07(DAR8) payload
+- B7H3-ADC-07(DAR8) linker
+- B7H3-ADC-08 (DAR4)
+- B7H3-ADC-08(DAR4) payload
+- B7H3-ADC-08(DAR4) linker
+- B7H3-ADC-08 (DAR8)
+- B7H3-ADC-08(DAR8) payload
+- B7H3-ADC-08(DAR8) linker
+- B7H3-ADC-09 (DAR8)
+- B7H3-ADC-09 payload
+- B7H3-ADC-09 linker
+- B7H3-ADC-10 (DAR8)
+- B7H3-ADC-10 payload
+- B7H3-ADC-10 linker
+- B7H3-ADC-11 (DAR8)
+- B7H3-ADC-11 payload
+- B7H3-ADC-11 linker
+- B7H3-ADC-12 (DAR8)
+- B7H3-ADC-12 payload
+- B7H3-ADC-12 linker
+- B7H3-ADC-13 (DAR8)
+- B7H3-ADC-13 payload
+- B7H3-ADC-13 linker
+- B7H3-ADC-14 (DAR8)
+- B7H3-ADC-14 payload
+- B7H3-ADC-14 linker
+- B7H3-ADC-15 (DAR4)
+- B7H3-ADC-15(DAR4) payload
+- B7H3-ADC-15(DAR4) linker
+- B7H3-ADC-15 (DAR8)
+- B7H3-ADC-15(DAR8) payload
+- B7H3-ADC-15(DAR8) linker
+- B7H3-ADC-16 (DAR8)
+- B7H3-ADC-16 payload
+- B7H3-ADC-16 linker
+- B7H3-ADC-17
+- B7H3-ADC-17 payload
+- B7H3-ADC-17 linker
+- B7H3-ADC-18 (DAR8)
+- B7H3-ADC-18 payload
+- B7H3-ADC-18 linker
+- B7H3-ADC-19 (DAR8)
+- B7H3-ADC-19 payload
+- B7H3-ADC-19 linker
+- B7H3-ADC-20 (DAR8)
+- B7H3-ADC-20 payload
+- B7H3-ADC-20 linker
+- B7H3-ADC-22 (DAR8)
+- B7H3-ADC-22 payload
+- B7H3-ADC-22 linker
+- B7H3-ADC-23 (DAR8)
+- B7H3-ADC-23 payload
+- B7H3-ADC-23 linker
+- B7H3-ADC-24 (DAR8)
+- B7H3-ADC-24 payload
+- B7H3-ADC-24 linker
+- B7H3-ADC-25 (DAR8)
+- B7H3-ADC-25 payload
+- B7H3-ADC-25 linker
+- B7H3-ADC-27 (DAR8)
+- B7H3-ADC-27 payload
+- B7H3-ADC-27 linker
+- B7H3-ADC-28 (DAR8)
+- B7H3-ADC-28 payload
+- B7H3-ADC-28 linker
+- B7H3-ADC-32 (DAR8)
+- B7H3-ADC-32 payload
+- B7H3-ADC-32 linker
+- B7H3-ADC-33 (DAR4)
+- B7H3-ADC-33(DAR4) payload
+- B7H3-ADC-33(DAR4) linker
+- B7H3-ADC-33 (DAR8)
+- B7H3-ADC-33(DAR8) payload
+- B7H3-ADC-33(DAR8) linker
+- Anti-CD276 mAb h1702DS
+- WO2020063673A1 ADC-1
+- WO2020063673A1_ADC-1 payload
+- WO2020063673A1_ADC-1 linker
+- WO2020063673A1 ADC-2
+- WO2020063673A1_ADC-2 payload
+- WO2020063673A1_ADC-2 linker
+- WO2020063673A1 ADC-3
+- WO2020063673A1_ADC-3 payload
+- WO2020063673A1_ADC-3 linker
+- WO2020063673A1 ADC-4
+- WO2020063673A1_ADC-4 payload
+- WO2020063673A1_ADC-4 linker
+- WO2020063673A1 ADC-5
+- WO2020063673A1_ADC-5 payload
+- WO2020063673A1_ADC-5 linker
+- WO2020063673A1 ADC-6
+- WO2020063673A1_ADC-6 payload
+- WO2020063673A1_ADC-6 linker
+- WO2020063673A1 ADC-7
+- WO2020063673A1_ADC-7 payload
+- WO2020063673A1_ADC-7 linker
+- WO2020063673A1 ADC-8
+- WO2020063673A1_ADC-8 payload
+- WO2020063673A1_ADC-8 linker
+- Anti-CD276 mAb m276-SL
+- M276-SL-PBD
+- PBD dimer
+- Human Deoxyribonucleic acid (hDNA)
+- Mc-Val-Ala
+- Anti-human CD276 mAb
+- B7H3-EC1
+- NAMPT inhibitor 4
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Maleimido-caproyl
+- B7H3-EC2
+- NAMPT inhibitor 6
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Maleimido-caproyl
+- B7H3-EC3 DAR4.1
+- NAMPT inhibitor 4
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Mc-Val-Ala
+- B7H3-EC3 DAR7.8
+- NAMPT inhibitor 4
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Mc-Val-Ala
+- B7H3-EC4
+- NAMPT inhibitor 5
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Open-chain glycine maleimide
+- B7H3-EC5
+- NAMPT inhibitor 6
+- Nicotinamide phosphoribosyltransferase (NAMPT)
+- Open-chain glycine maleimide-PEG
+- CN109069633A ADC-1
+- CN109069633A ADC-1 payload
+- CN109069633A ADC-1 linker
+- CN109069633A ADC-2
+- CN109069633A ADC-2 payload
+- CN109069633A ADC-2 linker
+- CN109069633A ADC-3
+- CN109069633A ADC-3 payload
+- CN109069633A ADC-3 linker
+- B7H3-C1
+- B7H3-ADC-21 (DAR2)
+- B7H3-ADC-21(DAR2) payload
+- B7H3-ADC-21(DAR2) linker
+- B7H3-ADC-21 (DAR6)
+- B7H3-ADC-21(DAR6) payload
+- B7H3-ADC-21(DAR6) linker
+- B7H3-ADC-21 (DAR8)
+- B7H3-ADC-21(DAR8) payload
+- B7H3-ADC-21(DAR8) linker
+- B7H3-C1-ADC-05 (DAR4)
+- B7H3-C1-ADC-05(DAR4) payload
+- B7H3-C1-ADC-05(DAR4) linker
+- B7H3-C1-ADC-07 (DAR4)
+- B7H3-C1-ADC-07(DAR4) payload
+- B7H3-C1-ADC-07(DAR4) linker
+- B7H3-C1-ADC-08 (DAR4)
+- B7H3-C1-ADC-08(DAR4) payload
+- B7H3-C1-ADC-08(DAR4) linker
+- B7H3-C1-ADC-21 (DAR4)
+- B7H3-C1-ADC-21(DAR4) payload
+- B7H3-C1-ADC-21(DAR4) linker
+- chAb11
+- chAb11-CZ
+- chAb11-CZ payload
+- chAb11-CZ linker
+- chAb13
+- chAb13-CZ
+- chAb13-CZ payload
+- chAb13-CZ linker
+- chAb14
+- chAb14-CZ
+- chAb14-CZ payload
+- chAb14-CZ linker
+- chAb16
+- chAb16-CZ
+- chAb16-CZ payload
+- chAb16-CZ linker
+- chAb18
+- chAb18-CZ
+- chAb18-CZ payload
+- chAb18-CZ linker
+- chAb2 (chimra IgG1)
+- chAb2-CZ
+- chAb2-CZ payload
+- chAb2-CZ linker
+- chAb3
+- chAb3-CZ
+- chAb3-CZ payload
+- chAb3-CZ linker
+- chAb4
+- chAb4-CZ
+- chAb4-CZ payload
+- chAb4-CZ linker
+- chAb6
+- chAb6-CZ
+- chAb6-CZ payload
+- chAb6-CZ linker
+- chmAb-A
+- chmAb-A B7-H3-ADC
+- Monomethyl auristatin E
+- Microtubule (MT)
+- Mc-Val-Cit-PABC
+- chmAb-B
+- chmAb-B B7-H3-ADC
+- Monomethyl auristatin E
+- Microtubule (MT)
+- Mc-Val-Cit-PABC
+- chmAb-C
+- chmAb-C B7-H3-ADC
+- Monomethyl auristatin E
+- Microtubule (MT)
+- Mc-Val-Cit-PABC
+- chmAb-D
+- chmAb-D B7-H3-ADC
+- Monomethyl auristatin E
+- Microtubule (MT)
+- Mc-Val-Cit-PABC
+- Enoblituzumab
+- Enoblituzumab-ADC-24-1
+- Enoblituzumab-ADC-24-1 payload
+- Enoblituzumab-ADC-24-1 linker
+- Enoblituzumab-ADC-24-10
+- Enoblituzumab-ADC-24-10 payload
+- Enoblituzumab-ADC-24-10 linker
+- Enoblituzumab-ADC-24-11
+- Enoblituzumab-ADC-24-11 payload
+- Enoblituzumab-ADC-24-11 linker
+- Enoblituzumab-ADC-24-12
+- Enoblituzumab-ADC-24-12 payload
+- Enoblituzumab-ADC-24-12 linker
+- Enoblituzumab-ADC-24-13
+- Enoblituzumab-ADC-24-13 payload
+- Enoblituzumab-ADC-24-13 linker
+- Enoblituzumab-ADC-24-2
+- Enoblituzumab-ADC-24-2 payload
+- Enoblituzumab-ADC-24-2 linker
+- Enoblituzumab-ADC-24-3
+- Enoblituzumab-ADC-24-3 payload
+- Enoblituzumab-ADC-24-3 linker
+- Enoblituzumab-ADC-24-4
+- Enoblituzumab-ADC-24-4 payload
+- Enoblituzumab-ADC-24-4 linker
+- Enoblituzumab-ADC-24-5
+- Enoblituzumab-ADC-24-5 payload
+- Enoblituzumab-ADC-24-5 linker
+- Enoblituzumab-ADC-24-6
+- Enoblituzumab-ADC-24-6 payload
+- Enoblituzumab-ADC-24-6 linker
+- Enoblituzumab-ADC-24-7
+- Enoblituzumab-ADC-24-7 payload
+- Enoblituzumab-ADC-24-7 linker
+- Enoblituzumab-ADC-24-8
+- Enoblituzumab-ADC-24-8 payload
+- Enoblituzumab-ADC-24-8 linker
+- Enoblituzumab-ADC-24-9
+- Enoblituzumab-ADC-24-9 payload
+- Enoblituzumab-ADC-24-9 linker
+- Enoblituzumab-ADC-Tb1-1
+- Enoblituzumab-ADC-Tb1-1 payload
+- Enoblituzumab-ADC-Tb1-1 linker
+- Enoblituzumab-ADC-Tb1-10
+- Enoblituzumab-ADC-Tb1-10 payload
+- Enoblituzumab-ADC-Tb1-10 linker
+- Enoblituzumab-ADC-Tb1-11
+- Enoblituzumab-ADC-Tb1-11 payload
+- Enoblituzumab-ADC-Tb1-11 linker
+- Enoblituzumab-ADC-Tb1-12
+- Enoblituzumab-ADC-Tb1-12 payload
+- Enoblituzumab-ADC-Tb1-12 linker
+- Enoblituzumab-ADC-Tb1-13
+- Enoblituzumab-ADC-Tb1-13 payload
+- Enoblituzumab-ADC-Tb1-13 linker
+- Enoblituzumab-ADC-Tb1-14
+- Enoblituzumab-ADC-Tb1-14 payload
+- Enoblituzumab-ADC-Tb1-14 linker
+- Enoblituzumab-ADC-Tb1-15
+- Enoblituzumab-ADC-Tb1-15 payload
+- Enoblituzumab-ADC-Tb1-15 linker
+- Enoblituzumab-ADC-Tb1-16
+- Enoblituzumab-ADC-Tb1-16 payload
+- Enoblituzumab-ADC-Tb1-16 linker
+- Enoblituzumab-ADC-Tb1-17
+- Enoblituzumab-ADC-Tb1-17 payload
+- Enoblituzumab-ADC-Tb1-17 linker
+- Enoblituzumab-ADC-Tb1-18
+- Enoblituzumab-ADC-Tb1-18 payload
+- Enoblituzumab-ADC-Tb1-18 linker
+- Enoblituzumab-ADC-Tb1-19
+- Enoblituzumab-ADC-Tb1-19 payload
+- Enoblituzumab-ADC-Tb1-19 linker
+- Enoblituzumab-ADC-Tb1-2
+- Enoblituzumab-ADC-Tb1-2 payload
+- Enoblituzumab-ADC-Tb1-2 linker
+- Enoblituzumab-ADC-Tb1-20
+- Enoblituzumab-ADC-Tb1-20 payload
+- Enoblituzumab-ADC-Tb1-20 linker
+- Enoblituzumab-ADC-Tb1-21
+- Enoblituzumab-ADC-Tb1-21 payload
+- Enoblituzumab-ADC-Tb1-21 linker
+- Enoblituzumab-ADC-Tb1-22
+- Enoblituzumab-ADC-Tb1-22 payload
+- Enoblituzumab-ADC-Tb1-22 linker
+- Enoblituzumab-ADC-Tb1-23
+- Enoblituzumab-ADC-Tb1-23 payload
+- Enoblituzumab-ADC-Tb1-23 linker
+- Enoblituzumab-ADC-Tb1-24
+- Enoblituzumab-ADC-Tb1-24 payload
+- Enoblituzumab-ADC-Tb1-24 linker
+- Enoblituzumab-ADC-Tb1-25
+- Enoblituzumab-ADC-Tb1-25 payload
+- Enoblituzumab-ADC-Tb1-25 linker
+- Enoblituzumab-ADC-Tb1-26
+- Enoblituzumab-ADC-Tb1-26 payload
+- Enoblituzumab-ADC-Tb1-26 linker
+- Enoblituzumab-ADC-Tb1-3
+- Enoblituzumab-ADC-Tb1-3 payload
+- Enoblituzumab-ADC-Tb1-3 linker
+- Enoblituzumab-ADC-Tb1-4
+- Enoblituzumab-ADC-Tb1-4 payload
+- Enoblituzumab-ADC-Tb1-4 linker
+- Enoblituzumab-ADC-Tb1-5
+- Enoblituzumab-ADC-Tb1-5 payload
+- Enoblituzumab-ADC-Tb1-5 linker
+- Enoblituzumab-ADC-Tb1-6
+- Enoblituzumab-ADC-Tb1-6 payload
+- Enoblituzumab-ADC-Tb1-6 linker
+- Enoblituzumab-ADC-Tb1-7
+- Enoblituzumab-ADC-Tb1-7 payload
+- Enoblituzumab-ADC-Tb1-7 linker
+- Enoblituzumab-ADC-Tb1-8
+- Enoblituzumab-ADC-Tb1-8 payload
+- Enoblituzumab-ADC-Tb1-8 linker
+- Enoblituzumab-ADC-Tb1-9
+- Enoblituzumab-ADC-Tb1-9 payload
+- Enoblituzumab-ADC-Tb1-9 linker
+- hmAb-C
+- hmAb-C-DUBA
+- seco-DUBA
+- Human Deoxyribonucleic acid (hDNA)
+- Mal-PEG2-Val-Cit-PABA-Cyclization Spacer
+- huAb13v1
+- huAb13v1-AAA
+- huAb13v1-AAA payload
+- huAb13v1-AAA linker
+- huAb13v1-AAD
+- huAb13v1-AAD payload
+- huAb13v1-AAD linker
+- huAb13v1-CZ
+- huAb13v1-CZ payload
+- huAb13v1-CZ linker
+- huAb13v1-KZ
+- huAb13v1-KZ payload
+- huAb13v1-KZ linker
+- huAb13v1-LB
+- huAb13v1-LB payload
+- huAb13v1-LB linker
+- huAb13v1-SE
+- huAb13v1-SE payload
+- huAb13v1-SE linker
+- huAb13v1-SR
+- huAb13v1-SR payload
+- huAb13v1-SR linker
+- huAb13v1-TV
+- huAb13v1-TV payload
+- huAb13v1-TV linker
+- huAb13v1-TX
+- huAb13v1-TX payload
+- huAb13v1-TX linker
+- huAb13v1-TX E2
+- huAb13v1-TX E2 payload
+- huAb13v1-TX E2 linker
+- huAb13v1-WD
+- huAb13v1-WD payload
+- huAb13v1-WD linker
+- huAb13v1-WD E2
+- huAb13v1-WD E2 payload
+- huAb13v1-WD E2 linker
+- huAb13v1-XW
+- huAb13v1-XW payload
+- huAb13v1-XW linker
+- huAb13v1-YG
+- huAb13v1-YG payload
+- huAb13v1-YG linker
+- huAb13v1-ZT
+- huAb13v1-ZT payload
+- huAb13v1-ZT linker
+- huAb13v1-ZZ
+- huAb13v1-ZZ payload
+- huAb13v1-ZZ linker
+- huAb18v1
+- huAb18v1-CZ
+- huAb18v1-CZ payload
+- huAb18v1-CZ linker
+- huAb18v10
+- huAb18v10-CZ
+- huAb18v10-CZ payload
+- huAb18v10-CZ linker
+- huAb18v2
+- huAb18v2-CZ
+- huAb18v2-CZ payload
+- huAb18v2-CZ linker
+- huAb18v3
+- huAb18v3-CZ
+- huAb18v3-CZ payload
+- huAb18v3-CZ linker
+- huAb18v4
+- huAb18v4-CZ
+- huAb18v4-CZ payload
+- huAb18v4-CZ linker
+- huAb18v5
+- huAb18v5-CZ
+- huAb18v5-CZ payload
+- huAb18v5-CZ linker
+- huAb18v6
+- huAb18v6-CZ
+- huAb18v6-CZ payload
+- huAb18v6-CZ linker
+- huAb18v7
+- huAb18v7-CZ
+- huAb18v7-CZ payload
+- huAb18v7-CZ linker
+- huAb18v8
+- huAb18v8-CZ
+- huAb18v8-CZ payload
+- huAb18v8-CZ linker
+- huAb18v9
+- huAb18v9-CZ
+- huAb18v9-CZ payload
+- huAb18v9-CZ linker
+- huAb3v1
+- huAb3v1-CZ
+- huAb3v1-CZ payload
+- huAb3v1-CZ linker
+- huAb3v2
+- huAb3v2-CZ
+- huAb3v2-CZ payload
+- huAb3v2-CZ linker
+- huAb3v2.2
+- huAb3v2.2-CZ
+- huAb3v2.2-CZ payload
+- huAb3v2.2-CZ linker
+- huAb3v2.3
+- huAb3v2.3-CZ
+- huAb3v2.3-CZ payload
+- huAb3v2.3-CZ linker
+- huAb3v2.5
+- huAb3v2.5-AAA
+- huAb3v2.5-AAA payload
+- huAb3v2.5-AAA linker
+- huAb3v2.5-AAD
+- huAb3v2.5-AAD payload
+- huAb3v2.5-AAD linker
+- huAb3v2.5-CZ
+- huAb3v2.5-CZ payload
+- huAb3v2.5-CZ linker
+- huAb3v2.5-KZ
+- huAb3v2.5-KZ payload
+- huAb3v2.5-KZ linker
+- huAb3v2.5-LB
+- huAb3v2.5-LB payload
+- huAb3v2.5-LB linker
+- huAb3v2.5-SE
+- huAb3v2.5-SE payload
+- huAb3v2.5-SE linker
+- huAb3v2.5-SR
+- huAb3v2.5-SR payload
+- huAb3v2.5-SR linker
+- huAb3v2.5-TV
+- huAb3v2.5-TV payload
+- huAb3v2.5-TV linker
+- huAb3v2.5-TX
+- huAb3v2.5-TX payload
+- huAb3v2.5-TX linker
+- huAb3v2.5-WD
+- huAb3v2.5-WD payload
+- huAb3v2.5-WD linker
+- huAb3v2.5-XW
+- huAb3v2.5-XW payload
+- huAb3v2.5-XW linker
+- huAb3v2.5-YG
+- huAb3v2.5-YG payload
+- huAb3v2.5-YG linker
+- huAb3v2.5-YY
+- huAb3v2.5-YY payload
+- huAb3v2.5-YY linker
+- huAb3v2.5-ZT
+- huAb3v2.5-ZT payload
+- huAb3v2.5-ZT linker
+- huAb3v2.5-ZZ
+- huAb3v2.5-ZZ payload
+- huAb3v2.5-ZZ linker
+- huAb3v2.6
+- huAb3v2.6-AAA
+- huAb3v2.6-AAA payload
+- huAb3v2.6-AAA linker
+- huAb3v2.6-AAD
+- huAb3v2.6-AAD payload
+- huAb3v2.6-AAD linker
+- huAb3v2.6-CZ
+- huAb3v2.6-CZ payload
+- huAb3v2.6-CZ linker
+- huAb3v2.6-KZ
+- huAb3v2.6-KZ payload
+- huAb3v2.6-KZ linker
+- huAb3v2.6-LB
+- huAb3v2.6-LB payload
+- huAb3v2.6-LB linker
+- huAb3v2.6-SE
+- huAb3v2.6-SE payload
+- huAb3v2.6-SE linker
+- huAb3v2.6-SR
+- huAb3v2.6-SR payload
+- huAb3v2.6-SR linker
+- huAb3v2.6-TV
+- huAb3v2.6-TV payload
+- huAb3v2.6-TV linker
+- huAb3v2.6-TX
+- huAb3v2.6-TX payload
+- huAb3v2.6-TX linker
+- huAb3v2.6-WD
+- huAb3v2.6-WD payload
+- huAb3v2.6-WD linker
+- huAb3v2.6-XW
+- huAb3v2.6-XW payload
+- huAb3v2.6-XW linker
+- huAb3v2.6-YG
+- huAb3v2.6-YG payload
+- huAb3v2.6-YG linker
+- huAb3v2.6-YY
+- huAb3v2.6-YY payload
+- huAb3v2.6-YY linker
+- huAb3v2.6-ZT
+- huAb3v2.6-ZT payload
+- huAb3v2.6-ZT linker
+- huAb3v2.6-ZZ
+- huAb3v2.6-ZZ payload
+- huAb3v2.6-ZZ linker
+- huAb3v2.8
+- huAb3v2.8-CZ
+- huAb3v2.8-CZ payload
+- huAb3v2.8-CZ linker
+- huAb3v2.9
+- huAb3v2.9-CZ
+- huAb3v2.9-CZ payload
+- huAb3v2.9-CZ linker
+- huAb3v2.9-TX
+- huAb3v2.9-TX payload
+- huAb3v2.9-TX linker
+- huAb3v3
+- huAb3v3-CZ
+- huAb3v3-CZ payload
+- huAb3v3-CZ linker
+- huAb3v4
+- huAb3v4-CZ
+- huAb3v4-CZ payload
+- huAb3v4-CZ linker
+- huAb3v5
+- huAb3v5-CZ
+- huAb3v5-CZ payload
+- huAb3v5-CZ linker
+- huAb3v6
+- huAb3v6-CZ
+- huAb3v6-CZ payload
+- huAb3v6-CZ linker
+- Ifinatamab
+- Ifinatamab deruxtecan
+- DX-8951 derivative (DXd)
+- DNA topoisomerase 1 (TOP1)
+- Mc-Gly-Gly-Phe-Gly
+- Mirzotamab
+- Mirzotamab clezutoclax
+- Clezutoclax
+- Bcl-2-like protein 1 (BCL2L1)
+- Valine-alanine (cleavable linker)
+- Mirzotamab-ADC-Tb1-1
+- Mirzotamab-ADC-Tb1-1 payload
+- Mirzotamab-ADC-Tb1-1 linker
+- Mirzotamab-ADC-Tb1-10
+- Mirzotamab-ADC-Tb1-10 payload
+- Mirzotamab-ADC-Tb1-10 linker
+- Mirzotamab-ADC-Tb1-11
+- Mirzotamab-ADC-Tb1-11 payload
+- Mirzotamab-ADC-Tb1-11 linker
+- Mirzotamab-ADC-Tb1-12
+- Mirzotamab-ADC-Tb1-12 payload
+- Mirzotamab-ADC-Tb1-12 linker
+- Mirzotamab-ADC-Tb1-13
+- Mirzotamab-ADC-Tb1-13 payload
+- Mirzotamab-ADC-Tb1-13 linker
+- Mirzotamab-ADC-Tb1-14
+- Mirzotamab-ADC-Tb1-14 payload
+- Mirzotamab-ADC-Tb1-14 linker
+- Mirzotamab-ADC-Tb1-15
+- Mirzotamab-ADC-Tb1-15 payload
+- Mirzotamab-ADC-Tb1-15 linker
+- Mirzotamab-ADC-Tb1-16
+- Mirzotamab-ADC-Tb1-16 payload
+- Mirzotamab-ADC-Tb1-16 linker
+- Mirzotamab-ADC-Tb1-17
+- Mirzotamab-ADC-Tb1-17 payload
+- Mirzotamab-ADC-Tb1-17 linker
+- Mirzotamab-ADC-Tb1-18
+- Mirzotamab-ADC-Tb1-18 payload
+- Mirzotamab-ADC-Tb1-18 linker
+- Mirzotamab-ADC-Tb1-19
+- Mirzotamab-ADC-Tb1-19 payload
+- Mirzotamab-ADC-Tb1-19 linker
+- Mirzotamab-ADC-Tb1-2
+- Mirzotamab-ADC-Tb1-2 payload
+- Mirzotamab-ADC-Tb1-2 linker
+- Mirzotamab-ADC-Tb1-20
+- Mirzotamab-ADC-Tb1-20 payload
+- Mirzotamab-ADC-Tb1-20 linker
+- Mirzotamab-ADC-Tb1-21
+- Mirzotamab-ADC-Tb1-21 payload
+- Mirzotamab-ADC-Tb1-21 linker
+- Mirzotamab-ADC-Tb1-22
+- Mirzotamab-ADC-Tb1-22 payload
+- Mirzotamab-ADC-Tb1-22 linker
+- Mirzotamab-ADC-Tb1-23
+- Mirzotamab-ADC-Tb1-23 payload
+- Mirzotamab-ADC-Tb1-23 linker
+- Mirzotamab-ADC-Tb1-24
+- Mirzotamab-ADC-Tb1-24 payload
+- Mirzotamab-ADC-Tb1-24 linker
+- Mirzotamab-ADC-Tb1-25
+- Mirzotamab-ADC-Tb1-25 payload
+- Mirzotamab-ADC-Tb1-25 linker
+- Mirzotamab-ADC-Tb1-26
+- Mirzotamab-ADC-Tb1-26 payload
+- Mirzotamab-ADC-Tb1-26 linker
+- Mirzotamab-ADC-Tb1-3
+- Mirzotamab-ADC-Tb1-3 payload
+- Mirzotamab-ADC-Tb1-3 linker
+- Mirzotamab-ADC-Tb1-4
+- Mirzotamab-ADC-Tb1-4 payload
+- Mirzotamab-ADC-Tb1-4 linker
+- Mirzotamab-ADC-Tb1-5
+- Mirzotamab-ADC-Tb1-5 payload
+- Mirzotamab-ADC-Tb1-5 linker
+- Mirzotamab-ADC-Tb1-6
+- Mirzotamab-ADC-Tb1-6 payload
+- Mirzotamab-ADC-Tb1-6 linker
+- Mirzotamab-ADC-Tb1-7
+- Mirzotamab-ADC-Tb1-7 payload
+- Mirzotamab-ADC-Tb1-7 linker
+- Mirzotamab-ADC-Tb1-8
+- Mirzotamab-ADC-Tb1-8 payload
+- Mirzotamab-ADC-Tb1-8 linker
+- Mirzotamab-ADC-Tb1-9
+- Mirzotamab-ADC-Tb1-9 payload
+- Mirzotamab-ADC-Tb1-9 linker
+- Omburtamab
+- Omburtamab-ADC-Tb1-1
+- Omburtamab-ADC-Tb1-1 payload
+- Omburtamab-ADC-Tb1-1 linker
+- Omburtamab-ADC-Tb1-10
+- Omburtamab-ADC-Tb1-10 payload
+- Omburtamab-ADC-Tb1-10 linker
+- Omburtamab-ADC-Tb1-11
+- Omburtamab-ADC-Tb1-11 payload
+- Omburtamab-ADC-Tb1-11 linker
+- Omburtamab-ADC-Tb1-12
+- Omburtamab-ADC-Tb1-12 payload
+- Omburtamab-ADC-Tb1-12 linker
+- Omburtamab-ADC-Tb1-13
+- Omburtamab-ADC-Tb1-13 payload
+- Omburtamab-ADC-Tb1-13 linker
+- Omburtamab-ADC-Tb1-14
+- Omburtamab-ADC-Tb1-14 payload
+- Omburtamab-ADC-Tb1-14 linker
+- Omburtamab-ADC-Tb1-15
+- Omburtamab-ADC-Tb1-15 payload
+- Omburtamab-ADC-Tb1-15 linker
+- Omburtamab-ADC-Tb1-16
+- Omburtamab-ADC-Tb1-16 payload
+- Omburtamab-ADC-Tb1-16 linker
+- Omburtamab-ADC-Tb1-17
+- Omburtamab-ADC-Tb1-17 payload
+- Omburtamab-ADC-Tb1-17 linker
+- Omburtamab-ADC-Tb1-18
+- Omburtamab-ADC-Tb1-18 payload
+- Omburtamab-ADC-Tb1-18 linker
+- Omburtamab-ADC-Tb1-19
+- Omburtamab-ADC-Tb1-19 payload
+- Omburtamab-ADC-Tb1-19 linker
+- Omburtamab-ADC-Tb1-2
+- Omburtamab-ADC-Tb1-2 payload
+- Omburtamab-ADC-Tb1-2 linker
+- Omburtamab-ADC-Tb1-20
+- Omburtamab-ADC-Tb1-20 payload
+- Omburtamab-ADC-Tb1-20 linker
+- Omburtamab-ADC-Tb1-21
+- Omburtamab-ADC-Tb1-21 payload
+- Omburtamab-ADC-Tb1-21 linker
+- Omburtamab-ADC-Tb1-22
+- Omburtamab-ADC-Tb1-22 payload
+- Omburtamab-ADC-Tb1-22 linker
+- Omburtamab-ADC-Tb1-23
+- Omburtamab-ADC-Tb1-23 payload
+- Omburtamab-ADC-Tb1-23 linker
+- Omburtamab-ADC-Tb1-24
+- Omburtamab-ADC-Tb1-24 payload
+- Omburtamab-ADC-Tb1-24 linker
+- Omburtamab-ADC-Tb1-25
+- Omburtamab-ADC-Tb1-25 payload
+- Omburtamab-ADC-Tb1-25 linker
+- Omburtamab-ADC-Tb1-26
+- Omburtamab-ADC-Tb1-26 payload
+- Omburtamab-ADC-Tb1-26 linker
+- Omburtamab-ADC-Tb1-3
+- Omburtamab-ADC-Tb1-3 payload
+- Omburtamab-ADC-Tb1-3 linker
+- Omburtamab-ADC-Tb1-4
+- Omburtamab-ADC-Tb1-4 payload
+- Omburtamab-ADC-Tb1-4 linker
+- Omburtamab-ADC-Tb1-5
+- Omburtamab-ADC-Tb1-5 payload
+- Omburtamab-ADC-Tb1-5 linker
+- Omburtamab-ADC-Tb1-6
+- Omburtamab-ADC-Tb1-6 payload
+- Omburtamab-ADC-Tb1-6 linker
+- Omburtamab-ADC-Tb1-7
+- Omburtamab-ADC-Tb1-7 payload
+- Omburtamab-ADC-Tb1-7 linker
+- Omburtamab-ADC-Tb1-8
+- Omburtamab-ADC-Tb1-8 payload
+- Omburtamab-ADC-Tb1-8 linker
+- Omburtamab-ADC-Tb1-9
+- Omburtamab-ADC-Tb1-9 payload
+- Omburtamab-ADC-Tb1-9 linker
+- Risvutatug
+- HS-20093
+- Exatecan derivative (HS-9265)
+- DNA topoisomerase 1 (TOP1)
+- Maleimide tetrapeptide linker
+- TPP-8567
+- Anti-B7H3 APDC 3f
+- Kinesin spindle protein (KSP) inhibitor 3f
+- Kinesin-like protein KIF11 (KIF11)
+- Open-chain glycine maleimide
+- Anti-B7H3 APDC 3g
+- Kinesin spindle protein (KSP) inhibitor 3g
+- Kinesin-like protein KIF11 (KIF11)
+- Open-chain glycine maleimide
+- Vobramitamab
+- Vobramitamab duocarmazine
+- seco-DUBA
+- Human Deoxyribonucleic acid (hDNA)
+- Mal-PEG2-Val-Cit-PABA-Cyclization Spacer
+- YL-201
+- YL0010014
+- DNA topoisomerase 1 (TOP1)
+- Tumor microenviroment activable tripeptide linker
+- DB-1311
+- P1021
+- DNA topoisomerase 1 (TOP1)
+- Maleimide tetrapeptide-based cleavable linker
+- IBI-129
+- DNA topoisomerase 1 (TOP1)
+- ILB-3101
+- Eribulin
+- Microtubule (MT)
+- MHB-088C
+- DNA topoisomerase I inhibitor
+- DNA topoisomerase 1 (TOP1)
+- Protease- hydrolyzable linker
+- BAT8009
+- Exatecan
+- DNA topoisomerase 1 (TOP1)
+- Cleavable linker
+- 64Cu-DOTAGA-alphaCD276 mAb
+- B7H3-MMAE
+- Monomethyl auristatin E
+- Microtubule (MT)
+- NV104
+- Irinotecan
+- DNA topoisomerase 1 (TOP1)
+- NV105
+- Temozolomide
+- Human Deoxyribonucleic acid (hDNA)
+- NV106
+- Panobinostat
+- Histone deacetylase 1 (HDAC1)
+- YBL-015
+- 7MW-3711
+- Topoisomerase I inhibitor
+- DNA topoisomerase 1 (TOP1)
+- B7-H3 ADC (Jiangsu hengrui)
+- BVD-CD276
+
+## References
+
+1. Bioactive substance conjugate, preparation method therefor and use thereof; 2022-08-18.
+2. Ligand-drug conjugate of exatecan analogue, preparation method therefor and application thereof; 2020-04-02.
+3. Anti-b7h3 antibody-exatecan analog conjugate and medicinal use thereof; 2020-04-02.
+4. The B7-H3-Targeting Antibody-Drug Conjugate m276-SL-PBD Is Potently Effective Against Pediatric Cancer Preclinical Solid Tumor Models. Clin Cancer Res. 2021 May 15;27(10):2938-2946. doi: 10.1158/1078-0432.CCR-20-4221. Epub 2021 Feb 22.
+5. A Novel NAMPT Inhibitor-Based Antibody-Drug Conjugate Payload Class for Cancer Therapy. Bioconjug Chem. 2022 Jun 15;33(6):1210-1221.
+6. Novel B7-H3- binding molecule, its antibody drug conjugate and its application method.
+7. Anti-b7-h3 antibodies and antibody drug conjugates; 2018-03-08.
+8. Novel b7-h3 binding molecules, antibody drug conjugates thereof and methods of use thereof; 2017-10-19.
+9. Ifinatamab deruxtecan (I-DXd), a novel B7-H3-targeting antibody-drug conjugate, demonstrates efficient payload delivery into tumor through target-dependent internalization. Cancer Res (2023) 83 (7_Supplement): 4891.
+10. A first-in-human study of mirzotamab clezutoclax as monotherapy and in combination with taxane therapy in relapsed/refractory solid tumors: Dose escalation results. Journal of Clinical Oncology 2021 39:15_suppl, 3015-3015.
+11. ARTEMIS-002: HS-20093 in Patients With Relapsed or Refractory Osteosarcoma and Other Sarcomas
+12. Antibody-Prodrug Conjugates with KSP Inhibitors and Legumain-Mediated Metabolite Formation. Chemistry. 2019 Jun 21;25(35):8208-8213. doi: 10.1002/chem.201900441. Epub 2019 Apr 15.
+13. Anti-tumor activity of vobramitamab duocarmazine (MGC018), an investigational duocarmycin-based anti-B7-H3 antibody-drug conjugate (ADC), in preclinical neuroblastoma models. Cancer Res (2023) 83 (7_Supplement): 2981.
+14. A Study of YL201 in Patients With Advanced Solid Tumors; NCT05434234.
+15. Preclinical development of a B7-H3-targeting ADC with a novel DNA topoisomerase I inhibitor for solid tumors. Cancer Res (2023) 83 (7_Supplement): 2967.
+16. Innoventbio 2022 Annual Performance Report.
+17. Innolake biopharm biotechnology company product pipeline
+18. Study of MHB088C in Participants With Advanced or Metastatic Solid Tumors; NCT05652855.
+19. Assess Safety, Tolerability, Pharmacokinetics, and Preliminary Efficacy of BAT8009; NCT05405621.
+20. Introduction to basic information on ADC drug 64Cu-DOTAGA-alphaCD276 mAb (Provenance).
+21. Anwita biosciences product pipeline
+22. Nanovalent pharmaceuticals product pipeline
+23. Y-Biologics biotechnology company product pipeline
+24. Clinical Trial Application for 7MW3711 - an Innovative Drug Developed by Mabwell's ADC Platform, Accepted by NMPA.
+25. Introduction to basic information on ADC drug B7-H3 ADC (Jiangsu hengrui).
+26. Biomed valley discoveries product pipeline

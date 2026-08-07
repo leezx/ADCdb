@@ -1,0 +1,34 @@
+---
+id: "DRG0YWXAR"
+name: "AbLJ-ConjC"
+entity_type: "ADC"
+source_url: "https://adcdb.idrblab.net/data/adc/details/DRG0YWXAR"
+---
+
+# AbLJ-ConjC
+
+Source: https://adcdb.idrblab.net/data/adc/details/DRG0YWXAR
+
+## Related
+
+- antibody: [[Antibodies/Anti-CD22 mAb AbLJ|Anti-CD22 mAb AbLJ]]
+- antigen: [[Antigens/B-cell receptor CD22 (CD22)|B-cell receptor CD22 (CD22)]]
+- payload: [[Payloads/Undisclosed|Undisclosed]]
+- linker: [[Linkers/AbLJ-ConjC linker|AbLJ-ConjC linker]]
+
+## ADCdb Links
+
+- [[Antigens/B-cell receptor CD22 (CD22)|B-cell receptor CD22 (CD22)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0XTCGM))
+
+## General Information
+
+| Field         | Value                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| ADC ID        | DRG0YWXAR AbLJ-ConjC                                                                       |
+| Synonyms      | AbLJ ConjC Organization ADC Therapeutics SA; MedImmune LLC                                 |
+| Drug Status   | Investigative                                                                              |
+| Indication    | Chronic myeloid leukaemia Investigative Drug-to-Antibody Ratio 1-2                         |
+| Antibody Name | Anti-CD22 mAb AbLJ                                                                         |
+| Antigen Name  | B-cell receptor CD22 (CD22)                                                                |
+| Payload Name  | Undisclosed                                                                                |
+| Linker Name   | AbLJ-ConjC linker Conjugate Type Random conjugation through reduced inter-chain cysteines. |

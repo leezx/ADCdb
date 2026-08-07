@@ -1,0 +1,65 @@
+---
+id: "TAR0LVECA"
+name: "Integrin alpha-4 (ITGA4)"
+entity_type: "Antigen"
+source_url: "https://adcdb.idrblab.net/data/abt/details/TAR0LVECA"
+---
+
+# Integrin alpha-4 (ITGA4)
+
+Source: https://adcdb.idrblab.net/data/abt/details/TAR0LVECA
+
+## ADCdb Links
+
+- [gene-symbol-report](https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6140)
+- [[Antibodies/ANI0LPUSR|ANI0LPUSR]] ([source](https://adcdb.idrblab.net/data/antibody/details/ANI0LPUSR))
+- [[ADCs/WO2015177360A1 ADC-Natalizumab S375C|WO2015177360A1 ADC-Natalizumab S375C]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0TXIKN))
+
+## General Information
+
+| Field         | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Antigen ID    | TAR0LVECA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Antigen Name  | Integrin alpha-4 (ITGA4)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Gene Name     | ITGA4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Gene ID       | 3676                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Synonym       | CD49D; CD49 antigen-like family member D; Integrin alpha-IV; VLA-4 subunit alpha; CD_antigen=CD49d                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Family        | Integrin alpha chain family                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Function      | Integrins alpha-4/beta-1 (VLA-4) and alpha-4/beta-7 are receptors for fibronectin. They recognize one or more domains within the alternatively spliced CS-1 and CS-5 regions of fibronectin. They are also receptors for VCAM1. Integrin alpha-4/beta-1 recognizes the sequence Q-I-D-S in VCAM1. Integrin alpha-4/beta-7 is also a receptor for MADCAM1. It recognizes the sequence L-D-T in MADCAM1. On activated endothelial cells integrin VLA-4 triggers homotypic aggregation for most VLA-4-positive leukocyte cell lines. It may also participate in cytolytic T-cell interactions with target cells. ITGA4:ITGB1 binds to fractalkine (CX3CL1) and may act as its coreceptor in CX3CR1-dependent fractalkine signaling. ITGA4:ITGB1 binds to PLA2G2A via a site (site 2) which is distinct from the classical ligand-binding site (site 1) and this induces integrin conformational changes and enhanced ligand binding to site 1. |
+| Uniprot Entry | ITA4_HUMAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| HGNC ID       | HGNC:6140                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| KEGG ID       | hsa:3676                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+### Protein Sequence
+
+```
+MAWEARREPGPRRAAVRETVMLLLCLGVPTGRPYNVDTESALLYQGPHNTLFGYSVVLHS
+HGANRWLLVGAPTANWLANASVINPGAIYRCRIGKNPGQTCEQLQLGSPNGEPCGKTCLE
+ERDNQWLGVTLSRQPGENGSIVTCGHRWKNIFYIKNENKLPTGGCYGVPPDLRTELSKRI
+APCYQDYVKKFGENFASCQAGISSFYTKDLIVMGAPGSSYWTGSLFVYNITTNKYKAFLD
+KQNQVKFGSYLGYSVGAGHFRSQHTTEVVGGAPQHEQIGKAYIFSIDEKELNILHEMKGK
+KLGSYFGASVCAVDLNADGFSDLLVGAPMQSTIREEGRVFVYINSGSGAVMNAMETNLVG
+SDKYAARFGESIVNLGDIDNDGFEDVAIGAPQEDDLQGAIYIYNGRADGISSTFSQRIEG
+LQISKSLSMFGQSISGQIDADNNGYVDVAVGAFRSDSAVLLRTRPVVIVDASLSHPESVN
+RTKFDCVENGWPSVCIDLTLCFSYKGKEVPGYIVLFYNMSLDVNRKAESPPRFYFSSNGT
+SDVITGSIQVSSREANCRTHQAFMRKDVRDILTPIQIEAAYHLGPHVISKRSTEEFPPLQ
+PILQQKKEKDIMKKTINFARFCAHENCSADLQVSAKIGFLKPHENKTYLAVGSMKTLMLN
+VSLFNAGDDAYETTLHVKLPVGLYFIKILELEEKQINCEVTDNSGVVQLDCSIGYIYVDH
+LSRIDISFLLDVSSLSRAEEDLSITVHATCENEEEMDNLKHSRVTVAIPLKYEVKLTVHG
+FVNPTSFVYGSNDENEPETCMVEKMNLTFHVINTGNSMAPNVSVEIMVPNSFSPQTDKLF
+NILDVQTTTGECHFENYQRVCALEQQKSAMQTLKGIVRFLSKTDKRLLYCIKADPHCLNF
+LCNFGKMESGKEASVHIQLEGRPSILEMDETSALKFEIRATGFPEPNPRVIELNKDENVA
+HVLLEGLHHQRPKRYFTIVIISSSLLLGLIVLLLISYVMWKAGFFKRQYKSILQEENRRD
+```
+
+## Related ADCs
+
+- Natalizumab S375C
+- WO2015177360A1 ADC-Natalizumab S375C
+- seco-DUBA
+- Human Deoxyribonucleic acid (hDNA)
+- Mal-PEG2-Val-Cit-PABA-Cyclization Spacer
+
+## References
+
+1. Site-specific conjugation of linker drugs to antibodies and resulting adcs.

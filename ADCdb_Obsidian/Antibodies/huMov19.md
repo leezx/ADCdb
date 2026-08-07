@@ -1,0 +1,291 @@
+---
+id: "ANI0JNYQZ"
+name: "huMov19"
+entity_type: "Antibodie"
+source_url: "https://adcdb.idrblab.net/data/antibody/details/ANI0JNYQZ"
+---
+
+# huMov19
+
+Source: https://adcdb.idrblab.net/data/antibody/details/ANI0JNYQZ
+
+## ADCdb Links
+
+- [[Antigens/Folate receptor alpha (FOLR1)|Folate receptor alpha (FOLR1)]] ([source](https://adcdb.idrblab.net/data/abt/details/TAR0QHAVI))
+- [[ADCs/huMov19-PEG4-Mal-DM4|huMov19-PEG4-Mal-DM4]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0WUQRC))
+- [[ADCs/huMov19-3-sulfo-Mal-DM4 (DAR 8.23)|huMov19-3-sulfo-Mal-DM4 (DAR 8.23)]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0MUBIP))
+- [[ADCs/huMov19-3-sulfo-Mal-DM4 (DAR 3.7)|huMov19-3-sulfo-Mal-DM4 (DAR 3.7)]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0CETGS))
+- [[ADCs/huMov19-SMCC-DM1|huMov19-SMCC-DM1]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0MCCPO))
+- [[ADCs/huMov19-sulfo-SPDB-DM4 (DAR6.8)|huMov19-sulfo-SPDB-DM4 (DAR6.8)]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0HWDCC))
+- [[ADCs/huMov19-SPP-DM1|huMov19-SPP-DM1]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0CDCKY))
+- [[ADCs/huMov19-SPDB-DM4|huMov19-SPDB-DM4]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0RHYIO))
+- [[ADCs/huMov19-sulfo-SPDB-DM4 (DAR3.8)|huMov19-sulfo-SPDB-DM4 (DAR3.8)]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0TKNIO))
+- [[ADCs/huMov19-PEG4-Mal-DM1|huMov19-PEG4-Mal-DM1]] ([source](https://adcdb.idrblab.net/data/adc/details/DRG0QOMDV))
+
+## General Information
+
+| Field            | Value                         |
+| ---------------- | ----------------------------- |
+| Antibody ID      | ANI0JNYQZ                     |
+| Antibody Name    | huMov19                       |
+| Antibody Type    | Monoclonal antibody (mAb)     |
+| Antibody Subtype | Humanized IgG1                |
+| Antigen Name     | Folate receptor alpha (FOLR1) |
+
+## Related ADC Activity Data
+
+### huMov19-PEG4-Mal-DM4 (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 24.92% (Day 22) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** PEG4Mal-DM4 conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 46.37% (Day 22) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** PEG4Mal-DM4 conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg ofone of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 68.53% (Day 22) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** PEG4Mal-DM4 conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 3 post cell inoculation with 10 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 76.02% (Day 22) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** PEG4Mal-DM4 conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 10 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 87.21% (Day 22) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** PEG4Mal-DM4 conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 10 mg/kg (every week, three weeks) of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 30) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Mice were randomized by body weight into treatment groups and reated either singly (SPDB conjugates) on day 3 post cell inoculation, or three times weekly on days 3, 10, and 17 post KB cell inoculation with 10 mg/kg of a conjugate.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372 Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.15 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** FOLR1-expressing SKOV3 cells were incubated with varying concentrations of anti FOLR1 antibodies or their conjugates and processed.
+- **In Vitro Model:** Ovarian serous cystadenocarcinoma SK-OV-3 cells CVCL_0532
+### huMov19-3-sulfo-Mal-DM4 (DAR 8.23) (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 26.41% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 1.1 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 39.00% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.1 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 85.77% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 4.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+### huMov19-3-sulfo-Mal-DM4 (DAR 3.7) (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 47.64% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 59.21% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 83.57% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 10 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+### huMov19-SMCC-DM1 (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 56.67% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 89.15% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 99.52% (Day 20) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 10 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 7 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 20.00 nM Moderate FOLR1 expression ( FOLR1 ++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Gestational choriocarcinoma JEG-3 cells CVCL_0363
+### huMov19-sulfo-SPDB-DM4 (DAR6.8) (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.72% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+### huMov19-SPP-DM1 (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 90.72% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 94.09% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.20 nM Moderate FOLR1 expression ( FOLR1 ++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Gestational choriocarcinoma JEG-3 cells CVCL_0363
+### huMov19-SPDB-DM4 (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 95.72% (Day 30) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Mice were randomized by body weight into treatment groups and reated either singly (SPDB conjugates) on day 3 post cell inoculation, or three times weekly on days 3, 10, and 17 post KB cell inoculation with 5 mg/kg of a conjugate.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 96.08% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 6 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.20 nM Moderate FOLR1 expression ( FOLR1 ++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Gestational choriocarcinoma JEG-3 cells CVCL_0363
+### huMov19-sulfo-SPDB-DM4 (DAR3.8) (Investigative)
+
+**Source:** Discovered Using Cell Line-derived Xenograft Model
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 96.08% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 2.5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Tumor Growth Inhibition value (TGI):** ≈ 100.00% (Day 17) Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugates of the exemplary anti-FOLR1 antibodies were tested using an established xenograft model of KB cells implanted subcutaneous into SCID mice. Mice were randomized by body weight into treatment groups and treated once on day 6 post cell inoculation with 5 mg/kg of one of the conjugates listed above or with PBS only.
+- **In Vivo Model:** KB CDX model
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 3 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 4 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.30 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Ovarian endometrioid adenocarcinoma IGROV-1 cells CVCL_1304
+**Experiment 5 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 3.00 nM Moderate FOLR1 expression ( FOLR1 ++ )
+- **Method Description:** Conjugate in various concentrations was added to FOLR1-expressing cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Gestational choriocarcinoma JEG-3 cells CVCL_0363
+### huMov19-PEG4-Mal-DM1 (Investigative)
+
+  Revealed Based on the Cell Line Data
+**Experiment 1 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** A PEG4-mal-DM4 conjugate in various concentrations was added to FOLR1-expressing KB cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+**Experiment 2 Reporting the Activity Date of This ADC**
+
+- **Efficacy Data:** Half Maximal Inhibitory Concentration (IC50) 0.10 nM Positive FOLR1 expression ( FOLR1 +++/++ )
+- **Method Description:** A PEG4-mal-DM4 conjugate in various concentrations was added to FOLR1-expressing KB cells in a 96 well plate at 1,000 cells per well in 100 pL in complete RPMI medium.
+- **In Vitro Model:** Human papillomavirus-related endocervical adenocarcinoma KB cells CVCL_0372
+
+## References
+
+1. Folate receptor 1 antibodies and immunoconjugates and uses thereof; 2011-09-01.
