@@ -1,7 +1,8 @@
 """Fetches ClinicalTrials.gov studies whose record was created or updated
 since a given date and whose text looks ADC-related, and normalizes each
-into an ADC_EVENT candidate. Event-type classification happens downstream
-in pipeline.py, not here.
+into a source-independent EvidenceRecord (see contracts.py). This adapter
+only extracts and reshapes fields — no entity resolution, no event-type
+interpretation happens here.
 
 No API key required — free, official v2 API
 (https://clinicaltrials.gov/api/v2/studies).
@@ -9,11 +10,14 @@ No API key required — free, official v2 API
 
 from __future__ import annotations
 
+import hashlib
 import time
-from datetime import date
+from datetime import date, datetime, timezone
 from typing import Iterator
 
 import requests
+
+from contracts import EvidenceRecord
 
 CTG_ENDPOINT = "https://clinicaltrials.gov/api/v2/studies"
 
@@ -68,10 +72,11 @@ def fetch_studies(since: date, page_size: int = 100, timeout: int = 30, sleep: f
         time.sleep(sleep)
 
 
-def normalize(study: dict) -> dict:
-    """Turn a raw CT.gov study record into a source-agnostic candidate dict.
-    pipeline.py does entity resolution and event-type classification; this
-    function only extracts fields."""
+def to_evidence(study: dict) -> EvidenceRecord:
+    """Turn one raw CT.gov study record into an EvidenceRecord. This is the
+    only function downstream code (entity resolution, future seed/event
+    logic) should ever call — nothing else in this module produces
+    source-agnostic output."""
     protocol = study.get("protocolSection", {})
     identification = protocol.get("identificationModule", {})
     status = protocol.get("statusModule", {})
@@ -81,24 +86,44 @@ def normalize(study: dict) -> dict:
     description = protocol.get("descriptionModule", {})
     sponsor = protocol.get("sponsorCollaboratorsModule", {})
 
+    nct_id = identification.get("nctId", "")
+    brief_title = identification.get("briefTitle", "")
+    brief_summary = description.get("briefSummary", "")
+
     intervention_names: list[str] = []
     for intervention in arms.get("interventions", []) or []:
         if intervention.get("name"):
             intervention_names.append(intervention["name"])
         intervention_names.extend(intervention.get("otherNames", []) or [])
 
-    return {
-        "source": "clinicaltrials.gov",
-        "nct_id": identification.get("nctId", ""),
-        "brief_title": identification.get("briefTitle", ""),
-        "official_title": identification.get("officialTitle", ""),
-        "overall_status": status.get("overallStatus", ""),
-        "last_update_post_date": (status.get("lastUpdatePostDateStruct", {}) or {}).get("date", ""),
-        "start_date": (status.get("startDateStruct", {}) or {}).get("date", ""),
-        "phases": design.get("phases", []) or [],
-        "intervention_names": intervention_names,
-        "conditions": conditions.get("conditions", []) or [],
-        "brief_summary": description.get("briefSummary", ""),
-        "lead_sponsor": (sponsor.get("leadSponsor", {}) or {}).get("name", ""),
-        "url": f"https://clinicaltrials.gov/study/{identification.get('nctId', '')}",
-    }
+    last_update = (status.get("lastUpdatePostDateStruct", {}) or {}).get("date", "")
+
+    return EvidenceRecord(
+        evidence_id=_evidence_id("clinicaltrials", nct_id, last_update),
+        source_type="clinicaltrials",
+        source_name="ClinicalTrials.gov",
+        source_url=f"https://clinicaltrials.gov/study/{nct_id}" if nct_id else "",
+        source_record_id=nct_id,
+        publication_date=last_update or None,
+        retrieved_at=datetime.now(timezone.utc).isoformat(),
+        title=brief_title,
+        evidence_text=brief_summary,
+        mentioned_assets=intervention_names,
+        mentioned_targets=[],
+        mentioned_indications=conditions.get("conditions", []) or [],
+        evidence_class="CLINICAL_TRIAL_RECORD",
+        confidence="raw",
+        provenance={
+            "nct_id": nct_id,
+            "official_title": identification.get("officialTitle", ""),
+            "overall_status": status.get("overallStatus", ""),
+            "phases": design.get("phases", []) or [],
+            "lead_sponsor": (sponsor.get("leadSponsor", {}) or {}).get("name", ""),
+            "start_date": (status.get("startDateStruct", {}) or {}).get("date", ""),
+        },
+    )
+
+
+def _evidence_id(source_type: str, record_id: str, version_marker: str) -> str:
+    digest = hashlib.sha1(f"{source_type}|{record_id}|{version_marker}".encode("utf-8"))
+    return digest.hexdigest()[:16]
