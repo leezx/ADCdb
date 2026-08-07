@@ -17,7 +17,15 @@ tools/adc_intelligence_delta/
       fda.py               # openFDA -> EvidenceRecord
       pubmed.py            # PubMed（NCBI E-utilities）-> EvidenceRecord
   tests/
+  calibration/             # PR #3：precision/recall 实验数据+工具，不含生产代码
 ```
+
+## PR #3：PubMed Radar Calibration v0.1（precision + recall 实测）
+
+不改 `ADC_QUERY_TERM`，只测量。完整方法和结论见 [calibration/REPORT.md](calibration/REPORT.md)。
+
+- **Precision（LLM 估计值，未经人工验证）**：515 篇 45 天窗口文章全量 LLM 标注（5 类：`PRECLINICAL_ADC_SEED`/`CLINICAL_ADC`/`ADC_REVIEW_OR_METHOD`/`ADC_RELATED_BUT_NOT_ASSET_SEED`/`IRRELEVANT`），LLM 判定主题精确率 98.4%，真正有价值的 `PRECLINICAL_ADC_SEED` 只占 12%——这两个数字都还没经过人工核实，已生成 67 篇分层抽样文件（`human_audit_sample.md`）供你核对。8 条假阳性的真实成因和最初猜测的不一样——不是"conjugate 疫苗"这类同形异义词，而是小分子药物偶联物、光免疫偶联物、抗菌 ADC 这类相邻但不同的药物模态。
+- **Recall**：用完全独立的检索方式（PubMed MeSH `Immunoconjugates[Mesh]` + preclinical 信号词，不是生产环境的自由文本匹配）构建 gold set。第一版有个方法学问题：筛选时把"production query 结构上抓不到"也当成了排除理由之一，这是循环论证——正确做法是排除标准必须完全独立于 production query 的能力，只按目标领域本体（是不是抗体+细胞毒小分子载荷+靶向递送+新的临床前证据）来判定。已经把 190 个候选里被排除的 115 篇按纯本体标准重新过一遍，找到 **6 篇被错误排除的真阳性**，另有 **1 篇是本体边界案例**（不是"错误排除"，而是排除标准本身有歧义）。复核 `recall_hits.jsonl` 发现，这 6 篇其实早就是 production query 能抓到的 hit（比如 PMID 41549487 标题本身就叫"...for Antibody-Drug Conjugates"）——说明原始筛选把它们排除掉纯粹是判断失误，跟 query 抓不抓得到无关，这是 gold-set 筛选质量问题，不是 recall gap。这 6 篇补回 gold set（75→81），重跑 `check_recall.py`：**生产 query 召回 81/81（100%）**。那 1 篇边界案例（PMID 39816690，ROR1-PROTAC "degrader-antibody conjugate"）单独处理：它的 payload 是靶向蛋白降解剂而不是经典细胞毒小分子，算不算"本体"里定义的 ADC 本身就是一个尚待决定的产品/ontology 判断，`recheck_excluded.jsonl` 里它的 verdict 也相应标成 `ONTOLOGY_BOUNDARY` 而不是 `SHOULD_BE_INCLUDED`，没有算进 gold set，而是记录在 `calibration/adjacent_modality_watchlist.jsonl` 里，作为以后若扩展 ADC 定义到 degrader-antibody conjugate 时的具体证据。**在当前严格 ADC 定义下，这次 benchmark 没有找到任何确认的 production-query miss。**
 
 ## PR #2：PubMed 滚动雷达（相对 Foundation v0.1）
 
