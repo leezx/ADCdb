@@ -222,10 +222,14 @@ def _extract_asset_mentions(text: str) -> list[str]:
 
 def to_evidence(article: dict) -> EvidenceRecord:
     """Turn one parsed PubMed article dict into an EvidenceRecord.
-    evidence_text here genuinely is verbatim source text (the abstract) —
-    unlike fda.py's synthesized description, this is the case
-    EvidenceRecord.evidence_text's docstring calls out as the "real"
-    verbatim option."""
+    evidence_text here is faithful, source-derived abstract text —
+    unlike fda.py's synthesized description, this is much closer to the
+    source. It is not strictly byte-for-byte verbatim, though: for
+    structured abstracts (BACKGROUND/METHODS/RESULTS/... sections),
+    _parse_article() reinserts each section's XML `Label` attribute as
+    plain text and joins the sections with spaces, which is a faithful
+    reconstruction of the abstract's content but not an exact copy of the
+    original PubMed XML markup."""
     pmid = article["pmid"]
     title = article["title"]
     abstract = article["abstract"]

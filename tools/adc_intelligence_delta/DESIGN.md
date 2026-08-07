@@ -189,10 +189,12 @@ from CT.gov/FDA available next (unstructured free text instead of
 structured trial/regulatory fields). **Result: `contracts.py` needed zero
 changes.** `sources/pubmed.py` adds `to_evidence()` following the exact
 same pattern as the other two adapters, and nothing downstream had to
-change. This is also the first adapter where `evidence_text` is genuinely
-verbatim source text (the PubMed abstract) rather than FDA's synthesized
-description — validating that `EvidenceRecord.evidence_text`'s "may be
-either" contract (see above) was the right call, not overcautious hedging.
+change. This is also the first adapter where `evidence_text` is faithful,
+source-derived abstract text (the PubMed abstract, reconstructed from its
+XML — see `to_evidence()`'s docstring for why that's not strictly
+byte-for-byte verbatim) rather than FDA's synthesized description —
+validating that `EvidenceRecord.evidence_text`'s "may be either" contract
+(see above) was the right call, not overcautious hedging.
 
 Two real, non-hypothetical precision problems were found and fixed by
 running the adapter against live NCBI data over the same 45-day window
@@ -223,3 +225,33 @@ structured drug-name field the way CT.gov's interventions or FDA's
 generic_name/brand_name do, so recall is intentionally traded for
 precision (a missed mention just means fewer resolvable candidates per
 article; a wrong mention risks a bad entity resolution downstream).
+
+### The search query itself is precision-first, not just mention extraction
+
+The paragraph above documents low recall in *mention extraction* (finding
+drug names inside an article this radar already fetched). That is a
+separate concern from recall in the *search query* (which articles the
+radar fetches in the first place) — and the query has the same bias.
+`ADC_QUERY_TERM` matches "antibody-drug conjugate"-style phrases plus a
+short list of known INN payload suffixes (vedotin, deruxtecan, ...). That
+combination is reasonable for tracking assets that already have a formal
+name, but this module is named a *seed* radar — its stated purpose (see
+"Why this exists" above) is catching left-edge, pre-asset signals, and the
+current query has a real gap there. It will miss:
+
+- academic ADC constructs that never got a formal INN,
+- company-code-only ADCs whose code isn't in the query,
+- payload chemistries outside the current suffix list,
+- articles that describe an "antibody conjugated to MMAE/SN-38/exatecan/..."
+  without ever using the phrase "antibody-drug conjugate."
+
+**v0.1's PubMed radar prioritizes precision over recall and does not claim
+complete preclinical seed coverage.** This is a deliberate, not accidental,
+scope limit for this PR — expanding the query with modality-construction
+terms (e.g. `"antibody conjugated"[tiab]`, `"antibody-payload"[tiab]`, or
+`antibody AND MMAE`-style combinations) is a real option, but calibrating
+it without also making it noisy needs to be measured against actual recall
+data, not guessed at. That measurement — auditing a sample of the ~515
+articles/month for true-positive rate, and checking recall against a known
+set of recent preclinical ADC papers — is deliberately left as a follow-up
+task rather than folded into this PR.
