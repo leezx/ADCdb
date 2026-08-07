@@ -92,14 +92,16 @@ reasoning had, even implicitly, let query capability leak into a
 membership decision; see the "gold-set eligibility re-check" subsection
 below for what that re-check found.
 
-**Observed recall on this MeSH-derived benchmark: 81/82 (98.8%)**
+**Observed recall on this MeSH-derived benchmark: 81/81 (100%)**
 (`check_recall.py`, verified via `<ADC_QUERY_TERM> AND <pmid>[uid]` against
 the live API — sanity-checked against unrelated negative-control PMIDs,
 which correctly returned 0, so this isn't a broken test). **This is a
 benchmark-specific number, not a general recall figure — see below for
 why**, and it already reflects the eligibility correction described next
-(the 82 includes 7 papers restored after the re-check found they'd been
-wrongly excluded — see "gold-set eligibility re-check" below).
+(the 81 includes 6 papers restored after the re-check found they'd been
+wrongly excluded from the original 75-entry set; a 7th restored candidate
+was moved to a separate adjacent-modality watchlist rather than counted
+here — see "gold-set eligibility re-check" below for both).
 
 **This is a real result, but it does not settle the recall question the
 review raised, and shouldn't be read as "recall is fine."** The gold-set
@@ -139,59 +141,66 @@ per-paper verdicts: `recheck_excluded.jsonl`.
 **Result: 108 correctly excluded (reviews, off-modality conjugates,
 already-approved-asset studies with no new tractability evidence, wrong
 indication), 7 wrongly excluded.** The 7 are genuine in-domain preclinical
-ADC papers — novel constructs/platforms with new in vitro/in vivo evidence
-— that had been dropped from the original screening: a
-receptor-ubiquitination "ubitaADC" platform (PMID 41887220), a novel
-peptidomimetic-linker/proprietary-payload trastuzumab construct (PMID
+constructs with new in vitro/in vivo evidence that had been dropped from
+the original screening: a receptor-ubiquitination "ubitaADC" platform
+(PMID 41887220), a novel peptidomimetic-linker trastuzumab construct (PMID
 41549487), a BB-1701 HER2-ADC study in T-DXd-resistant disease (PMID
 41548044), a ProTide-payload gemcitabine ADC (PMID 41273992), an
 albumin-binding scFv-MMAE "Albubody" platform (PMID 40850443), a high-DAR
 antibody-fragment ADC (PMID 40495111), and a ROR1-targeting
-antibody-PROTAC degrader conjugate (PMID 39816690). **All 7 use
-non-standard wording — code names ("11b"), platform names ("ubitaADC",
-"Albubody"), or chemistry descriptions (ProTide, PROTAC, high-DAR
-fragment) rather than the phrase "antibody-drug conjugate" or a listed
-payload suffix.** This confirms the review's concern was concrete, not
-theoretical: the kind of non-standard-wording paper the recall benchmark
-should be stress-testing had in fact been filtered out of the gold set
-before the production query was ever run against it. All 7 were restored
-to `gold_set.jsonl` (75 → 82) and `check_recall.py` was rerun against the
-corrected set — that's the 81/82 figure reported above.
+antibody-PROTAC degrader conjugate (PMID 39816690).
 
-**The one genuine miss found (PMID 39816690)** confirms the hypothesized
-failure mode directly: "A novel ROR1-targeting antibody-PROTAC conjugate
-promotes BRD4 degradation for solid tumor treatment" reports new in vitro
-(affinity, internalization, degradation, cytotoxicity) and in vivo
-(efficacy, PK, safety, combination) evidence for a specific construct, but
-is described as a "degrader-antibody conjugate" / PROTAC-payload construct
-— no "antibody-drug conjugate" phrase, no listed payload suffix
-(vedotin/deruxtecan/etc.). `ADC_QUERY_TERM` does not and structurally
-cannot match it. One honest caveat on this specific example: whether a
-PROTAC-degrader payload counts as a "cytotoxic small-molecule payload"
-under the domain rubric is itself a judgment call (PROTACs work via
-targeted protein degradation, not classical cytotoxicity, though the study
-reports genuine antitumor efficacy) — flagged here rather than silently
-resolved, since the miss-taxonomy conclusion (real recall gap for novel
-non-suffix payload chemistries) holds regardless of how that specific
-boundary case is judged, given the 6 other restored papers are unambiguous
-domain members and all 6 of those the production query *did* still catch
-(only the PROTAC one was missed) — the sample is small (1 miss), so this
-should be read as a confirmed *existence* of the hypothesized gap, not a
-reliable estimate of its size.
+**This is a genuine, confirmed finding about the original gold-set
+screening: it had target leakage.** But it is a screening-quality finding,
+not — on its own — a production-query recall finding, and an earlier
+version of this report conflated the two by claiming "all 7 use
+non-standard wording" and presenting their restoration as evidence of a
+recall gap. That claim does not survive checking `recall_hits.jsonl`: **6
+of the 7 restored papers are recall hits** — the production query does
+match them (e.g. PMID 41549487's title is literally "...for Antibody-Drug
+Conjugates," and its abstract opens with that exact phrase; the other 5
+are caught via a listed payload suffix or the ADC phrase elsewhere in
+title/abstract, despite an *unrelated* platform/code name like "ubitaADC"
+or "Albubody" appearing alongside it). For those 6, the original
+screening's exclusion was a pure judgment error — unrelated to whether
+`ADC_QUERY_TERM`'s wording could catch the paper — so their restoration
+demonstrates gold-set leakage, not a recall gap. All 6 were restored to
+`gold_set.jsonl` (75 → 81) and `check_recall.py` was rerun against the
+corrected set — that's the 81/81 (100%) figure reported above.
+
+**The 7th, PMID 39816690 (ROR1-targeting antibody-PROTAC degrader
+conjugate), is different and is deliberately *not* in `gold_set.jsonl`.**
+It pairs an antibody with a PROTAC payload — targeted protein degradation,
+not a classical cytotoxic small molecule — so whether it counts as
+in-domain under this report's own rubric ("antibody-based construct
+covalently linked to a **cytotoxic small-molecule payload**") is itself an
+ontology judgment call, not a settled fact. Counting it in the gold set
+while also treating it as a confirmed miss would silently redefine the
+domain specifically to manufacture a recall-gap finding — the same kind of
+circularity the original review flagged, just moved one level up. Instead
+it's tracked separately in `adjacent_modality_watchlist.jsonl`: excluded
+from the strict-ADC recall figure (81/81, 100%), but kept on record because
+`ADC_QUERY_TERM` demonstrably cannot match its wording ("degrader-antibody
+conjugate," no ADC phrase, no listed payload suffix), which is directly
+relevant if Stelligen's ADC intelligence scope is later broadened to
+include degrader-antibody conjugates as a payload class. **On the current,
+strict domain definition, this benchmark found zero confirmed production-query
+misses; the PROTAC case is evidence for a possible future scope-expansion
+decision, not evidence of an existing recall gap under the current
+scope.**
 
 ## What this PR does and does not do
 
 - Adds calibration tooling (`fetch_corpus.py`, `fetch_gold_candidates.py`,
   `check_recall.py`) and its output data under `calibration/`.
 - **Does not modify `ADC_QUERY_TERM` or any production code in
-  `src/`.** This holds even though this PR did surface one confirmed real
-  miss (PMID 39816690) — a single confirmed instance is evidence the gap
-  exists, not evidence of its size or a specification for how to close it;
-  expanding the query off one example risks the same "guessed at" problem
-  this whole calibration exercise was meant to avoid.
+  `src/`.** On the strict-ADC gold set, this benchmark found no confirmed
+  production-query miss (81/81); the one adjacent-modality candidate found
+  during the leakage audit (PMID 39816690, PROTAC payload) is tracked as a
+  watchlist item, not treated as a miss requiring a query fix.
 - Leaves three follow-ups open, not started here: (1) a company-code/AACR-linkage-based
-  gold set that avoids the MeSH selection bias above, to measure the size
-  of the confirmed recall gap rather than just its existence; (2) resolving
+  gold set that avoids the MeSH selection bias above, to actually test for
+  recall gaps this MeSH-biased benchmark structurally cannot surface; (2) resolving
   the two ambiguous IRRELEVANT classifications from Experiment A by
   checking full text instead of abstract-only; (3) the human audit of
   `human_audit_sample.md` to convert the LLM-estimated precision/yield

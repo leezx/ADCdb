@@ -265,17 +265,15 @@ articles, not yet human-validated) but seed yield is low (12%
 LLM-labeled `PRECLINICAL_ADC_SEED`). A recall check against an
 independently-built gold set (PubMed MeSH `Immunoconjugates[Mesh]` +
 preclinical-signal keywords, not the production free-text query — avoids
-circularity) found 81/82 (98.8%) benchmark recall, a *benchmark-specific*
+circularity) found 81/81 (100%) benchmark recall, a *benchmark-specific*
 number, not a general one — the gold-set's MeSH-tag requirement biases it
-toward papers that also use standard ADC vocabulary. Critically, a
-target-leakage re-check of everything the first screening pass excluded
-found 7 genuine in-domain papers had been wrongly dropped, all 7 using
-non-standard wording (platform names, code names, chemistry descriptions)
-— exactly the failure mode hypothesized above — and restoring them
-surfaced one real, confirmed miss (a ROR1-PROTAC "degrader-antibody
-conjugate" paper `ADC_QUERY_TERM` structurally cannot match). So the
-recall gap is now a confirmed, concrete finding, not just a hypothesis —
-but its *size* is still unmeasured (one miss in a small, biased sample).
-**`ADC_QUERY_TERM` was not changed by this PR** even with a confirmed
-example in hand — calibration data informs a future query-expansion
-decision, it doesn't make one off a single case.
+toward papers that also use standard ADC vocabulary. A target-leakage
+re-check of everything the first screening pass excluded found 7 genuine
+in-domain papers had been wrongly dropped; 6 were restored to the gold
+set and turned out to already be recall hits (their exclusion was a pure
+screening error, not a query blind spot). The 7th, a ROR1-targeting
+antibody-PROTAC "degrader-antibody conjugate," is a genuine ontology edge
+case — PROTAC payloads aren't classical cytotoxic small molecules — so
+it's tracked in `calibration/adjacent_modality_watchlist.jsonl` rather
+than counted as a confirmed miss; the strict-ADC benchmark found none.
+**`ADC_QUERY_TERM` was not changed by this PR.**
