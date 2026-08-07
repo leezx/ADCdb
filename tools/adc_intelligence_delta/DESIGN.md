@@ -255,3 +255,19 @@ data, not guessed at. That measurement — auditing a sample of the ~515
 articles/month for true-positive rate, and checking recall against a known
 set of recent preclinical ADC papers — is deliberately left as a follow-up
 task rather than folded into this PR.
+
+## PR #3: Calibration v0.1 — measuring precision and recall, not guessing
+
+That follow-up measurement task landed as its own PR. Full results and
+methodology: `calibration/REPORT.md`. Headline findings, without repeating
+the report: topical precision is high (98.4% of 515 articles genuinely
+about ADCs) but seed yield is low (12% are the actionable
+`PRECLINICAL_ADC_SEED` tier); a recall check against an independently-built
+75-paper gold set found 100% recall, but with a structural selection bias
+(the gold set required a PubMed MeSH `Immunoconjugates` tag, which
+correlates with using standard ADC vocabulary) that means the specific
+recall-gap scenarios hypothesized above (company-code-only ADCs, novel
+payload chemistries, "antibody conjugated to X" wording) remain untested,
+not confirmed absent. **`ADC_QUERY_TERM` was not changed by this PR** —
+calibration data informs a future query-expansion decision, it doesn't
+make one.

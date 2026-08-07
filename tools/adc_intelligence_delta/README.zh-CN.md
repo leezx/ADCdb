@@ -17,7 +17,15 @@ tools/adc_intelligence_delta/
       fda.py               # openFDA -> EvidenceRecord
       pubmed.py            # PubMed（NCBI E-utilities）-> EvidenceRecord
   tests/
+  calibration/             # PR #3：precision/recall 实验数据+工具，不含生产代码
 ```
+
+## PR #3：PubMed Radar Calibration v0.1（precision + recall 实测）
+
+不改 `ADC_QUERY_TERM`，只测量。完整方法和结论见 [calibration/REPORT.md](calibration/REPORT.md)。
+
+- **Precision**：515 篇 45 天窗口文章全量 LLM 标注（5 类：`PRECLINICAL_ADC_SEED`/`CLINICAL_ADC`/`ADC_REVIEW_OR_METHOD`/`ADC_RELATED_BUT_NOT_ASSET_SEED`/`IRRELEVANT`），主题精确率 98.4%，但真正有价值的 `PRECLINICAL_ADC_SEED` 只占 12%。8 条假阳性的真实成因和最初猜测的不一样——不是"conjugate 疫苗"这类同形异义词，而是小分子药物偶联物、光免疫偶联物、抗菌 ADC 这类相邻但不同的药物模态。已生成 67 篇分层抽样文件（`human_audit_sample.md`）供你人工核对 LLM 标注是否准确。
+- **Recall**：用完全独立的检索方式（PubMed MeSH `Immunoconjugates[Mesh]` + preclinical 信号词，不是生产环境的自由文本匹配）构建了一个 75 篇 gold set，结果生产 query 召回 100%——但这个数字有结构性偏差：gold set 要求 MeSH 已经标注为 immunoconjugates，而这种论文本身就很可能同时使用标准 ADC 词汇，所以最初担心的 company-code-only/新型 payload/不用"ADC"说法这几种 recall gap，**这次实验根本没测到，不代表不存在**。报告里写清楚了，没有拿这个 100% 冒充"recall 没问题"。
 
 ## PR #2：PubMed 滚动雷达（相对 Foundation v0.1）
 
