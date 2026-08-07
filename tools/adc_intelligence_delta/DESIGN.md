@@ -260,14 +260,22 @@ task rather than folded into this PR.
 
 That follow-up measurement task landed as its own PR. Full results and
 methodology: `calibration/REPORT.md`. Headline findings, without repeating
-the report: topical precision is high (98.4% of 515 articles genuinely
-about ADCs) but seed yield is low (12% are the actionable
-`PRECLINICAL_ADC_SEED` tier); a recall check against an independently-built
-75-paper gold set found 100% recall, but with a structural selection bias
-(the gold set required a PubMed MeSH `Immunoconjugates` tag, which
-correlates with using standard ADC vocabulary) that means the specific
-recall-gap scenarios hypothesized above (company-code-only ADCs, novel
-payload chemistries, "antibody conjugated to X" wording) remain untested,
-not confirmed absent. **`ADC_QUERY_TERM` was not changed by this PR** —
-calibration data informs a future query-expansion decision, it doesn't
-make one.
+the report: LLM-estimated topical precision is high (98.4% of 515
+articles, not yet human-validated) but seed yield is low (12%
+LLM-labeled `PRECLINICAL_ADC_SEED`). A recall check against an
+independently-built gold set (PubMed MeSH `Immunoconjugates[Mesh]` +
+preclinical-signal keywords, not the production free-text query — avoids
+circularity) found 81/82 (98.8%) benchmark recall, a *benchmark-specific*
+number, not a general one — the gold-set's MeSH-tag requirement biases it
+toward papers that also use standard ADC vocabulary. Critically, a
+target-leakage re-check of everything the first screening pass excluded
+found 7 genuine in-domain papers had been wrongly dropped, all 7 using
+non-standard wording (platform names, code names, chemistry descriptions)
+— exactly the failure mode hypothesized above — and restoring them
+surfaced one real, confirmed miss (a ROR1-PROTAC "degrader-antibody
+conjugate" paper `ADC_QUERY_TERM` structurally cannot match). So the
+recall gap is now a confirmed, concrete finding, not just a hypothesis —
+but its *size* is still unmeasured (one miss in a small, biased sample).
+**`ADC_QUERY_TERM` was not changed by this PR** even with a confirmed
+example in hand — calibration data informs a future query-expansion
+decision, it doesn't make one off a single case.
