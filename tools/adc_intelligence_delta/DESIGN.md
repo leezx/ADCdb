@@ -268,12 +268,14 @@ preclinical-signal keywords, not the production free-text query — avoids
 circularity) found 81/81 (100%) benchmark recall, a *benchmark-specific*
 number, not a general one — the gold-set's MeSH-tag requirement biases it
 toward papers that also use standard ADC vocabulary. A target-leakage
-re-check of everything the first screening pass excluded found 7 genuine
-in-domain papers had been wrongly dropped; 6 were restored to the gold
-set and turned out to already be recall hits (their exclusion was a pure
-screening error, not a query blind spot). The 7th, a ROR1-targeting
-antibody-PROTAC "degrader-antibody conjugate," is a genuine ontology edge
-case — PROTAC payloads aren't classical cytotoxic small molecules — so
-it's tracked in `calibration/adjacent_modality_watchlist.jsonl` rather
-than counted as a confirmed miss; the strict-ADC benchmark found none.
+re-check of everything the first screening pass excluded found 6 genuine
+in-domain papers had been wrongly dropped and were restored to the gold
+set; all 6 turned out to already be recall hits (their exclusion was a
+pure screening error, not a query blind spot). One further candidate, a
+ROR1-targeting antibody-PROTAC "degrader-antibody conjugate," is a
+genuine ontology edge case rather than a wrongly-excluded ADC positive —
+PROTAC payloads aren't classical cytotoxic small molecules — so it's
+tracked in `calibration/adjacent_modality_watchlist.jsonl` rather than
+counted in the gold set or as a confirmed miss; the strict-ADC benchmark
+found none.
 **`ADC_QUERY_TERM` was not changed by this PR.**

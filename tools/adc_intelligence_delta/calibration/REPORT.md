@@ -140,36 +140,44 @@ per-paper verdicts: `recheck_excluded.jsonl`.
 
 **Result: 108 correctly excluded (reviews, off-modality conjugates,
 already-approved-asset studies with no new tractability evidence, wrong
-indication), 7 wrongly excluded.** The 7 are genuine in-domain preclinical
-constructs with new in vitro/in vivo evidence that had been dropped from
-the original screening: a receptor-ubiquitination "ubitaADC" platform
-(PMID 41887220), a novel peptidomimetic-linker trastuzumab construct (PMID
-41549487), a BB-1701 HER2-ADC study in T-DXd-resistant disease (PMID
-41548044), a ProTide-payload gemcitabine ADC (PMID 41273992), an
-albumin-binding scFv-MMAE "Albubody" platform (PMID 40850443), a high-DAR
-antibody-fragment ADC (PMID 40495111), and a ROR1-targeting
-antibody-PROTAC degrader conjugate (PMID 39816690).
+indication), 6 wrongly excluded strict-ADC positives, 1 ontology-boundary
+candidate.** The 6 wrongly-excluded papers are genuine in-domain
+preclinical constructs with new in vitro/in vivo evidence that had been
+dropped from the original screening: a receptor-ubiquitination "ubitaADC"
+platform (PMID 41887220), a novel peptidomimetic-linker trastuzumab
+construct (PMID 41549487), a BB-1701 HER2-ADC study in T-DXd-resistant
+disease (PMID 41548044), a ProTide-payload gemcitabine ADC (PMID
+41273992), an albumin-binding scFv-MMAE "Albubody" platform (PMID
+40850443), and a high-DAR antibody-fragment ADC (PMID 40495111). The 1
+ontology-boundary candidate, a ROR1-targeting antibody-PROTAC degrader
+conjugate (PMID 39816690), is discussed on its own below — an earlier
+pass on this re-check had also marked it `SHOULD_BE_INCLUDED` alongside
+the other 6, but that verdict was itself an instance of the same
+leakage-adjacent error one level up (see below), corrected in
+`recheck_excluded.jsonl` to `ONTOLOGY_BOUNDARY`.
 
 **This is a genuine, confirmed finding about the original gold-set
 screening: it had target leakage.** But it is a screening-quality finding,
 not — on its own — a production-query recall finding, and an earlier
 version of this report conflated the two by claiming "all 7 use
 non-standard wording" and presenting their restoration as evidence of a
-recall gap. That claim does not survive checking `recall_hits.jsonl`: **6
-of the 7 restored papers are recall hits** — the production query does
-match them (e.g. PMID 41549487's title is literally "...for Antibody-Drug
-Conjugates," and its abstract opens with that exact phrase; the other 5
-are caught via a listed payload suffix or the ADC phrase elsewhere in
-title/abstract, despite an *unrelated* platform/code name like "ubitaADC"
-or "Albubody" appearing alongside it). For those 6, the original
-screening's exclusion was a pure judgment error — unrelated to whether
-`ADC_QUERY_TERM`'s wording could catch the paper — so their restoration
-demonstrates gold-set leakage, not a recall gap. All 6 were restored to
-`gold_set.jsonl` (75 → 81) and `check_recall.py` was rerun against the
-corrected set — that's the 81/81 (100%) figure reported above.
+recall gap. That claim does not survive checking `recall_hits.jsonl`: **all
+6 of the wrongly-excluded strict-ADC papers are recall hits** — the
+production query does match them (e.g. PMID 41549487's title is literally
+"...for Antibody-Drug Conjugates," and its abstract opens with that exact
+phrase; the other 5 are caught via a listed payload suffix or the ADC
+phrase elsewhere in title/abstract, despite an *unrelated* platform/code
+name like "ubitaADC" or "Albubody" appearing alongside it). For those 6,
+the original screening's exclusion was a pure judgment error — unrelated
+to whether `ADC_QUERY_TERM`'s wording could catch the paper — so their
+restoration demonstrates gold-set leakage, not a recall gap. All 6 were
+restored to `gold_set.jsonl` (75 → 81) and `check_recall.py` was rerun
+against the corrected set — that's the 81/81 (100%) figure reported
+above.
 
-**The 7th, PMID 39816690 (ROR1-targeting antibody-PROTAC degrader
-conjugate), is different and is deliberately *not* in `gold_set.jsonl`.**
+**The remaining candidate, PMID 39816690 (ROR1-targeting antibody-PROTAC
+degrader conjugate), is different and is deliberately *not* in
+`gold_set.jsonl`.**
 It pairs an antibody with a PROTAC payload — targeted protein degradation,
 not a classical cytotoxic small molecule — so whether it counts as
 in-domain under this report's own rubric ("antibody-based construct
