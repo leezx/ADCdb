@@ -36,6 +36,16 @@ tools/adc_intelligence_delta/
 5. AACR/ASCO Layer 3 的谱系确认加入置信度分级（HIGH/MEDIUM/LOW），Layer 4 的主要 benchmark 数字改成只统计 HIGH/MEDIUM，已上市药物通用名（trastuzumab deruxtecan）的匹配单独报告。详见 `calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md`。
 6. Layer 2 的 headline 数字从"0/2456"改成"0/2149（仅统计有 DOI 的记录，307 条无 DOI 不可测）"。
 
+**第二轮审核（提交给 ChatGPT 复核 PR #8 本身的 diff）发现并修复的真实 bug**（不是措辞问题）：
+
+7. **`sources/company_pr.py` 的 User-Agent 占位符会导致请求崩溃**——第 4 点改完之后，未配置环境变量时退化用的占位字符串里带了一个 Unicode 长破折号"—"，而 `http.client.putheader()` 发送 HTTP header 时要求值能编码成 Latin-1——用真实网络请求验证过，这会在 `requests.get()` 内部直接抛 `UnicodeEncodeError`，崩溃点在业务代码之外，很难排查。修复：不再发送任何占位符，改成环境变量未设置/为空/编码不了 Latin-1 时直接 `raise MissingUserAgentError`，把问题在配置阶段就暴露出来。
+8. **`classify_identifier_confidence()` 的 MEDIUM 档实际上是"HIGH 和 LOW 都不是就归 MEDIUM"的兜底桶**——任意垃圾字符串、公司名、未被那个只有一条记录的 `KNOWN_APPROVED_ADC_GENERIC_NAMES` 覆盖到的其他已上市 ADC 通用名（如 sacituzumab govitecan）、甚至加了品牌后缀的"trastuzumab deruxtecan-nxki"，都会被误判成 MEDIUM 并计入主 benchmark 分子——这是会实质性污染统计口径的 bug，不是风格问题。修复：新建 `identifier_confidence.py` 共享模块，把 LOW 的判定从"手工维护的已上市药名单"改成"identifier 文本是否直接包含 `ADC_QUERY_TERM` 的触发词"（更贴近"为什么算 tautological"这件事本身，且不用每出一个新批准的 ADC 就手动加一条）；HIGH 判定复用已有的靶点/CD抗原/NCT号排除表（之前漏了，导致 HER2 这种靶点符号会被误判成 HIGH）；无法归类的一律排除出 benchmark，不再默认落进 MEDIUM。同时把这个纯函数从 `task57_exhaustive_layer34.py`（一个会打 PubMed 网络请求的脚本）搬到独立的 `identifier_confidence.py`，去掉 `summarize_layer34.py` 不必要的运行时耦合。
+9. **`event_extraction.py` 的 `CT_STATUS_TO_EVENT_TYPE` 漏了 6 个官方 `OverallStatus` 枚举值**——`AVAILABLE`/`NO_LONGER_AVAILABLE`/`TEMPORARILY_NOT_AVAILABLE`/`APPROVED_FOR_MARKETING`/`WITHHELD`（Expanded Access 相关状态，现在映射到独立的 `EXPANDED_ACCESS_*` 类型，不和 `TRIAL_*` 混在一起）以及 `UNKNOWN`（这本身是一个正式定义的状态值，不是"未识别"，现在映射到 `TRIAL_STATUS_UNKNOWN`，不再落进 `TRIAL_OTHER`）。另外修了一个真实的 `None` 处理 bug：`provenance.get("overall_status", "")` 在 key 存在但值是 `None` 时会返回 `None` 而不是默认值，之前会在 `.upper()` 上崩溃；现在加了 `isinstance` 检查并对状态值做 `.strip()`，避免多余空格让合法状态误落 `TRIAL_OTHER`。
+10. **`summarize_layer34.py` 不再信任已存储的 `identifier_confidence` 值**，每次都用当前版本的 `classify_identifier_confidence()` 重新计算，避免分类逻辑改了以后旧结果文件里的过时等级还在悄悄生效；`seed_level_recall_note` 之前硬编码"X/X"没有真正验证任何东西，现在改成对 `lineage_confirmed_pmids` 非空这件事做真实计数。
+11. 新增 13 个测试覆盖以上修复（`test_identifier_confidence.py` 全新；`test_event_extraction.py`/`test_company_pr_source.py` 补充）。
+
+用真实 8 个已链接种子重新验证：置信度分级结果不变（7 HIGH + 1 LOW + 0 MEDIUM），`REPORT_AACR_ASCO.md` 里报告的数字不需要改——这一轮修的是代码的健壮性/正确性，不是当前数据集的结论。
+
 ## PR #7：穷尽版 AACR/ASCO Layer 3/4
 
 PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样本）。PR #7 对全部 51 个种子做穷尽测量：31/51 提取出标识符（20/51 结构性无法链接），31 个里 8 个成功链接到 32 篇谱系确认的后续发表论文，`ADC_QUERY_TERM` 全部命中（PR #8 之后按置信度拆分，见上）。完整方法见 [calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md](calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md)。
@@ -109,4 +119,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-30 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（PR #8，含 COMPLETED/TERMINATED 不再合并的回归锁定）。
+43 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1 时的崩溃防护测试（PR #8）。

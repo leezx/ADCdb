@@ -66,16 +66,43 @@ ADC_QUERY_TERMS = (
 # a real contact address here (they will rate-limit or block a generic/
 # fake one under sustained use), so this reads from an env var rather than
 # hardcoding a placeholder that would silently stay wrong in production.
-_DEFAULT_USER_AGENT_PLACEHOLDER = (
-    "ADCdb Intelligence Delta research-use — set ADCDB_EDGAR_USER_AGENT to a real contact before production use"
-)
+#
+# This must fail loudly rather than send any default: an earlier version
+# of this constant used an em-dash ("—") in the placeholder text, which
+# `http.client.putheader()` encodes as Latin-1 before sending -- any
+# non-Latin-1 character in a header value raises UnicodeEncodeError deep
+# inside `requests.get()`, well past the point a caller could catch it
+# meaningfully. Sending a fake-but-valid placeholder would be just as
+# wrong per SEC's fair-access policy (it wants a real contact, not any
+# non-empty string), so raising here instead of falling back is the
+# correct fix, not just the safe one.
+class MissingUserAgentError(RuntimeError):
+    pass
 
 
 def _user_agent() -> str:
     # Read at call time, not import time, so a caller that sets the env
     # var programmatically after `import company_pr` (e.g. a script that
     # loads a .env file, or a test) still gets picked up.
-    return os.environ.get("ADCDB_EDGAR_USER_AGENT", _DEFAULT_USER_AGENT_PLACEHOLDER)
+    value = os.environ.get("ADCDB_EDGAR_USER_AGENT", "").strip()
+    if not value:
+        raise MissingUserAgentError(
+            "ADCDB_EDGAR_USER_AGENT is not set. SEC EDGAR's fair-access policy "
+            "requires a real, identifying User-Agent (organization + contact "
+            "email) on every request -- see "
+            "https://www.sec.gov/os/webmaster-faq#developers. Set "
+            "ADCDB_EDGAR_USER_AGENT to something like "
+            "'ADCdb Intelligence Delta (your-real-email@example.org)' before "
+            "calling fetch_filings()."
+        )
+    try:
+        value.encode("latin-1")
+    except UnicodeEncodeError as exc:
+        raise MissingUserAgentError(
+            f"ADCDB_EDGAR_USER_AGENT contains a character HTTP headers can't "
+            f"carry (must be Latin-1 encodable): {exc}"
+        ) from exc
+    return value
 
 
 def fetch_filings(

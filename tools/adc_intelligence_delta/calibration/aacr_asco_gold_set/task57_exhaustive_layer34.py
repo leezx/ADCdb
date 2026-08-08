@@ -35,6 +35,8 @@ from pathlib import Path
 
 import requests
 
+from identifier_confidence import classify_identifier_confidence
+
 OUT_DIR = Path(__file__).parent
 SEEDS_FILE = OUT_DIR / "unique_adc_seeds.jsonl"
 OUT_PATH = OUT_DIR / "layer34_exhaustive_results.jsonl"
@@ -197,46 +199,6 @@ CURATED_IDENTIFIERS: dict[tuple[str, str], str | None] = {
     ("AACR", "4448"): None,
     ("ASCO", "e15045"): "SynchroLINK T2X",
 }
-
-
-# Identifiers that are the generic INN name of an already-approved ADC
-# rather than a proprietary/pre-approval asset code. Matching one of these
-# against ADC_QUERY_TERM is close to tautological -- the term is often
-# literally in ADC_QUERY_TERM's own vocabulary (e.g. "deruxtecan") -- so
-# lineage confirmed via one of these names is weaker evidence of a genuine
-# "PubMed found this seed's later publication" link than a proprietary
-# code match, even though the substring match itself is just as exact.
-KNOWN_APPROVED_ADC_GENERIC_NAMES = {
-    "trastuzumab deruxtecan",
-}
-
-
-def classify_identifier_confidence(identifier: str | None) -> str | None:
-    """Classify how much the identifier itself supports treating a
-    lineage-confirmed match as genuine evidence of later-publication
-    discovery, independent of whether the substring match succeeded.
-
-    - HIGH: a proprietary company asset code (e.g. "OBI-992", "MEN1309") --
-      specific enough that an incidental match is implausible.
-    - MEDIUM: an antibody/construct generic name (an -mab/-vedotin/...
-      style INN) that is not a known-already-approved drug -- more generic
-      than a code, but not a term ADC_QUERY_TERM itself already searches
-      for.
-    - LOW: the generic name of an already-FDA-approved ADC (see
-      KNOWN_APPROVED_ADC_GENERIC_NAMES) -- the query term and the lineage
-      identifier overlap, so a match here is much weaker signal about
-      whether ADC_QUERY_TERM can find genuinely NEW constructs.
-    - None: no identifier (UNLINKABLE seed).
-    """
-    if not identifier:
-        return None
-    lowered = identifier.lower()
-    if lowered in KNOWN_APPROVED_ADC_GENERIC_NAMES:
-        return "LOW"
-    stripped = identifier.replace(" ", "")
-    if ASSET_CODE_PATTERN.fullmatch(stripped) and not CD_ANTIGEN_PATTERN.match(stripped) and not NCT_PATTERN.match(stripped):
-        return "HIGH"
-    return "MEDIUM"
 
 
 def choose_query_identifier(identifiers: dict) -> str | None:

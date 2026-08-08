@@ -39,7 +39,8 @@
     "matches": 13,
     "recall_pct": 100.0
   },
-  "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds had ≥1 lineage-confirmed later-published paper, by construction of the LINKED_AND_TESTED status -- this is not evidence about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures).",
+  "seeds_unclassified_confidence": 0,
+  "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds have a non-empty lineage_confirmed_pmids list (this is actually counted, not assumed -- the LINKED_AND_TESTED status is supposed to guarantee it, but this checks the invariant rather than hardcoding seeds/seeds). This says nothing about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures) or the 0 LINKED_AND_TESTED seed(s) whose identifier didn't fit any confidence tier (excluded from every recall number above, not silently folded into MEDIUM).",
   "linked_seeds_detail": [
     {
       "source": "ASCO",

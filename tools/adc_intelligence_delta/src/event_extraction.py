@@ -26,6 +26,16 @@ from contracts import ADCEvent, EvidenceRecord
 # different facts, and merging them (as an earlier version of this
 # function did, via a shared "completed" substring match against
 # evidence_text) silently discards that distinction.
+#
+# Covers all 14 values in CT.gov's official OverallStatus enum (PR #8
+# review found the first version only covered 8): 8 regular-study
+# statuses, 5 expanded-access-program statuses (kept as a distinct
+# EXPANDED_ACCESS_* family rather than reusing TRIAL_*, since an expanded
+# access status describes drug availability outside a trial, not a trial
+# phase), plus UNKNOWN -- which is itself a defined enum value ("status
+# temporarily unknown pending verification"), not an absent/invalid one,
+# so it gets its own mapped type instead of falling into the TRIAL_OTHER
+# bucket reserved for genuinely unrecognized/future status strings.
 CT_STATUS_TO_EVENT_TYPE = {
     "RECRUITING": "TRIAL_RECRUITING",
     "NOT_YET_RECRUITING": "TRIAL_NOT_YET_RECRUITING",
@@ -35,6 +45,12 @@ CT_STATUS_TO_EVENT_TYPE = {
     "TERMINATED": "TRIAL_TERMINATED",
     "WITHDRAWN": "TRIAL_WITHDRAWN",
     "SUSPENDED": "TRIAL_SUSPENDED",
+    "UNKNOWN": "TRIAL_STATUS_UNKNOWN",
+    "AVAILABLE": "EXPANDED_ACCESS_AVAILABLE",
+    "NO_LONGER_AVAILABLE": "EXPANDED_ACCESS_NO_LONGER_AVAILABLE",
+    "TEMPORARILY_NOT_AVAILABLE": "EXPANDED_ACCESS_TEMPORARILY_NOT_AVAILABLE",
+    "APPROVED_FOR_MARKETING": "EXPANDED_ACCESS_APPROVED_FOR_MARKETING",
+    "WITHHELD": "EXPANDED_ACCESS_WITHHELD",
 }
 
 
@@ -63,7 +79,14 @@ def infer_event_type(record: EvidenceRecord) -> str:
     # ClinicalTrials.gov records → TRIAL events, from the structured status
     # field (provenance["overall_status"]), not evidence_text search.
     if source == "clinicaltrials":
-        status = (record.provenance or {}).get("overall_status", "").upper()
+        # dict.get(key, "") only returns the default when the key is
+        # missing -- a key present with value None (a malformed record)
+        # would return None here and crash on .upper(), so the isinstance
+        # check guards against that instead of trusting the field is
+        # always a string. .strip() absorbs incidental whitespace so a
+        # legitimate status doesn't silently fall through to TRIAL_OTHER.
+        raw_status = (record.provenance or {}).get("overall_status")
+        status = raw_status.strip().upper() if isinstance(raw_status, str) else ""
         return CT_STATUS_TO_EVENT_TYPE.get(status, "TRIAL_OTHER")
 
     # FDA records → REGULATORY events

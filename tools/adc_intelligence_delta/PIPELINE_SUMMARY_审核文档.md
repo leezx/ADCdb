@@ -100,6 +100,14 @@ PR #4 的 Layer 3/4 只测了 51 个种子里的 12 个（top 3 抗体样本）�
 ### PR #8 — Truthfulness / Event Correctness（本次修订，未合并，不新增数据源）
 针对审核反馈的收敛性修正：本文档的能力声明、`event_extraction.py` 的 CT.gov 分型 bug、`company_pr.py` 的 User-Agent、Layer 3/4 的置信度分级、Layer 2 的 headline 数字。不新增 ESMO/Patent 等数据源——评审意见明确指出当前瓶颈不是"有没有数据源"，而是"evidence 已经进来了，但 evidence → structured intelligence 这一段还不可靠"，所以这一轮只收敛既有能力的准确性，不扩张范围。
 
+**第二轮：把这次 PR 本身的 diff 提交给 ChatGPT 复核**，发现并修复了 4 个真实问题（不是措辞问题，是会实际出错的 bug）：
+1. `company_pr.py` 里"未配置 User-Agent 时用的占位字符串"本身带了个 Unicode 长破折号，实测会让 `requests.get()` 在发请求时直接抛 `UnicodeEncodeError` 崩溃——改成未配置/为空/编码不了时直接抛出明确的 `MissingUserAgentError`，而不是发送任何占位符。
+2. `classify_identifier_confidence()` 的 MEDIUM 档之前是"HIGH 和 LOW 都判不出就归 MEDIUM"的兜底桶，垃圾字符串、公司名、没被那份只有一条记录的已上市药名单覆盖到的其他已上市 ADC 通用名都会被误判进主 benchmark——重新设计成"LOW 判定看 identifier 是否直接包含生产查询的触发词"（而不是手工维护名单），拆成独立的 `identifier_confidence.py` 共享模块，顺便也修了"靶点名会被误判成 HIGH"的问题（HER2 这种）。
+3. CT.gov 状态映射表漏了 6 个官方枚举值（5 个 Expanded Access 状态 + `UNKNOWN`，`UNKNOWN` 本身是正式状态，不该跟"未识别值"混在一起落进 `TRIAL_OTHER`），另外修了一个 `provenance` 里 `overall_status` 显式为 `None` 时会崩溃的边界 bug。
+4. `summarize_layer34.py` 改成每次都用当前分类逻辑重新计算置信度，不再信任结果文件里可能过时的存量值；一处硬编码"X/X"的说明文字改成真实计数。
+
+用真实的 8 个已链接种子重新验证：置信度分级结果完全不变（7 HIGH + 1 LOW + 0 MEDIUM），`REPORT_AACR_ASCO.md` 里的数字不需要改——这一轮修的是代码健壮性和正确性，不是当前数据集的结论。新增 13 个测试（`pytest tests/` 从 30 个变成 43 个全过）。
+
 ---
 
 ## 4. AACR/ASCO Gold Set 的完整 Pipeline 逻辑（PR #4 + PR #7）
@@ -216,7 +224,7 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 
 ### 6.3 测试覆盖
 
-30 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"这条回归锁定）。
+43 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试、SEC EDGAR User-Agent 崩溃防护测试。
 
 ---
 

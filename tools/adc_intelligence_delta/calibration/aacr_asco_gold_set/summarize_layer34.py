@@ -7,7 +7,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from task57_exhaustive_layer34 import classify_identifier_confidence
+from identifier_confidence import classify_identifier_confidence
 
 OUT_DIR = Path(__file__).parent
 RESULTS_FILE = OUT_DIR / "layer34_exhaustive_results.jsonl"
@@ -23,13 +23,16 @@ def main() -> None:
     total_matches = sum(len(r["adc_query_term_matches"]) for r in linked)
     total_misses = sum(len(r["adc_query_term_misses"]) for r in linked)
 
-    # Recomputed rather than trusted from the stored row: older result
-    # files predate the identifier_confidence field, so fall back to
-    # deriving it from query_identifier for backward compatibility.
+    # Always recomputed from query_identifier, never trusted from a stored
+    # identifier_confidence value (even if one is present in the result
+    # file) -- a stored value could be stale relative to whatever version
+    # of classify_identifier_confidence() produced it, and silently
+    # trusting it would let a classifier bug fix here go unnoticed by
+    # anyone rerunning summarize_layer34.py against an old results file.
     for r in linked:
-        r.setdefault("identifier_confidence", None)
-        if r["identifier_confidence"] is None:
-            r["identifier_confidence"] = classify_identifier_confidence(r["query_identifier"])
+        r["identifier_confidence"] = classify_identifier_confidence(r["query_identifier"])
+
+    unclassified = [r for r in linked if r["identifier_confidence"] is None]
 
     def _tier_stats(tier_filter) -> dict:
         subset = [r for r in linked if tier_filter(r["identifier_confidence"])]
@@ -71,13 +74,20 @@ def main() -> None:
         "overall_recall_pct_all_confidence_tiers": round(100 * total_matches / total_confirmed, 1) if total_confirmed else None,
         "recall_by_confidence": recall_by_confidence,
         "benchmark_recall_high_medium_only": high_medium,
+        "seeds_unclassified_confidence": len(unclassified),
         "seed_level_recall_note": (
-            f"{high_medium['seeds']}/{high_medium['seeds']} HIGH/MEDIUM-confidence linked seeds had "
-            "≥1 lineage-confirmed later-published paper, by construction of the LINKED_AND_TESTED "
-            "status -- this is not evidence about the population of seeds that could NOT be linked "
+            f"{sum(1 for r in linked if r['identifier_confidence'] in ('HIGH', 'MEDIUM') and r['lineage_confirmed_pmids'])}"
+            f"/{high_medium['seeds']} HIGH/MEDIUM-confidence linked seeds have a non-empty "
+            "lineage_confirmed_pmids list (this is actually counted, not assumed -- the "
+            "LINKED_AND_TESTED status is supposed to guarantee it, but this checks the "
+            "invariant rather than hardcoding seeds/seeds). This says nothing about the "
+            "population of seeds that could NOT be linked "
             f"({status_counts.get('UNLINKABLE_NO_IDENTIFIER', 0)} UNLINKABLE + "
             f"{status_counts.get('NO_CANDIDATES_FOUND', 0)} NO_CANDIDATES_FOUND are excluded from this "
-            "denominator, not counted as recall failures)."
+            f"denominator, not counted as recall failures) or the "
+            f"{len(unclassified)} LINKED_AND_TESTED seed(s) whose identifier didn't fit any "
+            "confidence tier (excluded from every recall number above, not silently folded "
+            "into MEDIUM)."
         ),
         "linked_seeds_detail": [
             {

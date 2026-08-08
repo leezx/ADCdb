@@ -32,6 +32,19 @@ def test_ct_status_mapping_is_deterministic_on_structured_field():
     assert infer_event_type(_ct_record("NOT_YET_RECRUITING")) == "TRIAL_NOT_YET_RECRUITING"
     assert infer_event_type(_ct_record("ACTIVE_NOT_RECRUITING")) == "TRIAL_ACTIVE_NOT_RECRUITING"
     assert infer_event_type(_ct_record("WITHDRAWN")) == "TRIAL_WITHDRAWN"
+    assert infer_event_type(_ct_record("ENROLLING_BY_INVITATION")) == "TRIAL_ENROLLING_BY_INVITATION"
+    assert infer_event_type(_ct_record("SUSPENDED")) == "TRIAL_SUSPENDED"
+
+
+def test_ct_expanded_access_statuses_get_their_own_family_not_trial_star():
+    # Expanded-access statuses describe drug availability outside a trial,
+    # not a trial phase -- they must not collapse into the TRIAL_* types
+    # or into the catch-all TRIAL_OTHER.
+    assert infer_event_type(_ct_record("AVAILABLE")) == "EXPANDED_ACCESS_AVAILABLE"
+    assert infer_event_type(_ct_record("NO_LONGER_AVAILABLE")) == "EXPANDED_ACCESS_NO_LONGER_AVAILABLE"
+    assert infer_event_type(_ct_record("TEMPORARILY_NOT_AVAILABLE")) == "EXPANDED_ACCESS_TEMPORARILY_NOT_AVAILABLE"
+    assert infer_event_type(_ct_record("APPROVED_FOR_MARKETING")) == "EXPANDED_ACCESS_APPROVED_FOR_MARKETING"
+    assert infer_event_type(_ct_record("WITHHELD")) == "EXPANDED_ACCESS_WITHHELD"
 
 
 def test_ct_status_ignores_evidence_text_content():
@@ -43,9 +56,30 @@ def test_ct_status_ignores_evidence_text_content():
     assert infer_event_type(record) == "TRIAL_COMPLETED"
 
 
-def test_ct_unknown_status_falls_back_to_trial_other_not_untyped():
-    assert infer_event_type(_ct_record("UNKNOWN")) == "TRIAL_OTHER"
+def test_ct_unknown_is_a_real_status_not_the_trial_other_fallback():
+    # UNKNOWN is itself a defined CT.gov OverallStatus enum value ("status
+    # temporarily unknown pending verification"), not an absent/invalid
+    # one -- it must map to its own type, not the TRIAL_OTHER bucket
+    # reserved for genuinely unrecognized status strings.
+    assert infer_event_type(_ct_record("UNKNOWN")) == "TRIAL_STATUS_UNKNOWN"
+
+
+def test_ct_genuinely_unrecognized_status_falls_back_to_trial_other():
+    assert infer_event_type(_ct_record("SOME_FUTURE_STATUS_NOT_YET_DEFINED")) == "TRIAL_OTHER"
     assert infer_event_type(_ct_record("")) == "TRIAL_OTHER"
+
+
+def test_ct_status_handles_none_and_whitespace():
+    # provenance.get("overall_status", "") returns None (not the default)
+    # if the key is present with value None -- a naive .upper() call on
+    # that would crash. Also checks that incidental whitespace around a
+    # valid status doesn't cause it to miss the mapping.
+    record = _ct_record("RECRUITING")
+    record.provenance["overall_status"] = None
+    assert infer_event_type(record) == "TRIAL_OTHER"
+
+    record.provenance["overall_status"] = "  RECRUITING  "
+    assert infer_event_type(record) == "TRIAL_RECRUITING"
 
 
 def test_extract_events_from_record_attaches_ct_event_type():
