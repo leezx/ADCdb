@@ -10,15 +10,42 @@ tools/adc_intelligence_delta/
   DESIGN.md
   requirements.txt
   src/
-    contracts.py          # EvidenceRecord / ADCAsset / ADCSeed / ADCEvent 四个最小契约
-    entity_resolution.py  # 对 ADCdb_Obsidian/ADCs/*.md 做 alias 消歧，只读
+    contracts.py           # EvidenceRecord / ADCAsset / ADCSeed / ADCEvent 四个最小契约
+    entity_resolution.py   # 对 ADCdb_Obsidian/ADCs/*.md 做 alias 消歧，只读
+    seed_extraction.py     # EvidenceRecord -> ADCSeed（PR #5，按 target×indication 假设去重）
+    event_extraction.py    # EvidenceRecord -> ADCEvent（PR #5，启发式事件分型）
+    pipeline.py             # 串联 seed/event 提取的整合层（PR #5）
     sources/
-      clinicaltrials.py   # CT.gov -> EvidenceRecord
-      fda.py               # openFDA -> EvidenceRecord
-      pubmed.py            # PubMed（NCBI E-utilities）-> EvidenceRecord
+      clinicaltrials.py    # CT.gov -> EvidenceRecord
+      fda.py                 # openFDA -> EvidenceRecord
+      pubmed.py              # PubMed（NCBI E-utilities）-> EvidenceRecord
+      company_pr.py          # SEC EDGAR 全文检索（8-K 文件）-> EvidenceRecord（PR #6）
   tests/
-  calibration/             # PR #3：precision/recall 实验数据+工具，不含生产代码
+  calibration/               # PR #3：precision/recall 实验数据+工具，不含生产代码
+    aacr_asco_gold_set/      # PR #4：AACR/ASCO 独立 recall gold set（四层测量）
 ```
+
+## PR #6：Company PR / Pipeline 数据源（SEC EDGAR 全文检索）
+
+v0.1 设计里点名的四个数据源（CT.gov + FDA + AACR/ASCO/ESMO + Company PR/pipeline）中最后一个落地。
+
+**为什么用 SEC EDGAR 而不是逐家公司 IR 页面抓取**：公司新闻稿页面没有统一 API 或 feed 格式——每家公司自建网站，逐一爬取 ~400+ 家 biotech 的 IR 页面正是 source-adapter 模式想避免的"每个源一个爬虫"式蔓延（见 DESIGN.md）。SEC EDGAR 全文检索（`https://efts.sec.gov/LATEST/search-index`）反而提供一个官方、免费、无需 key 的统一入口，覆盖所有美股上市公司的 8-K 文件——对临床阶段 biotech 来说，重大事件（临床读出、监管进展、管线更新）几乎总会以 8-K 附件形式披露（通常是 EX-99.1，4 个工作日内必须提交）。
+
+**结构性覆盖缺口**（不是 bug，是已知边界）：只覆盖美股上市/SEC 报告公司，私有 biotech 和非美股上市公司（常见于早期学术衍生公司和部分海外药企）不在覆盖范围内。
+
+**精度权衡**：EDGAR 全文检索是对整份 8-K 文件正文做关键词匹配，不像 PubMed `[tiab]` 那样能限定 title/abstract 字段——EDGAR 没有暴露这个粒度。但 8-K 附件本身就是范围很窄的新闻稿文档（不像 PubMed 语料库里的完整期刊论文），所以关键词误报风险相对更低。
+
+**`evidence_text` 的性质**：和 FDA adapter 一样，EDGAR 全文检索只返回文件元数据，不返回附件正文——完整抓取解析每份 8-K 附件的 HTML 超出 v0.1 范围。`evidence_text` 是元数据的确定性文本化表示，真正可引用的原文见 `provenance["filing_url"]`。
+
+**实测**（45 天窗口）：37 份 8-K 文件，覆盖 30 家不同公司，含 ADC Therapeutics、AbbVie、Gilead、Amgen 等。
+
+## PR #5：ADCSeed/ADCEvent 提取骨架 v0.1
+
+从 EvidenceRecord 中提取"未必已有资产名"的早期治疗假设（target × indication，与药物名解耦）以及"有类型有日期"的事件（试验起止、监管进展、临床/临床前读出）。当前是骨架实现——实体消歧（把种子/事件关联到已知资产）和细粒度事件分型（LLM 分类）留给后续 PR。详细设计见 [EXTRACTION_DESIGN.md](EXTRACTION_DESIGN.md)。
+
+## PR #4：AACR/ASCO 独立 Recall Gold Set
+
+用 AACR/ASCO 会议摘要（而非 PubMed MeSH 词）构建一个与 PR #3 正交的 recall benchmark，避免 MeSH 索引偏差。四层测量分别独立报告（分类收率、会议 DOI 索引覆盖率、后续发表发现、ADC_QUERY_TERM 回召），不合并成一个数字。完整方法和结论见 [calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md](calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md)。
 
 ## PR #3：PubMed Radar Calibration v0.1（precision + recall 实测）
 
@@ -53,9 +80,9 @@ tools/adc_intelligence_delta/
 2. **`EvidenceRecord.raw_text` 改名 `evidence_text`**——FDA adapter 产出的其实是程序拼接的描述字符串，不是源文本原文，叫 `raw_text` 并声称"never paraphrased"是名不副实。改名后语义改成"可能是原文，也可能是结构化字段的确定性文本化表示"，真正的结构化字段始终保留在 `provenance` 里。
 3. 新增一个回归测试：构造一张 Synonyms 行在 10KB+ 之后才出现的卡片，锁定"只读文件头导致漏解析"这个真实 bug，防止以后有人为了性能又加回固定大小的读取窗口。
 
-## 有意不做的事（PR #2 范围外）
+## 有意不做的事（截至 PR #6 仍未做）
 
-AACR/ASCO/ESMO/company/patent 数据源、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实际提取逻辑、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md。
+ESMO/patent 数据源、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧与 LLM 细粒度事件分型、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
 
 ## 跑测试
 
@@ -65,4 +92,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-21 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed 归一化、PubMed 停用词过滤回归测试。
+25 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试。
