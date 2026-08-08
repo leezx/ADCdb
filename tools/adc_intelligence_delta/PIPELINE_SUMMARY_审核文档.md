@@ -173,7 +173,7 @@ PR #4 的 Layer 3/4 只测了 51 个种子里的 12 个（top 3 抗体样本）�
 
 ## 5. 生产查询：`ADC_QUERY_TERM`
 
-**本轮全部 7 个 PR 都没有修改这个查询**——这是明确的原则，calibration 只做测量。
+**PR #1-#8 全部没有修改这个查询**（包括本次的 PR #8）——这是明确的原则，calibration 只做测量，不调参。
 
 ```python
 _TERMS = (
@@ -250,6 +250,7 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 
 ## 附：所有 PR 链接
 
+已合并至 `main`：
 - PR #1: https://github.com/leezx/ADCdb/pull/1
 - PR #2: https://github.com/leezx/ADCdb/pull/2
 - PR #3: https://github.com/leezx/ADCdb/pull/3
@@ -258,4 +259,5 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 - PR #6: https://github.com/leezx/ADCdb/pull/6
 - PR #7: https://github.com/leezx/ADCdb/pull/7
 
-全部已合并至 `main`。
+未合并，等待本次审核：
+- PR #8: https://github.com/leezx/ADCdb/pull/8

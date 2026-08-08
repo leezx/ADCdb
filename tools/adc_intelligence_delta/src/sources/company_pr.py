@@ -66,10 +66,16 @@ ADC_QUERY_TERMS = (
 # a real contact address here (they will rate-limit or block a generic/
 # fake one under sustained use), so this reads from an env var rather than
 # hardcoding a placeholder that would silently stay wrong in production.
-USER_AGENT = os.environ.get(
-    "ADCDB_EDGAR_USER_AGENT",
-    "ADCdb Intelligence Delta research-use — set ADCDB_EDGAR_USER_AGENT to a real contact before production use",
+_DEFAULT_USER_AGENT_PLACEHOLDER = (
+    "ADCdb Intelligence Delta research-use — set ADCDB_EDGAR_USER_AGENT to a real contact before production use"
 )
+
+
+def _user_agent() -> str:
+    # Read at call time, not import time, so a caller that sets the env
+    # var programmatically after `import company_pr` (e.g. a script that
+    # loads a .env file, or a test) still gets picked up.
+    return os.environ.get("ADCDB_EDGAR_USER_AGENT", _DEFAULT_USER_AGENT_PLACEHOLDER)
 
 
 def fetch_filings(
@@ -96,7 +102,7 @@ def fetch_filings(
                 "enddt": until.isoformat(),
                 "from": str(start),
             }
-            headers = {"User-Agent": USER_AGENT}
+            headers = {"User-Agent": _user_agent()}
             response = requests.get(EDGAR_SEARCH_ENDPOINT, params=params, headers=headers, timeout=timeout)
             response.raise_for_status()
             data = response.json()
