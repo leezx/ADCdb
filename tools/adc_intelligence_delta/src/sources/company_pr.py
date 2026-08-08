@@ -102,15 +102,16 @@ def _user_agent() -> str:
             f"ADCDB_EDGAR_USER_AGENT contains a character HTTP headers can't "
             f"carry (must be Latin-1 encodable): {exc}"
         ) from exc
-    # CR/LF pass the Latin-1 check above (both are in range 0-255) but are
-    # invalid inside an HTTP header value -- requests would eventually
-    # reject them with its own InvalidHeader error, but only after this
-    # function had already claimed the value was fine, defeating the
-    # point of validating at the configuration boundary.
-    if "\r" in value or "\n" in value:
+    # C0 control characters (CR, LF, NUL, ...) pass the Latin-1 check
+    # above (they're all in range 0-255) but are invalid inside an HTTP
+    # header value -- requests would eventually reject them with its own
+    # InvalidHeader error, but only after this function had already
+    # claimed the value was fine, defeating the point of validating at
+    # the configuration boundary. Tab is allowed (valid in header values).
+    if any(ord(ch) < 0x20 and ch != "\t" for ch in value):
         raise MissingUserAgentError(
-            "ADCDB_EDGAR_USER_AGENT contains a carriage return or newline, "
-            "which is not valid inside an HTTP header value."
+            "ADCDB_EDGAR_USER_AGENT contains a control character, which is "
+            "not valid inside an HTTP header value."
         )
     return value
 

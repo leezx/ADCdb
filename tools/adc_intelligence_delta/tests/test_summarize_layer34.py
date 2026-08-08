@@ -107,3 +107,38 @@ def test_empty_results_do_not_crash_on_division():
     summary = build_summary([])
     assert summary["recall_by_confidence"]["HIGH"]["recall_pct"] is None
     assert summary["benchmark_recall_high_medium_only"]["recall_pct"] is None
+
+
+def test_matches_misses_and_recall_pct_all_tiers_are_correct():
+    # PR #8 round-3 review: prior tests only asserted on confirmed_pmids
+    # totals, not matches/misses/recall_pct -- this asserts on all of
+    # them, and specifically on a case with a real miss, which is the
+    # scenario total_misses exists to surface (an earlier version of
+    # build_summary() silently dropped this field entirely).
+    results = [
+        _linked_row("AACR", "1", "OBI-992", ["p1", "p2"], ["p1"], misses=["p2"]),
+        _linked_row("AACR", "2", "faricimab", ["p3"], ["p3"]),
+    ]
+    summary = build_summary(results)
+
+    assert summary["total_confirmed_pmids_all_tiers"] == 3
+    assert summary["total_matches_all_tiers"] == 2
+    assert summary["total_misses_all_tiers"] == 1
+    assert summary["recall_pct_all_tiers"] == round(100 * 2 / 3, 1)
+
+    high = summary["recall_by_confidence"]["HIGH"]
+    assert (high["confirmed_pmids"], high["matches"], high["misses"]) == (2, 1, 1)
+    medium = summary["recall_by_confidence"]["MEDIUM"]
+    assert (medium["confirmed_pmids"], medium["matches"], medium["misses"]) == (1, 1, 0)
+
+
+def test_build_summary_does_not_mutate_caller_owned_rows():
+    # PR #8 round-3 review: build_summary() wrote identifier_confidence
+    # directly onto the input row dicts despite being documented as a
+    # pure aggregation function -- a caller reusing the same row objects
+    # across multiple calls (or a test fixture shared across assertions)
+    # could see confidence values silently overwritten out from under it.
+    row = _linked_row("AACR", "1", "OBI-992", ["p1"], ["p1"])
+    original = dict(row)
+    build_summary([row])
+    assert row == original

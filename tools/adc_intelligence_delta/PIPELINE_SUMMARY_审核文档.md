@@ -116,6 +116,8 @@ PR #4 的 Layer 3/4 只测了 51 个种子里的 12 个（top 3 抗体样本）�
 
 再次用真实数据验证：数字仍不变（7 HIGH + 1 LOW + 0 MEDIUM + 0 UNCLASSIFIED）。新增 12 个测试（`pytest tests/` 从 43 个变成 55 个全过，含新建的 `test_summarize_layer34.py`）。
 
+**第四轮：直接问 ChatGPT"现在能不能合并"**，得到明确结论：有 1 个阻塞问题——第三轮重构时字段改名，意外把 `total_misses`（总 miss 数）整个删掉了，是真实的信息丢失（当前数据集恰好 0 miss 所以看不出来，但结构性是个 bug）。除此之外它明确说"没有新的阻塞性问题"，把 `build_summary()` 会修改传入对象、User-Agent 检查没拦截 CR/LF 之外的其他控制字符这两点标注为"不阻塞合并"。三点都顺手修了；**没有采纳**它建议的"给改名的字段保留旧名字做兼容别名"——检查过仓库里没有其他脚本或文档按精确字段名读取这份 JSON，加别名是给不存在的消费者做的过度设计。新增 5 个测试，`pytest tests/` 从 55 个变成 57 个全过。ChatGPT 的最终结论：修完 `total_misses` 之后"可以合并"，分类器剩余的已知局限在这个固定人工核实的数据集范围内是"可接受的已知技术债"。
+
 ---
 
 ## 4. AACR/ASCO Gold Set 的完整 Pipeline 逻辑（PR #4 + PR #7）
@@ -232,7 +234,7 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 
 ### 6.3 测试覆盖
 
-55 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、生产 query 词表一致性检查）、`summarize_layer34.py` 聚合逻辑测试、SEC EDGAR User-Agent 崩溃防护及网络请求防护测试。
+57 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、生产 query 词表一致性检查）、`summarize_layer34.py` 聚合逻辑测试、SEC EDGAR User-Agent 崩溃防护及网络请求防护测试。
 
 ---
 

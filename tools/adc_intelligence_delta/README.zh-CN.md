@@ -57,6 +57,10 @@ tools/adc_intelligence_delta/
 
 再次用真实 8 个已链接种子验证：数字仍然不变（7 HIGH + 1 LOW + 0 MEDIUM + 0 UNCLASSIFIED）。新增 12 个测试（`test_summarize_layer34.py` 全新，覆盖 `build_summary()` 的聚合逻辑；`test_identifier_confidence.py`/`test_company_pr_source.py` 继续补充），`pytest tests/` 从 43 个变成 55 个全过。
 
+**第四轮（请 ChatGPT 给出明确的"能不能合并"结论）**：指出第三轮的重构意外把 `summary` 输出里的 `total_misses` 字段整个删掉了（改名过程中漏加），这是真实的信息丢失——虽然当前数据集恰好 0 miss 所以看不出来，但结构性是个 bug。**这是它给出的唯一一条阻塞性问题**，其余（`build_summary()` 会原地修改传入的行、User-Agent 检查没有拒绝除 CR/LF 外的其他控制字符）都被它自己标注为"不阻塞合并"。修复：`_tier_stats()` 补回 `misses` 统计，加回顶层 `total_misses_all_tiers` 字段；顺手也把两条非阻塞建议一起做了（`build_summary()` 改成不修改调用者传入的对象；User-Agent 检查从只拒绝 CR/LF 扩大到拒绝全部 C0 控制字符，保留 tab）。**没有采纳**它建议的"保留旧字段名作兼容别名"——检查过仓库里没有任何其他脚本或文档按精确字段名读取这个 JSON，加兼容别名是为不存在的消费者做的过度设计。
+
+新增 5 个测试（`matches`/`misses`/`recall_pct_all_tiers` 的真实断言、`build_summary()` 不修改输入的回归测试、User-Agent 控制字符测试），`pytest tests/` 从 55 个变成 57 个全过。ChatGPT 最终结论：修完 `total_misses` 之后"可以合并"，分类器剩余的已知局限（denylist 缓解、MEDIUM 的抗体名误判风险）在这个固定人工核实的 51 条数据集范围内"可以作为已知技术债，不再阻塞"。
+
 ## PR #7：穷尽版 AACR/ASCO Layer 3/4
 
 PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样本）。PR #7 对全部 51 个种子做穷尽测量：31/51 提取出标识符（20/51 结构性无法链接），31 个里 8 个成功链接到 32 篇谱系确认的后续发表论文，`ADC_QUERY_TERM` 全部命中（PR #8 之后按置信度拆分，见上）。完整方法见 [calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md](calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md)。
@@ -130,4 +134,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-55 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）。
+57 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）。

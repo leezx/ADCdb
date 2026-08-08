@@ -11,30 +11,35 @@
   "seeds_linked_and_tested": 8,
   "total_confirmed_pmids_all_tiers": 32,
   "total_matches_all_tiers": 32,
+  "total_misses_all_tiers": 0,
   "recall_pct_all_tiers": 100.0,
   "recall_by_confidence": {
     "HIGH": {
       "seeds": 7,
       "confirmed_pmids": 13,
       "matches": 13,
+      "misses": 0,
       "recall_pct": 100.0
     },
     "MEDIUM": {
       "seeds": 0,
       "confirmed_pmids": 0,
       "matches": 0,
+      "misses": 0,
       "recall_pct": null
     },
     "LOW": {
       "seeds": 1,
       "confirmed_pmids": 19,
       "matches": 19,
+      "misses": 0,
       "recall_pct": 100.0
     },
     "UNCLASSIFIED": {
       "seeds": 0,
       "confirmed_pmids": 0,
       "matches": 0,
+      "misses": 0,
       "recall_pct": null
     }
   },
@@ -42,6 +47,7 @@
     "seeds": 7,
     "confirmed_pmids": 13,
     "matches": 13,
+    "misses": 0,
     "recall_pct": 100.0
   },
   "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds have a non-empty lineage_confirmed_pmids list (this is actually counted, not assumed -- the LINKED_AND_TESTED status is supposed to guarantee it, but this checks the invariant rather than hardcoding seeds/seeds). This says nothing about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures) or the 0 LINKED_AND_TESTED seed(s) whose identifier didn't fit any confidence tier (see recall_by_confidence.UNCLASSIFIED -- included in recall_pct_all_tiers above but excluded from benchmark_recall_high_medium_only).",

@@ -19,19 +19,26 @@ CONFIDENCE_TIERS = ("HIGH", "MEDIUM", "LOW", "UNCLASSIFIED")
 def _tier_stats(rows: list[dict]) -> dict:
     confirmed = sum(len(r["lineage_confirmed_pmids"]) for r in rows)
     matches = sum(len(r["adc_query_term_matches"]) for r in rows)
+    misses = sum(len(r["adc_query_term_misses"]) for r in rows)
     return {
         "seeds": len(rows),
         "confirmed_pmids": confirmed,
         "matches": matches,
+        "misses": misses,
         "recall_pct": round(100 * matches / confirmed, 1) if confirmed else None,
     }
 
 
 def build_summary(results: list[dict]) -> dict:
-    """Pure aggregation function, no file I/O -- separated from main() so
-    the aggregation logic (tier breakdown, recall math, the seed-level
-    recall invariant check) can be unit tested directly on constructed
-    fixtures instead of only against the live results file."""
+    """Pure aggregation function, no file I/O and no mutation of its
+    input -- separated from main() so the aggregation logic (tier
+    breakdown, recall math, the seed-level recall invariant check) can be
+    unit tested directly on constructed fixtures instead of only against
+    the live results file. (An earlier version mutated identifier_
+    confidence directly on the caller's row dicts; a caller or test
+    reusing the same objects across multiple build_summary() calls could
+    see confidence values silently overwritten. Now works on copies.)"""
+    results = [dict(r) for r in results]
     status_counts = Counter(r["status"] for r in results)
     linked = [r for r in results if r["status"] == "LINKED_AND_TESTED"]
 
@@ -86,6 +93,7 @@ def build_summary(results: list[dict]) -> dict:
     # a claim in prose.
     all_tiers_confirmed = sum(recall_by_confidence[t]["confirmed_pmids"] for t in CONFIDENCE_TIERS)
     all_tiers_matches = sum(recall_by_confidence[t]["matches"] for t in CONFIDENCE_TIERS)
+    all_tiers_misses = sum(recall_by_confidence[t]["misses"] for t in CONFIDENCE_TIERS)
 
     seeds_with_confirmed_paper = sum(1 for r in high_medium_rows if r["lineage_confirmed_pmids"])
 
@@ -98,6 +106,7 @@ def build_summary(results: list[dict]) -> dict:
         "seeds_linked_and_tested": len(linked),
         "total_confirmed_pmids_all_tiers": all_tiers_confirmed,
         "total_matches_all_tiers": all_tiers_matches,
+        "total_misses_all_tiers": all_tiers_misses,
         "recall_pct_all_tiers": round(100 * all_tiers_matches / all_tiers_confirmed, 1) if all_tiers_confirmed else None,
         "recall_by_confidence": recall_by_confidence,
         "benchmark_recall_high_medium_only": high_medium,

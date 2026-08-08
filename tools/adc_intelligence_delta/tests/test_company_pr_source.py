@@ -95,20 +95,24 @@ def test_user_agent_returns_valid_configured_value(monkeypatch):
     assert company_pr._user_agent() == "ADCdb Intelligence Delta (adc@example.org)"
 
 
-def test_user_agent_raises_on_embedded_crlf(monkeypatch):
-    # PR #8 round-2 review: a carriage return or newline passes the
-    # Latin-1 encodability check (both are in range 0-255) but is not a
-    # valid HTTP header value -- requests would eventually reject it with
-    # its own InvalidHeader error, but only after this function had
-    # already claimed the value was fine, defeating the point of
-    # validating at the configuration boundary.
-    monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb\ncontact@example.org")
-    with pytest.raises(company_pr.MissingUserAgentError):
-        company_pr._user_agent()
+def test_user_agent_raises_on_embedded_control_characters(monkeypatch):
+    # PR #8 review: control characters (CR, LF, ...) pass the Latin-1
+    # encodability check (all are in range 0-255) but are not valid
+    # inside an HTTP header value -- requests would eventually reject
+    # them with its own InvalidHeader error, but only after this
+    # function had already claimed the value was fine, defeating the
+    # point of validating at the configuration boundary. Tab is the one
+    # control character allowed in header values and must not raise.
+    # (NUL is not tested here: the OS environment itself rejects it --
+    # os.environ can't hold a null byte -- so it can never actually
+    # reach _user_agent() as an env var value.)
+    for bad_char in ("\n", "\r", "\x01"):
+        monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", f"ADCdb{bad_char}contact@example.org")
+        with pytest.raises(company_pr.MissingUserAgentError):
+            company_pr._user_agent()
 
-    monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb\rcontact@example.org")
-    with pytest.raises(company_pr.MissingUserAgentError):
-        company_pr._user_agent()
+    monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb\tIntelligence Delta (adc@example.org)")
+    assert company_pr._user_agent() == "ADCdb\tIntelligence Delta (adc@example.org)"
 
 
 def test_fetch_filings_never_calls_requests_when_user_agent_unset(monkeypatch):
