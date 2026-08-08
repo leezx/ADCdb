@@ -51,6 +51,17 @@ PR #8 审核后收敛出的下一优先级：把 `seed_extraction.py` 从"两个
 
 新增 25 个测试（`test_seed_extraction.py` 重写为覆盖 batch 完整性校验、quote 验证、response block 解析；新建 `test_pipeline.py` 验证 `process_records()` 的透传和原子失败契约），`pytest tests/` 从 57 个变成 88 个全过。
 
+**第三轮：用文字描述（不贴 diff，避免浏览器又崩溃）问 ChatGPT"现在能合并吗"**，结论仍然是不建议合并，指出前两个阻塞问题确实修好了，但发现两个新问题——我都先复现验证过是真实的，再修：
+
+1. **`supporting_quote` 只验证了"是不是这条记录的真实原文"，没验证"是不是真的支撑这条 claim"**——实测发现这种输出能通过校验：quote="No new safety signals were observed."（确实是原文，但和 target=HER2/indication=breast cancer 毫无关系）。修复：`_quote_supports_claim()` 现在额外要求 quote 里必须同时包含 target 和 indication 各自的原文字符串，不只是"是真的原文"。
+2. **畸形 claim（字段类型错、缺字段）仍然只是被静默丢弃，不影响 batch 通过**——实测确认：`evidence_id` 覆盖率检查看不到这个问题，因为它只关心 evidence_id 有没有出现，不关心该记录里的某条 claim 是不是在解析过程中损坏消失了。这和"整条记录静默丢失"是同一类问题，只是发生在 claim 这一层。修复：结构性畸形的 claim（字段类型不对、缺 target/indication/supporting_quote）现在会让整个 batch 抛 `IncompleteBatchError`，和记录级别的缺失/重复/幻觉 ID 处理方式一致；只有"quote 验证不过"这种内容判断失败保留成单条 claim 丢弃（不是整批失败——这反映的是模型对某一条 claim 的判断错了，不代表整批数据被破坏）。
+
+顺手加了输入层面的校验：如果调用方传进来的 `records` 里两条记录用了同一个 `evidence_id`，在发请求给模型之前就直接 `raise ValueError`（不然输出里那个 ID 对应哪条记录会有歧义）。
+
+新增 7 个测试（含结构性畸形 claim 拉整批失败、quote 内容不相关但真实存在、输入重复 evidence_id 拒绝），`pytest tests/` 从 88 个变成 91 个全过。
+
+**这一轮 ChatGPT 明确说了"这次没有看到实际 diff，结论基于你描述的实现语义，不是逐行代码确认"**——置信度比前几轮低。目前状态：第三轮指出的两个问题已经按上面的方式修复并验证，但还没有再提交一轮"看实际 diff"的确认。
+
 ## PR #8：Truthfulness / Event Correctness（不加新数据源）
 
 对 PR #1-#7 的能力声明和一处真实 bug 做的收敛性修正，不新增 ESMO/Patent 等数据源：
@@ -160,4 +171,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-88 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、batch 完整性校验（缺失/重复/幻觉 evidence_id 全部拒绝整批）、`supporting_quote` 校验（含跨记录张冠李戴场景）、Opus 5 thinking block 解析、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求，以及 `test_pipeline.py` 验证 `process_records()` 的 `llm_call` 透传和原子失败契约（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。
+91 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、batch 完整性校验（缺失/重复/幻觉 evidence_id 全部拒绝整批）、`supporting_quote` 校验（含跨记录张冠李戴场景）、Opus 5 thinking block 解析、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求，以及 `test_pipeline.py` 验证 `process_records()` 的 `llm_call` 透传和原子失败契约（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。

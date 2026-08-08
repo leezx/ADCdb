@@ -21,7 +21,9 @@ def _ct_record(evidence_id: str, overall_status: str) -> EvidenceRecord:
 
 
 def _fake_llm(record):
-    claim = {"target": "HER2", "indication": "breast cancer", "supporting_quote": "anti-HER2 antibody-drug conjugate"}
+    # Quote must be a real substring of evidence_text AND contain both
+    # the target and indication text -- the full sentence satisfies both.
+    claim = {"target": "HER2", "indication": "breast cancer", "supporting_quote": record.evidence_text}
     return lambda user_content: json.dumps({"evidence_id": record.evidence_id, "claims": [claim]})
 
 

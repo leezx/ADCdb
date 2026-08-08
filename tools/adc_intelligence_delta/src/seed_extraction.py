@@ -118,7 +118,7 @@ Do NOT invent claims by pairing every target mentioned with every indication men
 
 target: the protein/antigen the ADC binds (gene symbol or receptor name, e.g. "HER2", "TROP2", "CDCP1"), never a drug/company code name.
 indication: the disease/cancer type being evaluated (e.g. "colorectal cancer", "triple-negative breast cancer"), not a cell line or assay name.
-supporting_quote: a short excerpt (a few words to one sentence), copied EXACTLY and verbatim from that record's own evidence_text, that supports this specific target+indication claim. Do not paraphrase, translate, or summarize -- copy the literal substring. A claim whose quote cannot be verified against the record it's attached to will be discarded.
+supporting_quote: a short excerpt (a few words to one sentence), copied EXACTLY and verbatim from that record's own evidence_text, that must contain the actual words you used for BOTH the target and the indication -- e.g. if target="TROP2" and indication="gastric cancer", the quote must literally contain both "TROP2" and "gastric cancer" (or the exact substrings you used for them). Do not paraphrase, translate, or summarize, and do not pick a quote that only mentions one of the two. A claim whose quote cannot be verified against the record it's attached to, or doesn't contain both the target and indication text, will be discarded.
 
 You will be given a numbered list of records, each with an evidence_id. Output exactly ONE JSON object per input record, one per line, with fields:
 evidence_id (copy through unchanged), claims (a list of {{"target": ..., "indication": ..., "supporting_quote": ...}} objects, possibly empty)
@@ -228,19 +228,34 @@ def _build_user_message(records: list[EvidenceRecord]) -> str:
     return USER_MESSAGE_TEMPLATE.format(records_json=records_json)
 
 
-def _quote_is_verifiable(quote: str, evidence_text: str) -> bool:
-    # Whitespace-normalized, case-insensitive substring check -- tolerant
-    # of the model collapsing newlines/extra spaces or shifting case when
-    # it copies a quote, but still rejects a quote that doesn't actually
-    # appear in this specific record's evidence_text. This is the
-    # concrete defense against a claim being hallucinated outright, or
-    # misattributed from a different record in the same batch: a
-    # hallucinated or misattributed quote will not be a real substring of
-    # THIS record's text.
-    def normalize_ws(s: str) -> str:
-        return re.sub(r"\s+", " ", s).strip().lower()
+def _normalize_ws(s: str) -> str:
+    return re.sub(r"\s+", " ", s).strip().lower()
 
-    return normalize_ws(quote) in normalize_ws(evidence_text)
+
+def _quote_supports_claim(quote: str, target: str, indication: str, evidence_text: str) -> bool:
+    # Two checks, both required:
+    # 1. The quote is a real (whitespace/case-normalized) substring of
+    #    THIS record's evidence_text -- defends against a quote that's
+    #    outright fabricated, or misattributed from a different record in
+    #    the same batch.
+    # 2. The quote itself actually mentions the claimed target and
+    #    indication -- PR #9 review found check 1 alone wasn't enough: a
+    #    real, in-record quote (e.g. an unrelated safety-summary sentence)
+    #    could still be attached to a target/indication pair it says
+    #    nothing about. Requiring the target/indication text to appear
+    #    inside the quote binds the claim's content to its evidence, not
+    #    just its source record.
+    # Trade-off, documented in EXTRACTION_DESIGN.md: this requires the
+    # target/indication string the model extracted to literally appear in
+    # the quote, which will reject some real claims where the model
+    # reasonably normalized a name the quote spells differently (e.g.
+    # "HER2" vs "human epidermal growth factor receptor 2" in the source
+    # text) -- same recall-for-precision trade already accepted for the
+    # quote-verification design as a whole.
+    quote_norm = _normalize_ws(quote)
+    if quote_norm not in _normalize_ws(evidence_text):
+        return False
+    return _normalize_ws(target) in quote_norm and _normalize_ws(indication) in quote_norm
 
 
 def _parse_batch_output(
@@ -303,26 +318,43 @@ def _parse_batch_output(
             "silently treating missing coverage as \"zero claims\"."
         )
 
+    # Structurally malformed claims (wrong JSON types, missing fields) are
+    # treated as batch-fatal, not as a per-claim drop -- PR #9 review
+    # found that silently dropping them was a second, claim-level version
+    # of the same silent-recall-loss problem the record-level
+    # IncompleteBatchError above already exists to prevent: a record with
+    # evidence_id coverage intact could still have had one of its real
+    # claims corrupted into an unusable shape (e.g. by the same
+    # truncation/formatting glitch that could also cause missing IDs),
+    # and that would be indistinguishable from the model reporting a
+    # genuinely empty claims list. Content-verification failures (a
+    # syntactically valid claim whose quote doesn't check out) are kept
+    # as a softer per-claim drop below: that reflects the model's
+    # judgment being wrong about ONE claim, not evidence the batch itself
+    # is corrupted, so it shouldn't discard everything else in the batch.
+    malformed: dict[str, list] = {}
     seeds: list[ADCSeed] = []
     for evidence_id, claims in rows.items():
         record = evidence_by_id[evidence_id]
         for claim in claims:
             if not isinstance(claim, dict):
+                malformed.setdefault(evidence_id, []).append(claim)
                 continue
             target = claim.get("target")
             indication = claim.get("indication")
             quote = claim.get("supporting_quote")
             if not all(isinstance(x, str) for x in (target, indication, quote)):
+                malformed.setdefault(evidence_id, []).append(claim)
                 continue
             target = target.strip()
             indication = indication.strip()
             quote = quote.strip()
-            if not target or not indication:
+            if not target or not indication or not quote:
+                malformed.setdefault(evidence_id, []).append(claim)
                 continue
-            if len(quote) < MIN_QUOTE_LENGTH or not _quote_is_verifiable(quote, record.evidence_text):
-                # Drop this claim (not the whole batch): an unverifiable
-                # quote means this specific claim can't be trusted, but
-                # says nothing about the batch's overall coverage.
+
+            if len(quote) < MIN_QUOTE_LENGTH or not _quote_supports_claim(quote, target, indication, record.evidence_text):
+                # Per-claim drop, not batch-fatal -- see comment above.
                 continue
 
             target_clean = _clean_slug_component(target)
@@ -331,6 +363,9 @@ def _parse_batch_output(
                 # Punctuation-only or otherwise non-alphanumeric target/
                 # indication text (e.g. "---", "...") normalizes to an
                 # empty slug component -- not a real target/indication.
+                # This is a content-quality issue on an otherwise
+                # well-formed claim, not a structural one -- per-claim
+                # drop, same as a failed quote check.
                 continue
 
             seeds.append(
@@ -342,6 +377,18 @@ def _parse_batch_output(
                     supporting_evidence_ids=[evidence_id],
                 )
             )
+
+    if malformed:
+        raise IncompleteBatchError(
+            "LLM output batch integrity check failed for a "
+            f"{len(records)}-record batch: {sum(len(v) for v in malformed.values())} "
+            f"structurally malformed claim(s) across evidence_id(s) {sorted(malformed)} "
+            "(wrong JSON types or missing target/indication/supporting_quote fields). "
+            "Rejecting the whole batch rather than silently dropping a claim that "
+            "could have been a real one -- this is claim-level coverage loss, the "
+            "same failure mode the record-level evidence_id check above exists to "
+            "prevent."
+        )
 
     return seeds
 
@@ -374,13 +421,29 @@ def extract_seeds_from_records(
         seeds across records).
 
     Raises:
+        ValueError: batch_size isn't positive, or records contains
+            duplicate evidence_ids.
         IncompleteBatchError: a batch's output didn't cover every input
-            record's evidence_id exactly once.
+            record's evidence_id exactly once, or contained a
+            structurally malformed claim.
         LLMResponseError / MissingAPIKeyError: only when using the
             default (real) llm_call.
     """
     if batch_size <= 0:
         raise ValueError(f"batch_size must be a positive integer, got {batch_size}")
+
+    # Checked once, up front, over the whole input -- not just within a
+    # chunk. If two input records shared an evidence_id, an output line
+    # for that ID would be structurally ambiguous (which record does it
+    # answer for?) even if it "covers" the ID exactly once by the
+    # completeness check above -- reject this precondition violation
+    # before ever calling the model, rather than let it produce an
+    # unverifiable result.
+    all_ids = [r.evidence_id for r in records]
+    id_counts = Counter(all_ids)
+    duplicate_input_ids = sorted(eid for eid, count in id_counts.items() if count > 1)
+    if duplicate_input_ids:
+        raise ValueError(f"records contains duplicate evidence_id(s): {duplicate_input_ids}")
 
     llm_call = llm_call or _default_llm_call
     all_seeds: list[ADCSeed] = []

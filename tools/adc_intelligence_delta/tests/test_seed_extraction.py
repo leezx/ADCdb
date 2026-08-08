@@ -16,6 +16,12 @@ from seed_extraction import (
 TEXT_1 = "An anti-CDCP1 antibody-drug conjugate showed tumor regression in colorectal cancer PDX models."
 TEXT_2 = "Background: HER2 and TROP2 are both validated ADC targets. This study evaluates a novel anti-TROP2 ADC in gastric cancer."
 
+# Quotes below deliberately contain BOTH the target and indication text
+# (required since the round-3 review fix: a quote must mention both, not
+# just be a real substring of the record).
+QUOTE_1 = "anti-CDCP1 antibody-drug conjugate showed tumor regression in colorectal cancer"
+QUOTE_2 = "evaluates a novel anti-TROP2 ADC in gastric cancer"
+
 
 def _record(evidence_id: str, title: str = "", evidence_text: str = "") -> EvidenceRecord:
     return EvidenceRecord(
@@ -45,8 +51,7 @@ def test_normalize_seed_slug_format():
 
 def test_extracts_one_seed_per_verified_claim():
     records = [_record("e1", evidence_text=TEXT_1)]
-    claim = _claim("CDCP1", "colorectal cancer", "showed tumor regression in colorectal cancer PDX models")
-    fake = lambda p: _line("e1", [claim])
+    fake = lambda p: _line("e1", [_claim("CDCP1", "colorectal cancer", QUOTE_1)])
 
     seeds = extract_seeds_from_records(records, llm_call=fake)
 
@@ -67,8 +72,7 @@ def test_empty_claims_is_the_common_case_not_an_error():
 
 def test_does_not_invent_pairings_across_multiple_targets_and_indications():
     records = [_record("e1", evidence_text=TEXT_2)]
-    claim = _claim("TROP2", "gastric cancer", "evaluates a novel anti-TROP2 ADC in gastric cancer")
-    fake = lambda p: _line("e1", [claim])
+    fake = lambda p: _line("e1", [_claim("TROP2", "gastric cancer", QUOTE_2)])
 
     seeds = extract_seeds_from_records(records, llm_call=fake)
 
@@ -80,11 +84,15 @@ def test_does_not_invent_pairings_across_multiple_targets_and_indications():
 def test_multiple_claims_in_one_record_all_extracted():
     text = "A GPC3 ADC was tested in hepatocellular carcinoma models and separately in lung cancer models."
     records = [_record("e1", evidence_text=text)]
+    # Both claims quote the full sentence (a real, contiguous substring of
+    # the record) -- it happens to contain "GPC3" and both indications,
+    # which is sufficient for _quote_supports_claim's requirement that
+    # the quote contain both the target and that specific indication.
     fake = lambda p: _line(
         "e1",
         [
-            _claim("GPC3", "hepatocellular carcinoma", "tested in hepatocellular carcinoma models"),
-            _claim("GPC3", "lung cancer", "separately in lung cancer models"),
+            _claim("GPC3", "hepatocellular carcinoma", text),
+            _claim("GPC3", "lung cancer", text),
         ],
     )
 
@@ -108,7 +116,7 @@ def test_missing_evidence_id_raises_incomplete_batch_error():
         extract_seeds_from_records(records, llm_call=fake)
 
 
-def test_duplicate_evidence_id_raises_incomplete_batch_error():
+def test_duplicate_output_evidence_id_raises_incomplete_batch_error():
     records = [_record("e1", evidence_text=TEXT_1)]
     fake = lambda p: _line("e1", []) + "\n" + _line("e1", [])
 
@@ -127,6 +135,21 @@ def test_hallucinated_evidence_id_raises_incomplete_batch_error():
 
     with pytest.raises(IncompleteBatchError):
         extract_seeds_from_records(records, llm_call=fake)
+
+
+def test_duplicate_input_evidence_id_rejected_before_calling_model():
+    # Round-3 review: two INPUT records sharing an evidence_id would make
+    # any single output line for that ID structurally ambiguous (which
+    # record does it answer for?), even though it "covers" the ID exactly
+    # once. Reject this precondition violation up front, before any LLM
+    # call, rather than accept an unverifiable result.
+    calls = []
+    records = [_record("e1", evidence_text=TEXT_1), _record("e1", evidence_text=TEXT_2)]
+
+    with pytest.raises(ValueError):
+        extract_seeds_from_records(records, llm_call=lambda p: calls.append(p) or "")
+
+    assert calls == []  # never reached the model
 
 
 def test_complete_coverage_with_extra_malformed_lines_still_succeeds():
@@ -158,8 +181,24 @@ def test_claim_quote_hallucinated_from_a_different_record_is_dropped():
         _record("e2", evidence_text=TEXT_2),
     ]
     # Claim on e1 using a quote that only exists in e2's text.
-    misattributed = _claim("TROP2", "gastric cancer", "evaluates a novel anti-TROP2 ADC in gastric cancer")
+    misattributed = _claim("TROP2", "gastric cancer", QUOTE_2)
     fake = lambda p: _line("e1", [misattributed]) + "\n" + _line("e2", [])
+
+    seeds = extract_seeds_from_records(records, llm_call=fake)
+    assert seeds == []
+
+
+def test_quote_real_but_unrelated_to_claim_is_dropped():
+    # Round-3 review finding: a quote can be a genuine, verbatim
+    # substring of the CORRECT record and still say nothing about the
+    # specific target/indication being claimed (e.g. a safety-summary
+    # sentence attached to a fabricated target/indication pair). Checking
+    # only "is this quote real" wasn't enough -- the quote must also
+    # actually mention the target and indication.
+    text = "Patient received the ADC. No new safety signals were observed during the study period."
+    records = [_record("e1", evidence_text=text)]
+    claim = _claim("HER2", "breast cancer", "No new safety signals were observed")
+    fake = lambda p: _line("e1", [claim])
 
     seeds = extract_seeds_from_records(records, llm_call=fake)
     assert seeds == []
@@ -167,8 +206,14 @@ def test_claim_quote_hallucinated_from_a_different_record_is_dropped():
 
 def test_quote_verification_tolerates_whitespace_and_case_differences():
     records = [_record("e1", evidence_text=TEXT_1)]
-    # Quote has different casing and collapsed whitespace vs. the source.
-    claim = _claim("CDCP1", "colorectal cancer", "TUMOR REGRESSION   in colorectal cancer PDX models")
+    # Same word sequence as TEXT_1's real substring, but with different
+    # casing and extra whitespace -- still contains both the target and
+    # indication text once normalized.
+    claim = _claim(
+        "CDCP1",
+        "colorectal cancer",
+        "AN   anti-CDCP1 ANTIBODY-DRUG CONJUGATE showed tumor regression IN colorectal cancer",
+    )
     fake = lambda p: _line("e1", [claim])
 
     seeds = extract_seeds_from_records(records, llm_call=fake)
@@ -184,18 +229,46 @@ def test_too_short_quote_is_rejected():
     assert seeds == []
 
 
-# --- Malformed LLM output shapes (still tolerated per-line/per-claim) ---
+# --- Structurally malformed claims: batch-fatal (round-3 review) ---
 
 
-@pytest.mark.parametrize(
-    "claims_json",
-    [
-        "null",
-        '"oops"',
-        '["oops"]',
-    ],
-)
-def test_malformed_claims_field_shapes_do_not_crash(claims_json):
+def test_claim_with_non_string_target_raises_incomplete_batch_error():
+    # Round-3 review: a structurally malformed claim (wrong JSON type)
+    # within an otherwise-covered record was previously just dropped,
+    # silently indistinguishable from "zero claims" -- the same
+    # claim-level version of the record-level silent-recall-loss problem.
+    records = [_record("e1", evidence_text=TEXT_1)]
+    line = f'{{"evidence_id": "e1", "claims": [{{"target": 42, "indication": "colorectal cancer", "supporting_quote": "{QUOTE_1}"}}]}}'
+    fake = lambda p: line
+
+    with pytest.raises(IncompleteBatchError):
+        extract_seeds_from_records(records, llm_call=fake)
+
+
+def test_claim_entry_not_a_dict_raises_incomplete_batch_error():
+    records = [_record("e1", evidence_text=TEXT_1)]
+    line = '{"evidence_id": "e1", "claims": ["oops"]}'
+    fake = lambda p: line
+
+    with pytest.raises(IncompleteBatchError):
+        extract_seeds_from_records(records, llm_call=fake)
+
+
+def test_claim_missing_required_field_raises_incomplete_batch_error():
+    records = [_record("e1", evidence_text=TEXT_1)]
+    line = '{"evidence_id": "e1", "claims": [{"target": "CDCP1", "indication": "colorectal cancer"}]}'  # no supporting_quote
+    fake = lambda p: line
+
+    with pytest.raises(IncompleteBatchError):
+        extract_seeds_from_records(records, llm_call=fake)
+
+
+@pytest.mark.parametrize("claims_json", ["null", '"oops"'])
+def test_claims_field_itself_malformed_shapes_do_not_crash(claims_json):
+    # Distinct from a malformed CLAIM entry above: here the whole
+    # "claims" field isn't even a list, so there's nothing to iterate --
+    # treated as zero claims for this record (not batch-fatal), same as
+    # before.
     records = [_record("e1", evidence_text=TEXT_1)]
     line = f'{{"evidence_id": "e1", "claims": {claims_json}}}'
     fake = lambda p: line
@@ -217,18 +290,11 @@ def test_top_level_non_dict_json_line_is_treated_as_missing_not_a_crash():
         extract_seeds_from_records(records, llm_call=fake)
 
 
-def test_claim_target_as_non_string_is_dropped():
-    records = [_record("e1", evidence_text=TEXT_1)]
-    line = '{"evidence_id": "e1", "claims": [{"target": 42, "indication": "colorectal cancer", "supporting_quote": "tumor regression in colorectal cancer PDX models"}]}'
-    fake = lambda p: line
-
-    seeds = extract_seeds_from_records(records, llm_call=fake)
-    assert seeds == []
-
-
 def test_claim_normalizing_to_empty_slug_is_dropped():
     records = [_record("e1", evidence_text=TEXT_1)]
-    claim = _claim("---", "...", "tumor regression in colorectal cancer PDX models")
+    # Well-formed strings, so not batch-fatal -- just not usable as a
+    # slug component once cleaned, so this is a content-quality drop.
+    claim = _claim("---", "...", QUOTE_1)
     fake = lambda p: _line("e1", [claim])
 
     seeds = extract_seeds_from_records(records, llm_call=fake)
@@ -248,7 +314,7 @@ def test_batches_are_chunked_and_each_chunk_only_sees_its_own_records():
         return "\n".join(_line(f"e{n}", []) for n in range(4, 6))
 
     records = [_record(f"e{n}") for n in range(1, 6)]
-    seeds = extract_seeds_from_records(records, llm_call=fake_llm, batch_size=3)
+    extract_seeds_from_records(records, llm_call=fake_llm, batch_size=3)
 
     assert len(calls) == 2  # 5 records at batch_size=3 -> two chunks
 
@@ -277,10 +343,9 @@ def test_empty_records_list_makes_no_llm_call():
 def test_dedup_seeds_merges_same_hypothesis_across_records():
     r1 = _record("e1", evidence_text=TEXT_1)
     r2 = _record("e2", evidence_text=TEXT_1)
-    claim = _claim("CDCP1", "colorectal cancer", "tumor regression in colorectal cancer PDX models")
 
-    seeds = extract_seeds_from_records([r1], llm_call=lambda p: _line("e1", [claim]))
-    seeds += extract_seeds_from_records([r2], llm_call=lambda p: _line("e2", [claim]))
+    seeds = extract_seeds_from_records([r1], llm_call=lambda p: _line("e1", [_claim("CDCP1", "colorectal cancer", QUOTE_1)]))
+    seeds += extract_seeds_from_records([r2], llm_call=lambda p: _line("e2", [_claim("CDCP1", "colorectal cancer", QUOTE_1)]))
 
     deduped = dedup_seeds(seeds)
     assert len(deduped) == 1

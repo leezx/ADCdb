@@ -93,6 +93,35 @@ externally-scraped `evidence_text`/`title` fields, and the system prompt
 explicitly tells the model to treat that content as data, never as
 instructions.
 
+**v0.2 review round 2 (before merge) — closed two remaining gaps in the
+round-1 fixes**, both confirmed by directly reproducing them against the
+code before fixing:
+
+1. **`supporting_quote` verified the wrong thing**: the check only
+   confirmed a quote was real text from the *correct record* — it never
+   checked the quote actually *supported* the specific target/indication
+   claimed. A real, verbatim, correctly-attributed quote like "No new
+   safety signals were observed" could still be attached to a fabricated
+   `target`/`indication` pair and pass. `_quote_supports_claim()` now
+   additionally requires the quote to contain the claimed target's and
+   indication's own text, not just be real and correctly attributed.
+2. **A structurally malformed claim (wrong JSON type, missing field)
+   inside an otherwise-complete record was silently dropped**, which is
+   the same silent-recall-loss failure mode `IncompleteBatchError`
+   already exists to prevent at the record level, just one level down:
+   a record whose `evidence_id` coverage looked complete could still
+   have lost a real claim to corruption. Structurally malformed claims
+   now raise `IncompleteBatchError` for the whole batch, same as missing/
+   duplicate/hallucinated evidence_ids. (A syntactically valid claim that
+   merely fails quote verification is kept as a softer per-claim drop —
+   that reflects the model's own judgment being wrong about one specific
+   claim, not evidence the batch itself is corrupted.)
+
+Also added: input-level duplicate `evidence_id` rejection (`ValueError`,
+raised before any LLM call) — two input records sharing an ID would make
+any output line for that ID structurally ambiguous even if it
+technically "covers" the ID once.
+
 **Seed ID Format**: `TARGET|INDICATION|ADC` (e.g., `TROP2|COLORECTAL_CANCER|ADC`)
 
 **Deduplication**: Same seed_id → merge, accumulate evidence_ids
@@ -125,11 +154,26 @@ instructions.
   deliberate v0.1 scope decision (see `process_records()`'s docstring),
   not an oversight — independent partial results would need a different
   return contract.
-- `supporting_quote` verification trades recall for precision: a real
-  claim the model paraphrases instead of quoting verbatim will be
-  dropped. This mirrors the same precision-over-recall bias already
-  documented for `pubmed.py`'s asset-mention extraction (see DESIGN.md's
-  PR #2 section) rather than introducing a new tradeoff philosophy.
+- `supporting_quote` verification trades recall for precision, more so
+  after round 2's fix: a real claim is dropped not just if the model
+  paraphrases instead of quoting verbatim, but also if the target and
+  indication text don't both literally appear within the same quote
+  (e.g. the source spells a target differently in the sentence that
+  states the indication than in the sentence that names the target).
+  This mirrors the same precision-over-recall bias already documented
+  for `pubmed.py`'s asset-mention extraction (see DESIGN.md's PR #2
+  section) rather than introducing a new tradeoff philosophy. A
+  `target_text`/`target_normalized` field split (raw quote wording kept
+  separate from a canonicalized name) would recover some of this lost
+  recall while keeping verification exact-substring-strict; noted as a
+  reasonable follow-up, not implemented here.
+- A single malformed claim anywhere in a batch's output now fails the
+  entire batch (`IncompleteBatchError`), even if the other 49 records in
+  a 50-record batch were extracted cleanly. This is deliberately strict
+  (see "review round 2" above for why), but means one bad claim has an
+  outsized blast radius under the current batch-size default; if this
+  proves too disruptive in practice, a smaller `batch_size` reduces the
+  amount of good data any single failure discards.
 
 ---
 
