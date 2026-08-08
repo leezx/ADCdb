@@ -1,0 +1,29 @@
+...100 newly processed (record 100/2456)
+...200 newly processed (record 200/2456)
+...300 newly processed (record 300/2456)
+...400 newly processed (record 400/2456)
+...500 newly processed (record 500/2456)
+...600 newly processed (record 600/2456)
+...700 newly processed (record 700/2456)
+...800 newly processed (record 800/2456)
+...900 newly processed (record 900/2456)
+...1000 newly processed (record 1000/2456)
+...1100 newly processed (record 1100/2456)
+...1200 newly processed (record 1200/2456)
+...1300 newly processed (record 1300/2456)
+...1400 newly processed (record 1400/2456)
+...1500 newly processed (record 1500/2456)
+...1600 newly processed (record 1600/2456)
+...1700 newly processed (record 1700/2456)
+...1800 newly processed (record 1800/2456)
+...1900 newly processed (record 1900/2456)
+...2000 newly processed (record 2000/2456)
+...2100 newly processed (record 2100/2456)
+...2200 newly processed (record 2200/2456)
+...2300 newly processed (record 2300/2456)
+...2400 newly processed (record 2400/2456)
+Newly processed this run: 2456
+  DOI_LINKAGE_UNAVAILABLE (no doi): 307
+  SAME_RECORD_PUBMED_MATCH: 0
+  NO_EXACT_DOI_PMID_MATCH: 2149
+Wrote/appended to /Volumes/Stelligen_SSD/Stelligen/DATA/1.Databases/ADCdb/tools/adc_intelligence_delta/calibration/aacr_asco_gold_set/layer2_doi_linkage_results.jsonl
