@@ -1,0 +1,29 @@
+{
+  "layer": 4,
+  "stage": "sample_preliminary",
+  "seeds_represented": 12,
+  "seeds_total": 51,
+  "pmids_tested": 15,
+  "pmids_matched": 15,
+  "recall_pct": 100.0,
+  "by_antibody": [
+    {
+      "antibody": "sacituzumab",
+      "pmids_tested": 5,
+      "matched": 5,
+      "recall_pct": 100.0
+    },
+    {
+      "antibody": "datopotamab",
+      "pmids_tested": 5,
+      "matched": 5,
+      "recall_pct": 100.0
+    },
+    {
+      "antibody": "trastuzumab",
+      "pmids_tested": 5,
+      "matched": 5,
+      "recall_pct": 100.0
+    }
+  ]
+}
