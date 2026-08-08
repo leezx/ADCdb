@@ -31,6 +31,7 @@ articles.
 from __future__ import annotations
 
 import hashlib
+import os
 import time
 from datetime import date, datetime, timezone
 from typing import Iterator
@@ -61,8 +62,58 @@ ADC_QUERY_TERMS = (
 
 # SEC EDGAR full-text search requires an identifying User-Agent per their
 # fair-access policy (https://www.sec.gov/os/webmaster-faq#developers) —
-# unlike CT.gov/openFDA/PubMed this is enforced, not optional.
-USER_AGENT = "ADCdb Intelligence Delta research-use adc-research@example.com"
+# unlike CT.gov/openFDA/PubMed this is enforced, not optional. SEC expects
+# a real contact address here (they will rate-limit or block a generic/
+# fake one under sustained use), so this reads from an env var rather than
+# hardcoding a placeholder that would silently stay wrong in production.
+#
+# This must fail loudly rather than send any default: an earlier version
+# of this constant used an em-dash ("—") in the placeholder text, which
+# `http.client.putheader()` encodes as Latin-1 before sending -- any
+# non-Latin-1 character in a header value raises UnicodeEncodeError deep
+# inside `requests.get()`, well past the point a caller could catch it
+# meaningfully. Sending a fake-but-valid placeholder would be just as
+# wrong per SEC's fair-access policy (it wants a real contact, not any
+# non-empty string), so raising here instead of falling back is the
+# correct fix, not just the safe one.
+class MissingUserAgentError(RuntimeError):
+    pass
+
+
+def _user_agent() -> str:
+    # Read at call time, not import time, so a caller that sets the env
+    # var programmatically after `import company_pr` (e.g. a script that
+    # loads a .env file, or a test) still gets picked up.
+    value = os.environ.get("ADCDB_EDGAR_USER_AGENT", "").strip()
+    if not value:
+        raise MissingUserAgentError(
+            "ADCDB_EDGAR_USER_AGENT is not set. SEC EDGAR's fair-access policy "
+            "requires a real, identifying User-Agent (organization + contact "
+            "email) on every request -- see "
+            "https://www.sec.gov/os/webmaster-faq#developers. Set "
+            "ADCDB_EDGAR_USER_AGENT to something like "
+            "'ADCdb Intelligence Delta (your-real-email@example.org)' before "
+            "calling fetch_filings()."
+        )
+    try:
+        value.encode("latin-1")
+    except UnicodeEncodeError as exc:
+        raise MissingUserAgentError(
+            f"ADCDB_EDGAR_USER_AGENT contains a character HTTP headers can't "
+            f"carry (must be Latin-1 encodable): {exc}"
+        ) from exc
+    # C0 control characters (CR, LF, NUL, ...) pass the Latin-1 check
+    # above (they're all in range 0-255) but are invalid inside an HTTP
+    # header value -- requests would eventually reject them with its own
+    # InvalidHeader error, but only after this function had already
+    # claimed the value was fine, defeating the point of validating at
+    # the configuration boundary. Tab is allowed (valid in header values).
+    if any(ord(ch) < 0x20 and ch != "\t" for ch in value):
+        raise MissingUserAgentError(
+            "ADCDB_EDGAR_USER_AGENT contains a control character, which is "
+            "not valid inside an HTTP header value."
+        )
+    return value
 
 
 def fetch_filings(
@@ -89,7 +140,7 @@ def fetch_filings(
                 "enddt": until.isoformat(),
                 "from": str(start),
             }
-            headers = {"User-Agent": USER_AGENT}
+            headers = {"User-Agent": _user_agent()}
             response = requests.get(EDGAR_SEARCH_ENDPOINT, params=params, headers=headers, timeout=timeout)
             response.raise_for_status()
             data = response.json()

@@ -35,6 +35,8 @@ from pathlib import Path
 
 import requests
 
+from identifier_confidence import classify_identifier_confidence
+
 OUT_DIR = Path(__file__).parent
 SEEDS_FILE = OUT_DIR / "unique_adc_seeds.jsonl"
 OUT_PATH = OUT_DIR / "layer34_exhaustive_results.jsonl"
@@ -330,6 +332,7 @@ def process_seed(seed: dict) -> dict:
         "identifiers_extracted": identifiers,
         "query_identifier": query_id,
         "identifier_source": identifier_source,
+        "identifier_confidence": classify_identifier_confidence(query_id),
         "status": None,
         "candidate_pmids": [],
         "lineage_confirmed_pmids": [],
