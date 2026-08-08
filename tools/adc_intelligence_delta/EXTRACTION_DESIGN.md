@@ -49,10 +49,49 @@ records discussing a target/indication that were never tested together)
 
 **Testability**: the LLM call is injectable (`llm_call` parameter), so
 `tests/test_seed_extraction.py` exercises the parsing/validation logic
-(claim extraction, hallucinated-evidence-id rejection, malformed-JSON
-tolerance, batching, dedup) against constructed fake responses — no
-network call in the test suite, and `ANTHROPIC_API_KEY` is only required
-at actual pipeline run time, not for `pytest tests/`.
+(claim extraction, batch-integrity checks, quote verification,
+malformed-JSON tolerance, batching, dedup) against constructed fake
+responses — no network call in the test suite, and `ANTHROPIC_API_KEY` is
+only required at actual pipeline run time, not for `pytest tests/`.
+
+**v0.2 review round (before merge) — three integrity fixes**, all found
+by external review and verified before fixing rather than taken on faith:
+
+1. **Response-shape bug, confirmed against Anthropic's own docs**:
+   the initial implementation assumed `response["content"][0]["text"]`
+   was always the answer. Claude Opus 5 has thinking on by default (no
+   configuration needed — see
+   https://platform.claude.com/docs/en/build-with-claude/thinking),
+   so `content[0]` is a `thinking` block on every real call, not `text`.
+   `_extract_text_from_content_blocks()` now finds the actual `text`-type
+   block(s) explicitly instead of assuming a fixed index, and
+   `_default_llm_call()` also checks `stop_reason == "end_turn"` before
+   trusting the response at all. (Note: `classify_all_batches.py` has the
+   same `content[0]["text"]` assumption this was copied from — it wasn't
+   fixed as part of this PR, since it's a separate, out-of-scope script,
+   but it likely has the same latent bug.)
+2. **Silent recall loss**: if the model's output for a batch omitted,
+   duplicated, or hallucinated an `evidence_id` (most commonly from
+   truncation), that was previously indistinguishable from "this record
+   legitimately has zero claims" — a real pipeline should never
+   silently under-count seeds that way. `extract_seeds_from_records()`
+   now verifies every input record's `evidence_id` appears in the output
+   exactly once and raises `IncompleteBatchError` otherwise, rejecting
+   the whole batch rather than partially processing it.
+3. **Claim provenance**: a valid `evidence_id` alone didn't stop the
+   model from hallucinating a claim, or attaching one record's real
+   content to a different (also valid) `evidence_id` in the same batch.
+   Each claim must now include a `supporting_quote`, verified as an
+   actual (whitespace-normalized, case-insensitive) substring of that
+   specific record's `evidence_text` before being accepted — a
+   misattributed or invented quote simply won't be found in the record
+   it's attached to.
+
+Also hardened against prompt injection: the fixed instructions now live
+in the API's `system` parameter, separate from the untrusted,
+externally-scraped `evidence_text`/`title` fields, and the system prompt
+explicitly tells the model to treat that content as data, never as
+instructions.
 
 **Seed ID Format**: `TARGET|INDICATION|ADC` (e.g., `TROP2|COLORECTAL_CANCER|ADC`)
 
@@ -71,6 +110,26 @@ at actual pipeline run time, not for `pytest tests/`.
   or per-record synchronous use
 - No entity resolution yet (`asset_id`/matching to known `ADCAsset`s is
   still later-PR work, unchanged from v0.1)
+- No retry/backoff on transient network or API errors (429/5xx) — a
+  batch failure currently propagates immediately rather than retrying.
+  `classify_all_batches.py` doesn't have this either; flagged as a real
+  gap, not fixed here.
+- No token-budget-aware batch splitting — `batch_size` limits record
+  *count* per call, not input token size, so a batch of unusually long
+  `evidence_text` records could still risk truncation despite the fixed
+  count limit.
+- `pipeline.py`'s `process_records()` is atomic: if seed extraction
+  raises (missing API key, network error, `IncompleteBatchError`), no
+  events are returned either, even though event extraction is fully
+  local/deterministic and would have succeeded on its own. This is a
+  deliberate v0.1 scope decision (see `process_records()`'s docstring),
+  not an oversight — independent partial results would need a different
+  return contract.
+- `supporting_quote` verification trades recall for precision: a real
+  claim the model paraphrases instead of quoting verbatim will be
+  dropped. This mirrors the same precision-over-recall bias already
+  documented for `pubmed.py`'s asset-mention extraction (see DESIGN.md's
+  PR #2 section) rather than introducing a new tradeoff philosophy.
 
 ---
 

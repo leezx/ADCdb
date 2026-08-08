@@ -35,11 +35,21 @@ PR #8 审核后收敛出的下一优先级：把 `seed_extraction.py` 从"两个
 
 **API 调用方式**：复用 `calibration/aacr_asco_gold_set/classify_all_batches.py` 已有的调用约定——原生 `requests` 调 Anthropic Messages API，读 `ANTHROPIC_API_KEY` 环境变量，`claude-opus-5`，每批最多 50 条（同一个约定，不是发明第二套）。未设置环境变量时直接 `raise MissingAPIKeyError`，不发请求（同 PR #8 里 `MissingUserAgentError` 的设计）。
 
-**可测试性**：LLM 调用通过 `llm_call` 参数可注入，测试套件对着构造好的假响应验证解析/校验逻辑（claim 提取、幻觉 evidence_id 拒绝、畸形 JSON 容错、分批、去重），不发真实网络请求；`ANTHROPIC_API_KEY` 只在真正跑 pipeline 时才需要，不影响 `pytest tests/`。
+**可测试性**：LLM 调用通过 `llm_call` 参数可注入，测试套件对着构造好的假响应验证解析/校验逻辑，不发真实网络请求；`ANTHROPIC_API_KEY` 只在真正跑 pipeline 时才需要，不影响 `pytest tests/`。
 
-**已知局限**（写在 `EXTRACTION_DESIGN.md` 里）：非确定性（同一批记录重跑可能抽出略微不同的 claim，这是 LLM 提取固有的，不同于 CT.gov/FDA/PubMed 适配器的完全确定性）；没有靶点名称归一化（"TROP-2" vs "TROP2" 会被当成不同靶点，完全依赖 LLM 自身一致性）；每次 pipeline 运行都会产生和批次大小成正比的 API 调用成本——适合本项目设计的月度运行节奏，不适合高频或单条同步调用场景。
+**自查轮**（提交审核前自己先读了一遍 diff，用构造的畸形 LLM 输出实测 `_parse_llm_output`，不只是眼看）：发现并修了 4 个真实崩溃 bug——`"claims": null`（key 存在但值是 None）触发了和 PR #8 里 `event_extraction.py` 同一类 `dict.get()` 陷阱；claims 不是 list；单条 claim 不是 dict；顶层 JSON 不是 dict。改的过程中还发现自己把 isinstance 检查放在 `.strip()` 调用之后，导致 target/indication 非字符串时仍会崩，调整了顺序。加了 8 个畸形输入的参数化回归测试。
 
-新增 12 个测试（`test_seed_extraction.py`），`pytest tests/` 从 57 个变成 69 个全过。
+**第二轮：提交 ChatGPT 审核**（同一个审过 PR #8 的对话），给出明确结论：不建议合并，有 3 个阻塞性问题。逐条核实后确认全部属实，其中第一条我专门去查了 Anthropic 官方文档验证：
+
+1. **`_default_llm_call()` 对响应结构的假设在生产环境会直接崩溃**——代码原来写的是 `data["content"][0]["text"]`，但查了 [Anthropic 官方 thinking 文档](https://platform.claude.com/docs/en/build-with-claude/thinking) 确认：**Claude Opus 5 默认开启 thinking，不需要任何配置**，所以 `content[0]` 是 thinking block 不是 text block——这个假设在真实调用里几乎每次都会错。修复：显式按 `type == "text"` 找文本 block，不再假设固定下标；同时检查 `stop_reason == "end_turn"`，不是正常结束就直接拒绝这次响应（`classify_all_batches.py` 里也有同样的 `content[0]["text"]` 假设，这次没动它，但大概率有同样的潜在 bug）。
+2. **畸形/截断/缺失的模型输出会被静默解释成"没有 claim"，造成看不见的 recall 损失**——比如一个 50 条的 batch，模型只返回了前 35 条，剩下 15 条会被当成"合法地零 claim"，和模型主动输出 `claims: []` 完全无法区分。修复：`extract_seeds_from_records()` 现在要求每个输入的 `evidence_id` 在输出里**恰好出现一次**，缺失、重复、或出现输入里没有的 ID 都会触发新的 `IncompleteBatchError`，整批直接拒绝，不再部分处理静默过关。
+3. **合法的 evidence_id 挡不住模型在同一个 batch 内张冠李戴或编造内容**——比如把 A 记录里 HER2/乳腺癌的结论错误地挂到 B 记录合法的 evidence_id 下，靠 evidence_id 校验完全看不出来。修复：给每条 claim 加了必填的 `supporting_quote` 字段，要求是该条记录 `evidence_text` 里真实存在的原文子串（做了空白/大小写归一化容错），验证不通过就丢弃这条 claim。
+
+同时顺手做了它标注为"不阻塞但应尽快处理"的几项：prompt 里的规则和外部抓取来的 `evidence_text`/`title` 混在同一条 user message 里，边界太弱，容易被提示注入——改成固定规则放进 `system` 字段，并在里面明确声明 `evidence_text`/`title` 是不可信数据不是指令；`batch_size` 未校验（0 会报错，负数会静默返回空结果且不发请求）；`normalize_seed_slug` 归一化后可能产生空字符串（比如目标名是"---"）；`pipeline.process_records()` 硬编码了真实网络调用，没有把 `llm_call`/`batch_size` 透传出去；以及 seed 提取失败会连带阻止本来独立、确定性的 event 提取一起失败——这条判断后重新排了执行顺序（event 先算），并在 `process_records()` docstring 里把"这是有意为之的原子失败契约，不是疏漏"写清楚，而不是做更大的返回值结构改造。
+
+**没有采纳**它建议的 Anthropic Structured Outputs（保证 JSON schema 的新功能）和自动重试退避——都是合理方向，但分别是"换一种 API 调用方式"和"新增重试基础设施"，超出这一轮审核修复的范围，作为已知局限写进文档而不是现在做。
+
+新增 25 个测试（`test_seed_extraction.py` 重写为覆盖 batch 完整性校验、quote 验证、response block 解析；新建 `test_pipeline.py` 验证 `process_records()` 的透传和原子失败契约），`pytest tests/` 从 57 个变成 88 个全过。
 
 ## PR #8：Truthfulness / Event Correctness（不加新数据源）
 
@@ -150,4 +160,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-69 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、幻觉 evidence_id 拒绝、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。
+88 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、batch 完整性校验（缺失/重复/幻觉 evidence_id 全部拒绝整批）、`supporting_quote` 校验（含跨记录张冠李戴场景）、Opus 5 thinking block 解析、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求，以及 `test_pipeline.py` 验证 `process_records()` 的 `llm_call` 透传和原子失败契约（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。
