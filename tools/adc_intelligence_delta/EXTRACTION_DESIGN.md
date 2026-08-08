@@ -20,11 +20,30 @@ A **seed** is a therapeutic hypothesis: (target, indication, modality), complete
 - Later-named assets to contribute evidence backward-in-time
 - Un-named early-stage hypotheses to exist in the system
 
-### Implementation (v0.1)
+### Implementation (v0.1) — contract-validation only, not a landed capability
+
+**Status: this is a toy extractor that exercises the `ADCSeed` contract's
+shape. It is not yet a claim-level extraction capability and its output
+should not be consumed by anything downstream (in particular, the Rule
+Engine) until claim-level extraction lands.**
 
 **Input**: EvidenceRecord with `mentioned_targets` and `mentioned_indications`
 
 **Output**: One ADCSeed per (target, indication) Cartesian product
+
+**Known correctness issue with the Cartesian product**: if a single
+EvidenceRecord mentions two targets and two indications — e.g. an abstract
+that discusses both HER2 and TROP2 as background, evaluated only in
+gastric cancer — this code currently emits all four `target × indication`
+combinations, including two the source text never actually claims (e.g.
+`TROP2 × gastric cancer`, if the abstract's TROP2 mention was purely
+comparative and never tested in that indication). `mentioned_targets` and
+`mentioned_indications` are independent free-text mention lists, not
+claims, so their Cartesian product is not a valid substitute for the
+relation the seed is actually supposed to represent
+(`target — supported_in → indication`). This makes the current output
+directionally useful for validating the contract shape but not reliable
+enough to feed a Rule Engine or any other automated consumer.
 
 **Seed ID Format**: `TARGET|INDICATION|ADC` (e.g., `TROP2|COLORECTAL_CANCER|ADC`)
 
@@ -34,6 +53,10 @@ A **seed** is a therapeutic hypothesis: (target, indication, modality), complete
 - No LLM entity recognition (mentioned_targets/indications must come from source adapters)
 - No normalization (Target "TROP-2" vs "TROP2" treated as different)
 - No seed-level confidence scoring
+- No claim-level relation extraction (see Cartesian-product issue above) —
+  the real fix for a later PR is extracting the actual
+  `target — supported_in → indication` relation instead of pairing two
+  independent mention lists
 
 ---
 
@@ -55,10 +78,19 @@ Events attach to an **asset** (known ADC drug), a **seed** (hypothesis), or both
 **Output**: One ADCEvent per record (zero if no asset/seed attachment)
 
 **Event Type Inference**:
-- ClinicalTrials.gov status → trial event type
-- FDA submission text → regulatory event type
-- PubMed/AACR/ASCO → research readout type
+- ClinicalTrials.gov: deterministic mapping from the structured
+  `provenance["overall_status"]` field to a distinct `TRIAL_*` type per
+  status (RECRUITING/NOT_YET_RECRUITING/ACTIVE_NOT_RECRUITING/COMPLETED/
+  TERMINATED/WITHDRAWN/...) — not a text-search heuristic, and COMPLETED
+  vs TERMINATED are never merged, since a trial finishing as planned and
+  one stopped early are different facts
+- FDA submission text → regulatory event type (heuristic)
+- PubMed/AACR/ASCO → research readout type (heuristic)
 - Others → `UNTYPED` (requires LLM classification)
+
+LLM-based fine-grained typing is reserved for the free-text sources
+(PubMed/AACR/company); ClinicalTrials.gov already has a structured status
+field, so no LLM step is needed there.
 
 **Event Date**:
 - Prefer `record.publication_date`
@@ -66,7 +98,7 @@ Events attach to an **asset** (known ADC drug), a **seed** (hypothesis), or both
 - Last resort: `record.retrieved_at`
 
 **Limitations Flagged for Later**:
-- Heuristic event type rules (no LLM fine-grained classification)
+- Heuristic (not LLM) event type rules for FDA/PubMed/AACR/ASCO free text — ClinicalTrials.gov is deterministic (structured status field), not heuristic
 - No date extraction from free text (e.g., parsing "trial started in Q2 2024")
 - No event merging (same trial start from multiple sources = multiple events)
 - No entity resolution (all asset_id/seed_id are None in v0.1)

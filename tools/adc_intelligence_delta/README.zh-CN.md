@@ -25,9 +25,24 @@ tools/adc_intelligence_delta/
     aacr_asco_gold_set/      # PR #4：AACR/ASCO 独立 recall gold set（四层测量）
 ```
 
-## PR #6：Company PR / Pipeline 数据源（SEC EDGAR 全文检索）
+## PR #8：Truthfulness / Event Correctness（不加新数据源）
 
-v0.1 设计里点名的四个数据源（CT.gov + FDA + AACR/ASCO/ESMO + Company PR/pipeline）中最后一个落地。
+对 PR #1-#7 的能力声明和一处真实 bug 做的收敛性修正，不新增 ESMO/Patent 等数据源：
+
+1. 本文档 §PR #6 更名为 "SEC 8-K Disclosure Detector"，明确它只探测披露信号、不解析正文。
+2. 本文档 §PR #5 明确标注笛卡尔积产生假种子的问题，并声明 Rule Engine 不应消费其输出。
+3. `event_extraction.py` 的 ClinicalTrials.gov 事件分型改成读结构化 `provenance["overall_status"]` 字段做确定性映射，不再用 `evidence_text` 文本搜索；`COMPLETED`/`TERMINATED` 不再合并成同一事件类型。
+4. `sources/company_pr.py` 的 SEC User-Agent 改成环境变量 `ADCDB_EDGAR_USER_AGENT` 可配置，不再硬编码占位地址。
+5. AACR/ASCO Layer 3 的谱系确认加入置信度分级（HIGH/MEDIUM/LOW），Layer 4 的主要 benchmark 数字改成只统计 HIGH/MEDIUM，已上市药物通用名（trastuzumab deruxtecan）的匹配单独报告。详见 `calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md`。
+6. Layer 2 的 headline 数字从"0/2456"改成"0/2149（仅统计有 DOI 的记录，307 条无 DOI 不可测）"。
+
+## PR #7：穷尽版 AACR/ASCO Layer 3/4
+
+PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样本）。PR #7 对全部 51 个种子做穷尽测量：31/51 提取出标识符（20/51 结构性无法链接），31 个里 8 个成功链接到 32 篇谱系确认的后续发表论文，`ADC_QUERY_TERM` 全部命中（PR #8 之后按置信度拆分，见上）。完整方法见 [calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md](calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md)。
+
+## PR #6：SEC 8-K Disclosure Detector（原称"Company PR / Pipeline 数据源"，PR #8 更名）
+
+**命名修正（PR #8）**：这个模块之前称为"Company PR/pipeline 数据源"，但这个名字暗示它已经在监控公司管线新闻内容——实际不是。`company_pr.py` 目前做的是 SEC EDGAR 8-K 全文检索的**命中/元数据**，`EvidenceRecord.evidence_text` 只是"公司名+日期+item 编号+附件类型"的确定性拼接文本，不是新闻稿正文；`mentioned_assets`/`mentioned_targets`/`mentioned_indications` 三个字段目前全部为空数组（没有从 8-K 里解析出任何具体资产/靶点/适应症提及）。更准确的定位是"8-K 披露信号探测器"：它能告诉你"某公司在某天提交了一份提到 ADC 相关词的 8-K"，但不能告诉你那份 8-K 具体说了什么。真正意义上的"Company PR/pipeline 数据源"（解析出实际新闻稿正文和管线信息）是后续 PR 的工作（抓取 `provenance["filing_url"]` 指向的 EX-99.1 exhibit HTML 并解析正文）。
 
 **为什么用 SEC EDGAR 而不是逐家公司 IR 页面抓取**：公司新闻稿页面没有统一 API 或 feed 格式——每家公司自建网站，逐一爬取 ~400+ 家 biotech 的 IR 页面正是 source-adapter 模式想避免的"每个源一个爬虫"式蔓延（见 DESIGN.md）。SEC EDGAR 全文检索（`https://efts.sec.gov/LATEST/search-index`）反而提供一个官方、免费、无需 key 的统一入口，覆盖所有美股上市公司的 8-K 文件——对临床阶段 biotech 来说，重大事件（临床读出、监管进展、管线更新）几乎总会以 8-K 附件形式披露（通常是 EX-99.1，4 个工作日内必须提交）。
 
@@ -37,11 +52,13 @@ v0.1 设计里点名的四个数据源（CT.gov + FDA + AACR/ASCO/ESMO + Company
 
 **`evidence_text` 的性质**：和 FDA adapter 一样，EDGAR 全文检索只返回文件元数据，不返回附件正文——完整抓取解析每份 8-K 附件的 HTML 超出 v0.1 范围。`evidence_text` 是元数据的确定性文本化表示，真正可引用的原文见 `provenance["filing_url"]`。
 
+**User-Agent（PR #8 修复）**：SEC EDGAR 要求请求带真实联系方式的 User-Agent，之前硬编码成占位符 `adc-research@example.com`——生产环境长期使用这种假地址有被限流/屏蔽的风险。现在改成读环境变量 `ADCDB_EDGAR_USER_AGENT`，未设置时退化成一个明确写着"请设置真实联系方式"的字符串，而不是静默用假地址跑下去。
+
 **实测**（45 天窗口）：37 份 8-K 文件，覆盖 30 家不同公司，含 ADC Therapeutics、AbbVie、Gilead、Amgen 等。
 
 ## PR #5：ADCSeed/ADCEvent 提取骨架 v0.1
 
-从 EvidenceRecord 中提取"未必已有资产名"的早期治疗假设（target × indication，与药物名解耦）以及"有类型有日期"的事件（试验起止、监管进展、临床/临床前读出）。当前是骨架实现——实体消歧（把种子/事件关联到已知资产）和细粒度事件分型（LLM 分类）留给后续 PR。详细设计见 [EXTRACTION_DESIGN.md](EXTRACTION_DESIGN.md)。
+从 EvidenceRecord 中提取"未必已有资产名"的早期治疗假设（target × indication，与药物名解耦）以及"有类型有日期"的事件（试验起止、监管进展、临床/临床前读出）。**当前是契约验证用的 toy extractor，不是已经落地的提取能力**——`seed_extraction.py` 目前对一条记录的 `mentioned_targets` × `mentioned_indications` 直接做笛卡尔积，如果一篇摘要同时提到两个靶点和两个适应症，会生成全部四种组合，包括原文从未声称过的组合（这两个 mention 列表是相互独立的自由文本提取，不是"该靶点在该适应症下有效"这种带方向的 claim）。实体消歧（把种子/事件关联到已知资产）、细粒度事件分型（LLM 分类）、以及真正的 claim-level 关系提取都留给后续 PR。**在 claim-level 提取落地之前，不应该让 Rule Engine 或其他自动化下游消费 `seed_extraction.py` 的输出。** ClinicalTrials.gov 的事件分型已在 PR #8 改成读结构化 `overall_status` 字段（确定性映射），不再是启发式文本匹配；PubMed/AACR/ASCO/FDA 仍是启发式规则。详细设计见 [EXTRACTION_DESIGN.md](EXTRACTION_DESIGN.md)。
 
 ## PR #4：AACR/ASCO 独立 Recall Gold Set
 
@@ -80,9 +97,9 @@ v0.1 设计里点名的四个数据源（CT.gov + FDA + AACR/ASCO/ESMO + Company
 2. **`EvidenceRecord.raw_text` 改名 `evidence_text`**——FDA adapter 产出的其实是程序拼接的描述字符串，不是源文本原文，叫 `raw_text` 并声称"never paraphrased"是名不副实。改名后语义改成"可能是原文，也可能是结构化字段的确定性文本化表示"，真正的结构化字段始终保留在 `provenance` 里。
 3. 新增一个回归测试：构造一张 Synonyms 行在 10KB+ 之后才出现的卡片，锁定"只读文件头导致漏解析"这个真实 bug，防止以后有人为了性能又加回固定大小的读取窗口。
 
-## 有意不做的事（截至 PR #6 仍未做）
+## 有意不做的事（截至 PR #8 仍未做）
 
-ESMO/patent 数据源、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧与 LLM 细粒度事件分型、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
+ESMO/patent 数据源、AACR/ASCO 的持续摄取适配器（目前只有 PubMed 有生产 source adapter；AACR/ASCO 数据是 `calibration/` 下复用的静态语料，不是滚动数据源）、8-K 附件正文抓取解析、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧、claim-level 的 target-indication 关系提取（目前是笛卡尔积占位，见 PR #5 章节）、LLM 细粒度事件分型（ClinicalTrials.gov 除外，已确定性化）、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
 
 ## 跑测试
 
@@ -92,4 +109,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-25 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试。
+30 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（PR #8，含 COMPLETED/TERMINATED 不再合并的回归锁定）。

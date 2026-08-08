@@ -17,34 +17,54 @@ from datetime import datetime
 from contracts import ADCEvent, EvidenceRecord
 
 
+# ClinicalTrials.gov API v2 statusModule.overallStatus values, mapped to
+# distinct TRIAL_* event types. This is deterministic on the structured
+# status field the adapter already puts in provenance["overall_status"]
+# (see sources/clinicaltrials.py) -- it is NOT a text-search heuristic.
+# COMPLETED and TERMINATED are deliberately kept as separate event types:
+# a trial that finished as planned and one that was stopped early are
+# different facts, and merging them (as an earlier version of this
+# function did, via a shared "completed" substring match against
+# evidence_text) silently discards that distinction.
+CT_STATUS_TO_EVENT_TYPE = {
+    "RECRUITING": "TRIAL_RECRUITING",
+    "NOT_YET_RECRUITING": "TRIAL_NOT_YET_RECRUITING",
+    "ENROLLING_BY_INVITATION": "TRIAL_ENROLLING_BY_INVITATION",
+    "ACTIVE_NOT_RECRUITING": "TRIAL_ACTIVE_NOT_RECRUITING",
+    "COMPLETED": "TRIAL_COMPLETED",
+    "TERMINATED": "TRIAL_TERMINATED",
+    "WITHDRAWN": "TRIAL_WITHDRAWN",
+    "SUSPENDED": "TRIAL_SUSPENDED",
+}
+
+
 def infer_event_type(record: EvidenceRecord) -> str:
     """Infer basic event type from source_type and evidence_class.
 
     Rules (v0.1, coarse):
-    - clinicaltrials + UNCLASSIFIED → TRIAL_ENROLLMENT
+    - clinicaltrials → deterministic mapping from the structured
+      provenance["overall_status"] field (see CT_STATUS_TO_EVENT_TYPE)
     - fda + approval-related text → FDA_APPROVAL / FDA_DESIGNATION
     - pubmed/aacr/asco + preclinical → PRECLINICAL_READOUT
     - Others → UNTYPED (requires fine-grained LLM classification in a later PR)
 
-    These rules are heuristic and incomplete. Full typing requires LLM
-    classification on the evidence_text; this function only handles the
-    lowest-hanging fruit to validate the pipeline.
+    These rules are heuristic and incomplete for the free-text sources.
+    Full typing there requires LLM classification on the evidence_text;
+    this function only handles the lowest-hanging fruit to validate the
+    pipeline. ClinicalTrials.gov is the one source with a structured status
+    field, so it does not need free-text heuristics at all -- LLM
+    classification should be reserved for PubMed/AACR/company free text,
+    not applied to a source that already tells you the answer directly.
     """
     source = record.source_type.lower()
     evidence = record.evidence_text.lower()
     evidence_class = record.evidence_class.lower()
 
-    # ClinicalTrials.gov records → TRIAL events
+    # ClinicalTrials.gov records → TRIAL events, from the structured status
+    # field (provenance["overall_status"]), not evidence_text search.
     if source == "clinicaltrials":
-        if "not yet recruiting" in evidence or "recruiting" in evidence:
-            return "TRIAL_ENROLLMENT"
-        if "enrolling by invitation" in evidence:
-            return "TRIAL_ENROLLMENT"
-        if "active, not recruiting" in evidence:
-            return "TRIAL_ACTIVE"
-        if "completed" in evidence or "terminated" in evidence:
-            return "TRIAL_COMPLETED"
-        return "TRIAL_ENROLLMENT"  # Default for CT records
+        status = (record.provenance or {}).get("overall_status", "").upper()
+        return CT_STATUS_TO_EVENT_TYPE.get(status, "TRIAL_OTHER")
 
     # FDA records → REGULATORY events
     if source == "fda":

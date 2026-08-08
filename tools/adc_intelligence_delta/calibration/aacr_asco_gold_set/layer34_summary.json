@@ -12,18 +12,40 @@
   "total_confirmed_pmids": 32,
   "total_matches": 32,
   "total_misses": 0,
-  "overall_recall_pct": 100.0,
-  "novel_seeds_only": {
+  "overall_recall_pct_all_confidence_tiers": 100.0,
+  "recall_by_confidence": {
+    "HIGH": {
+      "seeds": 7,
+      "confirmed_pmids": 13,
+      "matches": 13,
+      "recall_pct": 100.0
+    },
+    "MEDIUM": {
+      "seeds": 0,
+      "confirmed_pmids": 0,
+      "matches": 0,
+      "recall_pct": null
+    },
+    "LOW": {
+      "seeds": 1,
+      "confirmed_pmids": 19,
+      "matches": 19,
+      "recall_pct": 100.0
+    }
+  },
+  "benchmark_recall_high_medium_only": {
     "seeds": 7,
     "confirmed_pmids": 13,
     "matches": 13,
     "recall_pct": 100.0
   },
+  "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds had ≥1 lineage-confirmed later-published paper, by construction of the LINKED_AND_TESTED status -- this is not evidence about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures).",
   "linked_seeds_detail": [
     {
       "source": "ASCO",
       "record_id": "e14039",
       "identifier": "MEN1309",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 2,
       "matches": 2,
       "misses": 0
@@ -32,6 +54,7 @@
       "source": "AACR",
       "record_id": "3130",
       "identifier": "OBI-992",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 3,
       "matches": 3,
       "misses": 0
@@ -40,6 +63,7 @@
       "source": "AACR",
       "record_id": "7179",
       "identifier": "OBI-992",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 3,
       "matches": 3,
       "misses": 0
@@ -48,6 +72,7 @@
       "source": "AACR",
       "record_id": "1884",
       "identifier": "DXC006",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 1,
       "matches": 1,
       "misses": 0
@@ -56,6 +81,7 @@
       "source": "AACR",
       "record_id": "3142",
       "identifier": "NN3201",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 1,
       "matches": 1,
       "misses": 0
@@ -64,6 +90,7 @@
       "source": "AACR",
       "record_id": "6341",
       "identifier": "RGX-019",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 2,
       "matches": 2,
       "misses": 0
@@ -72,6 +99,7 @@
       "source": "AACR",
       "record_id": "738",
       "identifier": "MBRC-101",
+      "identifier_confidence": "HIGH",
       "confirmed_pmids": 1,
       "matches": 1,
       "misses": 0
@@ -80,6 +108,7 @@
       "source": "ASCO",
       "record_id": "10049",
       "identifier": "trastuzumab deruxtecan",
+      "identifier_confidence": "LOW",
       "confirmed_pmids": 19,
       "matches": 19,
       "misses": 0

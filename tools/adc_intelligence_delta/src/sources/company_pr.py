@@ -31,6 +31,7 @@ articles.
 from __future__ import annotations
 
 import hashlib
+import os
 import time
 from datetime import date, datetime, timezone
 from typing import Iterator
@@ -61,8 +62,14 @@ ADC_QUERY_TERMS = (
 
 # SEC EDGAR full-text search requires an identifying User-Agent per their
 # fair-access policy (https://www.sec.gov/os/webmaster-faq#developers) —
-# unlike CT.gov/openFDA/PubMed this is enforced, not optional.
-USER_AGENT = "ADCdb Intelligence Delta research-use adc-research@example.com"
+# unlike CT.gov/openFDA/PubMed this is enforced, not optional. SEC expects
+# a real contact address here (they will rate-limit or block a generic/
+# fake one under sustained use), so this reads from an env var rather than
+# hardcoding a placeholder that would silently stay wrong in production.
+USER_AGENT = os.environ.get(
+    "ADCDB_EDGAR_USER_AGENT",
+    "ADCdb Intelligence Delta research-use — set ADCDB_EDGAR_USER_AGENT to a real contact before production use",
+)
 
 
 def fetch_filings(
