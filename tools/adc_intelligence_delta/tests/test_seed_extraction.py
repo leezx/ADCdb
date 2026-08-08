@@ -4,6 +4,7 @@ import pytest
 
 from contracts import EvidenceRecord
 from seed_extraction import (
+    SYSTEM_PROMPT,
     IncompleteBatchError,
     LLMResponseError,
     MissingAPIKeyError,
@@ -264,17 +265,29 @@ def test_claim_missing_required_field_raises_incomplete_batch_error():
 
 
 @pytest.mark.parametrize("claims_json", ["null", '"oops"'])
-def test_claims_field_itself_malformed_shapes_do_not_crash(claims_json):
-    # Distinct from a malformed CLAIM entry above: here the whole
-    # "claims" field isn't even a list, so there's nothing to iterate --
-    # treated as zero claims for this record (not batch-fatal), same as
-    # before.
+def test_claims_field_itself_malformed_shape_raises_incomplete_batch_error(claims_json):
+    # Round-4 review: the whole "claims" field not being a list at all
+    # (None, a string, a dict, missing entirely) was previously silently
+    # treated as "zero claims" -- the same silent-recall-loss pattern
+    # already fixed for individual malformed claim entries, just one
+    # level up. {"evidence_id": "x", "claims": null} is not evidence the
+    # model found zero claims; it's evidence something is wrong with
+    # this line, and must fail the batch like every other integrity
+    # violation here.
     records = [_record("e1", evidence_text=TEXT_1)]
     line = f'{{"evidence_id": "e1", "claims": {claims_json}}}'
     fake = lambda p: line
 
-    seeds = extract_seeds_from_records(records, llm_call=fake)
-    assert seeds == []
+    with pytest.raises(IncompleteBatchError):
+        extract_seeds_from_records(records, llm_call=fake)
+
+
+def test_missing_claims_key_entirely_raises_incomplete_batch_error():
+    records = [_record("e1", evidence_text=TEXT_1)]
+    fake = lambda p: json.dumps({"evidence_id": "e1"})  # no "claims" key at all
+
+    with pytest.raises(IncompleteBatchError):
+        extract_seeds_from_records(records, llm_call=fake)
 
 
 def test_top_level_non_dict_json_line_is_treated_as_missing_not_a_crash():
@@ -405,3 +418,19 @@ def test_extract_text_raises_on_non_dict_blocks():
     content = ["not a block"]
     with pytest.raises(LLMResponseError):
         _extract_text_from_content_blocks(content)
+
+
+# --- SYSTEM_PROMPT sanity ---
+
+
+def test_system_prompt_has_no_leftover_format_escaping():
+    # Round-4 review: SYSTEM_PROMPT is sent to the API verbatim, never
+    # through .format() -- an earlier version still had {{ }} escaping
+    # left over from before the system/user message split, when the
+    # whole prompt (including this JSON example) was one .format()-ed
+    # template. That sent literally malformed "{{...}}" text to the
+    # model. No test caught it: the injectable llm_call fake only ever
+    # receives user_content, never SYSTEM_PROMPT -- this test reads the
+    # actual constant instead.
+    assert "{{" not in SYSTEM_PROMPT
+    assert "}}" not in SYSTEM_PROMPT

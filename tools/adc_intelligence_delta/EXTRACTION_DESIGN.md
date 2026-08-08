@@ -122,6 +122,25 @@ raised before any LLM call) — two input records sharing an ID would make
 any output line for that ID structurally ambiguous even if it
 technically "covers" the ID once.
 
+**v0.2 review round 3 (before merge, diff-based) — two more fixes**, both
+confirmed by reproducing them against the code first:
+
+1. `SYSTEM_PROMPT` still had `{{ }}` escaping left over from before the
+   system/user message split — it used to be part of one big
+   `.format()`-templated prompt (which needed `{{ }}` to produce a
+   literal `{ }` in the output), but `SYSTEM_PROMPT` is now sent to the
+   API verbatim and never passed through `.format()`. That meant the
+   model was actually receiving malformed `{{"target": ...}}` text in
+   its own output-format instructions. No test caught this because the
+   injectable `llm_call` fake only ever sees `user_content`, never
+   `SYSTEM_PROMPT` — added `test_system_prompt_has_no_leftover_format_escaping()`
+   to check the constant directly.
+2. A `"claims"` field that wasn't a list at all (`null`, a string, a
+   dict, or missing entirely) was still silently treated as "confirmed
+   zero claims" — the exact silent-recall-loss pattern already fixed for
+   individual malformed claim *entries*, just one level up at the
+   claims-*field* level. Now raises `IncompleteBatchError` the same way.
+
 **Seed ID Format**: `TARGET|INDICATION|ADC` (e.g., `TROP2|COLORECTAL_CANCER|ADC`)
 
 **Deduplication**: Same seed_id → merge, accumulate evidence_ids
