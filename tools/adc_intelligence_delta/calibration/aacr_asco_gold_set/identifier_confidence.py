@@ -7,17 +7,45 @@ Split into its own module (PR #8 review) so that summarize_layer34.py --
 a lightweight aggregation script -- doesn't need to import
 task57_exhaustive_layer34.py, a live-network PubMed retrieval script, just
 to reach a pure string-classification function.
+
+Known limitations (PR #8 round-2 review; not fully solved, only mitigated,
+since a full fix means upstream identifier extraction returning a
+structured type -- ASSET_CODE / TARGET / GENERIC_NAME -- instead of this
+module inferring one from string shape alone; deferred as later-PR scope):
+- HIGH is denylist-based (ASSET_CODE_STOPWORDS): a target/antigen symbol
+  not yet added to that list can still be misclassified HIGH.
+- MEDIUM detects "shaped like an antibody INN", not "confirmed ADC" -- a
+  non-ADC monoclonal antibody name matches the same shape.
+- QUERY_TRIGGER_TERMS/ANTIBODY_SUFFIXES below are maintained by hand,
+  copied from (not imported from) the actual production query in
+  src/sources/pubmed.py -- see test_identifier_confidence.py's drift-guard
+  test, which is the current mitigation, not a structural fix.
+For this module's actual current use (classifying the 8 linked seeds in
+the fixed, human-curated 51-record AACR/ASCO gold set), these are bounded
+risks: every CURATED_IDENTIFIERS value in task57_exhaustive_layer34.py is
+already a human-verified string, so this classifier is a secondary safety
+net on top of that verification, not the primary correctness mechanism.
 """
 
 from __future__ import annotations
 
 import re
+import unicodedata
 
-# Same suffix list as task57_exhaustive_layer34.py's ANTIBODY_SUFFIXES.
+# Same suffix list as task57_exhaustive_layer34.py's ANTIBODY_SUFFIXES, plus
+# maytansinoid (DM1/DM4) payload suffixes -- "ravtansine"/"soravtansine"/
+# "mertansine" -- that PR #8 review found real approved/investigational ADCs
+# use (e.g. mirvetuximab soravtansine, anetumab ravtansine) but that were
+# missing, so those constructs fell through to None (excluded) instead of
+# MEDIUM. Note these payload suffixes are NOT in QUERY_TRIGGER_TERMS below:
+# ADC_QUERY_TERM itself doesn't search for them either (a real, separately
+# documented gap in the production query -- see DESIGN.md's "payload
+# chemistries outside the current suffix list" note), which is exactly why
+# they belong in MEDIUM and not LOW.
 ANTIBODY_SUFFIXES = (
     "zumab", "umab", "mab", "vedotin", "deruxtecan", "govitecan",
     "imab", "ximab", "tamab", "mafodotin", "tesirine", "emtansine",
-    "ozogamicin", "tirumotecan",
+    "ozogamicin", "tirumotecan", "ravtansine", "soravtansine", "mertansine",
 )
 
 # Same terms as src/sources/pubmed.py's ADC_QUERY_TERM, without the
@@ -49,9 +77,28 @@ CD_ANTIGEN_PATTERN = re.compile(r"^CD\d+$")
 # shaped like an asset code but are not one. Reused here so a target name
 # (e.g. "HER2") can never be misclassified HIGH just because it happens to
 # match the code-shape regex.
+#
+# PR #8 round-2 review found this list was missing common ADC target genes
+# (ROR1, DLL3, GPC3, HER3, PDL1, CEACAM5, ...), which the code-shape regex
+# alone can't distinguish from a real asset code -- any "few letters + a
+# digit" string matches both. Expanded the target-gene section below, but
+# this remains a denylist, not a structural fix: a target symbol not yet
+# added here can still be misclassified HIGH. The real fix is having
+# upstream identifier extraction tag *what kind* of string it found
+# (asset code vs. target vs. generic name) rather than inferring it here
+# from shape alone -- deferred, since for this fixed 51-seed dataset every
+# CURATED_IDENTIFIERS value is already a human-verified string (see that
+# table's own docstring), so this denylist is a secondary safety net, not
+# the primary correctness mechanism, and the residual risk is bounded to
+# future additions to that table.
 ASSET_CODE_STOPWORDS = {
     "IC50", "EC50", "IC-50", "EC-50", "COVID19",
-    "TOP1", "TOP2", "TROP2", "HER2", "ERBB2", "DEC205", "PTPN11",
+    # Target gene / antigen symbols
+    "TOP1", "TOP2", "TROP2", "HER2", "HER3", "ERBB2", "ERBB3",
+    "DEC205", "PTPN11", "ROR1", "DLL3", "GPC3", "PDL1", "CEACAM5",
+    "CEACAM6", "FOLR1", "STEAP1", "STEAP2", "ENPP3", "CDH6",
+    "SLC34A2", "SLC39A6", "CLDN18", "MUC1", "MUC16", "B7H3", "B7H4",
+    "NAPI2B", "PTK7", "EPHA2",
     "A549", "HEK293", "DU145", "N87", "MCF7", "HELA", "K562", "SKBR3",
     "JIMT1", "MDA231", "MDAMB231", "NCIH", "HCC827", "H1975", "H2110",
     "SW480", "HT29", "LOVO", "COLO205", "PC3", "LNCAP", "OVCAR3",
@@ -60,15 +107,24 @@ ASSET_CODE_STOPWORDS = {
 }
 
 _WHITESPACE_PATTERN = re.compile(r"\s+")
-_HYPHEN_VARIANTS = re.compile("[‐‑‒–—]")
+# Unicode dash/minus variants that NFKC compatibility normalization does
+# NOT fold to ASCII "-" (verified: NFKC folds the fullwidth hyphen "－" but
+# leaves U+2212 MINUS SIGN "−" alone) -- handled separately after NFKC.
+_HYPHEN_VARIANTS = re.compile("[‐‑‒–—−]")
 
 
 def _normalize(identifier: str) -> str:
-    # Collapses all whitespace (including tabs/non-breaking spaces) to a
-    # single ASCII space and folds Unicode dash variants (en dash, em
-    # dash, ...) to ASCII "-", so a hand-curated identifier with stray
-    # formatting doesn't silently fall through every classification rule.
-    normalized = _HYPHEN_VARIANTS.sub("-", identifier)
+    # NFKC folds fullwidth/compatibility character variants (fullwidth
+    # letters and digits, the fullwidth hyphen "－", ...) to their ASCII
+    # equivalents in one pass -- catches a broad class of visually-similar
+    # Unicode look-alikes that a hand-maintained substitution table would
+    # miss one at a time. Dash variants NFKC doesn't cover (en dash, em
+    # dash, minus sign, ...) are folded separately below. Whitespace
+    # (including tabs/non-breaking spaces) collapses to a single ASCII
+    # space, so a hand-curated identifier with stray formatting doesn't
+    # silently fall through every classification rule.
+    normalized = unicodedata.normalize("NFKC", identifier)
+    normalized = _HYPHEN_VARIANTS.sub("-", normalized)
     normalized = _WHITESPACE_PATTERN.sub(" ", normalized)
     return normalized.strip()
 
@@ -78,9 +134,19 @@ def classify_identifier_confidence(identifier: str | None) -> str | None:
 
     - HIGH: a proprietary company asset code (e.g. "OBI-992", "MEN1309")
       that is not also a known target/CD-antigen/cell-line/NCT-id --
-      specific enough that an incidental match is implausible.
-    - MEDIUM: an antibody/construct generic name (an -mab-style INN) that
-      does not overlap ADC_QUERY_TERM's own vocabulary.
+      specific enough that an incidental match is implausible. This is a
+      denylist-based judgment (see ASSET_CODE_STOPWORDS), not a structural
+      guarantee -- a target symbol not yet added to that list could still
+      be misclassified HIGH.
+    - MEDIUM: the identifier has the shape of an antibody generic name
+      (an -mab/-tansine-style INN suffix). This detects "looks like an
+      antibody INN", NOT "is confirmed to be an ADC" -- a bare monoclonal
+      antibody name with no payload at all (e.g. "faricimab", a non-ADC
+      bispecific) matches the same shape and will also return MEDIUM.
+      Treat MEDIUM as "plausible construct name, unconfirmed" rather than
+      "verified ADC", and see the module docstring's known-limitations
+      note before using this tier for anything higher-stakes than this
+      module's own calibration benchmark.
     - LOW: the identifier text itself contains one of ADC_QUERY_TERM's
       trigger words (e.g. "deruxtecan", "govitecan") -- most commonly
       because it's the generic name of an already-approved ADC (whose INN
@@ -118,8 +184,17 @@ def classify_identifier_confidence(identifier: str | None) -> str | None:
     ):
         return "HIGH"
 
-    antibody_pattern = r"^[a-z][a-z0-9]*(?:" + "|".join(ANTIBODY_SUFFIXES) + r")$"
-    if re.match(antibody_pattern, lowered.replace(" ", "")):
+    # Checked per whitespace-separated token, not against the whole
+    # space-stripped string: removing spaces before matching (as an
+    # earlier version of this check did) can create an accidental suffix
+    # match spanning a word boundary -- e.g. "random abstract" stripped to
+    # "randomabstract" contains "mab" purely by coincidence of where
+    # "random" ends and "abstract" begins, which classified unrelated text
+    # as MEDIUM. Each token is still allowed an optional trailing
+    # brand-suffix code (e.g. "soravtansine-gynx"), matching the same
+    # biosimilar-suffix case the LOW check above already handles.
+    antibody_pattern = r"^[a-z][a-z0-9]*(?:" + "|".join(ANTIBODY_SUFFIXES) + r")(?:-[a-z0-9]+)?$"
+    if any(re.match(antibody_pattern, token) for token in lowered.split(" ") if token):
         return "MEDIUM"
 
     return None

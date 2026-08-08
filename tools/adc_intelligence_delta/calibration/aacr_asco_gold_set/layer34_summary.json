@@ -9,10 +9,9 @@
   "seeds_unlinkable": 20,
   "seeds_no_candidates": 23,
   "seeds_linked_and_tested": 8,
-  "total_confirmed_pmids": 32,
-  "total_matches": 32,
-  "total_misses": 0,
-  "overall_recall_pct_all_confidence_tiers": 100.0,
+  "total_confirmed_pmids_all_tiers": 32,
+  "total_matches_all_tiers": 32,
+  "recall_pct_all_tiers": 100.0,
   "recall_by_confidence": {
     "HIGH": {
       "seeds": 7,
@@ -31,6 +30,12 @@
       "confirmed_pmids": 19,
       "matches": 19,
       "recall_pct": 100.0
+    },
+    "UNCLASSIFIED": {
+      "seeds": 0,
+      "confirmed_pmids": 0,
+      "matches": 0,
+      "recall_pct": null
     }
   },
   "benchmark_recall_high_medium_only": {
@@ -39,8 +44,7 @@
     "matches": 13,
     "recall_pct": 100.0
   },
-  "seeds_unclassified_confidence": 0,
-  "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds have a non-empty lineage_confirmed_pmids list (this is actually counted, not assumed -- the LINKED_AND_TESTED status is supposed to guarantee it, but this checks the invariant rather than hardcoding seeds/seeds). This says nothing about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures) or the 0 LINKED_AND_TESTED seed(s) whose identifier didn't fit any confidence tier (excluded from every recall number above, not silently folded into MEDIUM).",
+  "seed_level_recall_note": "7/7 HIGH/MEDIUM-confidence linked seeds have a non-empty lineage_confirmed_pmids list (this is actually counted, not assumed -- the LINKED_AND_TESTED status is supposed to guarantee it, but this checks the invariant rather than hardcoding seeds/seeds). This says nothing about the population of seeds that could NOT be linked (20 UNLINKABLE + 23 NO_CANDIDATES_FOUND are excluded from this denominator, not counted as recall failures) or the 0 LINKED_AND_TESTED seed(s) whose identifier didn't fit any confidence tier (see recall_by_confidence.UNCLASSIFIED -- included in recall_pct_all_tiers above but excluded from benchmark_recall_high_medium_only).",
   "linked_seeds_detail": [
     {
       "source": "ASCO",

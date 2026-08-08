@@ -93,3 +93,37 @@ def test_user_agent_raises_on_non_latin1_value(monkeypatch):
 def test_user_agent_returns_valid_configured_value(monkeypatch):
     monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb Intelligence Delta (adc@example.org)")
     assert company_pr._user_agent() == "ADCdb Intelligence Delta (adc@example.org)"
+
+
+def test_user_agent_raises_on_embedded_crlf(monkeypatch):
+    # PR #8 round-2 review: a carriage return or newline passes the
+    # Latin-1 encodability check (both are in range 0-255) but is not a
+    # valid HTTP header value -- requests would eventually reject it with
+    # its own InvalidHeader error, but only after this function had
+    # already claimed the value was fine, defeating the point of
+    # validating at the configuration boundary.
+    monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb\ncontact@example.org")
+    with pytest.raises(company_pr.MissingUserAgentError):
+        company_pr._user_agent()
+
+    monkeypatch.setenv("ADCDB_EDGAR_USER_AGENT", "ADCdb\rcontact@example.org")
+    with pytest.raises(company_pr.MissingUserAgentError):
+        company_pr._user_agent()
+
+
+def test_fetch_filings_never_calls_requests_when_user_agent_unset(monkeypatch):
+    # Integration-level check that the fail-fast design actually prevents
+    # any network call, not just that the helper function raises in
+    # isolation -- fetch_filings() must raise before its first
+    # requests.get(), not after.
+    monkeypatch.delenv("ADCDB_EDGAR_USER_AGENT", raising=False)
+
+    def _unexpected_get(*args, **kwargs):
+        raise AssertionError("requests.get() must not be called when ADCDB_EDGAR_USER_AGENT is unset")
+
+    monkeypatch.setattr(company_pr.requests, "get", _unexpected_get)
+
+    import datetime
+
+    with pytest.raises(company_pr.MissingUserAgentError):
+        next(company_pr.fetch_filings(since=datetime.date(2026, 1, 1)))

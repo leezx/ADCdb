@@ -46,6 +46,17 @@ tools/adc_intelligence_delta/
 
 用真实 8 个已链接种子重新验证：置信度分级结果不变（7 HIGH + 1 LOW + 0 MEDIUM），`REPORT_AACR_ASCO.md` 里报告的数字不需要改——这一轮修的是代码的健壮性/正确性，不是当前数据集的结论。
 
+**第三轮审核（把第二轮的修复 diff 再发给同一个 ChatGPT 对话审核）又发现 4 个真实问题**：
+
+12. **HIGH 判定仍会把常见 ADC 靶点误判成公司代号**——ROR1/DLL3/GPC3/HER3/PDL1/CEACAM5 这些字母+数字形状的靶点符号，之前没被加进排除表，会被误判 HIGH。扩充了排除表，并在代码注释里明确承认这**只是缓解，不是根治**——排除表天然是"你想到什么就排除什么"，新靶点仍可能漏网；真正的根治需要上游 identifier extraction 直接标注"这是代号/靶点/通用名"这种结构化类型，而不是靠字符串形状猜，这个更大的改动明确推迟到后续 PR。对这个数据集（51 条记录的 `CURATED_IDENTIFIERS` 全部是人工核实过的字符串）来说，这个分类器只是核实之上的第二道保险，不是唯一防线，风险有界。
+13. **MEDIUM 既有假阴性也有假阳性**——`mirvetuximab soravtansine`、`anetumab ravtansine` 这类真实 ADC（用 maytansinoid/DM 载荷）之前会被判 None 直接排除（因为它们既不含生产 query 的触发词，后缀也不在 `ANTIBODY_SUFFIXES` 里）；反过来 `faricimab` 这种根本不是 ADC 的普通抗体也会被判 MEDIUM。修复：把 `ravtansine`/`soravtansine`/`mertansine` 加进后缀表；MEDIUM 的 docstring 改成如实说明它检测的是"长得像抗体通用名"而不是"确认是 ADC"，`faricimab` 的测试保留但改成明确注释成"已知局限性，不是正确答案"。顺手还修了这一改动引入的一个新 bug：把匹配范围从"整个字符串锚定末尾"改成"允许品牌后缀"时，一开始用了去空格后整串搜索，结果"random abstract"去空格拼接成"randomabstract"意外包含"mab"子串——改成按空格分词、每个词单独匹配。
+14. **`summarize_layer34.py` 的"unclassified 排除在外"说法和实际计算不一致**——`overall_recall_pct_all_confidence_tiers` 的分子分母其实是对全部 linked 行求和（包括 identifier_confidence 分类不出来的行），但旁边的说明文字却写"排除在每个 recall 数字之外"，两者矛盾。当前数据集碰巧 0 条 unclassified，所以显示的数字没错，但这是代码结构性问题，不是巧合。修复：加一个显式的 `UNCLASSIFIED` 档（和 HIGH/MEDIUM/LOW 并列），保证"全部 4 档之和 = linked 总数"这个不变量，并在代码里加一个真的会报错的一致性检查（不只是文档承诺）；`total_confirmed_pmids`/`total_matches`/`overall_recall_pct_all_confidence_tiers` 相应改名成 `_all_tiers` 后缀，明确这个数字包含 UNCLASSIFIED，不是"只统计已分类的"。
+15. **`_user_agent()` 的 Latin-1 编码检查不拒绝换行符**——`"contact\ncontact@x.org"` 能通过编码检查（换行符在 Latin-1 范围内），要等到 `requests` 内部才会报错，绕过了"在配置边界清晰报错"这个设计初衷（虽然不会造成真正的 header 注入，`requests` 自己会拦）。加了 CR/LF 的显式拒绝。
+
+第三轮同时指出 `identifier_confidence.py` 里的 `QUERY_TRIGGER_TERMS`/`ANTIBODY_SUFFIXES` 是手抄自 `src/sources/pubmed.py` 的生产查询词，不是导入的，未来生产查询改了这里不会自动同步——采纳的缓解方案是加一致性测试（`test_query_trigger_terms_do_not_silently_drift_from_production_query`），而不是做更大的模块重构。
+
+再次用真实 8 个已链接种子验证：数字仍然不变（7 HIGH + 1 LOW + 0 MEDIUM + 0 UNCLASSIFIED）。新增 12 个测试（`test_summarize_layer34.py` 全新，覆盖 `build_summary()` 的聚合逻辑；`test_identifier_confidence.py`/`test_company_pr_source.py` 继续补充），`pytest tests/` 从 43 个变成 55 个全过。
+
 ## PR #7：穷尽版 AACR/ASCO Layer 3/4
 
 PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样本）。PR #7 对全部 51 个种子做穷尽测量：31/51 提取出标识符（20/51 结构性无法链接），31 个里 8 个成功链接到 32 篇谱系确认的后续发表论文，`ADC_QUERY_TERM` 全部命中（PR #8 之后按置信度拆分，见上）。完整方法见 [calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md](calibration/aacr_asco_gold_set/REPORT_AACR_ASCO.md)。
@@ -119,4 +130,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-43 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1 时的崩溃防护测试（PR #8）。
+55 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）。

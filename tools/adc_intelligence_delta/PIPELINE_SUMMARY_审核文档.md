@@ -108,6 +108,14 @@ PR #4 的 Layer 3/4 只测了 51 个种子里的 12 个（top 3 抗体样本）�
 
 用真实的 8 个已链接种子重新验证：置信度分级结果完全不变（7 HIGH + 1 LOW + 0 MEDIUM），`REPORT_AACR_ASCO.md` 里的数字不需要改——这一轮修的是代码健壮性和正确性，不是当前数据集的结论。新增 13 个测试（`pytest tests/` 从 30 个变成 43 个全过）。
 
+**第三轮：把第二轮的修复 diff 再发回同一个 ChatGPT 对话审核**，又发现 4 个真实问题：
+1. HIGH 判定仍会把常见 ADC 靶点（ROR1/DLL3/GPC3/HER3/PDL1/CEACAM5）误判成公司代号——排除表之前只覆盖了代码里已经用到过的靶点。扩充了排除表，但代码注释里明确承认这只是缓解不是根治：靠字符串形状排除永远追不完新靶点，真正的根治需要上游提取时就标注"这是代号还是靶点"，明确推迟到后续 PR。
+2. MEDIUM 既漏判真实 ADC（`mirvetuximab soravtansine`/`anetumab ravtansine` 这类 maytansinoid 载荷药物之前被排除在外），又误判非 ADC 抗体（`faricimab`）——补了载荷后缀，并把 MEDIUM 的语义改成如实说明"像抗体通用名"而不是"确认是 ADC"。改的过程中还发现自己引入了一个新 bug（去空格后整串搜索导致"random abstract"意外命中"mab"跨词子串），改成按词匹配修掉了。
+3. `summarize_layer34.py` 里"unclassified 排除在每个 recall 数字之外"的说明文字和实际计算不一致——当前数据集碰巧 0 条 unclassified 所以显示数字没错，但这是结构性 bug 不是巧合。加了显式的 UNCLASSIFIED 档和一个真的会报错的一致性检查（4 档之和必须等于 linked 总数），不再只靠文档承诺。
+4. User-Agent 的 Latin-1 检查不拒绝换行符，加了 CR/LF 显式拒绝。
+
+再次用真实数据验证：数字仍不变（7 HIGH + 1 LOW + 0 MEDIUM + 0 UNCLASSIFIED）。新增 12 个测试（`pytest tests/` 从 43 个变成 55 个全过，含新建的 `test_summarize_layer34.py`）。
+
 ---
 
 ## 4. AACR/ASCO Gold Set 的完整 Pipeline 逻辑（PR #4 + PR #7）
@@ -224,7 +232,7 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 
 ### 6.3 测试覆盖
 
-43 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试、SEC EDGAR User-Agent 崩溃防护测试。
+55 个单元测试全部通过（`pytest tests/ -v`）：实体消歧（含 6000 字节截断回归测试）、CT.gov/FDA/PubMed/Company PR 归一化、PubMed 停用词过滤回归测试、PR #8 新增的 CT.gov 事件分型确定性映射回归测试（含"COMPLETED/TERMINATED 不再合并成同一事件类型"、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、生产 query 词表一致性检查）、`summarize_layer34.py` 聚合逻辑测试、SEC EDGAR User-Agent 崩溃防护及网络请求防护测试。
 
 ---
 
@@ -249,7 +257,7 @@ ADC_QUERY_TERM = " OR ".join(f'"{term}"[tiab]' for term in _TERMS)
 如果您要重点核查，建议关注：
 
 1. **Layer 3 标识符提取的人工核实表**（`calibration/aacr_asco_gold_set/task57_exhaustive_layer34.py` 里的 `CURATED_IDENTIFIERS`）——这是唯一一处用人工判断代替自动化规则的地方，51 条记录的判断是否准确直接决定 Layer 3/4 数字是否可信。
-2. **PR #8 新增的置信度分级逻辑**（`classify_identifier_confidence()`）——HIGH/MEDIUM/LOW 三档的判定规则（公司代号 vs 已上市药通用名 vs 其他构建体名）是否合理，尤其是"trastuzumab deruxtecan"划为 LOW、不进主 benchmark 数字这个处理方式是否同意。
+2. **PR #8 新增的置信度分级逻辑**（`classify_identifier_confidence()`）——HIGH/MEDIUM/LOW 三档的判定规则（公司代号 vs 已上市药通用名 vs 其他构建体名）是否合理，尤其是"trastuzumab deruxtecan"划为 LOW、不进主 benchmark 数字这个处理方式是否同意。**已知未完全解决的局限**（写在 `identifier_confidence.py` 模块 docstring 里，不是隐藏的）：HIGH 判定靠一份靶点/细胞系排除表，新靶点仍可能漏判；MEDIUM 判定只能识别"长得像抗体通用名"，不能确认真的是 ADC。对当前 51 条人工核实过的数据集来说风险有界，但如果以后要把这份 51-record 的经验直接套到别的、非人工核实的数据集上，这两点需要重新评估。
 3. **PR #6（SEC 8-K Disclosure Detector）选择 SEC EDGAR 而非逐公司爬取的取舍**——是否接受"只覆盖美股上市公司"这个结构性缺口，以及"目前只有元数据、没有正文"这个能力边界，还是需要提前安排 PR #10（EX-99.1 正文抓取）。
 4. **PR #5 骨架实现的范围划分**——是否同意"claim-level 关系提取"（PR #9）作为下一步优先级最高的工作，而不是先扩展新数据源。
 5. **event_extraction.py 的 CT.gov 修复**（`CT_STATUS_TO_EVENT_TYPE` 映射表）——状态到事件类型的映射是否完整覆盖了您关心的 CT.gov 状态值，未识别状态目前落到 `TRIAL_OTHER`。
