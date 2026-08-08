@@ -1,0 +1,88 @@
+{
+  "total_seeds": 51,
+  "status_breakdown": {
+    "LINKED_AND_TESTED": 8,
+    "NO_CANDIDATES_FOUND": 23,
+    "UNLINKABLE_NO_IDENTIFIER": 20
+  },
+  "seeds_with_identifier": 31,
+  "seeds_unlinkable": 20,
+  "seeds_no_candidates": 23,
+  "seeds_linked_and_tested": 8,
+  "total_confirmed_pmids": 32,
+  "total_matches": 32,
+  "total_misses": 0,
+  "overall_recall_pct": 100.0,
+  "novel_seeds_only": {
+    "seeds": 7,
+    "confirmed_pmids": 13,
+    "matches": 13,
+    "recall_pct": 100.0
+  },
+  "linked_seeds_detail": [
+    {
+      "source": "ASCO",
+      "record_id": "e14039",
+      "identifier": "MEN1309",
+      "confirmed_pmids": 2,
+      "matches": 2,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "3130",
+      "identifier": "OBI-992",
+      "confirmed_pmids": 3,
+      "matches": 3,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "7179",
+      "identifier": "OBI-992",
+      "confirmed_pmids": 3,
+      "matches": 3,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "1884",
+      "identifier": "DXC006",
+      "confirmed_pmids": 1,
+      "matches": 1,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "3142",
+      "identifier": "NN3201",
+      "confirmed_pmids": 1,
+      "matches": 1,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "6341",
+      "identifier": "RGX-019",
+      "confirmed_pmids": 2,
+      "matches": 2,
+      "misses": 0
+    },
+    {
+      "source": "AACR",
+      "record_id": "738",
+      "identifier": "MBRC-101",
+      "confirmed_pmids": 1,
+      "matches": 1,
+      "misses": 0
+    },
+    {
+      "source": "ASCO",
+      "record_id": "10049",
+      "identifier": "trastuzumab deruxtecan",
+      "confirmed_pmids": 19,
+      "matches": 19,
+      "misses": 0
+    }
+  ]
+}
