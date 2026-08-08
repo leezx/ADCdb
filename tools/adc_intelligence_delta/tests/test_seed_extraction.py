@@ -103,6 +103,36 @@ def test_multiple_claims_in_one_record_all_extracted():
     assert {s.indication for s in seeds} == {"hepatocellular carcinoma", "lung cancer"}
 
 
+@pytest.mark.parametrize(
+    "line",
+    [
+        '{"evidence_id": "e1", "claims": null}',
+        '{"evidence_id": "e1", "claims": "oops"}',
+        '{"evidence_id": "e1", "claims": ["oops"]}',
+        "[1,2,3]",
+        "true",
+        '{"evidence_id": "e1", "claims": [{"target": 42, "indication": "x"}]}',
+        '{"evidence_id": "e1", "claims": [{"target": null, "indication": "x"}]}',
+        '{"evidence_id": 123, "claims": []}',
+    ],
+)
+def test_malformed_llm_output_shapes_are_skipped_not_fatal(line):
+    # Self-review regression guard: LLM output is not schema-guaranteed
+    # the way a deterministic API response is. An earlier version of
+    # _parse_llm_output crashed on every one of these shapes -- "claims"
+    # present but null hit the exact dict.get()-with-None pitfall PR #8
+    # fixed in event_extraction.py, and a non-dict claim/obj crashed with
+    # AttributeError. One malformed line must not take down the whole
+    # batch's results.
+    records = [_record("e1")]
+
+    def fake_llm(prompt):
+        return line
+
+    seeds = extract_seeds_from_records(records, llm_call=fake_llm)
+    assert seeds == []
+
+
 def test_hallucinated_evidence_id_is_dropped():
     # If the LLM returns an evidence_id that wasn't in this batch's input,
     # the claim must not be attached to anything -- silently trusting it

@@ -151,16 +151,37 @@ def _parse_llm_output(output_text: str, valid_evidence_ids: set[str]) -> list[AD
             # lines rather than fail the whole batch over one bad line.
             continue
 
+        # obj can be any JSON value (a bare list, string, number, ...),
+        # not necessarily a dict -- unlike a deterministic API response,
+        # LLM output isn't schema-guaranteed. Every field below is
+        # similarly untrusted: "claims" being present but null (not
+        # missing) is the same dict.get()-with-None pitfall found in
+        # event_extraction.py during PR #8, and a claim entry can be any
+        # JSON value too. Validate shape explicitly at each step rather
+        # than letting one malformed line crash the whole batch's results.
+        if not isinstance(obj, dict):
+            continue
+
         evidence_id = obj.get("evidence_id")
-        if evidence_id not in valid_evidence_ids:
+        if not isinstance(evidence_id, str) or evidence_id not in valid_evidence_ids:
             # Guards against the LLM hallucinating an evidence_id that
             # wasn't in this batch's input -- never attach a seed to a
             # record we didn't actually send it.
             continue
 
-        for claim in obj.get("claims", []):
-            target = (claim.get("target") or "").strip()
-            indication = (claim.get("indication") or "").strip()
+        claims = obj.get("claims")
+        if not isinstance(claims, list):
+            continue
+
+        for claim in claims:
+            if not isinstance(claim, dict):
+                continue
+            target = claim.get("target")
+            indication = claim.get("indication")
+            if not isinstance(target, str) or not isinstance(indication, str):
+                continue
+            target = target.strip()
+            indication = indication.strip()
             if not target or not indication:
                 continue
             seed_id = normalize_seed_slug(target, indication, modality="ADC")
