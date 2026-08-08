@@ -12,7 +12,7 @@ tools/adc_intelligence_delta/
   src/
     contracts.py           # EvidenceRecord / ADCAsset / ADCSeed / ADCEvent 四个最小契约
     entity_resolution.py   # 对 ADCdb_Obsidian/ADCs/*.md 做 alias 消歧，只读
-    seed_extraction.py     # EvidenceRecord -> ADCSeed（PR #5，按 target×indication 假设去重）
+    seed_extraction.py     # EvidenceRecord -> ADCSeed（PR #9，LLM claim 提取，按 target×indication 假设去重）
     event_extraction.py    # EvidenceRecord -> ADCEvent（PR #5，启发式事件分型）
     pipeline.py             # 串联 seed/event 提取的整合层（PR #5）
     sources/
@@ -24,6 +24,22 @@ tools/adc_intelligence_delta/
   calibration/               # PR #3：precision/recall 实验数据+工具，不含生产代码
     aacr_asco_gold_set/      # PR #4：AACR/ASCO 独立 recall gold set（四层测量）
 ```
+
+## PR #9：Claim-Level Seed 提取（LLM，替换笛卡尔积）
+
+PR #8 审核后收敛出的下一优先级：把 `seed_extraction.py` 从"两个独立 mention 列表做笛卡尔积"改成真正的 claim-level 提取。
+
+**审核时的关键发现（比 PR #8 文档里描述的问题更严重）**：PR #8 把旧实现的问题描述成"笛卡尔积会产生假种子"，但深入检查后发现——**四个数据源适配器没有一个真正填充过 `mentioned_targets`**（永远是空数组 `[]`），`mentioned_indications` 也只有 `clinicaltrials.py` 会填（来自 CT.gov 结构化的 `conditions` 字段）。这意味着旧的 `extract_seeds_from_record()` 在生产环境里**从来没有产出过一个种子**，不是"偶尔产生假种子"，是"永远产出空列表"。
+
+**新实现**：`extract_seeds_from_records()`（注意是复数，接收整批 EvidenceRecord）直接读 `evidence_text`，调用 Anthropic API 抽取明确的 `target — supported_in → indication` claim——即原文实际把哪个靶点和哪个适应症关联在一起评估，而不是"这条记录提到了 A 靶点也提到了 B 适应症"就配对。多数记录预期抽不出任何 claim（常规试验状态更新、安全性报告、综述等），空列表是常态不是失败。
+
+**API 调用方式**：复用 `calibration/aacr_asco_gold_set/classify_all_batches.py` 已有的调用约定——原生 `requests` 调 Anthropic Messages API，读 `ANTHROPIC_API_KEY` 环境变量，`claude-opus-5`，每批最多 50 条（同一个约定，不是发明第二套）。未设置环境变量时直接 `raise MissingAPIKeyError`，不发请求（同 PR #8 里 `MissingUserAgentError` 的设计）。
+
+**可测试性**：LLM 调用通过 `llm_call` 参数可注入，测试套件对着构造好的假响应验证解析/校验逻辑（claim 提取、幻觉 evidence_id 拒绝、畸形 JSON 容错、分批、去重），不发真实网络请求；`ANTHROPIC_API_KEY` 只在真正跑 pipeline 时才需要，不影响 `pytest tests/`。
+
+**已知局限**（写在 `EXTRACTION_DESIGN.md` 里）：非确定性（同一批记录重跑可能抽出略微不同的 claim，这是 LLM 提取固有的，不同于 CT.gov/FDA/PubMed 适配器的完全确定性）；没有靶点名称归一化（"TROP-2" vs "TROP2" 会被当成不同靶点，完全依赖 LLM 自身一致性）；每次 pipeline 运行都会产生和批次大小成正比的 API 调用成本——适合本项目设计的月度运行节奏，不适合高频或单条同步调用场景。
+
+新增 12 个测试（`test_seed_extraction.py`），`pytest tests/` 从 57 个变成 69 个全过。
 
 ## PR #8：Truthfulness / Event Correctness（不加新数据源）
 
@@ -124,7 +140,7 @@ PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样�
 
 ## 有意不做的事（截至 PR #8 仍未做）
 
-ESMO/patent 数据源、AACR/ASCO 的持续摄取适配器（目前只有 PubMed 有生产 source adapter；AACR/ASCO 数据是 `calibration/` 下复用的静态语料，不是滚动数据源）、8-K 附件正文抓取解析、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧、claim-level 的 target-indication 关系提取（目前是笛卡尔积占位，见 PR #5 章节）、LLM 细粒度事件分型（ClinicalTrials.gov 除外，已确定性化）、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
+ESMO/patent 数据源、AACR/ASCO 的持续摄取适配器（目前只有 PubMed 有生产 source adapter；AACR/ASCO 数据是 `calibration/` 下复用的静态语料，不是滚动数据源）、8-K 附件正文抓取解析、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧、靶点名称归一化（PR #9 之后仍是已知局限，见 EXTRACTION_DESIGN.md）、LLM 细粒度事件分型（ClinicalTrials.gov 除外，已确定性化）、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
 
 ## 跑测试
 
@@ -134,4 +150,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-57 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）。
+69 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、幻觉 evidence_id 拒绝、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。

@@ -1,6 +1,6 @@
-# ADCSeed & ADCEvent Extraction (PR #5)
+# ADCSeed & ADCEvent Extraction (PR #5, updated PR #8/#9)
 
-**Status**: v0.1 skeleton implementation  
+**Status**: ADCEvent typing is deterministic for ClinicalTrials.gov, heuristic elsewhere (PR #8); ADCSeed extraction is LLM-based claim extraction (PR #9)  
 **Date**: 2026-08-08
 
 ## Overview
@@ -20,43 +20,57 @@ A **seed** is a therapeutic hypothesis: (target, indication, modality), complete
 - Later-named assets to contribute evidence backward-in-time
 - Un-named early-stage hypotheses to exist in the system
 
-### Implementation (v0.1) — contract-validation only, not a landed capability
+### Implementation (v0.2, PR #9) — LLM claim extraction
 
-**Status: this is a toy extractor that exercises the `ADCSeed` contract's
-shape. It is not yet a claim-level extraction capability and its output
-should not be consumed by anything downstream (in particular, the Rule
-Engine) until claim-level extraction lands.**
+**History**: v0.1 (PR #5) was a toy extractor that took a record's
+`mentioned_targets` and `mentioned_indications` — two independently
+extracted free-text mention lists — and emitted one ADCSeed per
+Cartesian-product pair. This was wrong whenever a record mentioned more
+than one target or indication (it invents `target × indication` pairings
+the source text never claims, e.g. pairing a background-only target with
+an indication only a different target was actually tested in). PR #9
+review additionally found this bug was moot in practice: no source
+adapter (`clinicaltrials.py`, `fda.py`, `pubmed.py`, `company_pr.py`) ever
+populated `mentioned_targets` at all — it was always `[]` — so the v0.1
+function produced **zero seeds in production, always**, not just
+occasional false ones.
 
-**Input**: EvidenceRecord with `mentioned_targets` and `mentioned_indications`
+**v0.2 (current)**: `seed_extraction.py`'s `extract_seeds_from_records()`
+reads `evidence_text` directly (not the mention lists) and calls the
+Anthropic API (same calling convention as
+`calibration/aacr_asco_gold_set/classify_all_batches.py` — raw HTTP via
+`requests`, `ANTHROPIC_API_KEY` env var, batched in chunks of 50) to
+extract explicit `target — supported_in → indication` claims: pairs the
+source text actually links together as an ADC being evaluated in that
+indication, not just co-mentioned. Most records are expected to yield
+zero claims (routine trial status updates, safety reports, reviews,
+records discussing a target/indication that were never tested together)
+— an empty claims list is the common case, not a failure.
 
-**Output**: One ADCSeed per (target, indication) Cartesian product
-
-**Known correctness issue with the Cartesian product**: if a single
-EvidenceRecord mentions two targets and two indications — e.g. an abstract
-that discusses both HER2 and TROP2 as background, evaluated only in
-gastric cancer — this code currently emits all four `target × indication`
-combinations, including two the source text never actually claims (e.g.
-`TROP2 × gastric cancer`, if the abstract's TROP2 mention was purely
-comparative and never tested in that indication). `mentioned_targets` and
-`mentioned_indications` are independent free-text mention lists, not
-claims, so their Cartesian product is not a valid substitute for the
-relation the seed is actually supposed to represent
-(`target — supported_in → indication`). This makes the current output
-directionally useful for validating the contract shape but not reliable
-enough to feed a Rule Engine or any other automated consumer.
+**Testability**: the LLM call is injectable (`llm_call` parameter), so
+`tests/test_seed_extraction.py` exercises the parsing/validation logic
+(claim extraction, hallucinated-evidence-id rejection, malformed-JSON
+tolerance, batching, dedup) against constructed fake responses — no
+network call in the test suite, and `ANTHROPIC_API_KEY` is only required
+at actual pipeline run time, not for `pytest tests/`.
 
 **Seed ID Format**: `TARGET|INDICATION|ADC` (e.g., `TROP2|COLORECTAL_CANCER|ADC`)
 
 **Deduplication**: Same seed_id → merge, accumulate evidence_ids
 
 **Limitations Flagged for Later**:
-- No LLM entity recognition (mentioned_targets/indications must come from source adapters)
-- No normalization (Target "TROP-2" vs "TROP2" treated as different)
+- No normalization (Target "TROP-2" vs "TROP2" treated as different) —
+  relies entirely on the LLM's own consistency
 - No seed-level confidence scoring
-- No claim-level relation extraction (see Cartesian-product issue above) —
-  the real fix for a later PR is extracting the actual
-  `target — supported_in → indication` relation instead of pairing two
-  independent mention lists
+- Non-deterministic: re-running the same record batch can yield slightly
+  different claims run-to-run (inherent to LLM extraction, unlike the
+  fully deterministic CT.gov/FDA/pubmed source adapters)
+- Cost/latency: every pipeline run now makes Anthropic API calls
+  proportional to batch size (50 records/call) — acceptable for the
+  monthly-run cadence this pipeline is designed for, not for high-frequency
+  or per-record synchronous use
+- No entity resolution yet (`asset_id`/matching to known `ADCAsset`s is
+  still later-PR work, unchanged from v0.1)
 
 ---
 
@@ -153,15 +167,18 @@ Normalize mentions of the same target/indication across sources.
 
 ## Testing & Validation
 
-Currently no unit tests (v0.1 is skeleton). Tests will be added when:
-- Seed extraction is applied to real AACR/ASCO corpus → validate seed counts
-- Event extraction runs on ClinicalTrials.gov records → validate event type accuracy
+`tests/test_event_extraction.py` (PR #8) and `tests/test_seed_extraction.py`
+(PR #9) cover both modules — event-type mapping determinism/robustness and
+seed claim-extraction parsing/validation respectively, both without any
+network calls (seed extraction's LLM call is injectable; see above).
+Still not yet validated against the real AACR/ASCO corpus at scale — that
+remains follow-up work once this runs in a real pipeline pass.
 
 ---
 
 ## Files in This PR
 
-- `seed_extraction.py`: Hypothesis extraction from EvidenceRecords
+- `seed_extraction.py`: LLM-based target×indication claim extraction from EvidenceRecords (PR #9)
 - `event_extraction.py`: Event type inference and date extraction
 - `pipeline.py`: Integration and batch processing
 - `EXTRACTION_DESIGN.md`: This document
