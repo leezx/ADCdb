@@ -12,7 +12,7 @@ tools/adc_intelligence_delta/
   src/
     contracts.py           # EvidenceRecord / ADCAsset / ADCSeed / ADCEvent 四个最小契约
     entity_resolution.py   # 对 ADCdb_Obsidian/ADCs/*.md 做 alias 消歧，只读
-    seed_extraction.py     # EvidenceRecord -> ADCSeed（PR #5，按 target×indication 假设去重）
+    seed_extraction.py     # EvidenceRecord -> ADCSeed（PR #9，LLM claim 提取，按 target×indication 假设去重）
     event_extraction.py    # EvidenceRecord -> ADCEvent（PR #5，启发式事件分型）
     pipeline.py             # 串联 seed/event 提取的整合层（PR #5）
     sources/
@@ -24,6 +24,52 @@ tools/adc_intelligence_delta/
   calibration/               # PR #3：precision/recall 实验数据+工具，不含生产代码
     aacr_asco_gold_set/      # PR #4：AACR/ASCO 独立 recall gold set（四层测量）
 ```
+
+## PR #9：Claim-Level Seed 提取（LLM，替换笛卡尔积）
+
+PR #8 审核后收敛出的下一优先级：把 `seed_extraction.py` 从"两个独立 mention 列表做笛卡尔积"改成真正的 claim-level 提取。
+
+**审核时的关键发现（比 PR #8 文档里描述的问题更严重）**：PR #8 把旧实现的问题描述成"笛卡尔积会产生假种子"，但深入检查后发现——**四个数据源适配器没有一个真正填充过 `mentioned_targets`**（永远是空数组 `[]`），`mentioned_indications` 也只有 `clinicaltrials.py` 会填（来自 CT.gov 结构化的 `conditions` 字段）。这意味着旧的 `extract_seeds_from_record()` 在生产环境里**从来没有产出过一个种子**，不是"偶尔产生假种子"，是"永远产出空列表"。
+
+**新实现**：`extract_seeds_from_records()`（注意是复数，接收整批 EvidenceRecord）直接读 `evidence_text`，调用 Anthropic API 抽取明确的 `target — supported_in → indication` claim——即原文实际把哪个靶点和哪个适应症关联在一起评估，而不是"这条记录提到了 A 靶点也提到了 B 适应症"就配对。多数记录预期抽不出任何 claim（常规试验状态更新、安全性报告、综述等），空列表是常态不是失败。
+
+**API 调用方式**：复用 `calibration/aacr_asco_gold_set/classify_all_batches.py` 已有的调用约定——原生 `requests` 调 Anthropic Messages API，读 `ANTHROPIC_API_KEY` 环境变量，`claude-opus-5`，每批最多 50 条（同一个约定，不是发明第二套）。未设置环境变量时直接 `raise MissingAPIKeyError`，不发请求（同 PR #8 里 `MissingUserAgentError` 的设计）。
+
+**可测试性**：LLM 调用通过 `llm_call` 参数可注入，测试套件对着构造好的假响应验证解析/校验逻辑，不发真实网络请求；`ANTHROPIC_API_KEY` 只在真正跑 pipeline 时才需要，不影响 `pytest tests/`。
+
+**自查轮**（提交审核前自己先读了一遍 diff，用构造的畸形 LLM 输出实测 `_parse_llm_output`，不只是眼看）：发现并修了 4 个真实崩溃 bug——`"claims": null`（key 存在但值是 None）触发了和 PR #8 里 `event_extraction.py` 同一类 `dict.get()` 陷阱；claims 不是 list；单条 claim 不是 dict；顶层 JSON 不是 dict。改的过程中还发现自己把 isinstance 检查放在 `.strip()` 调用之后，导致 target/indication 非字符串时仍会崩，调整了顺序。加了 8 个畸形输入的参数化回归测试。
+
+**第二轮：提交 ChatGPT 审核**（同一个审过 PR #8 的对话），给出明确结论：不建议合并，有 3 个阻塞性问题。逐条核实后确认全部属实，其中第一条我专门去查了 Anthropic 官方文档验证：
+
+1. **`_default_llm_call()` 对响应结构的假设在生产环境会直接崩溃**——代码原来写的是 `data["content"][0]["text"]`，但查了 [Anthropic 官方 thinking 文档](https://platform.claude.com/docs/en/build-with-claude/thinking) 确认：**Claude Opus 5 默认开启 thinking，不需要任何配置**，所以 `content[0]` 是 thinking block 不是 text block——这个假设在真实调用里几乎每次都会错。修复：显式按 `type == "text"` 找文本 block，不再假设固定下标；同时检查 `stop_reason == "end_turn"`，不是正常结束就直接拒绝这次响应（`classify_all_batches.py` 里也有同样的 `content[0]["text"]` 假设，这次没动它，但大概率有同样的潜在 bug）。
+2. **畸形/截断/缺失的模型输出会被静默解释成"没有 claim"，造成看不见的 recall 损失**——比如一个 50 条的 batch，模型只返回了前 35 条，剩下 15 条会被当成"合法地零 claim"，和模型主动输出 `claims: []` 完全无法区分。修复：`extract_seeds_from_records()` 现在要求每个输入的 `evidence_id` 在输出里**恰好出现一次**，缺失、重复、或出现输入里没有的 ID 都会触发新的 `IncompleteBatchError`，整批直接拒绝，不再部分处理静默过关。
+3. **合法的 evidence_id 挡不住模型在同一个 batch 内张冠李戴或编造内容**——比如把 A 记录里 HER2/乳腺癌的结论错误地挂到 B 记录合法的 evidence_id 下，靠 evidence_id 校验完全看不出来。修复：给每条 claim 加了必填的 `supporting_quote` 字段，要求是该条记录 `evidence_text` 里真实存在的原文子串（做了空白/大小写归一化容错），验证不通过就丢弃这条 claim。
+
+同时顺手做了它标注为"不阻塞但应尽快处理"的几项：prompt 里的规则和外部抓取来的 `evidence_text`/`title` 混在同一条 user message 里，边界太弱，容易被提示注入——改成固定规则放进 `system` 字段，并在里面明确声明 `evidence_text`/`title` 是不可信数据不是指令；`batch_size` 未校验（0 会报错，负数会静默返回空结果且不发请求）；`normalize_seed_slug` 归一化后可能产生空字符串（比如目标名是"---"）；`pipeline.process_records()` 硬编码了真实网络调用，没有把 `llm_call`/`batch_size` 透传出去；以及 seed 提取失败会连带阻止本来独立、确定性的 event 提取一起失败——这条判断后重新排了执行顺序（event 先算），并在 `process_records()` docstring 里把"这是有意为之的原子失败契约，不是疏漏"写清楚，而不是做更大的返回值结构改造。
+
+**没有采纳**它建议的 Anthropic Structured Outputs（保证 JSON schema 的新功能）和自动重试退避——都是合理方向，但分别是"换一种 API 调用方式"和"新增重试基础设施"，超出这一轮审核修复的范围，作为已知局限写进文档而不是现在做。
+
+新增 25 个测试（`test_seed_extraction.py` 重写为覆盖 batch 完整性校验、quote 验证、response block 解析；新建 `test_pipeline.py` 验证 `process_records()` 的透传和原子失败契约），`pytest tests/` 从 57 个变成 88 个全过。
+
+**第三轮：用文字描述（不贴 diff，避免浏览器又崩溃）问 ChatGPT"现在能合并吗"**，结论仍然是不建议合并，指出前两个阻塞问题确实修好了，但发现两个新问题——我都先复现验证过是真实的，再修：
+
+1. **`supporting_quote` 只验证了"是不是这条记录的真实原文"，没验证"是不是真的支撑这条 claim"**——实测发现这种输出能通过校验：quote="No new safety signals were observed."（确实是原文，但和 target=HER2/indication=breast cancer 毫无关系）。修复：`_quote_supports_claim()` 现在额外要求 quote 里必须同时包含 target 和 indication 各自的原文字符串，不只是"是真的原文"。
+2. **畸形 claim（字段类型错、缺字段）仍然只是被静默丢弃，不影响 batch 通过**——实测确认：`evidence_id` 覆盖率检查看不到这个问题，因为它只关心 evidence_id 有没有出现，不关心该记录里的某条 claim 是不是在解析过程中损坏消失了。这和"整条记录静默丢失"是同一类问题，只是发生在 claim 这一层。修复：结构性畸形的 claim（字段类型不对、缺 target/indication/supporting_quote）现在会让整个 batch 抛 `IncompleteBatchError`，和记录级别的缺失/重复/幻觉 ID 处理方式一致；只有"quote 验证不过"这种内容判断失败保留成单条 claim 丢弃（不是整批失败——这反映的是模型对某一条 claim 的判断错了，不代表整批数据被破坏）。
+
+顺手加了输入层面的校验：如果调用方传进来的 `records` 里两条记录用了同一个 `evidence_id`，在发请求给模型之前就直接 `raise ValueError`（不然输出里那个 ID 对应哪条记录会有歧义）。
+
+新增 7 个测试（含结构性畸形 claim 拉整批失败、quote 内容不相关但真实存在、输入重复 evidence_id 拒绝），`pytest tests/` 从 88 个变成 91 个全过。
+
+**这一轮 ChatGPT 明确说了"这次没有看到实际 diff，结论基于你描述的实现语义，不是逐行代码确认"**——置信度比前几轮低。
+
+**第四轮：把完整 src/ diff 重新贴回去确认**，得到"还不能合并，2 个阻塞问题，都不大，修完就批准"的结论，两个都先复现验证再修：
+
+1. **`SYSTEM_PROMPT` 里还留着 `.format()` 转义用的双花括号**——这段文字以前是拼进一个整体走 `.format()` 的大 prompt 模板里的，需要 `{{ }}` 转义成字面 `{ }`；拆成 system/user 两条消息之后，`SYSTEM_PROMPT` 直接原样发给 API，根本没再走 `.format()`，于是模型实际收到的指令里带着两层花括号的畸形 JSON 示例。测试完全没抓到，因为注入测试用的假 `llm_call` 只接收 `user_content` 参数，从来看不到 `SYSTEM_PROMPT`。修复：改回单花括号，新增一个直接读常量字符串校验没有 `{{`/`}}` 的测试。
+2. **`claims` 字段本身不是 list（null、字符串、dict、或者整个字段缺失）仍然被静默当成"确认零 claim"**——这和之前修的"单条 claim 结构畸形"是同一类问题，只是发生在更外层的字段上：`{"evidence_id": "x", "claims": null}` 不代表模型真的判定零 claim，而是这一行有问题。修复：改成和单条 claim 畸形一样的处理方式，触发 `IncompleteBatchError`。
+
+顺手把 ChatGPT 标注"不阻塞但可以做"里最便宜的一条也做了：`_extract_text_from_content_blocks()` 现在会检查 text block 的 `text` 字段是不是字符串，不是的话抛明确的 `LLMResponseError`，而不是让后面 `"".join()` 崩出一个看不懂的原始 `TypeError`。其余几条（quote 校验不检查词边界、quote 同时提及两者不能数学上证明有关系、丢弃的 claim 没有计数日志）按 ChatGPT 自己的说法都是真实但不阻塞的方向，写进已知局限，这轮没做。
+
+新增 3 个测试，`pytest tests/` 从 91 个变成 93 个全过。ChatGPT 原话："修掉双花括号和非 list claims 被吞掉这两处后，可以合并"——已修，还没有提交这一轮的确认。
 
 ## PR #8：Truthfulness / Event Correctness（不加新数据源）
 
@@ -124,7 +170,7 @@ PR #4 的 Layer 3/4 只抽样测了 51 个种子里的 12 个（top 3 抗体样�
 
 ## 有意不做的事（截至 PR #8 仍未做）
 
-ESMO/patent 数据源、AACR/ASCO 的持续摄取适配器（目前只有 PubMed 有生产 source adapter；AACR/ASCO 数据是 `calibration/` 下复用的静态语料，不是滚动数据源）、8-K 附件正文抓取解析、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧、claim-level 的 target-indication 关系提取（目前是笛卡尔积占位，见 PR #5 章节）、LLM 细粒度事件分型（ClinicalTrials.gov 除外，已确定性化）、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
+ESMO/patent 数据源、AACR/ASCO 的持续摄取适配器（目前只有 PubMed 有生产 source adapter；AACR/ASCO 数据是 `calibration/` 下复用的静态语料，不是滚动数据源）、8-K 附件正文抓取解析、fuzzy matching、任何对 `ADCdb_Obsidian/` 卡片的写入、`ADCSeed`/`ADCEvent` 的实体消歧、靶点名称归一化（PR #9 之后仍是已知局限，见 EXTRACTION_DESIGN.md）、LLM 细粒度事件分型（ClinicalTrials.gov 除外，已确定性化）、和 `ADCpatent/` 的整合、Rule Engine 对接——理由见 DESIGN.md / EXTRACTION_DESIGN.md。
 
 ## 跑测试
 
@@ -134,4 +180,4 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -v
 ```
 
-57 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）。
+93 个测试全过：Synonyms 解析（含 6000 字节截断回归测试）、精确匹配、歧义匹配、未匹配、CT.gov/FDA/PubMed/Company PR（SEC EDGAR）归一化、PubMed 停用词过滤回归测试、CT.gov 事件分型确定性映射回归测试（含 COMPLETED/TERMINATED 不再合并、Expanded Access 状态族、UNKNOWN 状态、None/空格健壮性）、`identifier_confidence.py` 置信度分级测试（含常见 ADC 靶点排除、maytansinoid 载荷、跨词误匹配回归、Unicode 规范化、与生产 query 词表的一致性检查）、`summarize_layer34.py` 的 `build_summary()` 聚合逻辑测试、SEC EDGAR User-Agent 未配置/空值/非 Latin-1/CR-LF 时的崩溃防护测试及"从不发出网络请求"集成测试（PR #8）、`seed_extraction.py` 的 claim 提取测试——不假重不配对、batch 完整性校验（缺失/重复/幻觉 evidence_id 全部拒绝整批）、`supporting_quote` 校验（含跨记录张冠李戴场景）、Opus 5 thinking block 解析、分批、去重、`ANTHROPIC_API_KEY` 未配置时不发请求，以及 `test_pipeline.py` 验证 `process_records()` 的 `llm_call` 透传和原子失败契约（PR #9，全部通过注入假 `llm_call` 完成，测试套件不需要配置真实 API key）。
